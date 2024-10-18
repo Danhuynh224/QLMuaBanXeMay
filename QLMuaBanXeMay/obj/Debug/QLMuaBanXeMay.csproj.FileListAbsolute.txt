@@ -1,0 +1,13 @@
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\bin\Debug\QLMuaBanXeMay.exe.config
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\bin\Debug\QLMuaBanXeMay.exe
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\bin\Debug\QLMuaBanXeMay.pdb
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.csproj.AssemblyReference.cache
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.Form1.resources
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.Properties.Resources.resources
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC_QLXe.resources
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.csproj.GenerateResource.cache
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.csproj.CoreCompileInputs.cache
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.exe
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.pdb
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\bin\Debug\Guna.UI2.dll
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.csproj.CopyComplete

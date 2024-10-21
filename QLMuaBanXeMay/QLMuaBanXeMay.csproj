@@ -75,35 +75,47 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLMuaBanXeMayDataSet.xsd</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\UC_MainScreen.cs">
+    <Compile Include="UC\UC_MainScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\UC_MainScreen.Designer.cs">
+    <Compile Include="UC\UC_MainScreen.Designer.cs">
       <DependentUpon>UC_MainScreen.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\UC_QLPhuTung.cs">
+    <Compile Include="UC\UC_QLPhuTung.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\UC_QLPhuTung.Designer.cs">
+    <Compile Include="UC\UC_QLPhuTung.Designer.cs">
       <DependentUpon>UC_QLPhuTung.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\UC_QLXe.cs">
+    <Compile Include="UC\UC_QLXe.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\UC_QLXe.Designer.cs">
+    <Compile Include="UC\UC_QLXe.Designer.cs">
       <DependentUpon>UC_QLXe.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\UC_ThongTinKhachHang.cs">
+    <Compile Include="UC\UC_ThongTinKhachHang.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\UC_ThongTinKhachHang.Designer.cs">
+    <Compile Include="UC\UC_ThongTinKhachHang.Designer.cs">
       <DependentUpon>UC_ThongTinKhachHang.cs</DependentUpon>
     </Compile>
-    <Compile Include="UserControl\UC_ThongTinNhanVien.cs">
+    <Compile Include="UC\UC_ThongTinNhanVien.cs">
       <SubType>UserControl</SubType>
     </Compile>
-    <Compile Include="UserControl\UC_ThongTinNhanVien.Designer.cs">
+    <Compile Include="UC\UC_ThongTinNhanVien.Designer.cs">
       <DependentUpon>UC_ThongTinNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WF\Form_ThongTinPhuTung.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WF\Form_ThongTinPhuTung.Designer.cs">
+      <DependentUpon>Form_ThongTinPhuTung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WF\Form_ThongTinXe.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WF\Form_ThongTinXe.Designer.cs">
+      <DependentUpon>Form_ThongTinXe.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
@@ -118,20 +130,26 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
-    <EmbeddedResource Include="UserControl\UC_MainScreen.resx">
+    <EmbeddedResource Include="UC\UC_MainScreen.resx">
       <DependentUpon>UC_MainScreen.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\UC_QLPhuTung.resx">
+    <EmbeddedResource Include="UC\UC_QLPhuTung.resx">
       <DependentUpon>UC_QLPhuTung.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\UC_QLXe.resx">
+    <EmbeddedResource Include="UC\UC_QLXe.resx">
       <DependentUpon>UC_QLXe.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\UC_ThongTinKhachHang.resx">
+    <EmbeddedResource Include="UC\UC_ThongTinKhachHang.resx">
       <DependentUpon>UC_ThongTinKhachHang.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="UserControl\UC_ThongTinNhanVien.resx">
+    <EmbeddedResource Include="UC\UC_ThongTinNhanVien.resx">
       <DependentUpon>UC_ThongTinNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WF\Form_ThongTinPhuTung.resx">
+      <DependentUpon>Form_ThongTinPhuTung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WF\Form_ThongTinXe.resx">
+      <DependentUpon>Form_ThongTinXe.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">

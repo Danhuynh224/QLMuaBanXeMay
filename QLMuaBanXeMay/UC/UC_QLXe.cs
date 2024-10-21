@@ -13,7 +13,7 @@ namespace QLMuaBanXeMay
 {
     public partial class UC_QLXe : UserControl
     {
-        string connstring = @"Data Source=DANHUYNH\SQLEXPRESS;Initial Catalog=QLMuaBanXeMay;Integrated Security=True";
+        string connstring = @"Data Source=HONGSON;Initial Catalog=QLMuaBanXeMay;Integrated Security=True";
         SqlConnection conn = null;
         public UC_QLXe()
         {
@@ -48,6 +48,11 @@ namespace QLMuaBanXeMay
         }
 
         private void Xe_GridView_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Xe_GridView_CellContentClick_2(object sender, DataGridViewCellEventArgs e)
         {
 
         }

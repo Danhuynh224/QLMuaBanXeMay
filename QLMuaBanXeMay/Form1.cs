@@ -52,7 +52,10 @@ namespace QLMuaBanXeMay
 
         private void btnBillTool_Click(object sender, EventArgs e)
         {
-
+            UC_HoaDonPT uc = new UC_HoaDonPT();
+            panel5.Controls.Clear();
+            panel5.Controls.Add(uc);
+            uc.Dock = DockStyle.Fill;
         }
 
         private void btnUser_Click(object sender, EventArgs e)

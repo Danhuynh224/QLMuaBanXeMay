@@ -15,17 +15,45 @@ namespace QLMuaBanXeMay
         public Form1()
         {
             InitializeComponent();
-            // Khởi tạo User Control
-            UC_QLXe uC_QLXe = new UC_QLXe();
+        }
 
-            // Đặt Dock cho User Control (tùy chọn, nếu muốn User Control chiếm toàn bộ diện tích của Panel)
-            uC_QLXe.Dock = DockStyle.Fill;
+        private void btnEmployee_Click(object sender, EventArgs e)
+        {
 
-            // Xóa các control cũ (nếu muốn) trong panel
-            Main_panel.Controls.Clear();
+        }
 
-            // Thêm User Control vào Panel
-            Main_panel.Controls.Add(uC_QLXe);
+        private void btnGuest_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMotobike_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnTool_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBillBike_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnBillTool_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnUser_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnSignOut_Click(object sender, EventArgs e)
+        {
 
         }
     }

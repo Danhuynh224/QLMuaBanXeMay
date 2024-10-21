@@ -25,3 +25,11 @@ C:\Users\ADMIN\Source\Repos\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBan.EF1D6
 C:\Users\ADMIN\Source\Repos\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.exe
 C:\Users\ADMIN\Source\Repos\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.pdb
 C:\Users\ADMIN\Source\Repos\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC_MainScreen.resources
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC.UC_HoaDonPT.resources
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC.UC_HoaDonXee.resources
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC_MainScreen.resources
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC_QLPhuTung.resources
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC_ThongTinKhachHang.resources
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC_ThongTinNhanVien.resources
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.WF.Form_ThongTinPhuTung.resources
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.WF.Form_ThongTinXe.resources

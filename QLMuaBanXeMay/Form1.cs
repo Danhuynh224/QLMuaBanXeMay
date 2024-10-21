@@ -30,7 +30,9 @@ namespace QLMuaBanXeMay
 
         private void btnMotobike_Click(object sender, EventArgs e)
         {
-
+            UC_QLXe uc = new UC_QLXe();
+            uc.Dock = DockStyle.Fill;
+            uC_MainScreen.Controls.Add(uc);
         }
 
         private void btnTool_Click(object sender, EventArgs e)
@@ -59,6 +61,11 @@ namespace QLMuaBanXeMay
         }
 
         private void btnSignOut_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void uC_MainScreen_Load(object sender, EventArgs e)
         {
 
         }

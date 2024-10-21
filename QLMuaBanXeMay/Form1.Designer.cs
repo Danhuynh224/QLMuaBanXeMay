@@ -39,7 +39,7 @@
             this.btnMotobike = new System.Windows.Forms.Button();
             this.btnTool = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.uC_MainScreen1 = new QLMuaBanXeMay.UC_MainScreen();
+            this.uC_MainScreen = new QLMuaBanXeMay.UC_MainScreen();
             this.panel3.SuspendLayout();
             this.panel5.SuspendLayout();
             this.SuspendLayout();
@@ -60,7 +60,7 @@
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(200, 800);
+            this.panel3.Size = new System.Drawing.Size(200, 753);
             this.panel3.TabIndex = 0;
             // 
             // btnSignOut
@@ -194,26 +194,29 @@
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.uC_MainScreen1);
+            this.panel5.Controls.Add(this.uC_MainScreen);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(200, 0);
             this.panel5.Name = "panel5";
-            this.panel5.Size = new System.Drawing.Size(1300, 800);
+            this.panel5.Size = new System.Drawing.Size(1282, 753);
             this.panel5.TabIndex = 1;
             // 
-            // uC_MainScreen1
+            // uC_MainScreen
             // 
-            this.uC_MainScreen1.Location = new System.Drawing.Point(0, 0);
-            this.uC_MainScreen1.Name = "uC_MainScreen1";
-            this.uC_MainScreen1.Size = new System.Drawing.Size(1300, 800);
-            this.uC_MainScreen1.TabIndex = 0;
+            this.uC_MainScreen.Location = new System.Drawing.Point(0, 0);
+            this.uC_MainScreen.Name = "uC_MainScreen";
+            this.uC_MainScreen.Size = new System.Drawing.Size(1300, 800);
+            this.uC_MainScreen.TabIndex = 0;
+            this.uC_MainScreen.Load += new System.EventHandler(this.uC_MainScreen_Load);
             // 
             // Form1
             // 
-            this.ClientSize = new System.Drawing.Size(1500, 800);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.ClientSize = new System.Drawing.Size(1482, 753);
             this.Controls.Add(this.panel5);
             this.Controls.Add(this.panel3);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "mainform";
             this.panel3.ResumeLayout(false);
             this.panel5.ResumeLayout(false);
@@ -237,7 +240,7 @@
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Button btnUser;
         private System.Windows.Forms.Panel panel5;
-        private UC_MainScreen uC_MainScreen1;
+        private UC_MainScreen uC_MainScreen;
     }
 }
 

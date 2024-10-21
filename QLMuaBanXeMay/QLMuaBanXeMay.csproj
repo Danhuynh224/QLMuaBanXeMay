@@ -75,6 +75,18 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLMuaBanXeMayDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="UC\UC_HoaDonPT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_HoaDonPT.Designer.cs">
+      <DependentUpon>UC_HoaDonPT.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UC_HoaDonXee.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_HoaDonXee.Designer.cs">
+      <DependentUpon>UC_HoaDonXee.cs</DependentUpon>
+    </Compile>
     <Compile Include="UC\UC_MainScreen.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -130,6 +142,12 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UC\UC_HoaDonPT.resx">
+      <DependentUpon>UC_HoaDonPT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_HoaDonXee.resx">
+      <DependentUpon>UC_HoaDonXee.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC\UC_MainScreen.resx">
       <DependentUpon>UC_MainScreen.cs</DependentUpon>
     </EmbeddedResource>

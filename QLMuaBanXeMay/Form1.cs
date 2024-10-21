@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLMuaBanXeMay.UC;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -39,7 +40,12 @@ namespace QLMuaBanXeMay
 
         private void btnBillBike_Click(object sender, EventArgs e)
         {
-
+            
+            UC_HoaDonXee uc = new UC_HoaDonXee();
+            panel5.Controls.Clear();
+            panel5.Controls.Add(uc);
+            uc.Dock = DockStyle.Fill;
+            
         }
 
         private void btnBillTool_Click(object sender, EventArgs e)

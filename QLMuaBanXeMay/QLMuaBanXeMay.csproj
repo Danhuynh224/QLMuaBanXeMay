@@ -117,6 +117,12 @@
     <Compile Include="UC\UC_ThongTinNhanVien.Designer.cs">
       <DependentUpon>UC_ThongTinNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="WF\Form_ThongTinKH.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WF\Form_ThongTinKH.Designer.cs">
+      <DependentUpon>Form_ThongTinKH.cs</DependentUpon>
+    </Compile>
     <Compile Include="WF\Form_ThongTinPhuTung.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -162,6 +168,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC\UC_ThongTinNhanVien.resx">
       <DependentUpon>UC_ThongTinNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WF\Form_ThongTinKH.resx">
+      <DependentUpon>Form_ThongTinKH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WF\Form_ThongTinPhuTung.resx">
       <DependentUpon>Form_ThongTinPhuTung.cs</DependentUpon>

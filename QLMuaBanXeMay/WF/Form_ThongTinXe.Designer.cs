@@ -29,52 +29,52 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.textBox10 = new System.Windows.Forms.TextBox();
+            this.txt_NamSX = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.button3 = new System.Windows.Forms.Button();
-            this.textBox9 = new System.Windows.Forms.TextBox();
+            this.btn_Confirm = new System.Windows.Forms.Button();
+            this.txt_TinhTrang = new System.Windows.Forms.TextBox();
             this.label10 = new System.Windows.Forms.Label();
-            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.txt_PhanKhoi = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.txt_CongSuat = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
-            this.textBox12 = new System.Windows.Forms.TextBox();
+            this.txt_HangSX = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.textBox13 = new System.Windows.Forms.TextBox();
+            this.txt_MauSac = new System.Windows.Forms.TextBox();
             this.label12 = new System.Windows.Forms.Label();
-            this.textBox14 = new System.Windows.Forms.TextBox();
+            this.txt_TenXe = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.textBox15 = new System.Windows.Forms.TextBox();
+            this.txt_DonGia = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.textBox16 = new System.Windows.Forms.TextBox();
+            this.txt_LoaiXe = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.textBox17 = new System.Windows.Forms.TextBox();
+            this.txt_MaXe = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.textBox10);
+            this.groupBox2.Controls.Add(this.txt_NamSX);
             this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.button3);
-            this.groupBox2.Controls.Add(this.textBox9);
+            this.groupBox2.Controls.Add(this.btn_Confirm);
+            this.groupBox2.Controls.Add(this.txt_TinhTrang);
             this.groupBox2.Controls.Add(this.label10);
-            this.groupBox2.Controls.Add(this.textBox5);
+            this.groupBox2.Controls.Add(this.txt_PhanKhoi);
             this.groupBox2.Controls.Add(this.label6);
-            this.groupBox2.Controls.Add(this.textBox6);
+            this.groupBox2.Controls.Add(this.txt_CongSuat);
             this.groupBox2.Controls.Add(this.label7);
-            this.groupBox2.Controls.Add(this.textBox12);
+            this.groupBox2.Controls.Add(this.txt_HangSX);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.textBox13);
+            this.groupBox2.Controls.Add(this.txt_MauSac);
             this.groupBox2.Controls.Add(this.label12);
-            this.groupBox2.Controls.Add(this.textBox14);
+            this.groupBox2.Controls.Add(this.txt_TenXe);
             this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.textBox15);
+            this.groupBox2.Controls.Add(this.txt_DonGia);
             this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Controls.Add(this.textBox16);
+            this.groupBox2.Controls.Add(this.txt_LoaiXe);
             this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Controls.Add(this.textBox17);
+            this.groupBox2.Controls.Add(this.txt_MaXe);
             this.groupBox2.Controls.Add(this.label16);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.groupBox2.Location = new System.Drawing.Point(26, 23);
@@ -84,12 +84,12 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin xe";
             // 
-            // textBox10
+            // txt_NamSX
             // 
-            this.textBox10.Location = new System.Drawing.Point(541, 214);
-            this.textBox10.Name = "textBox10";
-            this.textBox10.Size = new System.Drawing.Size(195, 30);
-            this.textBox10.TabIndex = 20;
+            this.txt_NamSX.Location = new System.Drawing.Point(541, 214);
+            this.txt_NamSX.Name = "txt_NamSX";
+            this.txt_NamSX.Size = new System.Drawing.Size(195, 30);
+            this.txt_NamSX.TabIndex = 20;
             // 
             // label11
             // 
@@ -101,21 +101,22 @@
             this.label11.TabIndex = 19;
             this.label11.Text = "Năm Sản Xuất";
             // 
-            // button3
+            // btn_Confirm
             // 
-            this.button3.Location = new System.Drawing.Point(566, 367);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(170, 38);
-            this.button3.TabIndex = 18;
-            this.button3.Text = "Xác nhận";
-            this.button3.UseVisualStyleBackColor = true;
+            this.btn_Confirm.Location = new System.Drawing.Point(566, 367);
+            this.btn_Confirm.Name = "btn_Confirm";
+            this.btn_Confirm.Size = new System.Drawing.Size(170, 38);
+            this.btn_Confirm.TabIndex = 18;
+            this.btn_Confirm.Text = "Xác nhận";
+            this.btn_Confirm.UseVisualStyleBackColor = true;
+            this.btn_Confirm.Click += new System.EventHandler(this.btn_Confirm_Click);
             // 
-            // textBox9
+            // txt_TinhTrang
             // 
-            this.textBox9.Location = new System.Drawing.Point(541, 285);
-            this.textBox9.Name = "textBox9";
-            this.textBox9.Size = new System.Drawing.Size(195, 30);
-            this.textBox9.TabIndex = 17;
+            this.txt_TinhTrang.Location = new System.Drawing.Point(541, 285);
+            this.txt_TinhTrang.Name = "txt_TinhTrang";
+            this.txt_TinhTrang.Size = new System.Drawing.Size(195, 30);
+            this.txt_TinhTrang.TabIndex = 17;
             // 
             // label10
             // 
@@ -127,12 +128,12 @@
             this.label10.TabIndex = 16;
             this.label10.Text = "Tình trạng";
             // 
-            // textBox5
+            // txt_PhanKhoi
             // 
-            this.textBox5.Location = new System.Drawing.Point(541, 154);
-            this.textBox5.Name = "textBox5";
-            this.textBox5.Size = new System.Drawing.Size(195, 30);
-            this.textBox5.TabIndex = 15;
+            this.txt_PhanKhoi.Location = new System.Drawing.Point(541, 154);
+            this.txt_PhanKhoi.Name = "txt_PhanKhoi";
+            this.txt_PhanKhoi.Size = new System.Drawing.Size(195, 30);
+            this.txt_PhanKhoi.TabIndex = 15;
             // 
             // label6
             // 
@@ -144,12 +145,12 @@
             this.label6.TabIndex = 14;
             this.label6.Text = "Phân Khối";
             // 
-            // textBox6
+            // txt_CongSuat
             // 
-            this.textBox6.Location = new System.Drawing.Point(150, 214);
-            this.textBox6.Name = "textBox6";
-            this.textBox6.Size = new System.Drawing.Size(195, 30);
-            this.textBox6.TabIndex = 13;
+            this.txt_CongSuat.Location = new System.Drawing.Point(150, 214);
+            this.txt_CongSuat.Name = "txt_CongSuat";
+            this.txt_CongSuat.Size = new System.Drawing.Size(195, 30);
+            this.txt_CongSuat.TabIndex = 13;
             // 
             // label7
             // 
@@ -161,12 +162,12 @@
             this.label7.TabIndex = 12;
             this.label7.Text = "Công Suất";
             // 
-            // textBox12
+            // txt_HangSX
             // 
-            this.textBox12.Location = new System.Drawing.Point(150, 285);
-            this.textBox12.Name = "textBox12";
-            this.textBox12.Size = new System.Drawing.Size(195, 30);
-            this.textBox12.TabIndex = 11;
+            this.txt_HangSX.Location = new System.Drawing.Point(150, 285);
+            this.txt_HangSX.Name = "txt_HangSX";
+            this.txt_HangSX.Size = new System.Drawing.Size(195, 30);
+            this.txt_HangSX.TabIndex = 11;
             // 
             // label1
             // 
@@ -178,12 +179,12 @@
             this.label1.TabIndex = 10;
             this.label1.Text = "Hãng Sản Xuất";
             // 
-            // textBox13
+            // txt_MauSac
             // 
-            this.textBox13.Location = new System.Drawing.Point(150, 154);
-            this.textBox13.Name = "textBox13";
-            this.textBox13.Size = new System.Drawing.Size(195, 30);
-            this.textBox13.TabIndex = 9;
+            this.txt_MauSac.Location = new System.Drawing.Point(150, 154);
+            this.txt_MauSac.Name = "txt_MauSac";
+            this.txt_MauSac.Size = new System.Drawing.Size(195, 30);
+            this.txt_MauSac.TabIndex = 9;
             // 
             // label12
             // 
@@ -195,12 +196,12 @@
             this.label12.TabIndex = 8;
             this.label12.Text = "Màu Sắc";
             // 
-            // textBox14
+            // txt_TenXe
             // 
-            this.textBox14.Location = new System.Drawing.Point(541, 43);
-            this.textBox14.Name = "textBox14";
-            this.textBox14.Size = new System.Drawing.Size(195, 30);
-            this.textBox14.TabIndex = 7;
+            this.txt_TenXe.Location = new System.Drawing.Point(541, 43);
+            this.txt_TenXe.Name = "txt_TenXe";
+            this.txt_TenXe.Size = new System.Drawing.Size(195, 30);
+            this.txt_TenXe.TabIndex = 7;
             // 
             // label13
             // 
@@ -212,12 +213,12 @@
             this.label13.TabIndex = 6;
             this.label13.Text = "Tên Xe";
             // 
-            // textBox15
+            // txt_DonGia
             // 
-            this.textBox15.Location = new System.Drawing.Point(150, 101);
-            this.textBox15.Name = "textBox15";
-            this.textBox15.Size = new System.Drawing.Size(195, 30);
-            this.textBox15.TabIndex = 5;
+            this.txt_DonGia.Location = new System.Drawing.Point(150, 101);
+            this.txt_DonGia.Name = "txt_DonGia";
+            this.txt_DonGia.Size = new System.Drawing.Size(195, 30);
+            this.txt_DonGia.TabIndex = 5;
             // 
             // label14
             // 
@@ -229,12 +230,12 @@
             this.label14.TabIndex = 4;
             this.label14.Text = "Đơn giá";
             // 
-            // textBox16
+            // txt_LoaiXe
             // 
-            this.textBox16.Location = new System.Drawing.Point(541, 98);
-            this.textBox16.Name = "textBox16";
-            this.textBox16.Size = new System.Drawing.Size(195, 30);
-            this.textBox16.TabIndex = 3;
+            this.txt_LoaiXe.Location = new System.Drawing.Point(541, 98);
+            this.txt_LoaiXe.Name = "txt_LoaiXe";
+            this.txt_LoaiXe.Size = new System.Drawing.Size(195, 30);
+            this.txt_LoaiXe.TabIndex = 3;
             // 
             // label15
             // 
@@ -246,12 +247,12 @@
             this.label15.TabIndex = 2;
             this.label15.Text = "Loại Xe";
             // 
-            // textBox17
+            // txt_MaXe
             // 
-            this.textBox17.Location = new System.Drawing.Point(150, 46);
-            this.textBox17.Name = "textBox17";
-            this.textBox17.Size = new System.Drawing.Size(195, 30);
-            this.textBox17.TabIndex = 1;
+            this.txt_MaXe.Location = new System.Drawing.Point(150, 46);
+            this.txt_MaXe.Name = "txt_MaXe";
+            this.txt_MaXe.Size = new System.Drawing.Size(195, 30);
+            this.txt_MaXe.TabIndex = 1;
             // 
             // label16
             // 
@@ -280,26 +281,26 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.TextBox textBox10;
+        private System.Windows.Forms.TextBox txt_NamSX;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.TextBox textBox9;
+        private System.Windows.Forms.Button btn_Confirm;
+        private System.Windows.Forms.TextBox txt_TinhTrang;
         private System.Windows.Forms.Label label10;
-        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.TextBox txt_PhanKhoi;
         private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.TextBox txt_CongSuat;
         private System.Windows.Forms.Label label7;
-        private System.Windows.Forms.TextBox textBox12;
+        private System.Windows.Forms.TextBox txt_HangSX;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox13;
+        private System.Windows.Forms.TextBox txt_MauSac;
         private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.TextBox textBox14;
+        private System.Windows.Forms.TextBox txt_TenXe;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox textBox15;
+        private System.Windows.Forms.TextBox txt_DonGia;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox textBox16;
+        private System.Windows.Forms.TextBox txt_LoaiXe;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox textBox17;
+        private System.Windows.Forms.TextBox txt_MaXe;
         private System.Windows.Forms.Label label16;
     }
 }

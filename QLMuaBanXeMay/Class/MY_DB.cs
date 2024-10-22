@@ -11,12 +11,11 @@ namespace QLMuaBanXeMay.Class
     public class MY_DB
     {
         SqlConnection con = new SqlConnection("@Data Source = DESKTOP - Q1R3HVB; Initial Catalog = QLMuaBanXeMay; Integrated Security = True; Encrypt=False");
-        public SqlConnection getConnection
+        public SqlConnection getConnection()
         {
-            get
-            {
+
                 return con;
-            }
+            
         }
         public void openConnection()
         {

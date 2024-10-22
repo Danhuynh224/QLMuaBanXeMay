@@ -38,7 +38,11 @@ namespace QLMuaBanXeMay.UC
 
         private void UC_ThanhToanPT_Load(PhuTung phuTung, KhachHang khachHang)
         {
+
             MessageBox.Show(khachHang.MaLoai.ToString());
+
+
+
             this.txt_cccdKH.Text = khachHang.CCCDKH.ToString();
             this.txt_ten.Text = khachHang.TenKH.ToString();
             this.dt_ngaySinh.Value = khachHang.NgaySinh;
@@ -118,15 +122,5 @@ namespace QLMuaBanXeMay.UC
 
         }
 
-
-        private void UC_ThanhToanPT_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
-
-        }
     }
 }

@@ -22,6 +22,7 @@ namespace QLMuaBanXeMay
         SqlConnection conn = null;
 
         Class.XeMay xeMay = new XeMay();
+        Class.KhachHang khachHang = new KhachHang();
         public UC_QLXe()
         {
             InitializeComponent();
@@ -111,6 +112,13 @@ namespace QLMuaBanXeMay
             xeMay.TinhTrang = txt_TinhTrang.Text;
             DAOXeMay.SuaXe(xeMay);
             Load_GridView();
+        }
+
+        private void xuathoadon_btn_Click(object sender, EventArgs e)
+        {
+            UC_ThanhToanXe uc = new UC_ThanhToanXe(xeMay, khachHang);
+            this.Controls.Clear();
+            this.Controls.Add(uc);
         }
     }
 }

@@ -51,7 +51,7 @@
             this.btn_xoa = new System.Windows.Forms.DataGridViewButtonColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_Update = new System.Windows.Forms.Button();
-            this.capnhat_btn = new System.Windows.Forms.Button();
+            this.xuathoadon_btn = new System.Windows.Forms.Button();
             this.txt_NamSX = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.txt_TinhTrang = new System.Windows.Forms.TextBox();
@@ -297,7 +297,7 @@
             // groupBox1
             // 
             this.groupBox1.Controls.Add(this.btn_Update);
-            this.groupBox1.Controls.Add(this.capnhat_btn);
+            this.groupBox1.Controls.Add(this.xuathoadon_btn);
             this.groupBox1.Controls.Add(this.txt_NamSX);
             this.groupBox1.Controls.Add(this.label11);
             this.groupBox1.Controls.Add(this.txt_TinhTrang);
@@ -336,14 +336,15 @@
             this.btn_Update.UseVisualStyleBackColor = true;
             this.btn_Update.Click += new System.EventHandler(this.btn_Update_Click);
             // 
-            // capnhat_btn
+            // xuathoadon_btn
             // 
-            this.capnhat_btn.Location = new System.Drawing.Point(914, 141);
-            this.capnhat_btn.Name = "capnhat_btn";
-            this.capnhat_btn.Size = new System.Drawing.Size(170, 38);
-            this.capnhat_btn.TabIndex = 21;
-            this.capnhat_btn.Text = "Xuất hóa đơn";
-            this.capnhat_btn.UseVisualStyleBackColor = true;
+            this.xuathoadon_btn.Location = new System.Drawing.Point(914, 141);
+            this.xuathoadon_btn.Name = "xuathoadon_btn";
+            this.xuathoadon_btn.Size = new System.Drawing.Size(170, 38);
+            this.xuathoadon_btn.TabIndex = 21;
+            this.xuathoadon_btn.Text = "Xuất hóa đơn";
+            this.xuathoadon_btn.UseVisualStyleBackColor = true;
+            this.xuathoadon_btn.Click += new System.EventHandler(this.xuathoadon_btn_Click);
             // 
             // txt_NamSX
             // 
@@ -674,6 +675,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn TinhTrang;
         private System.Windows.Forms.DataGridViewButtonColumn btn_xoa;
         private System.Windows.Forms.Button btn_Update;
-        private System.Windows.Forms.Button capnhat_btn;
+        private System.Windows.Forms.Button xuathoadon_btn;
     }
 }

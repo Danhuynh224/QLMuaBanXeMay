@@ -51,7 +51,6 @@ namespace QLMuaBanXeMay.UC
             this.txt_chatLieu.Text = phuTung.ChatLieu.ToString();
             this.txt_soLuong.Text = "1";
 
-            MessageBox.Show(khachHang.MaLoai.ToString());
             this.txt_cccdKH.Text = khachHang.CCCDKH.ToString();
             this.txt_ten.Text = khachHang.TenKH.ToString();
             this.dt_ngaySinh.Value = khachHang.NgaySinh;
@@ -124,16 +123,6 @@ namespace QLMuaBanXeMay.UC
             }    
             
             txt_thanhTien.Text = thanhTien.ToString();
-
-        }
-
-        private void UC_ThanhToanPT_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox2_Enter(object sender, EventArgs e)
-        {
 
         }
     }

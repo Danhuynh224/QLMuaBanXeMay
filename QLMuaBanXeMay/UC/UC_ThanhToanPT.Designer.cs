@@ -284,7 +284,6 @@
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin khách hàng";
-            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // txt_diaChi
             // 
@@ -546,7 +545,6 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "UC_ThanhToanPT";
             this.Size = new System.Drawing.Size(1300, 800);
-            this.Load += new System.EventHandler(this.UC_ThanhToanPT_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.panel1.ResumeLayout(false);

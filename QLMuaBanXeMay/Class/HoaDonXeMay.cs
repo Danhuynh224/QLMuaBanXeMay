@@ -19,6 +19,8 @@ namespace QLMuaBanXeMay.Class
         private string pTTT;
         private DateTime ngayXuat;
 
+        public HoaDonXe() { }
+
         public HoaDonXe(int maHDXe, int maXe, float khuyenMai, float tongTien, int ccCDKH, int ccCDNV, string pTTT, DateTime ngayXuat)
         {
             this.maHDXe = maHDXe;

@@ -9,6 +9,8 @@ D:\HK1_24-25\DBMS\DoAn6pm\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC.UC_HoaDonPT.r
 D:\HK1_24-25\DBMS\DoAn6pm\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC.UC_HoaDonXee.resources
 D:\HK1_24-25\DBMS\DoAn6pm\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC_MainScreen.resources
 D:\HK1_24-25\DBMS\DoAn6pm\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC_QLPhuTung.resources
+D:\HK1_24-25\DBMS\DoAn6pm\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC.UC_QLThongTinKH.resources
+D:\HK1_24-25\DBMS\DoAn6pm\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC.UC_QLThongTinNhanVien.resources
 D:\HK1_24-25\DBMS\DoAn6pm\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC_QLXe.resources
 D:\HK1_24-25\DBMS\DoAn6pm\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC.UC_ThanhToanXe.resources
 D:\HK1_24-25\DBMS\DoAn6pm\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC.UC_ThanhToanPT.resources

@@ -20,12 +20,18 @@ namespace QLMuaBanXeMay
 
         private void btnEmployee_Click(object sender, EventArgs e)
         {
-
+            UC_QLThongTinNhanVien uc = new UC_QLThongTinNhanVien();
+            panel5.Controls.Clear();
+            panel5.Controls.Add(uc);
+            uc.Dock = DockStyle.Fill;
         }
 
         private void btnGuest_Click(object sender, EventArgs e)
         {
-
+            UC_QLThongTinKH uc = new UC_QLThongTinKH();
+            panel5.Controls.Clear();
+            panel5.Controls.Add(uc);
+            uc.Dock = DockStyle.Fill;
         }
 
         private void btnMotobike_Click(object sender, EventArgs e)

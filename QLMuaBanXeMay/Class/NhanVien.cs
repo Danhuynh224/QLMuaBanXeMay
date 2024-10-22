@@ -19,6 +19,7 @@ namespace QLMuaBanXeMay.Class
         private string email;
         private string chucVu;
 
+        public NhanVien() { }
         public NhanVien(int ccCDNV, string tenNV, DateTime ngaySinh, string gioiTinh, string sdt, string diaChi, string email, string chucVu)
         {
             this.ccCDNV = ccCDNV;

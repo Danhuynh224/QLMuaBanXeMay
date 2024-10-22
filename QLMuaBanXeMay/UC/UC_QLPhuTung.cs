@@ -31,7 +31,7 @@ namespace QLMuaBanXeMay
 
         private void PhuTung_GridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
-            if (e.RowIndex >= 0 && e.ColumnIndex != PhuTung_GridView.Columns["XoaBtn"].Index)
+            if (e.RowIndex >= 0)
             {
                 // Lấy hàng được chọn
                 DataGridViewRow row = PhuTung_GridView.Rows[e.RowIndex];
@@ -76,17 +76,6 @@ namespace QLMuaBanXeMay
 
         }
 
-        private void PhuTung_GridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-            if (e.ColumnIndex == PhuTung_GridView.Columns["XoaBtn"].Index && e.RowIndex >= 0)
-            {
-                DataGridViewRow row = PhuTung_GridView.Rows[e.RowIndex];
-                // Lấy các giá trị của các cột trong hàng được chọn
-                int maPhuTung = Convert.ToInt32(row.Cells["MaPT"].Value);
-                DAOPhuTung.XoaPhuTung(maPhuTung);
-                Load_GridView();
-            }
-        }
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {

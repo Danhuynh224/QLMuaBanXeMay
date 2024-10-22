@@ -62,6 +62,7 @@
     <Compile Include="Class\PhuTung.cs" />
     <Compile Include="Class\TaiKhoan.cs" />
     <Compile Include="DAO\DAOPhuTung.cs" />
+    <Compile Include="DAO\DAOXeMay.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>

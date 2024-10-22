@@ -10,23 +10,16 @@ namespace QLMuaBanXeMay.Class
 
     public class TaiKhoan
     {
-        private int maTK;
         private string tenTK;
         private string matKhau;
         private int ccCDNV;
 
-        public TaiKhoan(int maTK, string tenTK, string matKhau, int ccCDNV)
+        public TaiKhoan() { }
+        public TaiKhoan(string tenTK, string matKhau, int ccCDNV)
         {
-            this.maTK = maTK;
             this.tenTK = tenTK;
             this.matKhau = matKhau;
             this.ccCDNV = ccCDNV;
-        }
-
-        public int MaTK
-        {
-            get { return maTK; }
-            set { maTK = value; }
         }
 
         public string TenTK

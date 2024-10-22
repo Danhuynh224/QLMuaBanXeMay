@@ -63,8 +63,10 @@
     <Compile Include="Class\TaiKhoan.cs" />
     <Compile Include="DAO\DAOHoaDonPT.cs" />
     <Compile Include="DAO\DAOHoaDonXe.cs" />
+    <Compile Include="DAO\DAOKhachHang.cs" />
     <Compile Include="DAO\DAONhanVien.cs" />
     <Compile Include="DAO\DAOPhuTung.cs" />
+    <Compile Include="DAO\DAOTaiKhoan.cs" />
     <Compile Include="DAO\DAOThongTinKH.cs" />
     <Compile Include="DAO\DAOXeMay.cs" />
     <Compile Include="Form1.cs">
@@ -119,6 +121,12 @@
     </Compile>
     <Compile Include="UC\UC_QLPhuTung.Designer.cs">
       <DependentUpon>UC_QLPhuTung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UC_QLThongTinNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_QLThongTinNhanVien.Designer.cs">
+      <DependentUpon>UC_QLThongTinNhanVien.cs</DependentUpon>
     </Compile>
     <Compile Include="UC\UC_QLXe.cs">
       <SubType>UserControl</SubType>
@@ -186,6 +194,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC\UC_QLPhuTung.resx">
       <DependentUpon>UC_QLPhuTung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_QLThongTinNhanVien.resx">
+      <DependentUpon>UC_QLThongTinNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC\UC_QLXe.resx">
       <DependentUpon>UC_QLXe.cs</DependentUpon>

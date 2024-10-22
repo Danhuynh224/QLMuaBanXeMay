@@ -1,4 +1,5 @@
 ﻿using QLMuaBanXeMay.Class;
+using QLMuaBanXeMay.DAO;
 using QLMuaBanXeMay.UC;
 using System;
 using System.Collections.Generic;
@@ -15,8 +16,7 @@ namespace QLMuaBanXeMay.WF
 {
     public partial class Form_ThongTinKH : Form
     {
-        string connstring = @"Data Source=HONGSON;Initial Catalog=QLMuaBanXeMay;Integrated Security=True";
-        SqlConnection conn = null;
+        
         private KhachHang khachHang1 = new KhachHang();
         Class.PhuTung phuTung1 = new PhuTung();
         public KhachHang KhachHang1 { get => khachHang1; set => khachHang1 = value; }
@@ -28,30 +28,14 @@ namespace QLMuaBanXeMay.WF
         }
         private void Load_GridView()
         {
-            try
-            {
-                conn = new SqlConnection(connstring);
-                if (conn.State == ConnectionState.Closed)
-                {
-                    conn.Open();
-                    string query = "Select * From KhachHang";
-                    SqlDataAdapter dataAdapter = new SqlDataAdapter(query, conn);
-                    DataTable dt = new DataTable();
-                    dataAdapter.Fill(dt);
-                    dg_kh.DataSource = dt;
-                }
-            }
-            catch
-            {
-                MessageBox.Show("Mở kết nối không thành công");
-            }
+            dg_kh.DataSource = DAOThongTinKH.LayThongTin();
         }
-        private void Form_ThongTinKH_Load(object sender, EventArgs e)
+        /*private void Form_ThongTinKH_Load(object sender, EventArgs e)
         {
             // TODO: This line of code loads data into the 'qLMuaBanXeMayDataSet2.KhachHang' table. You can move, or remove it, as needed.
             this.khachHangTableAdapter.Fill(this.qLMuaBanXeMayDataSet2.KhachHang);
 
-        }
+        }*/
 
 
         private void btn_chonKH_Click(object sender, EventArgs e)

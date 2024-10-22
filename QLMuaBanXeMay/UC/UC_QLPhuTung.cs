@@ -102,5 +102,10 @@ namespace QLMuaBanXeMay
             this.Controls.Clear();
             this.Controls.Add(uc);
         }
+
+        private void PhuTung_GridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

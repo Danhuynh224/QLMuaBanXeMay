@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace QLMuaBanXeMay.DAO
 {
@@ -63,6 +64,23 @@ namespace QLMuaBanXeMay.DAO
 
                 return dt;
             }
+        }
+        public static String LayThongTinKhuyenMai(int cccd)
+        {
+            
+            using (SqlCommand command = new SqlCommand("SELECT dbo.LayKhuyenMaiTuCCCD(@cccd)", MY_DB.getConnection()))
+            {
+                command.Parameters.AddWithValue("@cccd", cccd);
+                MY_DB.openConnection();
+                string khuyenmai = command.ExecuteScalar().ToString();
+
+                MY_DB.closeConnection();
+
+                return khuyenmai;
+             
+            }
+
+         
         }
     }
 }

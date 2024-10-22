@@ -18,8 +18,7 @@ namespace QLMuaBanXeMay.UC
 {
     public partial class UC_ThanhToanPT : UserControl
     {
-        string connstring = @"Data Source=HONGSON;Initial Catalog=QLMuaBanXeMay;Integrated Security=True";
-        SqlConnection conn = null;
+
         Class.PhuTung phuTung_tt = new PhuTung();
         Class.KhachHang khachHang_tt = new KhachHang();
        
@@ -39,8 +38,6 @@ namespace QLMuaBanXeMay.UC
             this.txt_chatLieu.Text = phuTung.ChatLieu.ToString();
             this.txt_soLuong.Text = "1";
 
-            
-            
         }
         
 
@@ -79,24 +76,7 @@ namespace QLMuaBanXeMay.UC
 
         private void txt_cccdKH_TextChanged(object sender, EventArgs e)
         {
-            try
-            {
-                using (SqlConnection connection = new SqlConnection(connstring))
-                {
-                    using (SqlCommand command = new SqlCommand("SELECT dbo.LayKhuyenMaiTuCCCD(@cccd)", connection))
-                    {
-                        command.Parameters.AddWithValue("@cccd", txt_cccdKH.Text);
-                        connection.Open();
-                        txt_khuyenMai.Text = command.ExecuteScalar().ToString();
-                        connection.Close();
-                    }
-
-                }
-            }
-            catch
-            {
-                MessageBox.Show("Mở kết nối không thành công");
-            }
+            txt_khuyenMai.Text = DAO.DAOHoaDonPT.LayThongTinKhuyenMai(Convert.ToInt32(txt_cccdKH.Text));
         }
 
         private void btn_XuatHD_Click(object sender, EventArgs e)

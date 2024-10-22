@@ -63,6 +63,7 @@
     <Compile Include="Class\TaiKhoan.cs" />
     <Compile Include="DAO\DAOHoaDonPT.cs" />
     <Compile Include="DAO\DAOHoaDonXe.cs" />
+    <Compile Include="DAO\DAONhanVien.cs" />
     <Compile Include="DAO\DAOPhuTung.cs" />
     <Compile Include="DAO\DAOThongTinKH.cs" />
     <Compile Include="DAO\DAOXeMay.cs" />

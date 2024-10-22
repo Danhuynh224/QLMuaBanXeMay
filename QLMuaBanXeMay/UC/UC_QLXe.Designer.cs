@@ -617,6 +617,7 @@
             this.Controls.Add(this.label1);
             this.Name = "UC_QLXe";
             this.Size = new System.Drawing.Size(1300, 721);
+            this.Load += new System.EventHandler(this.UC_QLXe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.xeMayBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLMuaBanXeMayDataSet)).EndInit();
             this.groupBox2.ResumeLayout(false);

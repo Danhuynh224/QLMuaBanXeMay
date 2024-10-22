@@ -163,6 +163,18 @@
     <Compile Include="WF\Form_DangNhap.Designer.cs">
       <DependentUpon>Form_DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="WF\Form_ThemKhachHang.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WF\Form_ThemKhachHang.Designer.cs">
+      <DependentUpon>Form_ThemKhachHang.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WF\Form_ThemNhanVien.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WF\Form_ThemNhanVien.Designer.cs">
+      <DependentUpon>Form_ThemNhanVien.cs</DependentUpon>
+    </Compile>
     <Compile Include="WF\Form_ThongTinKH.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -223,6 +235,12 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WF\Form_DangNhap.resx">
       <DependentUpon>Form_DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WF\Form_ThemKhachHang.resx">
+      <DependentUpon>Form_ThemKhachHang.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WF\Form_ThemNhanVien.resx">
+      <DependentUpon>Form_ThemNhanVien.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WF\Form_ThongTinKH.resx">
       <DependentUpon>Form_ThongTinKH.cs</DependentUpon>

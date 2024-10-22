@@ -80,7 +80,7 @@ namespace QLMuaBanXeMay.UC
         {
             int soluong;
             float khuyenmai;
-            float thanhTien = Convert.ToInt32(txt_donGia.Text);
+            float thanhTien = float.Parse(txt_donGia.Text);
             if (float.TryParse(txt_khuyenMai.Text, out khuyenmai))
             {
                 thanhTien = thanhTien - (thanhTien * khuyenmai);

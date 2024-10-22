@@ -50,9 +50,9 @@ namespace QLMuaBanXeMay.DAO
                 MY_DB.closeConnection();
             }
         }
-        public static DataTable LayThongTin()
+        public static DataTable Load_ViewHD()
         {
-            using (SqlCommand command = new SqlCommand("Select * From HoaDonPT", MY_DB.getConnection()))
+            using (SqlCommand command = new SqlCommand("Select * From View_HoaDonPT", MY_DB.getConnection()))
             {
                 MY_DB.openConnection();
 
@@ -65,6 +65,25 @@ namespace QLMuaBanXeMay.DAO
                 return dt;
             }
         }
+        public static DataTable Load_ViewChiTietHD(int maHD)
+        {
+            using (SqlCommand command = new SqlCommand("SELECT * FROM View_ChiTietHDPT WHERE MaHDPT = @maHD", MY_DB.getConnection()))
+            {
+               
+                command.Parameters.AddWithValue("@maHD", maHD);
+
+                MY_DB.openConnection();
+
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                MY_DB.closeConnection();
+
+                return dt;
+            }
+        }
+
         public static String LayThongTinKhuyenMai(int cccd)
         {
             

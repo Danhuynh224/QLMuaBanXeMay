@@ -32,6 +32,9 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label2 = new System.Windows.Forms.Label();
             this.txt_diaChi = new System.Windows.Forms.TextBox();
             this.txt_sdt = new System.Windows.Forms.TextBox();
@@ -53,13 +56,6 @@
             this.hoaDonXeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.gv_hdPT = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.maHDPTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.khuyenMaiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tongTienDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cCCDKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cCCDNVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pTTTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngayXuatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.hoaDonPTBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.qLMuaBanXeMayDataSet3 = new QLMuaBanXeMay.QLMuaBanXeMayDataSet3();
             this.hoaDonXeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
@@ -67,18 +63,36 @@
             this.label16 = new System.Windows.Forms.Label();
             this.txt_giamGia = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.txt_soLuong = new System.Windows.Forms.TextBox();
-            this.label14 = new System.Windows.Forms.Label();
-            this.txt_donGia = new System.Windows.Forms.TextBox();
-            this.label13 = new System.Windows.Forms.Label();
-            this.txt_tenPT = new System.Windows.Forms.TextBox();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label11 = new System.Windows.Forms.Label();
             this.groupBox_spXe = new System.Windows.Forms.GroupBox();
-            this.txt_maPT = new System.Windows.Forms.TextBox();
             this.txt_timkiem = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.hoaDonPTTableAdapter = new QLMuaBanXeMay.QLMuaBanXeMayDataSet3TableAdapters.HoaDonPTTableAdapter();
+            this.qLMuaBanXeMayDataSet5 = new QLMuaBanXeMay.QLMuaBanXeMayDataSet5();
+            this.viewHoaDonPTBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.view_HoaDonPTTableAdapter = new QLMuaBanXeMay.QLMuaBanXeMayDataSet5TableAdapters.View_HoaDonPTTableAdapter();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.gv_chiTietHD = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.qLMuaBanXeMayDataSet6 = new QLMuaBanXeMay.QLMuaBanXeMayDataSet6();
+            this.viewChiTietHDPTBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.view_ChiTietHDPTTableAdapter = new QLMuaBanXeMay.QLMuaBanXeMayDataSet6TableAdapters.View_ChiTietHDPTTableAdapter();
+            this.maHDPTDataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.maPTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenPTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soLuongDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.donGiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.qLMuaBanXeMayDataSet7 = new QLMuaBanXeMay.QLMuaBanXeMayDataSet7();
+            this.viewHoaDonPTBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
+            this.view_HoaDonPTTableAdapter1 = new QLMuaBanXeMay.QLMuaBanXeMayDataSet7TableAdapters.View_HoaDonPTTableAdapter();
+            this.maHDPTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngayXuatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cCCDNVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenNVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cCCDKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.sDTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.diaChiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.khuyenMaiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tongTienDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonXeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gv_hdPT)).BeginInit();
@@ -87,6 +101,14 @@
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonXeBindingSource1)).BeginInit();
             this.groupBox_spXe.SuspendLayout();
             this.groupBox2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.qLMuaBanXeMayDataSet5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewHoaDonPTBindingSource)).BeginInit();
+            this.groupBox3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.gv_chiTietHD)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLMuaBanXeMayDataSet6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewChiTietHDPTBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLMuaBanXeMayDataSet7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewHoaDonPTBindingSource1)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -312,13 +334,16 @@
             this.gv_hdPT.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.gv_hdPT.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.maHDPTDataGridViewTextBoxColumn,
-            this.khuyenMaiDataGridViewTextBoxColumn,
-            this.tongTienDataGridViewTextBoxColumn,
-            this.cCCDKHDataGridViewTextBoxColumn,
+            this.ngayXuatDataGridViewTextBoxColumn,
             this.cCCDNVDataGridViewTextBoxColumn,
-            this.pTTTDataGridViewTextBoxColumn,
-            this.ngayXuatDataGridViewTextBoxColumn});
-            this.gv_hdPT.DataSource = this.hoaDonPTBindingSource;
+            this.tenNVDataGridViewTextBoxColumn,
+            this.cCCDKHDataGridViewTextBoxColumn,
+            this.tenKHDataGridViewTextBoxColumn,
+            this.sDTDataGridViewTextBoxColumn,
+            this.diaChiDataGridViewTextBoxColumn,
+            this.khuyenMaiDataGridViewTextBoxColumn,
+            this.tongTienDataGridViewTextBoxColumn});
+            this.gv_hdPT.DataSource = this.viewHoaDonPTBindingSource1;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
             dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 7.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -328,13 +353,13 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.gv_hdPT.DefaultCellStyle = dataGridViewCellStyle3;
             this.gv_hdPT.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gv_hdPT.Location = new System.Drawing.Point(66, 450);
+            this.gv_hdPT.Location = new System.Drawing.Point(66, 649);
             this.gv_hdPT.Name = "gv_hdPT";
             this.gv_hdPT.ReadOnly = true;
             this.gv_hdPT.RowHeadersVisible = false;
             this.gv_hdPT.RowHeadersWidth = 51;
             this.gv_hdPT.RowTemplate.Height = 24;
-            this.gv_hdPT.Size = new System.Drawing.Size(1151, 190);
+            this.gv_hdPT.Size = new System.Drawing.Size(1151, 243);
             this.gv_hdPT.TabIndex = 48;
             this.gv_hdPT.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.gv_hdPT.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -360,62 +385,6 @@
             this.gv_hdPT.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gv_hdPT_CellClick);
             this.gv_hdPT.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gv_hdPT_CellContentClick);
             // 
-            // maHDPTDataGridViewTextBoxColumn
-            // 
-            this.maHDPTDataGridViewTextBoxColumn.DataPropertyName = "MaHDPT";
-            this.maHDPTDataGridViewTextBoxColumn.HeaderText = "MaHDPT";
-            this.maHDPTDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.maHDPTDataGridViewTextBoxColumn.Name = "maHDPTDataGridViewTextBoxColumn";
-            this.maHDPTDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // khuyenMaiDataGridViewTextBoxColumn
-            // 
-            this.khuyenMaiDataGridViewTextBoxColumn.DataPropertyName = "KhuyenMai";
-            this.khuyenMaiDataGridViewTextBoxColumn.HeaderText = "KhuyenMai";
-            this.khuyenMaiDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.khuyenMaiDataGridViewTextBoxColumn.Name = "khuyenMaiDataGridViewTextBoxColumn";
-            this.khuyenMaiDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // tongTienDataGridViewTextBoxColumn
-            // 
-            this.tongTienDataGridViewTextBoxColumn.DataPropertyName = "TongTien";
-            this.tongTienDataGridViewTextBoxColumn.HeaderText = "TongTien";
-            this.tongTienDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.tongTienDataGridViewTextBoxColumn.Name = "tongTienDataGridViewTextBoxColumn";
-            this.tongTienDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cCCDKHDataGridViewTextBoxColumn
-            // 
-            this.cCCDKHDataGridViewTextBoxColumn.DataPropertyName = "CCCDKH";
-            this.cCCDKHDataGridViewTextBoxColumn.HeaderText = "CCCDKH";
-            this.cCCDKHDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.cCCDKHDataGridViewTextBoxColumn.Name = "cCCDKHDataGridViewTextBoxColumn";
-            this.cCCDKHDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cCCDNVDataGridViewTextBoxColumn
-            // 
-            this.cCCDNVDataGridViewTextBoxColumn.DataPropertyName = "CCCDNV";
-            this.cCCDNVDataGridViewTextBoxColumn.HeaderText = "CCCDNV";
-            this.cCCDNVDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.cCCDNVDataGridViewTextBoxColumn.Name = "cCCDNVDataGridViewTextBoxColumn";
-            this.cCCDNVDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // pTTTDataGridViewTextBoxColumn
-            // 
-            this.pTTTDataGridViewTextBoxColumn.DataPropertyName = "PTTT";
-            this.pTTTDataGridViewTextBoxColumn.HeaderText = "PTTT";
-            this.pTTTDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.pTTTDataGridViewTextBoxColumn.Name = "pTTTDataGridViewTextBoxColumn";
-            this.pTTTDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // ngayXuatDataGridViewTextBoxColumn
-            // 
-            this.ngayXuatDataGridViewTextBoxColumn.DataPropertyName = "NgayXuat";
-            this.ngayXuatDataGridViewTextBoxColumn.HeaderText = "NgayXuat";
-            this.ngayXuatDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ngayXuatDataGridViewTextBoxColumn.Name = "ngayXuatDataGridViewTextBoxColumn";
-            this.ngayXuatDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
             // hoaDonPTBindingSource
             // 
             this.hoaDonPTBindingSource.DataMember = "HoaDonPT";
@@ -433,7 +402,7 @@
             // txt_thanhTien
             // 
             this.txt_thanhTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_thanhTien.Location = new System.Drawing.Point(923, 103);
+            this.txt_thanhTien.Location = new System.Drawing.Point(537, 43);
             this.txt_thanhTien.Name = "txt_thanhTien";
             this.txt_thanhTien.Size = new System.Drawing.Size(170, 27);
             this.txt_thanhTien.TabIndex = 43;
@@ -443,7 +412,7 @@
             this.label16.AutoSize = true;
             this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label16.ForeColor = System.Drawing.Color.Blue;
-            this.label16.Location = new System.Drawing.Point(793, 108);
+            this.label16.Location = new System.Drawing.Point(407, 48);
             this.label16.Name = "label16";
             this.label16.Size = new System.Drawing.Size(92, 20);
             this.label16.TabIndex = 42;
@@ -452,7 +421,7 @@
             // txt_giamGia
             // 
             this.txt_giamGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_giamGia.Location = new System.Drawing.Point(552, 103);
+            this.txt_giamGia.Location = new System.Drawing.Point(166, 43);
             this.txt_giamGia.Name = "txt_giamGia";
             this.txt_giamGia.Size = new System.Drawing.Size(170, 27);
             this.txt_giamGia.TabIndex = 41;
@@ -462,79 +431,11 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Blue;
-            this.label15.Location = new System.Drawing.Point(423, 107);
+            this.label15.Location = new System.Drawing.Point(37, 47);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(113, 20);
             this.label15.TabIndex = 40;
             this.label15.Text = "Giảm giá (%):";
-            // 
-            // txt_soLuong
-            // 
-            this.txt_soLuong.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_soLuong.Location = new System.Drawing.Point(157, 100);
-            this.txt_soLuong.Name = "txt_soLuong";
-            this.txt_soLuong.Size = new System.Drawing.Size(170, 27);
-            this.txt_soLuong.TabIndex = 39;
-            // 
-            // label14
-            // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.Blue;
-            this.label14.Location = new System.Drawing.Point(57, 103);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(79, 20);
-            this.label14.TabIndex = 38;
-            this.label14.Text = "Số lượng:";
-            // 
-            // txt_donGia
-            // 
-            this.txt_donGia.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_donGia.Location = new System.Drawing.Point(923, 45);
-            this.txt_donGia.Name = "txt_donGia";
-            this.txt_donGia.Size = new System.Drawing.Size(170, 27);
-            this.txt_donGia.TabIndex = 37;
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.Blue;
-            this.label13.Location = new System.Drawing.Point(793, 49);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(71, 20);
-            this.label13.TabIndex = 36;
-            this.label13.Text = "Đơn giá:";
-            // 
-            // txt_tenPT
-            // 
-            this.txt_tenPT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_tenPT.Location = new System.Drawing.Point(552, 46);
-            this.txt_tenPT.Name = "txt_tenPT";
-            this.txt_tenPT.Size = new System.Drawing.Size(170, 27);
-            this.txt_tenPT.TabIndex = 35;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Blue;
-            this.label12.Location = new System.Drawing.Point(423, 48);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(68, 20);
-            this.label12.TabIndex = 34;
-            this.label12.Text = "Tên PT:";
-            // 
-            // label11
-            // 
-            this.label11.AutoSize = true;
-            this.label11.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.ForeColor = System.Drawing.Color.Blue;
-            this.label11.Location = new System.Drawing.Point(57, 44);
-            this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(63, 20);
-            this.label11.TabIndex = 32;
-            this.label11.Text = "Mã PT:";
             // 
             // groupBox_spXe
             // 
@@ -542,30 +443,14 @@
             this.groupBox_spXe.Controls.Add(this.label16);
             this.groupBox_spXe.Controls.Add(this.txt_giamGia);
             this.groupBox_spXe.Controls.Add(this.label15);
-            this.groupBox_spXe.Controls.Add(this.txt_soLuong);
-            this.groupBox_spXe.Controls.Add(this.label14);
-            this.groupBox_spXe.Controls.Add(this.txt_donGia);
-            this.groupBox_spXe.Controls.Add(this.label13);
-            this.groupBox_spXe.Controls.Add(this.txt_tenPT);
-            this.groupBox_spXe.Controls.Add(this.label12);
-            this.groupBox_spXe.Controls.Add(this.txt_maPT);
-            this.groupBox_spXe.Controls.Add(this.label11);
             this.groupBox_spXe.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox_spXe.Location = new System.Drawing.Point(66, 286);
             this.groupBox_spXe.Name = "groupBox_spXe";
-            this.groupBox_spXe.Size = new System.Drawing.Size(1151, 158);
+            this.groupBox_spXe.Size = new System.Drawing.Size(1151, 91);
             this.groupBox_spXe.TabIndex = 46;
             this.groupBox_spXe.TabStop = false;
-            this.groupBox_spXe.Text = "Thông tin sản phẩm";
+            this.groupBox_spXe.Text = "Thông tin hóa đơn";
             this.groupBox_spXe.Enter += new System.EventHandler(this.groupBox_spXe_Enter);
-            // 
-            // txt_maPT
-            // 
-            this.txt_maPT.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_maPT.Location = new System.Drawing.Point(157, 41);
-            this.txt_maPT.Name = "txt_maPT";
-            this.txt_maPT.Size = new System.Drawing.Size(170, 27);
-            this.txt_maPT.TabIndex = 33;
             // 
             // txt_timkiem
             // 
@@ -579,7 +464,7 @@
             this.groupBox2.Controls.Add(this.button1);
             this.groupBox2.Controls.Add(this.txt_timkiem);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(66, 659);
+            this.groupBox2.Location = new System.Drawing.Point(77, 911);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(349, 69);
             this.groupBox2.TabIndex = 49;
@@ -590,16 +475,253 @@
             // 
             this.hoaDonPTTableAdapter.ClearBeforeFill = true;
             // 
+            // qLMuaBanXeMayDataSet5
+            // 
+            this.qLMuaBanXeMayDataSet5.DataSetName = "QLMuaBanXeMayDataSet5";
+            this.qLMuaBanXeMayDataSet5.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // viewHoaDonPTBindingSource
+            // 
+            this.viewHoaDonPTBindingSource.DataMember = "View_HoaDonPT";
+            this.viewHoaDonPTBindingSource.DataSource = this.qLMuaBanXeMayDataSet5;
+            // 
+            // view_HoaDonPTTableAdapter
+            // 
+            this.view_HoaDonPTTableAdapter.ClearBeforeFill = true;
+            // 
+            // groupBox3
+            // 
+            this.groupBox3.Controls.Add(this.gv_chiTietHD);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(66, 383);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Size = new System.Drawing.Size(1151, 260);
+            this.groupBox3.TabIndex = 50;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Thông tin sản phẩm";
+            // 
+            // gv_chiTietHD
+            // 
+            this.gv_chiTietHD.AllowUserToAddRows = false;
+            this.gv_chiTietHD.AllowUserToDeleteRows = false;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.gv_chiTietHD.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            this.gv_chiTietHD.AutoGenerateColumns = false;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.gv_chiTietHD.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            this.gv_chiTietHD.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gv_chiTietHD.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.maHDPTDataGridViewTextBoxColumn1,
+            this.maPTDataGridViewTextBoxColumn,
+            this.tenPTDataGridViewTextBoxColumn,
+            this.soLuongDataGridViewTextBoxColumn,
+            this.donGiaDataGridViewTextBoxColumn});
+            this.gv_chiTietHD.DataSource = this.viewChiTietHDPTBindingSource;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.gv_chiTietHD.DefaultCellStyle = dataGridViewCellStyle6;
+            this.gv_chiTietHD.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gv_chiTietHD.Location = new System.Drawing.Point(11, 27);
+            this.gv_chiTietHD.Name = "gv_chiTietHD";
+            this.gv_chiTietHD.ReadOnly = true;
+            this.gv_chiTietHD.RowHeadersVisible = false;
+            this.gv_chiTietHD.RowHeadersWidth = 51;
+            this.gv_chiTietHD.RowTemplate.Height = 24;
+            this.gv_chiTietHD.Size = new System.Drawing.Size(1134, 219);
+            this.gv_chiTietHD.TabIndex = 0;
+            this.gv_chiTietHD.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.gv_chiTietHD.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.gv_chiTietHD.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.gv_chiTietHD.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.gv_chiTietHD.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.gv_chiTietHD.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.gv_chiTietHD.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gv_chiTietHD.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.gv_chiTietHD.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.gv_chiTietHD.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gv_chiTietHD.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.gv_chiTietHD.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.gv_chiTietHD.ThemeStyle.HeaderStyle.Height = 24;
+            this.gv_chiTietHD.ThemeStyle.ReadOnly = true;
+            this.gv_chiTietHD.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.gv_chiTietHD.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.gv_chiTietHD.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.gv_chiTietHD.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.gv_chiTietHD.ThemeStyle.RowsStyle.Height = 24;
+            this.gv_chiTietHD.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.gv_chiTietHD.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
+            // qLMuaBanXeMayDataSet6
+            // 
+            this.qLMuaBanXeMayDataSet6.DataSetName = "QLMuaBanXeMayDataSet6";
+            this.qLMuaBanXeMayDataSet6.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // viewChiTietHDPTBindingSource
+            // 
+            this.viewChiTietHDPTBindingSource.DataMember = "View_ChiTietHDPT";
+            this.viewChiTietHDPTBindingSource.DataSource = this.qLMuaBanXeMayDataSet6;
+            // 
+            // view_ChiTietHDPTTableAdapter
+            // 
+            this.view_ChiTietHDPTTableAdapter.ClearBeforeFill = true;
+            // 
+            // maHDPTDataGridViewTextBoxColumn1
+            // 
+            this.maHDPTDataGridViewTextBoxColumn1.DataPropertyName = "MaHDPT";
+            this.maHDPTDataGridViewTextBoxColumn1.HeaderText = "MaHDPT";
+            this.maHDPTDataGridViewTextBoxColumn1.MinimumWidth = 6;
+            this.maHDPTDataGridViewTextBoxColumn1.Name = "maHDPTDataGridViewTextBoxColumn1";
+            this.maHDPTDataGridViewTextBoxColumn1.ReadOnly = true;
+            // 
+            // maPTDataGridViewTextBoxColumn
+            // 
+            this.maPTDataGridViewTextBoxColumn.DataPropertyName = "MaPT";
+            this.maPTDataGridViewTextBoxColumn.HeaderText = "MaPT";
+            this.maPTDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.maPTDataGridViewTextBoxColumn.Name = "maPTDataGridViewTextBoxColumn";
+            this.maPTDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tenPTDataGridViewTextBoxColumn
+            // 
+            this.tenPTDataGridViewTextBoxColumn.DataPropertyName = "TenPT";
+            this.tenPTDataGridViewTextBoxColumn.HeaderText = "TenPT";
+            this.tenPTDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.tenPTDataGridViewTextBoxColumn.Name = "tenPTDataGridViewTextBoxColumn";
+            this.tenPTDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // soLuongDataGridViewTextBoxColumn
+            // 
+            this.soLuongDataGridViewTextBoxColumn.DataPropertyName = "SoLuong";
+            this.soLuongDataGridViewTextBoxColumn.HeaderText = "SoLuong";
+            this.soLuongDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.soLuongDataGridViewTextBoxColumn.Name = "soLuongDataGridViewTextBoxColumn";
+            this.soLuongDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // donGiaDataGridViewTextBoxColumn
+            // 
+            this.donGiaDataGridViewTextBoxColumn.DataPropertyName = "DonGia";
+            this.donGiaDataGridViewTextBoxColumn.HeaderText = "DonGia";
+            this.donGiaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.donGiaDataGridViewTextBoxColumn.Name = "donGiaDataGridViewTextBoxColumn";
+            this.donGiaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // qLMuaBanXeMayDataSet7
+            // 
+            this.qLMuaBanXeMayDataSet7.DataSetName = "QLMuaBanXeMayDataSet7";
+            this.qLMuaBanXeMayDataSet7.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
+            // viewHoaDonPTBindingSource1
+            // 
+            this.viewHoaDonPTBindingSource1.DataMember = "View_HoaDonPT";
+            this.viewHoaDonPTBindingSource1.DataSource = this.qLMuaBanXeMayDataSet7;
+            // 
+            // view_HoaDonPTTableAdapter1
+            // 
+            this.view_HoaDonPTTableAdapter1.ClearBeforeFill = true;
+            // 
+            // maHDPTDataGridViewTextBoxColumn
+            // 
+            this.maHDPTDataGridViewTextBoxColumn.DataPropertyName = "MaHDPT";
+            this.maHDPTDataGridViewTextBoxColumn.HeaderText = "MaHDPT";
+            this.maHDPTDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.maHDPTDataGridViewTextBoxColumn.Name = "maHDPTDataGridViewTextBoxColumn";
+            this.maHDPTDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ngayXuatDataGridViewTextBoxColumn
+            // 
+            this.ngayXuatDataGridViewTextBoxColumn.DataPropertyName = "NgayXuat";
+            this.ngayXuatDataGridViewTextBoxColumn.HeaderText = "NgayXuat";
+            this.ngayXuatDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.ngayXuatDataGridViewTextBoxColumn.Name = "ngayXuatDataGridViewTextBoxColumn";
+            this.ngayXuatDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cCCDNVDataGridViewTextBoxColumn
+            // 
+            this.cCCDNVDataGridViewTextBoxColumn.DataPropertyName = "CCCDNV";
+            this.cCCDNVDataGridViewTextBoxColumn.HeaderText = "CCCDNV";
+            this.cCCDNVDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.cCCDNVDataGridViewTextBoxColumn.Name = "cCCDNVDataGridViewTextBoxColumn";
+            this.cCCDNVDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tenNVDataGridViewTextBoxColumn
+            // 
+            this.tenNVDataGridViewTextBoxColumn.DataPropertyName = "TenNV";
+            this.tenNVDataGridViewTextBoxColumn.HeaderText = "TenNV";
+            this.tenNVDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.tenNVDataGridViewTextBoxColumn.Name = "tenNVDataGridViewTextBoxColumn";
+            this.tenNVDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cCCDKHDataGridViewTextBoxColumn
+            // 
+            this.cCCDKHDataGridViewTextBoxColumn.DataPropertyName = "CCCDKH";
+            this.cCCDKHDataGridViewTextBoxColumn.HeaderText = "CCCDKH";
+            this.cCCDKHDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.cCCDKHDataGridViewTextBoxColumn.Name = "cCCDKHDataGridViewTextBoxColumn";
+            this.cCCDKHDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tenKHDataGridViewTextBoxColumn
+            // 
+            this.tenKHDataGridViewTextBoxColumn.DataPropertyName = "TenKH";
+            this.tenKHDataGridViewTextBoxColumn.HeaderText = "TenKH";
+            this.tenKHDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.tenKHDataGridViewTextBoxColumn.Name = "tenKHDataGridViewTextBoxColumn";
+            this.tenKHDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // sDTDataGridViewTextBoxColumn
+            // 
+            this.sDTDataGridViewTextBoxColumn.DataPropertyName = "SDT";
+            this.sDTDataGridViewTextBoxColumn.HeaderText = "SDT";
+            this.sDTDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.sDTDataGridViewTextBoxColumn.Name = "sDTDataGridViewTextBoxColumn";
+            this.sDTDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // diaChiDataGridViewTextBoxColumn
+            // 
+            this.diaChiDataGridViewTextBoxColumn.DataPropertyName = "DiaChi";
+            this.diaChiDataGridViewTextBoxColumn.HeaderText = "DiaChi";
+            this.diaChiDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.diaChiDataGridViewTextBoxColumn.Name = "diaChiDataGridViewTextBoxColumn";
+            this.diaChiDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // khuyenMaiDataGridViewTextBoxColumn
+            // 
+            this.khuyenMaiDataGridViewTextBoxColumn.DataPropertyName = "KhuyenMai";
+            this.khuyenMaiDataGridViewTextBoxColumn.HeaderText = "KhuyenMai";
+            this.khuyenMaiDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.khuyenMaiDataGridViewTextBoxColumn.Name = "khuyenMaiDataGridViewTextBoxColumn";
+            this.khuyenMaiDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tongTienDataGridViewTextBoxColumn
+            // 
+            this.tongTienDataGridViewTextBoxColumn.DataPropertyName = "TongTien";
+            this.tongTienDataGridViewTextBoxColumn.HeaderText = "TongTien";
+            this.tongTienDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.tongTienDataGridViewTextBoxColumn.Name = "tongTienDataGridViewTextBoxColumn";
+            this.tongTienDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
             // UC_HoaDonPT
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.AutoScroll = true;
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.gv_hdPT);
             this.Controls.Add(this.groupBox_spXe);
             this.Controls.Add(this.groupBox2);
             this.Name = "UC_HoaDonPT";
-            this.Size = new System.Drawing.Size(1300, 800);
+            this.Size = new System.Drawing.Size(1300, 1500);
             this.Load += new System.EventHandler(this.UC_HoaDonPT_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -612,6 +734,14 @@
             this.groupBox_spXe.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.qLMuaBanXeMayDataSet5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewHoaDonPTBindingSource)).EndInit();
+            this.groupBox3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.gv_chiTietHD)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLMuaBanXeMayDataSet6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewChiTietHDPTBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLMuaBanXeMayDataSet7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewHoaDonPTBindingSource1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -645,26 +775,37 @@
         private System.Windows.Forms.Label label16;
         private System.Windows.Forms.TextBox txt_giamGia;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txt_soLuong;
-        private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox txt_donGia;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox txt_tenPT;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label11;
         private System.Windows.Forms.GroupBox groupBox_spXe;
-        private System.Windows.Forms.TextBox txt_maPT;
         private System.Windows.Forms.TextBox txt_timkiem;
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.BindingSource hoaDonPTBindingSource;
         private QLMuaBanXeMayDataSet3 qLMuaBanXeMayDataSet3;
         private QLMuaBanXeMayDataSet3TableAdapters.HoaDonPTTableAdapter hoaDonPTTableAdapter;
+        private System.Windows.Forms.BindingSource viewHoaDonPTBindingSource;
+        private QLMuaBanXeMayDataSet5 qLMuaBanXeMayDataSet5;
+        private QLMuaBanXeMayDataSet5TableAdapters.View_HoaDonPTTableAdapter view_HoaDonPTTableAdapter;
+        private System.Windows.Forms.GroupBox groupBox3;
+        private Guna.UI2.WinForms.Guna2DataGridView gv_chiTietHD;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maHDPTDataGridViewTextBoxColumn1;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maPTDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenPTDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn soLuongDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn donGiaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource viewChiTietHDPTBindingSource;
+        private QLMuaBanXeMayDataSet6 qLMuaBanXeMayDataSet6;
+        private QLMuaBanXeMayDataSet6TableAdapters.View_ChiTietHDPTTableAdapter view_ChiTietHDPTTableAdapter;
         private System.Windows.Forms.DataGridViewTextBoxColumn maHDPTDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn ngayXuatDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cCCDNVDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenNVDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn cCCDKHDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenKHDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn sDTDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn diaChiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn khuyenMaiDataGridViewTextBoxColumn;
         private System.Windows.Forms.DataGridViewTextBoxColumn tongTienDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cCCDKHDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn cCCDNVDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn pTTTDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn ngayXuatDataGridViewTextBoxColumn;
+        private System.Windows.Forms.BindingSource viewHoaDonPTBindingSource1;
+        private QLMuaBanXeMayDataSet7 qLMuaBanXeMayDataSet7;
+        private QLMuaBanXeMayDataSet7TableAdapters.View_HoaDonPTTableAdapter view_HoaDonPTTableAdapter1;
     }
 }

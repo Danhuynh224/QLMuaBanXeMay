@@ -103,6 +103,21 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLMuaBanXeMayDataSet4.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QLMuaBanXeMayDataSet5.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLMuaBanXeMayDataSet5.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLMuaBanXeMayDataSet6.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLMuaBanXeMayDataSet6.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLMuaBanXeMayDataSet7.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLMuaBanXeMayDataSet7.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UC\UC_HoaDonPT.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -302,6 +317,39 @@
     </None>
     <None Include="QLMuaBanXeMayDataSet4.xss">
       <DependentUpon>QLMuaBanXeMayDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet5.xsc">
+      <DependentUpon>QLMuaBanXeMayDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet5.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLMuaBanXeMayDataSet5.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet5.xss">
+      <DependentUpon>QLMuaBanXeMayDataSet5.xsd</DependentUpon>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet6.xsc">
+      <DependentUpon>QLMuaBanXeMayDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet6.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLMuaBanXeMayDataSet6.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet6.xss">
+      <DependentUpon>QLMuaBanXeMayDataSet6.xsd</DependentUpon>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet7.xsc">
+      <DependentUpon>QLMuaBanXeMayDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet7.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLMuaBanXeMayDataSet7.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet7.xss">
+      <DependentUpon>QLMuaBanXeMayDataSet7.xsd</DependentUpon>
     </None>
     <None Include="Resources\form_main_login.png" />
   </ItemGroup>

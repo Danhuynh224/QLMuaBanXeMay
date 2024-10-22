@@ -49,6 +49,12 @@
             this.label2 = new System.Windows.Forms.Label();
             this.gird_groupbox = new System.Windows.Forms.GroupBox();
             this.PhuTung_GridView = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.MaPT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenPT = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ChatLieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HangSX = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.SoLuongTon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.phuTungBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.qLMuaBanXeMayDataSet1 = new QLMuaBanXeMay.QLMuaBanXeMayDataSet1();
             this.phuTungTableAdapter = new QLMuaBanXeMay.QLMuaBanXeMayDataSet1TableAdapters.PhuTungTableAdapter();
@@ -58,12 +64,6 @@
             this.btn_search = new Guna.UI2.WinForms.Guna2Button();
             this.txt_search = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
-            this.MaPT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenPT = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ChatLieu = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HangSX = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.SoLuongTon = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.ThonTingroupBox.SuspendLayout();
             this.gird_groupbox.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.PhuTung_GridView)).BeginInit();
@@ -295,6 +295,66 @@
             this.PhuTung_GridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.PhuTung_GridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PhuTung_GridView_CellClick);
             // 
+            // MaPT
+            // 
+            this.MaPT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.MaPT.DataPropertyName = "MaPT";
+            this.MaPT.FillWeight = 137F;
+            this.MaPT.HeaderText = "Mã Phụ Tùng";
+            this.MaPT.MinimumWidth = 6;
+            this.MaPT.Name = "MaPT";
+            this.MaPT.ReadOnly = true;
+            // 
+            // TenPT
+            // 
+            this.TenPT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TenPT.DataPropertyName = "TenPT";
+            this.TenPT.FillWeight = 135F;
+            this.TenPT.HeaderText = "Tên Phụ Tùng";
+            this.TenPT.MinimumWidth = 6;
+            this.TenPT.Name = "TenPT";
+            this.TenPT.ReadOnly = true;
+            // 
+            // DonGia
+            // 
+            this.DonGia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.DonGia.DataPropertyName = "DonGia";
+            this.DonGia.FillWeight = 135F;
+            this.DonGia.HeaderText = "Đơn Giá";
+            this.DonGia.MinimumWidth = 6;
+            this.DonGia.Name = "DonGia";
+            this.DonGia.ReadOnly = true;
+            // 
+            // ChatLieu
+            // 
+            this.ChatLieu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.ChatLieu.DataPropertyName = "ChatLieu";
+            this.ChatLieu.FillWeight = 70.68937F;
+            this.ChatLieu.HeaderText = "Chất Liệu";
+            this.ChatLieu.MinimumWidth = 6;
+            this.ChatLieu.Name = "ChatLieu";
+            this.ChatLieu.ReadOnly = true;
+            // 
+            // HangSX
+            // 
+            this.HangSX.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.HangSX.DataPropertyName = "HangSX";
+            this.HangSX.FillWeight = 70.68937F;
+            this.HangSX.HeaderText = "Hãng Sản Xuất";
+            this.HangSX.MinimumWidth = 6;
+            this.HangSX.Name = "HangSX";
+            this.HangSX.ReadOnly = true;
+            // 
+            // SoLuongTon
+            // 
+            this.SoLuongTon.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.SoLuongTon.DataPropertyName = "SoLuongTon";
+            this.SoLuongTon.FillWeight = 70.68937F;
+            this.SoLuongTon.HeaderText = "Số Lượng Tồn";
+            this.SoLuongTon.MinimumWidth = 6;
+            this.SoLuongTon.Name = "SoLuongTon";
+            this.SoLuongTon.ReadOnly = true;
+            // 
             // phuTungBindingSource
             // 
             this.phuTungBindingSource.DataMember = "PhuTung";
@@ -400,66 +460,6 @@
             this.label6.TabIndex = 26;
             this.label6.Text = "Quản Lý Phụ Tùng";
             // 
-            // MaPT
-            // 
-            this.MaPT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.MaPT.DataPropertyName = "MaPT";
-            this.MaPT.FillWeight = 137F;
-            this.MaPT.HeaderText = "Mã Phụ Tùng";
-            this.MaPT.MinimumWidth = 6;
-            this.MaPT.Name = "MaPT";
-            this.MaPT.ReadOnly = true;
-            // 
-            // TenPT
-            // 
-            this.TenPT.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TenPT.DataPropertyName = "TenPT";
-            this.TenPT.FillWeight = 135F;
-            this.TenPT.HeaderText = "Tên Phụ Tùng";
-            this.TenPT.MinimumWidth = 6;
-            this.TenPT.Name = "TenPT";
-            this.TenPT.ReadOnly = true;
-            // 
-            // DonGia
-            // 
-            this.DonGia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.DonGia.DataPropertyName = "DonGia";
-            this.DonGia.FillWeight = 135F;
-            this.DonGia.HeaderText = "Đơn Giá";
-            this.DonGia.MinimumWidth = 6;
-            this.DonGia.Name = "DonGia";
-            this.DonGia.ReadOnly = true;
-            // 
-            // ChatLieu
-            // 
-            this.ChatLieu.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ChatLieu.DataPropertyName = "ChatLieu";
-            this.ChatLieu.FillWeight = 70.68937F;
-            this.ChatLieu.HeaderText = "Chất Liệu";
-            this.ChatLieu.MinimumWidth = 6;
-            this.ChatLieu.Name = "ChatLieu";
-            this.ChatLieu.ReadOnly = true;
-            // 
-            // HangSX
-            // 
-            this.HangSX.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.HangSX.DataPropertyName = "HangSX";
-            this.HangSX.FillWeight = 70.68937F;
-            this.HangSX.HeaderText = "Hãng Sản Xuất";
-            this.HangSX.MinimumWidth = 6;
-            this.HangSX.Name = "HangSX";
-            this.HangSX.ReadOnly = true;
-            // 
-            // SoLuongTon
-            // 
-            this.SoLuongTon.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.SoLuongTon.DataPropertyName = "SoLuongTon";
-            this.SoLuongTon.FillWeight = 70.68937F;
-            this.SoLuongTon.HeaderText = "Số Lượng Tồn";
-            this.SoLuongTon.MinimumWidth = 6;
-            this.SoLuongTon.Name = "SoLuongTon";
-            this.SoLuongTon.ReadOnly = true;
-            // 
             // UC_QLPhuTung
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -470,6 +470,7 @@
             this.Controls.Add(this.gird_groupbox);
             this.Name = "UC_QLPhuTung";
             this.Size = new System.Drawing.Size(1300, 800);
+            this.Load += new System.EventHandler(this.UC_QLPhuTung_Load);
             this.ThonTingroupBox.ResumeLayout(false);
             this.ThonTingroupBox.PerformLayout();
             this.gird_groupbox.ResumeLayout(false);

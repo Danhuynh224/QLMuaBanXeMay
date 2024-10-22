@@ -112,5 +112,10 @@ namespace QLMuaBanXeMay
             DAOXeMay.SuaXe(xeMay);
             Load_GridView();
         }
+
+        private void UC_QLXe_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

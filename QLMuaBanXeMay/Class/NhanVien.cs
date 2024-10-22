@@ -31,6 +31,7 @@ namespace QLMuaBanXeMay.Class
             this.chucVu = chucVu;
         }
 
+        public NhanVien() { }
         public int CCCDNV
         {
             get { return ccCDNV; }

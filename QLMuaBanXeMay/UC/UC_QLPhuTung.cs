@@ -102,5 +102,10 @@ namespace QLMuaBanXeMay
             this.Controls.Clear();
             this.Controls.Add(uc);
         }
+
+        private void UC_QLPhuTung_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

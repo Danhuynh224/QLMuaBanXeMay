@@ -19,6 +19,7 @@ namespace QLMuaBanXeMay.Class
         private string email;
         private int maLoai;
         private float tongChiTieu;
+        public KhachHang() { }
 
         public KhachHang(int ccCDKH, string tenKH, DateTime ngaySinh, string gioiTinh, string sdt, string diaChi, string email, int maLoai, float tongChiTieu)
         {

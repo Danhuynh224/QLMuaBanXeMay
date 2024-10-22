@@ -33,5 +33,15 @@ namespace QLMuaBanXeMay.Properties {
                 return ((string)(this["QLMuaBanXeMayConnectionString"]));
             }
         }
+        
+        [global::System.Configuration.ApplicationScopedSettingAttribute()]
+        [global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+        [global::System.Configuration.SpecialSettingAttribute(global::System.Configuration.SpecialSetting.ConnectionString)]
+        [global::System.Configuration.DefaultSettingValueAttribute("Data Source=HONGSON;Initial Catalog=QLMuaBanXeMay;Integrated Security=True")]
+        public string QLMuaBanXeMayConnectionString1 {
+            get {
+                return ((string)(this["QLMuaBanXeMayConnectionString1"]));
+            }
+        }
     }
 }

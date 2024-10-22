@@ -16,6 +16,8 @@ namespace QLMuaBanXeMay.Class
         private string hangSX;
         private int soLuongTon;
 
+        public PhuTung() { }
+
         public PhuTung(int maPT, string tenPT, float donGia, string chatLieu, string hangSX, int soLuongTon)
         {
             this.maPT = maPT;

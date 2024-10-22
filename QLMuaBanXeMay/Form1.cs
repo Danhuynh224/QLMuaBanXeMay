@@ -31,13 +31,17 @@ namespace QLMuaBanXeMay
         private void btnMotobike_Click(object sender, EventArgs e)
         {
             UC_QLXe uc = new UC_QLXe();
+            panel5.Controls.Clear();
+            panel5.Controls.Add(uc);
             uc.Dock = DockStyle.Fill;
-            uC_MainScreen.Controls.Add(uc);
         }
 
         private void btnTool_Click(object sender, EventArgs e)
         {
-
+            UC_QLPhuTung uc = new UC_QLPhuTung();
+            panel5.Controls.Clear();
+            panel5.Controls.Add(uc);
+            uc.Dock = DockStyle.Fill;
         }
 
         private void btnBillBike_Click(object sender, EventArgs e)

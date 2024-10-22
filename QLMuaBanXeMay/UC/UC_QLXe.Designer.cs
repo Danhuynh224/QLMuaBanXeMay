@@ -30,14 +30,25 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.xeMayBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.qLMuaBanXeMayDataSet = new QLMuaBanXeMay.QLMuaBanXeMayDataSet();
             this.xeMayTableAdapter = new QLMuaBanXeMay.QLMuaBanXeMayDataSetTableAdapters.XeMayTableAdapter();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.Xe_GridView = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.maXeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tenXeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.donGiaDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.loaiXeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.mauSacDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.phanKhoiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.congSuatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hangSXDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.namSXDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tinhTrangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Xoa_btn = new System.Windows.Forms.DataGridViewButtonColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.textBox10 = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
@@ -61,22 +72,20 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.maXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tenXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.donGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.loaiXeDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.mauSacDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.phanKhoiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.congSuatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.hangSXDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.namSXDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tinhTrangDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Xoa_btn = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.guna2Button2 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button3 = new Guna.UI2.WinForms.Guna2Button();
+            this.guna2Button4 = new Guna.UI2.WinForms.Guna2Button();
+            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.guna2TextBox7 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.guna2Button1 = new Guna.UI2.WinForms.Guna2Button();
+            this.groupBox3 = new System.Windows.Forms.GroupBox();
             ((System.ComponentModel.ISupportInitialize)(this.xeMayBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLMuaBanXeMayDataSet)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Xe_GridView)).BeginInit();
             this.groupBox1.SuspendLayout();
+            this.groupBox4.SuspendLayout();
+            this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
             // xeMayBindingSource
@@ -97,9 +106,9 @@
             // 
             this.groupBox2.Controls.Add(this.Xe_GridView);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox2.Location = new System.Drawing.Point(86, 310);
+            this.groupBox2.Location = new System.Drawing.Point(86, 264);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(1135, 352);
+            this.groupBox2.Size = new System.Drawing.Size(1135, 257);
             this.groupBox2.TabIndex = 7;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh sách các xe";
@@ -110,23 +119,23 @@
             this.Xe_GridView.AllowUserToDeleteRows = false;
             this.Xe_GridView.AllowUserToResizeColumns = false;
             this.Xe_GridView.AllowUserToResizeRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.Xe_GridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.Xe_GridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.Xe_GridView.AutoGenerateColumns = false;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.Xe_GridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.Xe_GridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.Xe_GridView.ColumnHeadersHeight = 50;
             this.Xe_GridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.Xe_GridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.maXe,
-            this.tenXe,
-            this.donGia,
+            this.maXeDataGridViewTextBoxColumn,
+            this.tenXeDataGridViewTextBoxColumn,
+            this.donGiaDataGridViewTextBoxColumn,
             this.loaiXeDataGridViewTextBoxColumn,
             this.mauSacDataGridViewTextBoxColumn,
             this.phanKhoiDataGridViewTextBoxColumn,
@@ -136,14 +145,14 @@
             this.tinhTrangDataGridViewTextBoxColumn,
             this.Xoa_btn});
             this.Xe_GridView.DataSource = this.xeMayBindingSource;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.Xe_GridView.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.Xe_GridView.DefaultCellStyle = dataGridViewCellStyle3;
             this.Xe_GridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.Xe_GridView.Location = new System.Drawing.Point(11, 32);
             this.Xe_GridView.Name = "Xe_GridView";
@@ -152,7 +161,7 @@
             this.Xe_GridView.RowHeadersWidth = 51;
             this.Xe_GridView.RowTemplate.Height = 24;
             this.Xe_GridView.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.Xe_GridView.Size = new System.Drawing.Size(1118, 314);
+            this.Xe_GridView.Size = new System.Drawing.Size(1118, 208);
             this.Xe_GridView.TabIndex = 2;
             this.Xe_GridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.Xe_GridView.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -176,6 +185,115 @@
             this.Xe_GridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.Xe_GridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.Xe_GridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Xe_GridView_CellContentClick_2);
+            // 
+            // maXeDataGridViewTextBoxColumn
+            // 
+            this.maXeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.maXeDataGridViewTextBoxColumn.DataPropertyName = "MaXe";
+            this.maXeDataGridViewTextBoxColumn.FillWeight = 50F;
+            this.maXeDataGridViewTextBoxColumn.HeaderText = "Mã Xe";
+            this.maXeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.maXeDataGridViewTextBoxColumn.Name = "maXeDataGridViewTextBoxColumn";
+            this.maXeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tenXeDataGridViewTextBoxColumn
+            // 
+            this.tenXeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.tenXeDataGridViewTextBoxColumn.DataPropertyName = "TenXe";
+            this.tenXeDataGridViewTextBoxColumn.FillWeight = 160F;
+            this.tenXeDataGridViewTextBoxColumn.HeaderText = "Tên Xe";
+            this.tenXeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.tenXeDataGridViewTextBoxColumn.Name = "tenXeDataGridViewTextBoxColumn";
+            this.tenXeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // donGiaDataGridViewTextBoxColumn
+            // 
+            this.donGiaDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.donGiaDataGridViewTextBoxColumn.DataPropertyName = "DonGia";
+            this.donGiaDataGridViewTextBoxColumn.HeaderText = "Đơn Giá";
+            this.donGiaDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.donGiaDataGridViewTextBoxColumn.Name = "donGiaDataGridViewTextBoxColumn";
+            this.donGiaDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // loaiXeDataGridViewTextBoxColumn
+            // 
+            this.loaiXeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.loaiXeDataGridViewTextBoxColumn.DataPropertyName = "LoaiXe";
+            this.loaiXeDataGridViewTextBoxColumn.FillWeight = 80.58823F;
+            this.loaiXeDataGridViewTextBoxColumn.HeaderText = "Loại Xe";
+            this.loaiXeDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.loaiXeDataGridViewTextBoxColumn.Name = "loaiXeDataGridViewTextBoxColumn";
+            this.loaiXeDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // mauSacDataGridViewTextBoxColumn
+            // 
+            this.mauSacDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.mauSacDataGridViewTextBoxColumn.DataPropertyName = "MauSac";
+            this.mauSacDataGridViewTextBoxColumn.FillWeight = 80.58823F;
+            this.mauSacDataGridViewTextBoxColumn.HeaderText = "Màu Sắc";
+            this.mauSacDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.mauSacDataGridViewTextBoxColumn.Name = "mauSacDataGridViewTextBoxColumn";
+            this.mauSacDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // phanKhoiDataGridViewTextBoxColumn
+            // 
+            this.phanKhoiDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.phanKhoiDataGridViewTextBoxColumn.DataPropertyName = "PhanKhoi";
+            this.phanKhoiDataGridViewTextBoxColumn.FillWeight = 80.58823F;
+            this.phanKhoiDataGridViewTextBoxColumn.HeaderText = "Phân Khối";
+            this.phanKhoiDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.phanKhoiDataGridViewTextBoxColumn.Name = "phanKhoiDataGridViewTextBoxColumn";
+            this.phanKhoiDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // congSuatDataGridViewTextBoxColumn
+            // 
+            this.congSuatDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.congSuatDataGridViewTextBoxColumn.DataPropertyName = "CongSuat";
+            this.congSuatDataGridViewTextBoxColumn.FillWeight = 80.58823F;
+            this.congSuatDataGridViewTextBoxColumn.HeaderText = "Công Suất";
+            this.congSuatDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.congSuatDataGridViewTextBoxColumn.Name = "congSuatDataGridViewTextBoxColumn";
+            this.congSuatDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // hangSXDataGridViewTextBoxColumn
+            // 
+            this.hangSXDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.hangSXDataGridViewTextBoxColumn.DataPropertyName = "HangSX";
+            this.hangSXDataGridViewTextBoxColumn.FillWeight = 80.58823F;
+            this.hangSXDataGridViewTextBoxColumn.HeaderText = "Hãng Sản Xuất";
+            this.hangSXDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.hangSXDataGridViewTextBoxColumn.Name = "hangSXDataGridViewTextBoxColumn";
+            this.hangSXDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // namSXDataGridViewTextBoxColumn
+            // 
+            this.namSXDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.namSXDataGridViewTextBoxColumn.DataPropertyName = "NamSX";
+            this.namSXDataGridViewTextBoxColumn.FillWeight = 80.58823F;
+            this.namSXDataGridViewTextBoxColumn.HeaderText = "Năm Sản Xuất";
+            this.namSXDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.namSXDataGridViewTextBoxColumn.Name = "namSXDataGridViewTextBoxColumn";
+            this.namSXDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tinhTrangDataGridViewTextBoxColumn
+            // 
+            this.tinhTrangDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.tinhTrangDataGridViewTextBoxColumn.DataPropertyName = "TinhTrang";
+            this.tinhTrangDataGridViewTextBoxColumn.FillWeight = 80.58823F;
+            this.tinhTrangDataGridViewTextBoxColumn.HeaderText = "Tình Trạng";
+            this.tinhTrangDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.tinhTrangDataGridViewTextBoxColumn.Name = "tinhTrangDataGridViewTextBoxColumn";
+            this.tinhTrangDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // Xoa_btn
+            // 
+            this.Xoa_btn.FillWeight = 80.58823F;
+            this.Xoa_btn.HeaderText = "";
+            this.Xoa_btn.MinimumWidth = 6;
+            this.Xoa_btn.Name = "Xoa_btn";
+            this.Xoa_btn.ReadOnly = true;
+            this.Xoa_btn.Text = "Xóa";
+            this.Xoa_btn.UseColumnTextForButtonValue = true;
             // 
             // groupBox1
             // 
@@ -201,12 +319,13 @@
             this.groupBox1.Controls.Add(this.textBox1);
             this.groupBox1.Controls.Add(this.label2);
             this.groupBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
-            this.groupBox1.Location = new System.Drawing.Point(86, 103);
+            this.groupBox1.Location = new System.Drawing.Point(86, 57);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(1135, 201);
             this.groupBox1.TabIndex = 6;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Thông tin xe";
+            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // textBox10
             // 
@@ -233,7 +352,6 @@
             this.capnhat_btn.TabIndex = 18;
             this.capnhat_btn.Text = "Xuất hóa đơn";
             this.capnhat_btn.UseVisualStyleBackColor = true;
-            this.capnhat_btn.Click += new System.EventHandler(this.capnhat_btn_Click);
             // 
             // textBox9
             // 
@@ -392,136 +510,143 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 16F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(80, 58);
+            this.label1.Location = new System.Drawing.Point(22, 10);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(166, 31);
             this.label1.TabIndex = 5;
             this.label1.Text = "Quản Lý Xe";
             // 
-            // maXe
+            // guna2Button2
             // 
-            this.maXe.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.maXe.DataPropertyName = "MaXe";
-            this.maXe.FillWeight = 50F;
-            this.maXe.HeaderText = "Mã Xe";
-            this.maXe.MinimumWidth = 6;
-            this.maXe.Name = "maXe";
-            this.maXe.ReadOnly = true;
+            this.guna2Button2.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.guna2Button2.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button2.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button2.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button2.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.guna2Button2.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button2.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button2.Location = new System.Drawing.Point(96, 30);
+            this.guna2Button2.Name = "guna2Button2";
+            this.guna2Button2.Size = new System.Drawing.Size(122, 43);
+            this.guna2Button2.TabIndex = 55;
+            this.guna2Button2.Text = "Thêm";
             // 
-            // tenXe
+            // guna2Button3
             // 
-            this.tenXe.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.tenXe.DataPropertyName = "TenXe";
-            this.tenXe.FillWeight = 160F;
-            this.tenXe.HeaderText = "Tên Xe";
-            this.tenXe.MinimumWidth = 6;
-            this.tenXe.Name = "tenXe";
-            this.tenXe.ReadOnly = true;
+            this.guna2Button3.Animated = true;
+            this.guna2Button3.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button3.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button3.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button3.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.guna2Button3.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button3.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button3.Location = new System.Drawing.Point(293, 30);
+            this.guna2Button3.Name = "guna2Button3";
+            this.guna2Button3.Size = new System.Drawing.Size(122, 43);
+            this.guna2Button3.TabIndex = 56;
+            this.guna2Button3.Text = "Sửa";
             // 
-            // donGia
+            // guna2Button4
             // 
-            this.donGia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.donGia.DataPropertyName = "DonGia";
-            this.donGia.HeaderText = "Đơn Giá";
-            this.donGia.MinimumWidth = 6;
-            this.donGia.Name = "donGia";
-            this.donGia.ReadOnly = true;
+            this.guna2Button4.Animated = true;
+            this.guna2Button4.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button4.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button4.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button4.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.guna2Button4.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button4.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button4.Location = new System.Drawing.Point(486, 30);
+            this.guna2Button4.Name = "guna2Button4";
+            this.guna2Button4.Size = new System.Drawing.Size(122, 43);
+            this.guna2Button4.TabIndex = 57;
+            this.guna2Button4.Text = "Xóa";
             // 
-            // loaiXeDataGridViewTextBoxColumn
+            // groupBox4
             // 
-            this.loaiXeDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.loaiXeDataGridViewTextBoxColumn.DataPropertyName = "LoaiXe";
-            this.loaiXeDataGridViewTextBoxColumn.FillWeight = 80.58823F;
-            this.loaiXeDataGridViewTextBoxColumn.HeaderText = "Loại Xe";
-            this.loaiXeDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.loaiXeDataGridViewTextBoxColumn.Name = "loaiXeDataGridViewTextBoxColumn";
-            this.loaiXeDataGridViewTextBoxColumn.ReadOnly = true;
+            this.groupBox4.Controls.Add(this.guna2Button4);
+            this.groupBox4.Controls.Add(this.guna2Button3);
+            this.groupBox4.Controls.Add(this.guna2Button2);
+            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox4.Location = new System.Drawing.Point(615, 581);
+            this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox4.Name = "groupBox4";
+            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox4.Size = new System.Drawing.Size(663, 88);
+            this.groupBox4.TabIndex = 28;
+            this.groupBox4.TabStop = false;
+            this.groupBox4.Text = "Công cụ";
             // 
-            // mauSacDataGridViewTextBoxColumn
+            // guna2TextBox7
             // 
-            this.mauSacDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.mauSacDataGridViewTextBoxColumn.DataPropertyName = "MauSac";
-            this.mauSacDataGridViewTextBoxColumn.FillWeight = 80.58823F;
-            this.mauSacDataGridViewTextBoxColumn.HeaderText = "Màu Sắc";
-            this.mauSacDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.mauSacDataGridViewTextBoxColumn.Name = "mauSacDataGridViewTextBoxColumn";
-            this.mauSacDataGridViewTextBoxColumn.ReadOnly = true;
+            this.guna2TextBox7.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.guna2TextBox7.DefaultText = "";
+            this.guna2TextBox7.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.guna2TextBox7.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.guna2TextBox7.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox7.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.guna2TextBox7.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox7.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.guna2TextBox7.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.guna2TextBox7.Location = new System.Drawing.Point(14, 34);
+            this.guna2TextBox7.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.guna2TextBox7.Name = "guna2TextBox7";
+            this.guna2TextBox7.PasswordChar = '\0';
+            this.guna2TextBox7.PlaceholderText = "";
+            this.guna2TextBox7.SelectedText = "";
+            this.guna2TextBox7.Size = new System.Drawing.Size(307, 36);
+            this.guna2TextBox7.TabIndex = 53;
             // 
-            // phanKhoiDataGridViewTextBoxColumn
+            // guna2Button1
             // 
-            this.phanKhoiDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.phanKhoiDataGridViewTextBoxColumn.DataPropertyName = "PhanKhoi";
-            this.phanKhoiDataGridViewTextBoxColumn.FillWeight = 80.58823F;
-            this.phanKhoiDataGridViewTextBoxColumn.HeaderText = "Phân Khối";
-            this.phanKhoiDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.phanKhoiDataGridViewTextBoxColumn.Name = "phanKhoiDataGridViewTextBoxColumn";
-            this.phanKhoiDataGridViewTextBoxColumn.ReadOnly = true;
+            this.guna2Button1.Animated = true;
+            this.guna2Button1.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.guna2Button1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.guna2Button1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.guna2Button1.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.guna2Button1.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.guna2Button1.ForeColor = System.Drawing.Color.Black;
+            this.guna2Button1.Location = new System.Drawing.Point(351, 30);
+            this.guna2Button1.Name = "guna2Button1";
+            this.guna2Button1.Size = new System.Drawing.Size(122, 43);
+            this.guna2Button1.TabIndex = 54;
+            this.guna2Button1.Text = "Tìm";
             // 
-            // congSuatDataGridViewTextBoxColumn
+            // groupBox3
             // 
-            this.congSuatDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.congSuatDataGridViewTextBoxColumn.DataPropertyName = "CongSuat";
-            this.congSuatDataGridViewTextBoxColumn.FillWeight = 80.58823F;
-            this.congSuatDataGridViewTextBoxColumn.HeaderText = "Công Suất";
-            this.congSuatDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.congSuatDataGridViewTextBoxColumn.Name = "congSuatDataGridViewTextBoxColumn";
-            this.congSuatDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // hangSXDataGridViewTextBoxColumn
-            // 
-            this.hangSXDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.hangSXDataGridViewTextBoxColumn.DataPropertyName = "HangSX";
-            this.hangSXDataGridViewTextBoxColumn.FillWeight = 80.58823F;
-            this.hangSXDataGridViewTextBoxColumn.HeaderText = "Hãng Sản Xuất";
-            this.hangSXDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.hangSXDataGridViewTextBoxColumn.Name = "hangSXDataGridViewTextBoxColumn";
-            this.hangSXDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // namSXDataGridViewTextBoxColumn
-            // 
-            this.namSXDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.namSXDataGridViewTextBoxColumn.DataPropertyName = "NamSX";
-            this.namSXDataGridViewTextBoxColumn.FillWeight = 80.58823F;
-            this.namSXDataGridViewTextBoxColumn.HeaderText = "Năm Sản Xuất";
-            this.namSXDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.namSXDataGridViewTextBoxColumn.Name = "namSXDataGridViewTextBoxColumn";
-            this.namSXDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // tinhTrangDataGridViewTextBoxColumn
-            // 
-            this.tinhTrangDataGridViewTextBoxColumn.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.tinhTrangDataGridViewTextBoxColumn.DataPropertyName = "TinhTrang";
-            this.tinhTrangDataGridViewTextBoxColumn.FillWeight = 80.58823F;
-            this.tinhTrangDataGridViewTextBoxColumn.HeaderText = "Tình Trạng";
-            this.tinhTrangDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.tinhTrangDataGridViewTextBoxColumn.Name = "tinhTrangDataGridViewTextBoxColumn";
-            this.tinhTrangDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // Xoa_btn
-            // 
-            this.Xoa_btn.FillWeight = 80.58823F;
-            this.Xoa_btn.HeaderText = "";
-            this.Xoa_btn.MinimumWidth = 6;
-            this.Xoa_btn.Name = "Xoa_btn";
-            this.Xoa_btn.ReadOnly = true;
-            this.Xoa_btn.Text = "Xóa";
-            this.Xoa_btn.UseColumnTextForButtonValue = true;
+            this.groupBox3.Controls.Add(this.guna2Button1);
+            this.groupBox3.Controls.Add(this.guna2TextBox7);
+            this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.groupBox3.Location = new System.Drawing.Point(75, 581);
+            this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox3.Name = "groupBox3";
+            this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.groupBox3.Size = new System.Drawing.Size(505, 88);
+            this.groupBox3.TabIndex = 27;
+            this.groupBox3.TabStop = false;
+            this.groupBox3.Text = "Tìm kiếm theo tên nhân viên";
             // 
             // UC_QLXe
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
+            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.label1);
             this.Name = "UC_QLXe";
             this.Size = new System.Drawing.Size(1300, 721);
-            this.Load += new System.EventHandler(this.UC_QLXe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.xeMayBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLMuaBanXeMayDataSet)).EndInit();
             this.groupBox2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.Xe_GridView)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
+            this.groupBox4.ResumeLayout(false);
+            this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -533,6 +658,17 @@
         private QLMuaBanXeMayDataSetTableAdapters.XeMayTableAdapter xeMayTableAdapter;
         private System.Windows.Forms.GroupBox groupBox2;
         private Guna.UI2.WinForms.Guna2DataGridView Xe_GridView;
+        private System.Windows.Forms.DataGridViewTextBoxColumn maXeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tenXeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn donGiaDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn loaiXeDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn mauSacDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn phanKhoiDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn congSuatDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn hangSXDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn namSXDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewTextBoxColumn tinhTrangDataGridViewTextBoxColumn;
+        private System.Windows.Forms.DataGridViewButtonColumn Xoa_btn;
         private System.Windows.Forms.GroupBox groupBox1;
         private System.Windows.Forms.TextBox textBox10;
         private System.Windows.Forms.Label label11;
@@ -556,16 +692,12 @@
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn maXe;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tenXe;
-        private System.Windows.Forms.DataGridViewTextBoxColumn donGia;
-        private System.Windows.Forms.DataGridViewTextBoxColumn loaiXeDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn mauSacDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn phanKhoiDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn congSuatDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn hangSXDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn namSXDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewTextBoxColumn tinhTrangDataGridViewTextBoxColumn;
-        private System.Windows.Forms.DataGridViewButtonColumn Xoa_btn;
+        private Guna.UI2.WinForms.Guna2Button guna2Button2;
+        private Guna.UI2.WinForms.Guna2Button guna2Button3;
+        private Guna.UI2.WinForms.Guna2Button guna2Button4;
+        private System.Windows.Forms.GroupBox groupBox4;
+        private Guna.UI2.WinForms.Guna2TextBox guna2TextBox7;
+        private Guna.UI2.WinForms.Guna2Button guna2Button1;
+        private System.Windows.Forms.GroupBox groupBox3;
     }
 }

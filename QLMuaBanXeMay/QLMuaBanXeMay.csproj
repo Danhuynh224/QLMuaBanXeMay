@@ -75,6 +75,16 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLMuaBanXeMayDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QLMuaBanXeMayDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLMuaBanXeMayDataSet1.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLMuaBanXeMayDataSet2.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLMuaBanXeMayDataSet2.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UC\UC_HoaDonPT.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -110,6 +120,12 @@
     </Compile>
     <Compile Include="UC\UC_ThanhToan.Designer.cs">
       <DependentUpon>UC_ThanhToan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UC_ThanhToanPT.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_ThanhToanPT.Designer.cs">
+      <DependentUpon>UC_ThanhToanPT.cs</DependentUpon>
     </Compile>
     <Compile Include="UC\UC_ThongTinKhachHang.cs">
       <SubType>UserControl</SubType>
@@ -172,6 +188,9 @@
     <EmbeddedResource Include="UC\UC_ThanhToan.resx">
       <DependentUpon>UC_ThanhToan.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_ThanhToanPT.resx">
+      <DependentUpon>UC_ThanhToanPT.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC\UC_ThongTinKhachHang.resx">
       <DependentUpon>UC_ThongTinKhachHang.cs</DependentUpon>
     </EmbeddedResource>
@@ -213,6 +232,28 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <None Include="QLMuaBanXeMayDataSet1.xsc">
+      <DependentUpon>QLMuaBanXeMayDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLMuaBanXeMayDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet1.xss">
+      <DependentUpon>QLMuaBanXeMayDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet2.xsc">
+      <DependentUpon>QLMuaBanXeMayDataSet2.xsd</DependentUpon>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet2.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLMuaBanXeMayDataSet2.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet2.xss">
+      <DependentUpon>QLMuaBanXeMayDataSet2.xsd</DependentUpon>
+    </None>
     <None Include="Resources\form_main_login.png" />
   </ItemGroup>
   <ItemGroup>

@@ -17,6 +17,7 @@ namespace QLMuaBanXeMay.Class
         private string pTTT;
         private DateTime ngayXuat;
 
+        public HoaDonPT() { }
         public HoaDonPT(int maHDPT, float khuyenMai, float tongTien, int ccCDKH, int ccCDNV, string pTTT, DateTime ngayXuat)
         {
             this.maHDPT = maHDPT;

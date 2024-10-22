@@ -33,6 +33,7 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.ThonTingroupBox = new System.Windows.Forms.GroupBox();
+            this.btn_Add = new System.Windows.Forms.Button();
             this.btn_Update = new System.Windows.Forms.Button();
             this.capnhat_btn = new System.Windows.Forms.Button();
             this.txt_HangSX = new System.Windows.Forms.TextBox();
@@ -75,6 +76,7 @@
             // 
             // ThonTingroupBox
             // 
+            this.ThonTingroupBox.Controls.Add(this.btn_Add);
             this.ThonTingroupBox.Controls.Add(this.btn_Update);
             this.ThonTingroupBox.Controls.Add(this.capnhat_btn);
             this.ThonTingroupBox.Controls.Add(this.txt_HangSX);
@@ -96,6 +98,16 @@
             this.ThonTingroupBox.TabIndex = 9;
             this.ThonTingroupBox.TabStop = false;
             this.ThonTingroupBox.Text = "Thông tin phụ tùng";
+            // 
+            // btn_Add
+            // 
+            this.btn_Add.Location = new System.Drawing.Point(558, 157);
+            this.btn_Add.Name = "btn_Add";
+            this.btn_Add.Size = new System.Drawing.Size(170, 38);
+            this.btn_Add.TabIndex = 20;
+            this.btn_Add.Text = "Thêm vào ";
+            this.btn_Add.UseVisualStyleBackColor = true;
+            this.btn_Add.Click += new System.EventHandler(this.btn_Add_Click);
             // 
             // btn_Update
             // 
@@ -294,7 +306,6 @@
             this.PhuTung_GridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.PhuTung_GridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.PhuTung_GridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PhuTung_GridView_CellClick);
-            this.PhuTung_GridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.PhuTung_GridView_CellContentClick);
             // 
             // MaPT
             // 
@@ -517,5 +528,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn ChatLieu;
         private System.Windows.Forms.DataGridViewTextBoxColumn HangSX;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuongTon;
+        private System.Windows.Forms.Button btn_Add;
     }
 }

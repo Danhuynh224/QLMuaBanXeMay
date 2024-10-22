@@ -24,6 +24,7 @@ namespace QLMuaBanXeMay
 
         Class.PhuTung phuTung = new PhuTung();
         Class.KhachHang khachHang = new KhachHang();
+        List<PhuTung> listPT = new List<PhuTung>();
         public UC_QLPhuTung()
         {
             InitializeComponent();
@@ -98,14 +99,15 @@ namespace QLMuaBanXeMay
 
         private void capnhat_btn_Click(object sender, EventArgs e)
         {
-            UC_ThanhToanPT uc = new UC_ThanhToanPT(phuTung, khachHang);
+            UC_ThanhToanPT uc = new UC_ThanhToanPT(listPT, khachHang);
             this.Controls.Clear();
             this.Controls.Add(uc);
         }
 
-        private void PhuTung_GridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void btn_Add_Click(object sender, EventArgs e)
         {
-
+            PhuTung phuTung = new PhuTung(Convert.ToInt32(txt_MaPhuTung.Text), txt_TenPhuTung.Text, float.Parse(txt_DonGia.Text), txt_ChatLieu.Text, txt_HangSX.Text, Convert.ToInt32(txt_SoLuongTon.Text));
+            listPT.Add(phuTung);
         }
     }
 }

@@ -119,7 +119,6 @@
             this.dg_kh.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.dg_kh.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.dg_kh.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_kh_CellClick);
-            this.dg_kh.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.dg_kh_CellContentClick);
             // 
             // khachHangBindingSource
             // 

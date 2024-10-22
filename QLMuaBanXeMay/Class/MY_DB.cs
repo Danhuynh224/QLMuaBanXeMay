@@ -10,7 +10,7 @@ namespace QLMuaBanXeMay.Class
 {
     public class MY_DB
     {
-        static SqlConnection con = new SqlConnection(@"Data Source=HONGSON;Initial Catalog=QLMuaBanXeMay;Integrated Security=True");
+        static SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-Q1R3HVB;Initial Catalog=QLMuaBanXeMay;Integrated Security=True;Encrypt=False");
         static public SqlConnection getConnection()
         {
              return con;

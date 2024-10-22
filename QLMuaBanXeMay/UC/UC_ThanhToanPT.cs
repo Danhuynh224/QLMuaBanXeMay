@@ -21,36 +21,23 @@ namespace QLMuaBanXeMay.UC
 
         Class.PhuTung phuTung_tt = new PhuTung();
         Class.KhachHang khachHang_tt = new KhachHang();
-       
+        List<PhuTung> ListPT = new List<PhuTung>();
         public UC_ThanhToanPT()
         {
-            InitializeComponent();
+            
         }
-        public UC_ThanhToanPT(PhuTung phuTung, KhachHang khachHang)
+        public UC_ThanhToanPT(List<PhuTung> listPT, KhachHang khachHang)
         {
-            phuTung_tt = phuTung;
-            khachHang_tt = khachHang;
             InitializeComponent();
-            this.txt_maPT.Text = phuTung.MaPT.ToString();
-            this.txt_tenPT.Text = phuTung.TenPT.ToString();
-            this.txt_donGia.Text = phuTung.DonGia.ToString();
-            this.txt_hangSX.Text = phuTung.HangSX.ToString();
-            this.txt_chatLieu.Text = phuTung.ChatLieu.ToString();
-            this.txt_soLuong.Text = "1";
-
+            ListPT = listPT;
+            dataGridViewPT.DataSource = null; // Xóa dữ liệu hiện có (nếu có)
+            dataGridViewPT.DataSource = listPT;
+            
         }
         
 
         private void UC_ThanhToanPT_Load(PhuTung phuTung, KhachHang khachHang)
         {
-            /*InitializeComponent();*/
-            this.txt_maPT.Text = phuTung.MaPT.ToString();
-            this.txt_tenPT.Text = phuTung.TenPT.ToString();
-            this.txt_donGia.Text = phuTung.DonGia.ToString();
-            this.txt_hangSX.Text = phuTung.HangSX.ToString();
-            this.txt_chatLieu.Text = phuTung.ChatLieu.ToString();
-            this.txt_soLuong.Text = "1";
-
             MessageBox.Show(khachHang.MaLoai.ToString());
             this.txt_cccdKH.Text = khachHang.CCCDKH.ToString();
             this.txt_ten.Text = khachHang.TenKH.ToString();
@@ -70,8 +57,9 @@ namespace QLMuaBanXeMay.UC
             {
                 MessageBox.Show(khachHang_tt.TenKH.ToString());
                 UC_ThanhToanPT_Load(phuTung_tt, khachHang_tt);
+                tinhThanhTien();
             }
-                
+            
         }
 
         private void txt_cccdKH_TextChanged(object sender, EventArgs e)
@@ -95,37 +83,41 @@ namespace QLMuaBanXeMay.UC
 
             Class.ChiTietHD_PT chiTietHD_PT = new ChiTietHD_PT();
             chiTietHD_PT.MaHDPT = Convert.ToInt32(txt_maHD.Text);
-            chiTietHD_PT.MaPT = Convert.ToInt32(txt_maPT.Text);
-            chiTietHD_PT.SoLuong = Convert.ToInt32(txt_soLuong.Text);
-            chiTietHD_PT.DonGia = float.Parse(txt_donGia.Text);
+            foreach (PhuTung phuTung in ListPT)
+            {
+                
+            chiTietHD_PT.MaPT = phuTung.MaPT;
+            chiTietHD_PT.SoLuong = phuTung.SoLuongTon;
+            chiTietHD_PT.DonGia = phuTung.DonGia;
 
             DAO.DAOHoaDonPT.ThemChiTietHDPT(chiTietHD_PT);
 
+
+            }
+            
             MessageBox.Show("Done");
 
 
 
         }
-
-        private void txt_soLuong_TextChanged(object sender, EventArgs e)
+        private void tinhThanhTien()
         {
             int soluong;
             float khuyenmai;
             float thanhTien = 0;
-            if (int.TryParse(txt_soLuong.Text, out soluong))
+            foreach (PhuTung phuTung in ListPT)
             {
-                int donGia = Convert.ToInt32(txt_donGia.Text);
-                thanhTien = soluong * donGia;
-                
+                thanhTien += phuTung.DonGia * phuTung.SoLuongTon;
             }
-            if(float.TryParse(txt_khuyenMai.Text, out khuyenmai))
+            if (float.TryParse(txt_khuyenMai.Text, out khuyenmai))
             {
                 thanhTien = thanhTien - (thanhTien * khuyenmai);
-            }    
-            
+            }
+
             txt_thanhTien.Text = thanhTien.ToString();
 
         }
+
 
         private void UC_ThanhToanPT_Load(object sender, EventArgs e)
         {

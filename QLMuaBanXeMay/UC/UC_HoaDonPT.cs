@@ -20,15 +20,15 @@ namespace QLMuaBanXeMay.UC
             InitializeComponent();
             Load_GridView();
         }
-
+        private void Load_GridView()
+        {
+            gv_hdPT.DataSource = DAOHoaDonPT.Load_ViewHD();
+        }
         private void UC_HoaDonPT_Load(object sender, EventArgs e)
         {
 
         }
-        private void Load_GridView()
-        {
-            gv_hdPT.DataSource = DAOHoaDonPT.LayThongTin();
-        }
+
         private void gv_hdPT_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
@@ -38,23 +38,21 @@ namespace QLMuaBanXeMay.UC
         {
             if (e.RowIndex >= 0)
             {
-
                 DataGridViewRow row = gv_hdPT.Rows[e.RowIndex];
 
-                hoaDonPT.MaHDPT = Convert.ToInt32(row.Cells[0].Value);
-                hoaDonPT.KhuyenMai = float.Parse(row.Cells[1].Value.ToString());
-                hoaDonPT.TongTien = float.Parse(row.Cells[2].Value.ToString());
-                hoaDonPT.CCCDKH = Convert.ToInt32(row.Cells[3].Value);
-                hoaDonPT.CCCDNV = Convert.ToInt32(row.Cells[4].Value);
-                hoaDonPT.PTTT = row.Cells[5].Value.ToString();
-                hoaDonPT.NgayXuat = Convert.ToDateTime(row.Cells[6].Value);
+                txt_maHd.Text = row.Cells[0].Value.ToString();
+                dt_ngayBan.Value = Convert.ToDateTime(row.Cells[1].Value);
+                txt_maNV.Text = row.Cells[2].Value.ToString();
+                txt_tenNV.Text = row.Cells[3].Value.ToString();
+                txt_maKH.Text = row.Cells[4].Value.ToString();
+                txt_tenKH.Text = row.Cells[5].Value.ToString();
+                txt_sdt.Text = row.Cells[6].Value.ToString();
+                txt_diaChi.Text = row.Cells[7].Value.ToString();
+                txt_giamGia.Text = row.Cells[8].Value.ToString();
+                txt_thanhTien.Text = row.Cells[9].Value.ToString();
 
-                txt_maHd.Text = hoaDonPT.MaHDPT.ToString();
-                txt_giamGia.Text = hoaDonPT.KhuyenMai.ToString();
-                txt_thanhTien.Text = hoaDonPT.TongTien.ToString();
-                txt_maKH.Text = hoaDonPT.CCCDKH.ToString();
-                txt_maNV.Text = hoaDonPT.CCCDNV.ToString();
-                dt_ngayBan.Value = hoaDonPT.NgayXuat;
+                gv_chiTietHD.DataSource = DAOHoaDonPT.Load_ViewChiTietHD(Convert.ToInt32(txt_maHd.Text));
+
 
             }
         }

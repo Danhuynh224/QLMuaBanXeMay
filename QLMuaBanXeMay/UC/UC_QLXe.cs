@@ -18,8 +18,6 @@ namespace QLMuaBanXeMay
 {
     public partial class UC_QLXe : UserControl
     {
-        string connstring = @"Data Source=HONGSON;Initial Catalog=QLMuaBanXeMay;Integrated Security=True";
-        SqlConnection conn = null;
 
         Class.XeMay xeMay = new XeMay();
         Class.KhachHang khachHang = new KhachHang();

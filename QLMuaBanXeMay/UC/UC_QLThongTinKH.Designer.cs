@@ -435,7 +435,7 @@
             this.groupBox4.Controls.Add(this.btnSua);
             this.groupBox4.Controls.Add(this.btnThem);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(589, 687);
+            this.groupBox4.Location = new System.Drawing.Point(589, 659);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -470,7 +470,7 @@
             this.groupBox3.Controls.Add(this.btnTim);
             this.groupBox3.Controls.Add(this.txt_TimCCCD);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox3.Location = new System.Drawing.Point(49, 687);
+            this.groupBox3.Location = new System.Drawing.Point(49, 659);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox3.Name = "groupBox3";
             this.groupBox3.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -507,7 +507,7 @@
             this.groupBox2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox2.Size = new System.Drawing.Size(1203, 352);
+            this.groupBox2.Size = new System.Drawing.Size(1203, 333);
             this.groupBox2.TabIndex = 32;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Danh sách khách hàng";
@@ -542,7 +542,7 @@
             this.dgv_ThongTinKH.RowHeadersVisible = false;
             this.dgv_ThongTinKH.RowHeadersWidth = 51;
             this.dgv_ThongTinKH.RowTemplate.Height = 24;
-            this.dgv_ThongTinKH.Size = new System.Drawing.Size(1177, 295);
+            this.dgv_ThongTinKH.Size = new System.Drawing.Size(1177, 279);
             this.dgv_ThongTinKH.TabIndex = 0;
             this.dgv_ThongTinKH.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.dgv_ThongTinKH.ThemeStyle.AlternatingRowsStyle.Font = null;

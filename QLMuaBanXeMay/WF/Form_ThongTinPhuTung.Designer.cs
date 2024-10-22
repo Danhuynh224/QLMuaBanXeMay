@@ -29,36 +29,36 @@
         private void InitializeComponent()
         {
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.ConfirmButton = new System.Windows.Forms.Button();
-            this.SLTontextBox = new System.Windows.Forms.TextBox();
+            this.btn_Confirm = new System.Windows.Forms.Button();
+            this.txt_SLTon = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
-            this.HangSXtextBox = new System.Windows.Forms.TextBox();
+            this.txt_HangSX = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
-            this.TenPT_textBox = new System.Windows.Forms.TextBox();
+            this.txt_TenPT = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.DonGiatextBox = new System.Windows.Forms.TextBox();
+            this.txt_DonGia = new System.Windows.Forms.TextBox();
             this.label14 = new System.Windows.Forms.Label();
-            this.ChatLieutextBox = new System.Windows.Forms.TextBox();
+            this.txt_ChatLieu = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.MaPT_textBox = new System.Windows.Forms.TextBox();
+            this.txt_MaPT = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.ConfirmButton);
-            this.groupBox2.Controls.Add(this.SLTontextBox);
+            this.groupBox2.Controls.Add(this.btn_Confirm);
+            this.groupBox2.Controls.Add(this.txt_SLTon);
             this.groupBox2.Controls.Add(this.label11);
-            this.groupBox2.Controls.Add(this.HangSXtextBox);
+            this.groupBox2.Controls.Add(this.txt_HangSX);
             this.groupBox2.Controls.Add(this.label1);
-            this.groupBox2.Controls.Add(this.TenPT_textBox);
+            this.groupBox2.Controls.Add(this.txt_TenPT);
             this.groupBox2.Controls.Add(this.label13);
-            this.groupBox2.Controls.Add(this.DonGiatextBox);
+            this.groupBox2.Controls.Add(this.txt_DonGia);
             this.groupBox2.Controls.Add(this.label14);
-            this.groupBox2.Controls.Add(this.ChatLieutextBox);
+            this.groupBox2.Controls.Add(this.txt_ChatLieu);
             this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Controls.Add(this.MaPT_textBox);
+            this.groupBox2.Controls.Add(this.txt_MaPT);
             this.groupBox2.Controls.Add(this.label16);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.groupBox2.Location = new System.Drawing.Point(12, 26);
@@ -68,22 +68,22 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin Phụ Tùng";
             // 
-            // ConfirmButton
+            // btn_Confirm
             // 
-            this.ConfirmButton.Location = new System.Drawing.Point(532, 243);
-            this.ConfirmButton.Name = "ConfirmButton";
-            this.ConfirmButton.Size = new System.Drawing.Size(170, 38);
-            this.ConfirmButton.TabIndex = 19;
-            this.ConfirmButton.Text = "Xác nhận";
-            this.ConfirmButton.UseVisualStyleBackColor = true;
-            this.ConfirmButton.Click += new System.EventHandler(this.ConfirmButton_Click);
+            this.btn_Confirm.Location = new System.Drawing.Point(532, 243);
+            this.btn_Confirm.Name = "btn_Confirm";
+            this.btn_Confirm.Size = new System.Drawing.Size(170, 38);
+            this.btn_Confirm.TabIndex = 19;
+            this.btn_Confirm.Text = "Xác nhận";
+            this.btn_Confirm.UseVisualStyleBackColor = true;
+            this.btn_Confirm.Click += new System.EventHandler(this.ConfirmButton_Click);
             // 
-            // SLTontextBox
+            // txt_SLTon
             // 
-            this.SLTontextBox.Location = new System.Drawing.Point(532, 170);
-            this.SLTontextBox.Name = "SLTontextBox";
-            this.SLTontextBox.Size = new System.Drawing.Size(195, 30);
-            this.SLTontextBox.TabIndex = 24;
+            this.txt_SLTon.Location = new System.Drawing.Point(532, 170);
+            this.txt_SLTon.Name = "txt_SLTon";
+            this.txt_SLTon.Size = new System.Drawing.Size(195, 30);
+            this.txt_SLTon.TabIndex = 24;
             // 
             // label11
             // 
@@ -95,12 +95,12 @@
             this.label11.TabIndex = 23;
             this.label11.Text = "Số Lượng Tồn";
             // 
-            // HangSXtextBox
+            // txt_HangSX
             // 
-            this.HangSXtextBox.Location = new System.Drawing.Point(532, 105);
-            this.HangSXtextBox.Name = "HangSXtextBox";
-            this.HangSXtextBox.Size = new System.Drawing.Size(195, 30);
-            this.HangSXtextBox.TabIndex = 22;
+            this.txt_HangSX.Location = new System.Drawing.Point(532, 105);
+            this.txt_HangSX.Name = "txt_HangSX";
+            this.txt_HangSX.Size = new System.Drawing.Size(195, 30);
+            this.txt_HangSX.TabIndex = 22;
             // 
             // label1
             // 
@@ -112,12 +112,12 @@
             this.label1.TabIndex = 21;
             this.label1.Text = "Hãng Sản Xuất";
             // 
-            // TenPT_textBox
+            // txt_TenPT
             // 
-            this.TenPT_textBox.Location = new System.Drawing.Point(154, 104);
-            this.TenPT_textBox.Name = "TenPT_textBox";
-            this.TenPT_textBox.Size = new System.Drawing.Size(195, 30);
-            this.TenPT_textBox.TabIndex = 7;
+            this.txt_TenPT.Location = new System.Drawing.Point(154, 104);
+            this.txt_TenPT.Name = "txt_TenPT";
+            this.txt_TenPT.Size = new System.Drawing.Size(195, 30);
+            this.txt_TenPT.TabIndex = 7;
             // 
             // label13
             // 
@@ -129,13 +129,13 @@
             this.label13.TabIndex = 6;
             this.label13.Text = "Tên Phụ Tùng";
             // 
-            // DonGiatextBox
+            // txt_DonGia
             // 
-            this.DonGiatextBox.Location = new System.Drawing.Point(154, 173);
-            this.DonGiatextBox.Name = "DonGiatextBox";
-            this.DonGiatextBox.Size = new System.Drawing.Size(195, 30);
-            this.DonGiatextBox.TabIndex = 5;
-            this.DonGiatextBox.TextChanged += new System.EventHandler(this.textBox15_TextChanged);
+            this.txt_DonGia.Location = new System.Drawing.Point(154, 173);
+            this.txt_DonGia.Name = "txt_DonGia";
+            this.txt_DonGia.Size = new System.Drawing.Size(195, 30);
+            this.txt_DonGia.TabIndex = 5;
+            this.txt_DonGia.TextChanged += new System.EventHandler(this.textBox15_TextChanged);
             // 
             // label14
             // 
@@ -147,12 +147,12 @@
             this.label14.TabIndex = 4;
             this.label14.Text = "Đơn giá";
             // 
-            // ChatLieutextBox
+            // txt_ChatLieu
             // 
-            this.ChatLieutextBox.Location = new System.Drawing.Point(532, 46);
-            this.ChatLieutextBox.Name = "ChatLieutextBox";
-            this.ChatLieutextBox.Size = new System.Drawing.Size(195, 30);
-            this.ChatLieutextBox.TabIndex = 3;
+            this.txt_ChatLieu.Location = new System.Drawing.Point(532, 46);
+            this.txt_ChatLieu.Name = "txt_ChatLieu";
+            this.txt_ChatLieu.Size = new System.Drawing.Size(195, 30);
+            this.txt_ChatLieu.TabIndex = 3;
             // 
             // label15
             // 
@@ -164,12 +164,12 @@
             this.label15.TabIndex = 2;
             this.label15.Text = "Chất Liệu";
             // 
-            // MaPT_textBox
+            // txt_MaPT
             // 
-            this.MaPT_textBox.Location = new System.Drawing.Point(154, 46);
-            this.MaPT_textBox.Name = "MaPT_textBox";
-            this.MaPT_textBox.Size = new System.Drawing.Size(195, 30);
-            this.MaPT_textBox.TabIndex = 1;
+            this.txt_MaPT.Location = new System.Drawing.Point(154, 46);
+            this.txt_MaPT.Name = "txt_MaPT";
+            this.txt_MaPT.Size = new System.Drawing.Size(195, 30);
+            this.txt_MaPT.TabIndex = 1;
             // 
             // label16
             // 
@@ -198,18 +198,18 @@
         #endregion
 
         private System.Windows.Forms.GroupBox groupBox2;
-        private System.Windows.Forms.Button ConfirmButton;
-        private System.Windows.Forms.TextBox SLTontextBox;
+        private System.Windows.Forms.Button btn_Confirm;
+        private System.Windows.Forms.TextBox txt_SLTon;
         private System.Windows.Forms.Label label11;
-        private System.Windows.Forms.TextBox HangSXtextBox;
+        private System.Windows.Forms.TextBox txt_HangSX;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox TenPT_textBox;
+        private System.Windows.Forms.TextBox txt_TenPT;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.TextBox DonGiatextBox;
+        private System.Windows.Forms.TextBox txt_DonGia;
         private System.Windows.Forms.Label label14;
-        private System.Windows.Forms.TextBox ChatLieutextBox;
+        private System.Windows.Forms.TextBox txt_ChatLieu;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox MaPT_textBox;
+        private System.Windows.Forms.TextBox txt_MaPT;
         private System.Windows.Forms.Label label16;
     }
 }

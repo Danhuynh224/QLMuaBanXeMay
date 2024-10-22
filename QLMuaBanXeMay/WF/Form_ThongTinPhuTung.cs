@@ -25,12 +25,12 @@ namespace QLMuaBanXeMay.WF
 
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
-            phuTung.MaPT = Convert.ToInt32(MaPT_textBox.Text);
-            phuTung.TenPT= TenPT_textBox.Text;
-            phuTung.ChatLieu=ChatLieutextBox.Text;
-            phuTung.HangSX=HangSXtextBox.Text;
-            phuTung.DonGia= float.Parse(DonGiatextBox.Text);
-            phuTung.SoLuongTon = Convert.ToInt32(SLTontextBox.Text);
+            phuTung.MaPT = Convert.ToInt32(txt_MaPT.Text);
+            phuTung.TenPT= txt_TenPT.Text;
+            phuTung.ChatLieu=txt_ChatLieu.Text;
+            phuTung.HangSX=txt_HangSX.Text;
+            phuTung.DonGia= float.Parse(txt_DonGia.Text);
+            phuTung.SoLuongTon = Convert.ToInt32(txt_SLTon.Text);
             this.DialogResult = DialogResult.OK; // Thiết lập kết quả đối thoại
             this.Close(); // Đóng Form2
         }

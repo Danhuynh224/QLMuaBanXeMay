@@ -62,19 +62,19 @@ namespace QLMuaBanXeMay
                 phuTung.SoLuongTon = Convert.ToInt32(row.Cells["SoLuongTon"].Value);
 
                 // Hiển thị giá trị (hoặc xử lý theo yêu cầu)
-                MaPhuTung_textBox.Text = phuTung.MaPT.ToString();
-                TenPhuTung_textBox.Text =phuTung.TenPT.ToString();  
-                DonGia_textBox.Text=phuTung.DonGia.ToString();
-                ChatLieu_textBox.Text=phuTung.ChatLieu.ToString();
-                HangSX_textBox.Text = phuTung.HangSX.ToString();
-                SoLuongTon_textBox.Text= phuTung.SoLuongTon.ToString();
+                txt_MaPhuTung.Text = phuTung.MaPT.ToString();
+                txt_TenPhuTung.Text =phuTung.TenPT.ToString();  
+                txt_DonGia.Text=phuTung.DonGia.ToString();
+                txt_ChatLieu.Text=phuTung.ChatLieu.ToString();
+                txt_HangSX.Text = phuTung.HangSX.ToString();
+                txt_SoLuongTon.Text= phuTung.SoLuongTon.ToString();
                 
             }
         }
 
         private void searchButton_Click(object sender, EventArgs e)
         {
-            string timkiem= search_textBox.Text;
+            string timkiem= txt_search.Text;
             conn = new SqlConnection(connstring);
             try
             {              
@@ -161,12 +161,12 @@ namespace QLMuaBanXeMay
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-            phuTung.MaPT = Convert.ToInt32(MaPhuTung_textBox.Text);
-            phuTung.TenPT = TenPhuTung_textBox.Text; // hoặc row.Cells[0].Value.ToString()
-            phuTung.DonGia = float.Parse(DonGia_textBox.Text);
-            phuTung.ChatLieu = ChatLieu_textBox.Text;
-            phuTung.HangSX = HangSX_textBox.Text;
-            phuTung.SoLuongTon = Convert.ToInt32(SoLuongTon_textBox.Text);
+            phuTung.MaPT = Convert.ToInt32(txt_MaPhuTung.Text);
+            phuTung.TenPT = txt_TenPhuTung.Text; // hoặc row.Cells[0].Value.ToString()
+            phuTung.DonGia = float.Parse(txt_DonGia.Text);
+            phuTung.ChatLieu = txt_ChatLieu.Text;
+            phuTung.HangSX = txt_HangSX.Text;
+            phuTung.SoLuongTon = Convert.ToInt32(txt_SoLuongTon.Text);
             try
             {
                 conn = new SqlConnection(connstring);
@@ -188,5 +188,7 @@ namespace QLMuaBanXeMay
             }
             Load_GridView();
         }
+
+   
     }
 }

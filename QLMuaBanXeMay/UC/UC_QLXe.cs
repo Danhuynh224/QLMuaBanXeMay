@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLMuaBanXeMay.Class;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -15,6 +16,7 @@ namespace QLMuaBanXeMay
     {
         string connstring = @"Data Source=DANHUYNH\SQLEXPRESS;Initial Catalog=QLMuaBanXeMay;Integrated Security=True";
         SqlConnection conn = null;
+        Class.XeMay xeMay = new XeMay();
         public UC_QLXe()
         {
             InitializeComponent();
@@ -55,6 +57,32 @@ namespace QLMuaBanXeMay
         private void Xe_GridView_CellContentClick_2(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void Xe_GridView_CellClick(object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0 && e.ColumnIndex != Xe_GridView.Columns["XoaBtn"].Index)
+            {
+                // Lấy hàng được chọn
+                DataGridViewRow row = Xe_GridView.Rows[e.RowIndex];
+
+                // Lấy giá trị từ các cột
+                xeMay.MaXe = Convert.ToInt32(row.Cells["MaXe"].Value);
+                xeMay.TenXe = row.Cells["TenXe"].Value.ToString(); // hoặc row.Cells[0].Value.ToString()
+                xeMay.DonGia = float.Parse(row.Cells["DonGia"].Value.ToString());
+                xeMay.LoaiXe = row.Cells["LoaiXe"].Value.ToString();
+                xeMay.MauSac = row.Cells["MauSac"].Value.ToString();
+                xeMay.PhanKhoi = Convert.ToInt32(row.Cells["PhanKhoi"].Value);
+
+                // Hiển thị giá trị (hoặc xử lý theo yêu cầu)
+                txt_MaPhuTung.Text = phuTung.MaPT.ToString();
+                txt_TenPhuTung.Text = phuTung.TenPT.ToString();
+                txt_DonGia.Text = phuTung.DonGia.ToString();
+                txt_ChatLieu.Text = phuTung.ChatLieu.ToString();
+                txt_HangSX.Text = phuTung.HangSX.ToString();
+                txt_SoLuongTon.Text = phuTung.SoLuongTon.ToString();
+
+            }
         }
     }
 }

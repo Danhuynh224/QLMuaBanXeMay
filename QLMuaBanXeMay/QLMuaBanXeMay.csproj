@@ -61,6 +61,7 @@
     <Compile Include="Class\NhanVien.cs" />
     <Compile Include="Class\PhuTung.cs" />
     <Compile Include="Class\TaiKhoan.cs" />
+    <Compile Include="DAO\DAOPhuTung.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +123,12 @@
     <Compile Include="UC\UC_ThongTinNhanVien.Designer.cs">
       <DependentUpon>UC_ThongTinNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="WF\Form_DangNhap.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WF\Form_DangNhap.Designer.cs">
+      <DependentUpon>Form_DangNhap.cs</DependentUpon>
+    </Compile>
     <Compile Include="WF\Form_ThongTinKH.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -173,6 +180,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC\UC_ThongTinNhanVien.resx">
       <DependentUpon>UC_ThongTinNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WF\Form_DangNhap.resx">
+      <DependentUpon>Form_DangNhap.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WF\Form_ThongTinKH.resx">
       <DependentUpon>Form_ThongTinKH.cs</DependentUpon>
@@ -246,6 +256,8 @@
   <ItemGroup>
     <None Include="Resources\form_main_signout.png" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <None Include="Resources\motobike.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

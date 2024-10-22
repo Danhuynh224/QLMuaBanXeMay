@@ -75,12 +75,12 @@ namespace QLMuaBanXeMay
                 xeMay.PhanKhoi = Convert.ToInt32(row.Cells["PhanKhoi"].Value);
 
                 // Hiển thị giá trị (hoặc xử lý theo yêu cầu)
-                txt_MaPhuTung.Text = phuTung.MaPT.ToString();
+                /*txt_MaPhuTung.Text = phuTung.MaPT.ToString();
                 txt_TenPhuTung.Text = phuTung.TenPT.ToString();
                 txt_DonGia.Text = phuTung.DonGia.ToString();
                 txt_ChatLieu.Text = phuTung.ChatLieu.ToString();
                 txt_HangSX.Text = phuTung.HangSX.ToString();
-                txt_SoLuongTon.Text = phuTung.SoLuongTon.ToString();
+                txt_SoLuongTon.Text = phuTung.SoLuongTon.ToString();*/
 
             }
         }

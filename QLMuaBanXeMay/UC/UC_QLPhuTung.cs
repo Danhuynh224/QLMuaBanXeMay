@@ -1,4 +1,5 @@
 ﻿using QLMuaBanXeMay.Class;
+using QLMuaBanXeMay.DAO;
 using QLMuaBanXeMay.WF;
 using System;
 using System.Collections.Generic;
@@ -15,8 +16,6 @@ namespace QLMuaBanXeMay
 {
     public partial class UC_QLPhuTung : UserControl
     {
-        string connstring = @"Data Source=DANHUYNH\SQLEXPRESS;Initial Catalog=QLMuaBanXeMay;Integrated Security=True";
-        SqlConnection conn = null;
         Class.PhuTung phuTung = new PhuTung();
         public UC_QLPhuTung()
         {
@@ -26,23 +25,7 @@ namespace QLMuaBanXeMay
         }
         private void Load_GridView()
         {
-            try
-            {
-                conn = new SqlConnection(connstring);
-                if (conn.State == ConnectionState.Closed)
-                {
-                    conn.Open();
-                    string query = "Select * From PhuTung";
-                    SqlDataAdapter dataAdapter = new SqlDataAdapter(query, conn);
-                    DataTable dt = new DataTable();
-                    dataAdapter.Fill(dt);
-                    PhuTung_GridView.DataSource = dt;
-                }
-            }
-            catch
-            {
-                MessageBox.Show("Mở kết nối không thành công");
-            }
+            PhuTung_GridView.DataSource= DAOPhuTung.LayThongTin();
         }
 
 
@@ -75,24 +58,7 @@ namespace QLMuaBanXeMay
         private void searchButton_Click(object sender, EventArgs e)
         {
             string timkiem= txt_search.Text;
-            conn = new SqlConnection(connstring);
-            try
-            {              
-                if (conn.State == ConnectionState.Closed)
-                {
-                    conn.Open();
-                    string query = string.Format("SELECT * FROM PhuTung WHERE TenPT LIKE N'%{0}%'; ", timkiem);
-                    MessageBox.Show(query);
-                    SqlDataAdapter dataAdapter = new SqlDataAdapter(query, conn);
-                    DataTable dt = new DataTable();
-                    dataAdapter.Fill(dt);
-                    PhuTung_GridView.DataSource = dt;
-                }
-            }
-            catch
-            {
-                MessageBox.Show("Mở kết nối không thành công");
-            }
+            PhuTung_GridView.DataSource = DAOPhuTung.LayThongTinTheoTen(timkiem);
         }
 
         private void ThemBtn_Click(object sender, EventArgs e)
@@ -103,26 +69,7 @@ namespace QLMuaBanXeMay
             {
                 // Nhận giá trị từ Form2
                 phuTung = form.PhuTung;
-                try
-                {
-                    conn = new SqlConnection(connstring);
-                    if (conn.State == ConnectionState.Closed)
-                    {
-                        conn.Open();
-                        string query = string.Format("INSERT INTO PhuTung (MaPT, TenPT, DonGia, ChatLieu, HangSX, SoLuongTon) " +
-                            "VALUES ({0}, N'{1}', {2}, N'{3}', N'{4}', {5}); ",
-                            phuTung.MaPT, phuTung.TenPT, phuTung.DonGia, phuTung.ChatLieu, phuTung.HangSX, phuTung.SoLuongTon);
-                        using (SqlCommand command = new SqlCommand(query, conn))
-                        {
-                            int rowsAffected = command.ExecuteNonQuery(); // Thực thi câu lệnh
-                            MessageBox.Show($"{rowsAffected} bản ghi đã được xử lý thành công.");
-                        }
-                    }
-                }
-                catch
-                {
-                    MessageBox.Show("Mở kết nối không thành công");
-                }
+                DAOPhuTung.ThemPhuTung(phuTung);
                 Load_GridView();
 
             }
@@ -136,25 +83,7 @@ namespace QLMuaBanXeMay
                 DataGridViewRow row = PhuTung_GridView.Rows[e.RowIndex];
                 // Lấy các giá trị của các cột trong hàng được chọn
                 int maPhuTung = Convert.ToInt32(row.Cells["MaPT"].Value);
-                try
-                {
-                    conn = new SqlConnection(connstring);
-                    if (conn.State == ConnectionState.Closed)
-                    {
-                        conn.Open();
-                        string query = string.Format("DELETE  FROM PhuTung  WHERE MaPT={0};",
-                            phuTung.MaPT);
-                        using (SqlCommand command = new SqlCommand(query, conn))
-                        {
-                            int rowsAffected = command.ExecuteNonQuery(); // Thực thi câu lệnh
-                            MessageBox.Show("Xóa thành công");
-                        }
-                    }
-                }
-                catch
-                {
-                    MessageBox.Show("Mở kết nối không thành công");
-                }
+                DAOPhuTung.XoaPhuTung(maPhuTung);
                 Load_GridView();
             }
         }
@@ -167,25 +96,7 @@ namespace QLMuaBanXeMay
             phuTung.ChatLieu = txt_ChatLieu.Text;
             phuTung.HangSX = txt_HangSX.Text;
             phuTung.SoLuongTon = Convert.ToInt32(txt_SoLuongTon.Text);
-            try
-            {
-                conn = new SqlConnection(connstring);
-                if (conn.State == ConnectionState.Closed)
-                {
-                    conn.Open();
-                    string query = string.Format("UPDATE PhuTung SET TenPT = N'{1}', DonGia = {2}, ChatLieu =N'{3}', HangSX = N'{4}', SoLuongTon = {5} WHERE MaPT = {0};",
-                        phuTung.MaPT, phuTung.TenPT, phuTung.DonGia, phuTung.ChatLieu, phuTung.HangSX, phuTung.SoLuongTon);
-                    using (SqlCommand command = new SqlCommand(query, conn))
-                    {
-                        int rowsAffected = command.ExecuteNonQuery(); // Thực thi câu lệnh
-                        MessageBox.Show("Cập nhật thành công");
-                    }
-                }
-            }
-            catch
-            {
-                MessageBox.Show("Mở kết nối không thành công");
-            }
+            DAOPhuTung.CapNhatPhuTung(phuTung);
             Load_GridView();
         }
 

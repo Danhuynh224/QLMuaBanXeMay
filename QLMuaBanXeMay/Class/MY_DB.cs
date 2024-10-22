@@ -10,22 +10,21 @@ namespace QLMuaBanXeMay.Class
 {
     public class MY_DB
     {
-        SqlConnection con = new SqlConnection("@Data Source = DESKTOP - Q1R3HVB; Initial Catalog = QLMuaBanXeMay; Integrated Security = True; Encrypt=False");
-        public SqlConnection getConnection
+        static SqlConnection con = new SqlConnection(@"Data Source=DANHUYNH\SQLEXPRESS;Initial Catalog=QLMuaBanXeMay;Integrated Security=True");
+        static public SqlConnection getConnection()
         {
-            get
-            {
-                return con;
-            }
+
+             return con;
+            
         }
-        public void openConnection()
+        static public void openConnection()
         {
             if (con.State == ConnectionState.Closed)
             {
                 con.Open();
             }
         }
-        public void closeConnection()
+        static public void closeConnection()
         {
             if (con.State == ConnectionState.Open)
             {

@@ -42,3 +42,4 @@ C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\bin\Debug\QLMuaBanXe
 C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\bin\Debug\QLMuaBanXeMay.pdb
 C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\bin\Debug\Guna.UI2.dll
 C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.csproj.CopyComplete
+C:\Users\DELL 3500\Desktop\DBMS\QLMuaBanXeMay\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.WF.Form_DangNhap.resources

@@ -11,8 +11,10 @@ D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC_MainScreen.r
 D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC_QLPhuTung.resources
 D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC_QLXe.resources
 D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC.UC_ThanhToan.resources
+D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC.UC_ThanhToanPT.resources
 D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC_ThongTinKhachHang.resources
 D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC_ThongTinNhanVien.resources
+D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.WF.Form_DangNhap.resources
 D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.WF.Form_ThongTinKH.resources
 D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.WF.Form_ThongTinPhuTung.resources
 D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.WF.Form_ThongTinXe.resources
@@ -21,4 +23,3 @@ D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.csproj.CoreComp
 D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.csproj.CopyComplete
 D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.exe
 D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.pdb
-D:\HK1_24-25\DBMS\DoAnDBMS\QLMuaBanXeMay\obj\Debug\QLMuaBanXeMay.UC.UC_ThanhToanPT.resources

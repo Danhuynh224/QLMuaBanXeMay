@@ -1,5 +1,9 @@
 ﻿using QLMuaBanXeMay.Class;
+
 using QLMuaBanXeMay.UC;
+
+using QLMuaBanXeMay.DAO;
+
 using QLMuaBanXeMay.WF;
 using System;
 using System.Collections.Generic;
@@ -16,8 +20,8 @@ namespace QLMuaBanXeMay
 {
     public partial class UC_QLPhuTung : UserControl
     {
-        string connstring = @"Data Source=HONGSON;Initial Catalog=QLMuaBanXeMay;Integrated Security=True";
-        SqlConnection conn = null;
+
+
         Class.PhuTung phuTung = new PhuTung();
         Class.KhachHang khachHang = new KhachHang();
         public UC_QLPhuTung()
@@ -28,23 +32,7 @@ namespace QLMuaBanXeMay
         }
         private void Load_GridView()
         {
-            try
-            {
-                conn = new SqlConnection(connstring);
-                if (conn.State == ConnectionState.Closed)
-                {
-                    conn.Open();
-                    string query = "Select * From PhuTung";
-                    SqlDataAdapter dataAdapter = new SqlDataAdapter(query, conn);
-                    DataTable dt = new DataTable();
-                    dataAdapter.Fill(dt);
-                    PhuTung_GridView.DataSource = dt;
-                }
-            }
-            catch
-            {
-                MessageBox.Show("Mở kết nối không thành công");
-            }
+            PhuTung_GridView.DataSource= DAOPhuTung.LayThongTin();
         }
 
 
@@ -64,37 +52,20 @@ namespace QLMuaBanXeMay
                 phuTung.SoLuongTon = Convert.ToInt32(row.Cells["SoLuongTon"].Value);
 
                 // Hiển thị giá trị (hoặc xử lý theo yêu cầu)
-                MaPhuTung_textBox.Text = phuTung.MaPT.ToString();
-                TenPhuTung_textBox.Text =phuTung.TenPT.ToString();  
-                DonGia_textBox.Text=phuTung.DonGia.ToString();
-                ChatLieu_textBox.Text=phuTung.ChatLieu.ToString();
-                HangSX_textBox.Text = phuTung.HangSX.ToString();
-                SoLuongTon_textBox.Text= phuTung.SoLuongTon.ToString();
+                txt_MaPhuTung.Text = phuTung.MaPT.ToString();
+                txt_TenPhuTung.Text =phuTung.TenPT.ToString();  
+                txt_DonGia.Text=phuTung.DonGia.ToString();
+                txt_ChatLieu.Text=phuTung.ChatLieu.ToString();
+                txt_HangSX.Text = phuTung.HangSX.ToString();
+                txt_SoLuongTon.Text= phuTung.SoLuongTon.ToString();
                 
             }
         }
 
         private void searchButton_Click(object sender, EventArgs e)
         {
-            string timkiem= search_textBox.Text;
-            conn = new SqlConnection(connstring);
-            try
-            {              
-                if (conn.State == ConnectionState.Closed)
-                {
-                    conn.Open();
-                    string query = string.Format("SELECT * FROM PhuTung WHERE TenPT LIKE N'%{0}%'; ", timkiem);
-                    MessageBox.Show(query);
-                    SqlDataAdapter dataAdapter = new SqlDataAdapter(query, conn);
-                    DataTable dt = new DataTable();
-                    dataAdapter.Fill(dt);
-                    PhuTung_GridView.DataSource = dt;
-                }
-            }
-            catch
-            {
-                MessageBox.Show("Mở kết nối không thành công");
-            }
+            string timkiem= txt_search.Text;
+            PhuTung_GridView.DataSource = DAOPhuTung.LayThongTinTheoTen(timkiem);
         }
 
         private void ThemBtn_Click(object sender, EventArgs e)
@@ -105,26 +76,7 @@ namespace QLMuaBanXeMay
             {
                 // Nhận giá trị từ Form2
                 phuTung = form.PhuTung;
-                try
-                {
-                    conn = new SqlConnection(connstring);
-                    if (conn.State == ConnectionState.Closed)
-                    {
-                        conn.Open();
-                        string query = string.Format("INSERT INTO PhuTung (MaPT, TenPT, DonGia, ChatLieu, HangSX, SoLuongTon) " +
-                            "VALUES ({0}, N'{1}', {2}, N'{3}', N'{4}', {5}); ",
-                            phuTung.MaPT, phuTung.TenPT, phuTung.DonGia, phuTung.ChatLieu, phuTung.HangSX, phuTung.SoLuongTon);
-                        using (SqlCommand command = new SqlCommand(query, conn))
-                        {
-                            int rowsAffected = command.ExecuteNonQuery(); // Thực thi câu lệnh
-                            MessageBox.Show($"{rowsAffected} bản ghi đã được xử lý thành công.");
-                        }
-                    }
-                }
-                catch
-                {
-                    MessageBox.Show("Mở kết nối không thành công");
-                }
+                DAOPhuTung.ThemPhuTung(phuTung);
                 Load_GridView();
 
             }
@@ -138,79 +90,28 @@ namespace QLMuaBanXeMay
                 DataGridViewRow row = PhuTung_GridView.Rows[e.RowIndex];
                 // Lấy các giá trị của các cột trong hàng được chọn
                 int maPhuTung = Convert.ToInt32(row.Cells["MaPT"].Value);
-                try
-                {
-                    conn = new SqlConnection(connstring);
-                    if (conn.State == ConnectionState.Closed)
-                    {
-                        conn.Open();
-                        string query = string.Format("DELETE  FROM PhuTung  WHERE MaPT={0};",
-                            phuTung.MaPT);
-                        using (SqlCommand command = new SqlCommand(query, conn))
-                        {
-                            int rowsAffected = command.ExecuteNonQuery(); // Thực thi câu lệnh
-                            MessageBox.Show("Xóa thành công");
-                        }
-                    }
-                }
-                catch
-                {
-                    MessageBox.Show("Mở kết nối không thành công");
-                }
+                DAOPhuTung.XoaPhuTung(maPhuTung);
                 Load_GridView();
             }
         }
 
         private void UpdateButton_Click(object sender, EventArgs e)
         {
-            phuTung.MaPT = Convert.ToInt32(MaPhuTung_textBox.Text);
-            phuTung.TenPT = TenPhuTung_textBox.Text; // hoặc row.Cells[0].Value.ToString()
-            phuTung.DonGia = float.Parse(DonGia_textBox.Text);
-            phuTung.ChatLieu = ChatLieu_textBox.Text;
-            phuTung.HangSX = HangSX_textBox.Text;
-            phuTung.SoLuongTon = Convert.ToInt32(SoLuongTon_textBox.Text);
-            try
-            {
-                conn = new SqlConnection(connstring);
-                if (conn.State == ConnectionState.Closed)
-                {
-                    conn.Open();
-                    string query = string.Format("UPDATE PhuTung SET TenPT = N'{1}', DonGia = {2}, ChatLieu =N'{3}', HangSX = N'{4}', SoLuongTon = {5} WHERE MaPT = {0};",
-                        phuTung.MaPT, phuTung.TenPT, phuTung.DonGia, phuTung.ChatLieu, phuTung.HangSX, phuTung.SoLuongTon);
-                    using (SqlCommand command = new SqlCommand(query, conn))
-                    {
-                        int rowsAffected = command.ExecuteNonQuery(); // Thực thi câu lệnh
-                        MessageBox.Show("Cập nhật thành công");
-                    }
-                }
-            }
-            catch
-            {
-                MessageBox.Show("Mở kết nối không thành công");
-            }
+            phuTung.MaPT = Convert.ToInt32(txt_MaPhuTung.Text);
+            phuTung.TenPT = txt_TenPhuTung.Text; // hoặc row.Cells[0].Value.ToString()
+            phuTung.DonGia = float.Parse(txt_DonGia.Text);
+            phuTung.ChatLieu = txt_ChatLieu.Text;
+            phuTung.HangSX = txt_HangSX.Text;
+            phuTung.SoLuongTon = Convert.ToInt32(txt_SoLuongTon.Text);
+            DAOPhuTung.CapNhatPhuTung(phuTung);
             Load_GridView();
         }
 
-        private void button3_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void ThonTingroupBox_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void btn_xuatHDPT_Click(object sender, EventArgs e)
+        private void capnhat_btn_Click(object sender, EventArgs e)
         {
             UC_ThanhToanPT uc = new UC_ThanhToanPT(phuTung, khachHang);
             this.Controls.Clear();
             this.Controls.Add(uc);
-        }
-
-        private void UC_QLPhuTung_Load(object sender, EventArgs e)
-        {
-
         }
     }
 }

@@ -12,6 +12,7 @@ namespace QLMuaBanXeMay.Class
         private int maPT;
         private int soLuong;
         private float donGia;
+        public ChiTietHD_PT() { }
 
         public ChiTietHD_PT(int maHDPT, int maPT, int soLuong, float donGia)
         {

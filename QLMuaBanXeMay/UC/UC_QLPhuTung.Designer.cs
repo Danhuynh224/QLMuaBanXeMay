@@ -29,23 +29,23 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.ThonTingroupBox = new System.Windows.Forms.GroupBox();
-            this.UpdateButton = new System.Windows.Forms.Button();
-            this.btn_xuatHDPT = new System.Windows.Forms.Button();
-            this.HangSX_textBox = new System.Windows.Forms.TextBox();
+            this.btn_Update = new System.Windows.Forms.Button();
+            this.capnhat_btn = new System.Windows.Forms.Button();
+            this.txt_HangSX = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.SoLuongTon_textBox = new System.Windows.Forms.TextBox();
+            this.txt_SoLuongTon = new System.Windows.Forms.TextBox();
             this.label9 = new System.Windows.Forms.Label();
-            this.TenPhuTung_textBox = new System.Windows.Forms.TextBox();
+            this.txt_TenPhuTung = new System.Windows.Forms.TextBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.DonGia_textBox = new System.Windows.Forms.TextBox();
+            this.txt_DonGia = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
-            this.ChatLieu_textBox = new System.Windows.Forms.TextBox();
+            this.txt_ChatLieu = new System.Windows.Forms.TextBox();
             this.label3 = new System.Windows.Forms.Label();
-            this.MaPhuTung_textBox = new System.Windows.Forms.TextBox();
+            this.txt_MaPhuTung = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.gird_groupbox = new System.Windows.Forms.GroupBox();
             this.PhuTung_GridView = new Guna.UI2.WinForms.Guna2DataGridView();
@@ -60,10 +60,10 @@
             this.qLMuaBanXeMayDataSet1 = new QLMuaBanXeMay.QLMuaBanXeMayDataSet1();
             this.phuTungTableAdapter = new QLMuaBanXeMay.QLMuaBanXeMayDataSet1TableAdapters.PhuTungTableAdapter();
             this.groupBox4 = new System.Windows.Forms.GroupBox();
-            this.ThemBtn = new Guna.UI2.WinForms.Guna2Button();
+            this.btn_them = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
-            this.searchButton = new Guna.UI2.WinForms.Guna2Button();
-            this.search_textBox = new Guna.UI2.WinForms.Guna2TextBox();
+            this.btn_search = new Guna.UI2.WinForms.Guna2Button();
+            this.txt_search = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.ThonTingroupBox.SuspendLayout();
             this.gird_groupbox.SuspendLayout();
@@ -76,19 +76,19 @@
             // 
             // ThonTingroupBox
             // 
-            this.ThonTingroupBox.Controls.Add(this.UpdateButton);
-            this.ThonTingroupBox.Controls.Add(this.btn_xuatHDPT);
-            this.ThonTingroupBox.Controls.Add(this.HangSX_textBox);
+            this.ThonTingroupBox.Controls.Add(this.btn_Update);
+            this.ThonTingroupBox.Controls.Add(this.capnhat_btn);
+            this.ThonTingroupBox.Controls.Add(this.txt_HangSX);
             this.ThonTingroupBox.Controls.Add(this.label8);
-            this.ThonTingroupBox.Controls.Add(this.SoLuongTon_textBox);
+            this.ThonTingroupBox.Controls.Add(this.txt_SoLuongTon);
             this.ThonTingroupBox.Controls.Add(this.label9);
-            this.ThonTingroupBox.Controls.Add(this.TenPhuTung_textBox);
+            this.ThonTingroupBox.Controls.Add(this.txt_TenPhuTung);
             this.ThonTingroupBox.Controls.Add(this.label5);
-            this.ThonTingroupBox.Controls.Add(this.DonGia_textBox);
+            this.ThonTingroupBox.Controls.Add(this.txt_DonGia);
             this.ThonTingroupBox.Controls.Add(this.label4);
-            this.ThonTingroupBox.Controls.Add(this.ChatLieu_textBox);
+            this.ThonTingroupBox.Controls.Add(this.txt_ChatLieu);
             this.ThonTingroupBox.Controls.Add(this.label3);
-            this.ThonTingroupBox.Controls.Add(this.MaPhuTung_textBox);
+            this.ThonTingroupBox.Controls.Add(this.txt_MaPhuTung);
             this.ThonTingroupBox.Controls.Add(this.label2);
             this.ThonTingroupBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ThonTingroupBox.Location = new System.Drawing.Point(83, 70);
@@ -97,34 +97,33 @@
             this.ThonTingroupBox.TabIndex = 9;
             this.ThonTingroupBox.TabStop = false;
             this.ThonTingroupBox.Text = "Thông tin phụ tùng";
-            this.ThonTingroupBox.Enter += new System.EventHandler(this.ThonTingroupBox_Enter);
             // 
-            // UpdateButton
+            // btn_Update
             // 
-            this.UpdateButton.Location = new System.Drawing.Point(734, 157);
-            this.UpdateButton.Name = "UpdateButton";
-            this.UpdateButton.Size = new System.Drawing.Size(170, 38);
-            this.UpdateButton.TabIndex = 19;
-            this.UpdateButton.Text = "Cập nhật";
-            this.UpdateButton.UseVisualStyleBackColor = true;
-            this.UpdateButton.Click += new System.EventHandler(this.UpdateButton_Click);
+            this.btn_Update.Location = new System.Drawing.Point(734, 157);
+            this.btn_Update.Name = "btn_Update";
+            this.btn_Update.Size = new System.Drawing.Size(170, 38);
+            this.btn_Update.TabIndex = 19;
+            this.btn_Update.Text = "Cập nhật";
+            this.btn_Update.UseVisualStyleBackColor = true;
+            this.btn_Update.Click += new System.EventHandler(this.UpdateButton_Click);
             // 
-            // btn_xuatHDPT
+            // capnhat_btn
             // 
-            this.btn_xuatHDPT.Location = new System.Drawing.Point(910, 157);
-            this.btn_xuatHDPT.Name = "btn_xuatHDPT";
-            this.btn_xuatHDPT.Size = new System.Drawing.Size(170, 38);
-            this.btn_xuatHDPT.TabIndex = 18;
-            this.btn_xuatHDPT.Text = "Xuất hóa đơn";
-            this.btn_xuatHDPT.UseVisualStyleBackColor = true;
-            this.btn_xuatHDPT.Click += new System.EventHandler(this.btn_xuatHDPT_Click);
+            this.capnhat_btn.Location = new System.Drawing.Point(910, 157);
+            this.capnhat_btn.Name = "capnhat_btn";
+            this.capnhat_btn.Size = new System.Drawing.Size(170, 38);
+            this.capnhat_btn.TabIndex = 18;
+            this.capnhat_btn.Text = "Xuất hóa đơn";
+            this.capnhat_btn.UseVisualStyleBackColor = true;
+            this.capnhat_btn.Click += new System.EventHandler(this.capnhat_btn_Click);
             // 
-            // HangSX_textBox
+            // txt_HangSX
             // 
-            this.HangSX_textBox.Location = new System.Drawing.Point(519, 94);
-            this.HangSX_textBox.Name = "HangSX_textBox";
-            this.HangSX_textBox.Size = new System.Drawing.Size(195, 30);
-            this.HangSX_textBox.TabIndex = 11;
+            this.txt_HangSX.Location = new System.Drawing.Point(519, 94);
+            this.txt_HangSX.Name = "txt_HangSX";
+            this.txt_HangSX.Size = new System.Drawing.Size(195, 30);
+            this.txt_HangSX.TabIndex = 11;
             // 
             // label8
             // 
@@ -136,12 +135,12 @@
             this.label8.TabIndex = 10;
             this.label8.Text = "Hãng Sản Xuất";
             // 
-            // SoLuongTon_textBox
+            // txt_SoLuongTon
             // 
-            this.SoLuongTon_textBox.Location = new System.Drawing.Point(885, 91);
-            this.SoLuongTon_textBox.Name = "SoLuongTon_textBox";
-            this.SoLuongTon_textBox.Size = new System.Drawing.Size(195, 30);
-            this.SoLuongTon_textBox.TabIndex = 9;
+            this.txt_SoLuongTon.Location = new System.Drawing.Point(885, 91);
+            this.txt_SoLuongTon.Name = "txt_SoLuongTon";
+            this.txt_SoLuongTon.Size = new System.Drawing.Size(195, 30);
+            this.txt_SoLuongTon.TabIndex = 9;
             // 
             // label9
             // 
@@ -153,12 +152,12 @@
             this.label9.TabIndex = 8;
             this.label9.Text = "Số Lượng Tồn";
             // 
-            // TenPhuTung_textBox
+            // txt_TenPhuTung
             // 
-            this.TenPhuTung_textBox.Location = new System.Drawing.Point(519, 43);
-            this.TenPhuTung_textBox.Name = "TenPhuTung_textBox";
-            this.TenPhuTung_textBox.Size = new System.Drawing.Size(195, 30);
-            this.TenPhuTung_textBox.TabIndex = 7;
+            this.txt_TenPhuTung.Location = new System.Drawing.Point(519, 43);
+            this.txt_TenPhuTung.Name = "txt_TenPhuTung";
+            this.txt_TenPhuTung.Size = new System.Drawing.Size(195, 30);
+            this.txt_TenPhuTung.TabIndex = 7;
             // 
             // label5
             // 
@@ -170,12 +169,12 @@
             this.label5.TabIndex = 6;
             this.label5.Text = "Tên Phụ Tùng";
             // 
-            // DonGia_textBox
+            // txt_DonGia
             // 
-            this.DonGia_textBox.Location = new System.Drawing.Point(885, 43);
-            this.DonGia_textBox.Name = "DonGia_textBox";
-            this.DonGia_textBox.Size = new System.Drawing.Size(195, 30);
-            this.DonGia_textBox.TabIndex = 5;
+            this.txt_DonGia.Location = new System.Drawing.Point(885, 43);
+            this.txt_DonGia.Name = "txt_DonGia";
+            this.txt_DonGia.Size = new System.Drawing.Size(195, 30);
+            this.txt_DonGia.TabIndex = 5;
             // 
             // label4
             // 
@@ -187,12 +186,12 @@
             this.label4.TabIndex = 4;
             this.label4.Text = "Đơn giá";
             // 
-            // ChatLieu_textBox
+            // txt_ChatLieu
             // 
-            this.ChatLieu_textBox.Location = new System.Drawing.Point(143, 96);
-            this.ChatLieu_textBox.Name = "ChatLieu_textBox";
-            this.ChatLieu_textBox.Size = new System.Drawing.Size(195, 30);
-            this.ChatLieu_textBox.TabIndex = 3;
+            this.txt_ChatLieu.Location = new System.Drawing.Point(143, 96);
+            this.txt_ChatLieu.Name = "txt_ChatLieu";
+            this.txt_ChatLieu.Size = new System.Drawing.Size(195, 30);
+            this.txt_ChatLieu.TabIndex = 3;
             // 
             // label3
             // 
@@ -204,12 +203,12 @@
             this.label3.TabIndex = 2;
             this.label3.Text = "Chất Liệu";
             // 
-            // MaPhuTung_textBox
+            // txt_MaPhuTung
             // 
-            this.MaPhuTung_textBox.Location = new System.Drawing.Point(143, 43);
-            this.MaPhuTung_textBox.Name = "MaPhuTung_textBox";
-            this.MaPhuTung_textBox.Size = new System.Drawing.Size(195, 30);
-            this.MaPhuTung_textBox.TabIndex = 1;
+            this.txt_MaPhuTung.Location = new System.Drawing.Point(143, 43);
+            this.txt_MaPhuTung.Name = "txt_MaPhuTung";
+            this.txt_MaPhuTung.Size = new System.Drawing.Size(195, 30);
+            this.txt_MaPhuTung.TabIndex = 1;
             // 
             // label2
             // 
@@ -236,17 +235,17 @@
             // 
             this.PhuTung_GridView.AllowUserToAddRows = false;
             this.PhuTung_GridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
-            this.PhuTung_GridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.PhuTung_GridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.PhuTung_GridView.AutoGenerateColumns = false;
-            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.PhuTung_GridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.PhuTung_GridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.PhuTung_GridView.ColumnHeadersHeight = 22;
             this.PhuTung_GridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.PhuTung_GridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -258,14 +257,14 @@
             this.SoLuongTon,
             this.XoaBtn});
             this.PhuTung_GridView.DataSource = this.phuTungBindingSource;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.PhuTung_GridView.DefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.PhuTung_GridView.DefaultCellStyle = dataGridViewCellStyle3;
             this.PhuTung_GridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.PhuTung_GridView.Location = new System.Drawing.Point(11, 29);
             this.PhuTung_GridView.Name = "PhuTung_GridView";
@@ -386,7 +385,7 @@
             // 
             // groupBox4
             // 
-            this.groupBox4.Controls.Add(this.ThemBtn);
+            this.groupBox4.Controls.Add(this.btn_them);
             this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox4.Location = new System.Drawing.Point(602, 610);
             this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -397,27 +396,27 @@
             this.groupBox4.TabStop = false;
             this.groupBox4.Text = "Công cụ";
             // 
-            // ThemBtn
+            // btn_them
             // 
-            this.ThemBtn.BackColor = System.Drawing.SystemColors.AppWorkspace;
-            this.ThemBtn.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.ThemBtn.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.ThemBtn.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.ThemBtn.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.ThemBtn.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.ThemBtn.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ThemBtn.ForeColor = System.Drawing.Color.Black;
-            this.ThemBtn.Location = new System.Drawing.Point(250, 28);
-            this.ThemBtn.Name = "ThemBtn";
-            this.ThemBtn.Size = new System.Drawing.Size(122, 43);
-            this.ThemBtn.TabIndex = 55;
-            this.ThemBtn.Text = "Thêm";
-            this.ThemBtn.Click += new System.EventHandler(this.ThemBtn_Click);
+            this.btn_them.BackColor = System.Drawing.SystemColors.AppWorkspace;
+            this.btn_them.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_them.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_them.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_them.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_them.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.btn_them.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_them.ForeColor = System.Drawing.Color.Black;
+            this.btn_them.Location = new System.Drawing.Point(250, 28);
+            this.btn_them.Name = "btn_them";
+            this.btn_them.Size = new System.Drawing.Size(122, 43);
+            this.btn_them.TabIndex = 55;
+            this.btn_them.Text = "Thêm";
+            this.btn_them.Click += new System.EventHandler(this.ThemBtn_Click);
             // 
             // groupBox3
             // 
-            this.groupBox3.Controls.Add(this.searchButton);
-            this.groupBox3.Controls.Add(this.search_textBox);
+            this.groupBox3.Controls.Add(this.btn_search);
+            this.groupBox3.Controls.Add(this.txt_search);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(74, 610);
             this.groupBox3.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
@@ -428,42 +427,42 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tìm kiếm theo tên phụ tùng";
             // 
-            // searchButton
+            // btn_search
             // 
-            this.searchButton.Animated = true;
-            this.searchButton.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
-            this.searchButton.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
-            this.searchButton.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
-            this.searchButton.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.searchButton.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
-            this.searchButton.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.searchButton.ForeColor = System.Drawing.Color.Black;
-            this.searchButton.Location = new System.Drawing.Point(351, 30);
-            this.searchButton.Name = "searchButton";
-            this.searchButton.Size = new System.Drawing.Size(122, 43);
-            this.searchButton.TabIndex = 54;
-            this.searchButton.Text = "Tìm";
-            this.searchButton.Click += new System.EventHandler(this.searchButton_Click);
+            this.btn_search.Animated = true;
+            this.btn_search.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
+            this.btn_search.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
+            this.btn_search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
+            this.btn_search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
+            this.btn_search.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(217)))), ((int)(((byte)(217)))), ((int)(((byte)(217)))));
+            this.btn_search.Font = new System.Drawing.Font("Segoe UI Semibold", 10.2F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_search.ForeColor = System.Drawing.Color.Black;
+            this.btn_search.Location = new System.Drawing.Point(351, 30);
+            this.btn_search.Name = "btn_search";
+            this.btn_search.Size = new System.Drawing.Size(122, 43);
+            this.btn_search.TabIndex = 54;
+            this.btn_search.Text = "Tìm";
+            this.btn_search.Click += new System.EventHandler(this.searchButton_Click);
             // 
-            // search_textBox
+            // txt_search
             // 
-            this.search_textBox.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.search_textBox.DefaultText = "";
-            this.search_textBox.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.search_textBox.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.search_textBox.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.search_textBox.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.search_textBox.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.search_textBox.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.search_textBox.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.search_textBox.Location = new System.Drawing.Point(14, 34);
-            this.search_textBox.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.search_textBox.Name = "search_textBox";
-            this.search_textBox.PasswordChar = '\0';
-            this.search_textBox.PlaceholderText = "";
-            this.search_textBox.SelectedText = "";
-            this.search_textBox.Size = new System.Drawing.Size(307, 36);
-            this.search_textBox.TabIndex = 53;
+            this.txt_search.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txt_search.DefaultText = "";
+            this.txt_search.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txt_search.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txt_search.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_search.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txt_search.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_search.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txt_search.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txt_search.Location = new System.Drawing.Point(14, 34);
+            this.txt_search.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txt_search.Name = "txt_search";
+            this.txt_search.PasswordChar = '\0';
+            this.txt_search.PlaceholderText = "";
+            this.txt_search.SelectedText = "";
+            this.txt_search.Size = new System.Drawing.Size(307, 36);
+            this.txt_search.TabIndex = 53;
             // 
             // label6
             // 
@@ -485,7 +484,6 @@
             this.Controls.Add(this.gird_groupbox);
             this.Name = "UC_QLPhuTung";
             this.Size = new System.Drawing.Size(1300, 800);
-            this.Load += new System.EventHandler(this.UC_QLPhuTung_Load);
             this.ThonTingroupBox.ResumeLayout(false);
             this.ThonTingroupBox.PerformLayout();
             this.gird_groupbox.ResumeLayout(false);
@@ -501,18 +499,18 @@
 
         #endregion
         private System.Windows.Forms.GroupBox ThonTingroupBox;
-        private System.Windows.Forms.Button btn_xuatHDPT;
-        private System.Windows.Forms.TextBox HangSX_textBox;
+        private System.Windows.Forms.Button capnhat_btn;
+        private System.Windows.Forms.TextBox txt_HangSX;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.TextBox SoLuongTon_textBox;
+        private System.Windows.Forms.TextBox txt_SoLuongTon;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.TextBox TenPhuTung_textBox;
+        private System.Windows.Forms.TextBox txt_TenPhuTung;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.TextBox DonGia_textBox;
+        private System.Windows.Forms.TextBox txt_DonGia;
         private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.TextBox ChatLieu_textBox;
+        private System.Windows.Forms.TextBox txt_ChatLieu;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox MaPhuTung_textBox;
+        private System.Windows.Forms.TextBox txt_MaPhuTung;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.GroupBox gird_groupbox;
         private Guna.UI2.WinForms.Guna2DataGridView PhuTung_GridView;
@@ -520,10 +518,10 @@
         private QLMuaBanXeMayDataSet1 qLMuaBanXeMayDataSet1;
         private QLMuaBanXeMayDataSet1TableAdapters.PhuTungTableAdapter phuTungTableAdapter;
         private System.Windows.Forms.GroupBox groupBox4;
-        private Guna.UI2.WinForms.Guna2Button ThemBtn;
+        private Guna.UI2.WinForms.Guna2Button btn_them;
         private System.Windows.Forms.GroupBox groupBox3;
-        private Guna.UI2.WinForms.Guna2Button searchButton;
-        private Guna.UI2.WinForms.Guna2TextBox search_textBox;
+        private Guna.UI2.WinForms.Guna2Button btn_search;
+        private Guna.UI2.WinForms.Guna2TextBox txt_search;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaPT;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenPT;
@@ -532,6 +530,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HangSX;
         private System.Windows.Forms.DataGridViewTextBoxColumn SoLuongTon;
         private System.Windows.Forms.DataGridViewButtonColumn XoaBtn;
-        private System.Windows.Forms.Button UpdateButton;
+        private System.Windows.Forms.Button btn_Update;
     }
 }

@@ -53,6 +53,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
             this.xoa = new System.Windows.Forms.DataGridViewButtonColumn();
+            this.hoaDonXeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.txt_thanhTien = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
             this.txt_giamGia = new System.Windows.Forms.TextBox();
@@ -66,17 +67,14 @@
             this.label11 = new System.Windows.Forms.Label();
             this.groupBox_spXe = new System.Windows.Forms.GroupBox();
             this.txt_maXe = new System.Windows.Forms.TextBox();
-            this.button3 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
-            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.txt_timkiem = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.hoaDonXeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.hoaDonXeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hoaDonXeBindingSource1)).BeginInit();
             this.groupBox_spXe.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hoaDonXeBindingSource1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonXeBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
@@ -345,6 +343,10 @@
             this.xoa.Text = "Xóa";
             this.xoa.UseColumnTextForButtonValue = true;
             // 
+            // hoaDonXeBindingSource1
+            // 
+            this.hoaDonXeBindingSource1.DataMember = "HoaDonXe";
+            // 
             // txt_thanhTien
             // 
             this.txt_thanhTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -482,35 +484,17 @@
             this.txt_maXe.Size = new System.Drawing.Size(170, 27);
             this.txt_maXe.TabIndex = 33;
             // 
-            // button3
+            // txt_timkiem
             // 
-            this.button3.Location = new System.Drawing.Point(967, 677);
-            this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(113, 37);
-            this.button3.TabIndex = 47;
-            this.button3.Text = "Thêm";
-            this.button3.UseVisualStyleBackColor = true;
-            // 
-            // button2
-            // 
-            this.button2.Location = new System.Drawing.Point(1104, 677);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(113, 37);
-            this.button2.TabIndex = 50;
-            this.button2.Text = "Cập nhật";
-            this.button2.UseVisualStyleBackColor = true;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(22, 28);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(192, 27);
-            this.textBox1.TabIndex = 0;
+            this.txt_timkiem.Location = new System.Drawing.Point(22, 28);
+            this.txt_timkiem.Name = "txt_timkiem";
+            this.txt_timkiem.Size = new System.Drawing.Size(192, 27);
+            this.txt_timkiem.TabIndex = 0;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.button1);
-            this.groupBox2.Controls.Add(this.textBox1);
+            this.groupBox2.Controls.Add(this.txt_timkiem);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox2.Location = new System.Drawing.Point(66, 659);
             this.groupBox2.Name = "groupBox2";
@@ -518,10 +502,6 @@
             this.groupBox2.TabIndex = 49;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tìm kiếm mã HĐ";
-            // 
-            // hoaDonXeBindingSource1
-            // 
-            this.hoaDonXeBindingSource1.DataMember = "HoaDonXe";
             // 
             // hoaDonXeBindingSource
             // 
@@ -534,8 +514,6 @@
             this.Controls.Add(this.groupBox1);
             this.Controls.Add(this.guna2DataGridView1);
             this.Controls.Add(this.groupBox_spXe);
-            this.Controls.Add(this.button3);
-            this.Controls.Add(this.button2);
             this.Controls.Add(this.groupBox2);
             this.Name = "UC_HoaDonXee";
             this.Size = new System.Drawing.Size(1282, 753);
@@ -543,11 +521,11 @@
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hoaDonXeBindingSource1)).EndInit();
             this.groupBox_spXe.ResumeLayout(false);
             this.groupBox_spXe.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.hoaDonXeBindingSource1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonXeBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -592,9 +570,7 @@
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.GroupBox groupBox_spXe;
         private System.Windows.Forms.TextBox txt_maXe;
-        private System.Windows.Forms.Button button3;
-        private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox txt_timkiem;
         private System.Windows.Forms.GroupBox groupBox2;
     }
 }

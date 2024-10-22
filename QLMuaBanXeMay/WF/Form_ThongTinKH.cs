@@ -81,5 +81,10 @@ namespace QLMuaBanXeMay.WF
 
             }
         }
+
+        private void dg_kh_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

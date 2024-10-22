@@ -101,6 +101,7 @@ namespace QLMuaBanXeMay.Class
             NamSX = namSX;
             TinhTrang = tinhTrang;
         }
+        public XeMay() { }
     }
 
 }

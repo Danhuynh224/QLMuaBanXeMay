@@ -61,16 +61,16 @@
             this.label6 = new System.Windows.Forms.Label();
             this.btn_chonKH = new System.Windows.Forms.Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.txt_khuyenMai = new System.Windows.Forms.TextBox();
+            this.label10 = new System.Windows.Forms.Label();
+            this.dt_ngayXuat = new System.Windows.Forms.DateTimePicker();
+            this.cb_pttt = new System.Windows.Forms.ComboBox();
+            this.label8 = new System.Windows.Forms.Label();
             this.txt_thanhTien = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.txt_maHD = new System.Windows.Forms.TextBox();
             this.label20 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
-            this.cb_pttt = new System.Windows.Forms.ComboBox();
-            this.dt_ngayXuat = new System.Windows.Forms.DateTimePicker();
-            this.txt_khuyenMai = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
             this.groupBox1.SuspendLayout();
@@ -284,6 +284,7 @@
             this.groupBox2.TabIndex = 6;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Thông tin khách hàng";
+            this.groupBox2.Enter += new System.EventHandler(this.groupBox2_Enter);
             // 
             // txt_diaChi
             // 
@@ -433,6 +434,58 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông tin hóa đơn";
             // 
+            // txt_khuyenMai
+            // 
+            this.txt_khuyenMai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_khuyenMai.Location = new System.Drawing.Point(789, 43);
+            this.txt_khuyenMai.Name = "txt_khuyenMai";
+            this.txt_khuyenMai.Size = new System.Drawing.Size(276, 27);
+            this.txt_khuyenMai.TabIndex = 32;
+            // 
+            // label10
+            // 
+            this.label10.AutoSize = true;
+            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label10.ForeColor = System.Drawing.Color.Blue;
+            this.label10.Location = new System.Drawing.Point(635, 43);
+            this.label10.Name = "label10";
+            this.label10.Size = new System.Drawing.Size(101, 20);
+            this.label10.TabIndex = 31;
+            this.label10.Text = "Khuyến mãi:";
+            // 
+            // dt_ngayXuat
+            // 
+            this.dt_ngayXuat.CustomFormat = "dd/MM/yyyy";
+            this.dt_ngayXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dt_ngayXuat.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.dt_ngayXuat.Location = new System.Drawing.Point(145, 92);
+            this.dt_ngayXuat.Name = "dt_ngayXuat";
+            this.dt_ngayXuat.Size = new System.Drawing.Size(276, 27);
+            this.dt_ngayXuat.TabIndex = 26;
+            // 
+            // cb_pttt
+            // 
+            this.cb_pttt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cb_pttt.FormattingEnabled = true;
+            this.cb_pttt.Items.AddRange(new object[] {
+            "Tiền mặt",
+            "Chuyển khoản"});
+            this.cb_pttt.Location = new System.Drawing.Point(789, 89);
+            this.cb_pttt.Name = "cb_pttt";
+            this.cb_pttt.Size = new System.Drawing.Size(276, 28);
+            this.cb_pttt.TabIndex = 30;
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label8.ForeColor = System.Drawing.Color.Blue;
+            this.label8.Location = new System.Drawing.Point(546, 92);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(190, 20);
+            this.label8.TabIndex = 29;
+            this.label8.Text = "Phương thức thanh toán:";
+            // 
             // txt_thanhTien
             // 
             this.txt_thanhTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -482,58 +535,6 @@
             this.label20.TabIndex = 9;
             this.label20.Text = "Mã HĐ:";
             // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.Blue;
-            this.label8.Location = new System.Drawing.Point(546, 92);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(190, 20);
-            this.label8.TabIndex = 29;
-            this.label8.Text = "Phương thức thanh toán:";
-            // 
-            // cb_pttt
-            // 
-            this.cb_pttt.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.cb_pttt.FormattingEnabled = true;
-            this.cb_pttt.Items.AddRange(new object[] {
-            "Tiền mặt",
-            "Chuyển khoản"});
-            this.cb_pttt.Location = new System.Drawing.Point(789, 89);
-            this.cb_pttt.Name = "cb_pttt";
-            this.cb_pttt.Size = new System.Drawing.Size(276, 28);
-            this.cb_pttt.TabIndex = 30;
-            // 
-            // dt_ngayXuat
-            // 
-            this.dt_ngayXuat.CustomFormat = "dd/MM/yyyy";
-            this.dt_ngayXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dt_ngayXuat.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dt_ngayXuat.Location = new System.Drawing.Point(145, 92);
-            this.dt_ngayXuat.Name = "dt_ngayXuat";
-            this.dt_ngayXuat.Size = new System.Drawing.Size(276, 27);
-            this.dt_ngayXuat.TabIndex = 26;
-            // 
-            // txt_khuyenMai
-            // 
-            this.txt_khuyenMai.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_khuyenMai.Location = new System.Drawing.Point(789, 43);
-            this.txt_khuyenMai.Name = "txt_khuyenMai";
-            this.txt_khuyenMai.Size = new System.Drawing.Size(276, 27);
-            this.txt_khuyenMai.TabIndex = 32;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.Blue;
-            this.label10.Location = new System.Drawing.Point(635, 43);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(101, 20);
-            this.label10.TabIndex = 31;
-            this.label10.Text = "Khuyến mãi:";
-            // 
             // UC_ThanhToanPT
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -545,6 +546,7 @@
             this.Controls.Add(this.groupBox1);
             this.Name = "UC_ThanhToanPT";
             this.Size = new System.Drawing.Size(1300, 800);
+            this.Load += new System.EventHandler(this.UC_ThanhToanPT_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.panel1.ResumeLayout(false);

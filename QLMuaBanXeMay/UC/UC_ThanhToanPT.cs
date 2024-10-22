@@ -110,27 +110,21 @@ namespace QLMuaBanXeMay.UC
             hoaDonPT.PTTT = cb_pttt.Text;
             hoaDonPT.NgayXuat = dt_ngayXuat.Value;
 
+            DAO.DAOHoaDonPT.ThemHoaDonPT(hoaDonPT);
+            
 
-           /* try
-            {
-                conn = new SqlConnection(connstring);
-                if (conn.State == ConnectionState.Closed)
-                {
-                    conn.Open();
-                    string query = string.Format("INSERT INTO HoaDonPT (MaHDPT, KhuyenMai, TongTien, CCCDKH, HangSX, SoLuongTon) " +
-                        "VALUES ({0}, N'{1}', {2}, N'{3}', N'{4}', {5}); ",
-                        phuTung.MaPT, phuTung.TenPT, phuTung.DonGia, phuTung.ChatLieu, phuTung.HangSX, phuTung.SoLuongTon);
-                    using (SqlCommand command = new SqlCommand(query, conn))
-                    {
-                        int rowsAffected = command.ExecuteNonQuery(); // Thực thi câu lệnh
-                        MessageBox.Show($"{rowsAffected} bản ghi đã được xử lý thành công.");
-                    }
-                }
-            }
-            catch
-            {
-                MessageBox.Show("Mở kết nối không thành công");
-            }*/
+            Class.ChiTietHD_PT chiTietHD_PT = new ChiTietHD_PT();
+            chiTietHD_PT.MaHDPT = Convert.ToInt32(txt_maHD.Text);
+            chiTietHD_PT.MaPT = Convert.ToInt32(txt_maPT.Text);
+            chiTietHD_PT.SoLuong = Convert.ToInt32(txt_soLuong.Text);
+            chiTietHD_PT.DonGia = float.Parse(txt_donGia.Text);
+
+            DAO.DAOHoaDonPT.ThemChiTietHDPT(chiTietHD_PT);
+
+            MessageBox.Show("Done");
+
+
+
         }
 
         private void txt_soLuong_TextChanged(object sender, EventArgs e)
@@ -150,6 +144,16 @@ namespace QLMuaBanXeMay.UC
             }    
             
             txt_thanhTien.Text = thanhTien.ToString();
+
+        }
+
+        private void UC_ThanhToanPT_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void groupBox2_Enter(object sender, EventArgs e)
+        {
 
         }
     }

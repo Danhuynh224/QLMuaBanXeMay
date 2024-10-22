@@ -10,25 +10,27 @@ using System.Windows.Forms;
 
 namespace QLMuaBanXeMay.UC
 {
-    public partial class UC_HoaDonXee : UserControl
+    public partial class UC_ThanhToan : UserControl
     {
-        public UC_HoaDonXee()
+        public UC_ThanhToan()
         {
             InitializeComponent();
         }
-
-        private void UC_HoaDonXee_Load(object sender, EventArgs e)
-        {
-
-        }
-        public UC_HoaDonXee(int maXe)
+        public UC_ThanhToan(int maxe)
         {
             InitializeComponent();
-            this.txt_maXe.Text = maXe.ToString();
-            
+        }
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
 
-        private void groupBox_spXe_Enter(object sender, EventArgs e)
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void UC_ThanhToan_Load(object sender, EventArgs e)
         {
 
         }

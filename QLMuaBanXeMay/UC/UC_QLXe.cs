@@ -8,6 +8,8 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using QLMuaBanXeMay.Class;
+using QLMuaBanXeMay.UC;
 
 namespace QLMuaBanXeMay
 {
@@ -53,6 +55,23 @@ namespace QLMuaBanXeMay
         }
 
         private void Xe_GridView_CellContentClick_2(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void capnhat_btn_Click(object sender, EventArgs e)
+        {
+            if (Xe_GridView.CurrentRow != null)
+            {
+                int maXe = Convert.ToInt32(Xe_GridView.CurrentRow.Cells[0].Value);
+                UC_ThanhToan uc = new UC_ThanhToan(maXe);
+                this.Controls.Clear();
+                this.Controls.Add(uc);
+            }
+
+        }
+
+        private void UC_QLXe_Load(object sender, EventArgs e)
         {
 
         }

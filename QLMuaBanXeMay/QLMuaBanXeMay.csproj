@@ -178,6 +178,12 @@
     <Compile Include="WF\Form_DangNhap.Designer.cs">
       <DependentUpon>Form_DangNhap.cs</DependentUpon>
     </Compile>
+    <Compile Include="WF\Form_NhapSLPT.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WF\Form_NhapSLPT.Designer.cs">
+      <DependentUpon>Form_NhapSLPT.cs</DependentUpon>
+    </Compile>
     <Compile Include="WF\Form_ThemKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>

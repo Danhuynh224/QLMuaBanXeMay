@@ -29,11 +29,11 @@ namespace QLMuaBanXeMay
         {
             InitializeComponent();
             Load_GridView();
-            
+
         }
         private void Load_GridView()
         {
-            PhuTung_GridView.DataSource= DAOPhuTung.LayThongTin();
+            PhuTung_GridView.DataSource = DAOPhuTung.LayThongTin();
         }
 
 
@@ -43,29 +43,29 @@ namespace QLMuaBanXeMay
             {
                 // Lấy hàng được chọn
                 DataGridViewRow row = PhuTung_GridView.Rows[e.RowIndex];
-               
+
                 // Lấy giá trị từ các cột
                 phuTung.MaPT = Convert.ToInt32(row.Cells["MaPT"].Value);
                 phuTung.TenPT = row.Cells["TenPT"].Value.ToString(); // hoặc row.Cells[0].Value.ToString()
-                phuTung.DonGia = float.Parse(row.Cells["DonGia"].Value.ToString()); 
+                phuTung.DonGia = float.Parse(row.Cells["DonGia"].Value.ToString());
                 phuTung.ChatLieu = row.Cells["ChatLieu"].Value.ToString();
                 phuTung.HangSX = row.Cells["HangSX"].Value.ToString();
                 phuTung.SoLuongTon = Convert.ToInt32(row.Cells["SoLuongTon"].Value);
 
                 // Hiển thị giá trị (hoặc xử lý theo yêu cầu)
                 txt_MaPhuTung.Text = phuTung.MaPT.ToString();
-                txt_TenPhuTung.Text =phuTung.TenPT.ToString();  
-                txt_DonGia.Text=phuTung.DonGia.ToString();
-                txt_ChatLieu.Text=phuTung.ChatLieu.ToString();
+                txt_TenPhuTung.Text = phuTung.TenPT.ToString();
+                txt_DonGia.Text = phuTung.DonGia.ToString();
+                txt_ChatLieu.Text = phuTung.ChatLieu.ToString();
                 txt_HangSX.Text = phuTung.HangSX.ToString();
-                txt_SoLuongTon.Text= phuTung.SoLuongTon.ToString();
-                
+                txt_SoLuongTon.Text = phuTung.SoLuongTon.ToString();
+
             }
         }
 
         private void searchButton_Click(object sender, EventArgs e)
         {
-            string timkiem= txt_search.Text;
+            string timkiem = txt_search.Text;
             PhuTung_GridView.DataSource = DAOPhuTung.LayThongTinTheoTen(timkiem);
         }
 
@@ -106,8 +106,22 @@ namespace QLMuaBanXeMay
 
         private void btn_Add_Click(object sender, EventArgs e)
         {
-            PhuTung phuTung = new PhuTung(Convert.ToInt32(txt_MaPhuTung.Text), txt_TenPhuTung.Text, float.Parse(txt_DonGia.Text), txt_ChatLieu.Text, txt_HangSX.Text, Convert.ToInt32(txt_SoLuongTon.Text));
-            listPT.Add(phuTung);
+            if (txt_SoLuongTon.Text != "")
+            {
+                Form_NhapSLPT form_NhapSLPT = new Form_NhapSLPT(Convert.ToInt32(txt_SoLuongTon.Text));
+                int SLMua;
+                if (form_NhapSLPT.ShowDialog() == DialogResult.OK)
+                {
+                    // Nhận giá trị từ Form2
+                    SLMua = form_NhapSLPT.SelectedValue;
+                }
+                PhuTung phuTung = new PhuTung(Convert.ToInt32(txt_MaPhuTung.Text), txt_TenPhuTung.Text, float.Parse(txt_DonGia.Text), txt_ChatLieu.Text, txt_HangSX.Text, Convert.ToInt32(txt_SoLuongTon.Text));
+                listPT.Add(phuTung);
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn phụ tùng");
+            }
         }
     }
 }

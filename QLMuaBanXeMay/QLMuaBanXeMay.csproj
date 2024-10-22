@@ -98,6 +98,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLMuaBanXeMayDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QLMuaBanXeMayDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLMuaBanXeMayDataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UC\UC_HoaDonPT.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -121,6 +126,12 @@
     </Compile>
     <Compile Include="UC\UC_QLPhuTung.Designer.cs">
       <DependentUpon>UC_QLPhuTung.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UC_QLThongTinKH.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_QLThongTinKH.Designer.cs">
+      <DependentUpon>UC_QLThongTinKH.cs</DependentUpon>
     </Compile>
     <Compile Include="UC\UC_QLThongTinNhanVien.cs">
       <SubType>UserControl</SubType>
@@ -194,6 +205,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC\UC_QLPhuTung.resx">
       <DependentUpon>UC_QLPhuTung.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_QLThongTinKH.resx">
+      <DependentUpon>UC_QLThongTinKH.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="UC\UC_QLThongTinNhanVien.resx">
       <DependentUpon>UC_QLThongTinNhanVien.cs</DependentUpon>
@@ -277,6 +291,17 @@
     </None>
     <None Include="QLMuaBanXeMayDataSet3.xss">
       <DependentUpon>QLMuaBanXeMayDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet4.xsc">
+      <DependentUpon>QLMuaBanXeMayDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLMuaBanXeMayDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet4.xss">
+      <DependentUpon>QLMuaBanXeMayDataSet4.xsd</DependentUpon>
     </None>
     <None Include="Resources\form_main_login.png" />
   </ItemGroup>

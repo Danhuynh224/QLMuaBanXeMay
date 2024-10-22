@@ -58,6 +58,7 @@ namespace QLMuaBanXeMay.UC
 
                 // Tải lại dữ liệu vào DataGridView
                 LoadData();
+                clearTextBox()
             }
             catch (Exception ex)
             {
@@ -94,6 +95,7 @@ namespace QLMuaBanXeMay.UC
 
                 // Tải lại dữ liệu lên DataGridView
                 LoadData();
+                clearTextBox()
             }
             catch (Exception ex)
             {
@@ -124,7 +126,19 @@ namespace QLMuaBanXeMay.UC
 
         private void UC_QLThongTinNhanVien_Load(object sender, EventArgs e)
         {
+            LoadData();
+        }
 
+        private void clearTextBox()
+        {
+            txtCCCD.Clear();
+            txtTenNV.Clear();
+            txtEmail.Clear();
+            txtGioiTinh.Clear();
+            txtSDT.Clear();
+            txtDiaChi.Clear();
+            dtpNgaySinh.ResetText();
+            txtChucVu.Clear();
         }
 
         private void dgv_thongTinNV_CellClick(object sender, DataGridViewCellEventArgs e)

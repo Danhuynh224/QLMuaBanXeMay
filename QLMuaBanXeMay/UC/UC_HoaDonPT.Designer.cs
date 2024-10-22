@@ -53,6 +53,15 @@
             this.hoaDonXeBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.button1 = new System.Windows.Forms.Button();
             this.gv_hdPT = new Guna.UI2.WinForms.Guna2DataGridView();
+            this.maHDPTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.khuyenMaiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.tongTienDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cCCDKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.cCCDNVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.pTTTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ngayXuatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.hoaDonPTBindingSource = new System.Windows.Forms.BindingSource(this.components);
+            this.qLMuaBanXeMayDataSet3 = new QLMuaBanXeMay.QLMuaBanXeMayDataSet3();
             this.hoaDonXeBindingSource1 = new System.Windows.Forms.BindingSource(this.components);
             this.txt_thanhTien = new System.Windows.Forms.TextBox();
             this.label16 = new System.Windows.Forms.Label();
@@ -69,24 +78,15 @@
             this.txt_maPT = new System.Windows.Forms.TextBox();
             this.txt_timkiem = new System.Windows.Forms.TextBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
-            this.qLMuaBanXeMayDataSet3 = new QLMuaBanXeMay.QLMuaBanXeMayDataSet3();
-            this.hoaDonPTBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.hoaDonPTTableAdapter = new QLMuaBanXeMay.QLMuaBanXeMayDataSet3TableAdapters.HoaDonPTTableAdapter();
-            this.maHDPTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.khuyenMaiDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.tongTienDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cCCDKHDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.cCCDNVDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.pTTTDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ngayXuatDataGridViewTextBoxColumn = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonXeBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.gv_hdPT)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hoaDonPTBindingSource)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLMuaBanXeMayDataSet3)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonXeBindingSource1)).BeginInit();
             this.groupBox_spXe.SuspendLayout();
             this.groupBox2.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.qLMuaBanXeMayDataSet3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hoaDonPTBindingSource)).BeginInit();
             this.SuspendLayout();
             // 
             // label2
@@ -360,6 +360,72 @@
             this.gv_hdPT.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gv_hdPT_CellClick);
             this.gv_hdPT.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gv_hdPT_CellContentClick);
             // 
+            // maHDPTDataGridViewTextBoxColumn
+            // 
+            this.maHDPTDataGridViewTextBoxColumn.DataPropertyName = "MaHDPT";
+            this.maHDPTDataGridViewTextBoxColumn.HeaderText = "MaHDPT";
+            this.maHDPTDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.maHDPTDataGridViewTextBoxColumn.Name = "maHDPTDataGridViewTextBoxColumn";
+            this.maHDPTDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // khuyenMaiDataGridViewTextBoxColumn
+            // 
+            this.khuyenMaiDataGridViewTextBoxColumn.DataPropertyName = "KhuyenMai";
+            this.khuyenMaiDataGridViewTextBoxColumn.HeaderText = "KhuyenMai";
+            this.khuyenMaiDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.khuyenMaiDataGridViewTextBoxColumn.Name = "khuyenMaiDataGridViewTextBoxColumn";
+            this.khuyenMaiDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // tongTienDataGridViewTextBoxColumn
+            // 
+            this.tongTienDataGridViewTextBoxColumn.DataPropertyName = "TongTien";
+            this.tongTienDataGridViewTextBoxColumn.HeaderText = "TongTien";
+            this.tongTienDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.tongTienDataGridViewTextBoxColumn.Name = "tongTienDataGridViewTextBoxColumn";
+            this.tongTienDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cCCDKHDataGridViewTextBoxColumn
+            // 
+            this.cCCDKHDataGridViewTextBoxColumn.DataPropertyName = "CCCDKH";
+            this.cCCDKHDataGridViewTextBoxColumn.HeaderText = "CCCDKH";
+            this.cCCDKHDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.cCCDKHDataGridViewTextBoxColumn.Name = "cCCDKHDataGridViewTextBoxColumn";
+            this.cCCDKHDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // cCCDNVDataGridViewTextBoxColumn
+            // 
+            this.cCCDNVDataGridViewTextBoxColumn.DataPropertyName = "CCCDNV";
+            this.cCCDNVDataGridViewTextBoxColumn.HeaderText = "CCCDNV";
+            this.cCCDNVDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.cCCDNVDataGridViewTextBoxColumn.Name = "cCCDNVDataGridViewTextBoxColumn";
+            this.cCCDNVDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // pTTTDataGridViewTextBoxColumn
+            // 
+            this.pTTTDataGridViewTextBoxColumn.DataPropertyName = "PTTT";
+            this.pTTTDataGridViewTextBoxColumn.HeaderText = "PTTT";
+            this.pTTTDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.pTTTDataGridViewTextBoxColumn.Name = "pTTTDataGridViewTextBoxColumn";
+            this.pTTTDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // ngayXuatDataGridViewTextBoxColumn
+            // 
+            this.ngayXuatDataGridViewTextBoxColumn.DataPropertyName = "NgayXuat";
+            this.ngayXuatDataGridViewTextBoxColumn.HeaderText = "NgayXuat";
+            this.ngayXuatDataGridViewTextBoxColumn.MinimumWidth = 6;
+            this.ngayXuatDataGridViewTextBoxColumn.Name = "ngayXuatDataGridViewTextBoxColumn";
+            this.ngayXuatDataGridViewTextBoxColumn.ReadOnly = true;
+            // 
+            // hoaDonPTBindingSource
+            // 
+            this.hoaDonPTBindingSource.DataMember = "HoaDonPT";
+            this.hoaDonPTBindingSource.DataSource = this.qLMuaBanXeMayDataSet3;
+            // 
+            // qLMuaBanXeMayDataSet3
+            // 
+            this.qLMuaBanXeMayDataSet3.DataSetName = "QLMuaBanXeMayDataSet3";
+            this.qLMuaBanXeMayDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
+            // 
             // hoaDonXeBindingSource1
             // 
             this.hoaDonXeBindingSource1.DataMember = "HoaDonXe";
@@ -491,6 +557,7 @@
             this.groupBox_spXe.TabIndex = 46;
             this.groupBox_spXe.TabStop = false;
             this.groupBox_spXe.Text = "Thông tin sản phẩm";
+            this.groupBox_spXe.Enter += new System.EventHandler(this.groupBox_spXe_Enter);
             // 
             // txt_maPT
             // 
@@ -519,75 +586,9 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Tìm kiếm mã HĐ";
             // 
-            // qLMuaBanXeMayDataSet3
-            // 
-            this.qLMuaBanXeMayDataSet3.DataSetName = "QLMuaBanXeMayDataSet3";
-            this.qLMuaBanXeMayDataSet3.SchemaSerializationMode = System.Data.SchemaSerializationMode.IncludeSchema;
-            // 
-            // hoaDonPTBindingSource
-            // 
-            this.hoaDonPTBindingSource.DataMember = "HoaDonPT";
-            this.hoaDonPTBindingSource.DataSource = this.qLMuaBanXeMayDataSet3;
-            // 
             // hoaDonPTTableAdapter
             // 
             this.hoaDonPTTableAdapter.ClearBeforeFill = true;
-            // 
-            // maHDPTDataGridViewTextBoxColumn
-            // 
-            this.maHDPTDataGridViewTextBoxColumn.DataPropertyName = "MaHDPT";
-            this.maHDPTDataGridViewTextBoxColumn.HeaderText = "MaHDPT";
-            this.maHDPTDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.maHDPTDataGridViewTextBoxColumn.Name = "maHDPTDataGridViewTextBoxColumn";
-            this.maHDPTDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // khuyenMaiDataGridViewTextBoxColumn
-            // 
-            this.khuyenMaiDataGridViewTextBoxColumn.DataPropertyName = "KhuyenMai";
-            this.khuyenMaiDataGridViewTextBoxColumn.HeaderText = "KhuyenMai";
-            this.khuyenMaiDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.khuyenMaiDataGridViewTextBoxColumn.Name = "khuyenMaiDataGridViewTextBoxColumn";
-            this.khuyenMaiDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // tongTienDataGridViewTextBoxColumn
-            // 
-            this.tongTienDataGridViewTextBoxColumn.DataPropertyName = "TongTien";
-            this.tongTienDataGridViewTextBoxColumn.HeaderText = "TongTien";
-            this.tongTienDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.tongTienDataGridViewTextBoxColumn.Name = "tongTienDataGridViewTextBoxColumn";
-            this.tongTienDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cCCDKHDataGridViewTextBoxColumn
-            // 
-            this.cCCDKHDataGridViewTextBoxColumn.DataPropertyName = "CCCDKH";
-            this.cCCDKHDataGridViewTextBoxColumn.HeaderText = "CCCDKH";
-            this.cCCDKHDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.cCCDKHDataGridViewTextBoxColumn.Name = "cCCDKHDataGridViewTextBoxColumn";
-            this.cCCDKHDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // cCCDNVDataGridViewTextBoxColumn
-            // 
-            this.cCCDNVDataGridViewTextBoxColumn.DataPropertyName = "CCCDNV";
-            this.cCCDNVDataGridViewTextBoxColumn.HeaderText = "CCCDNV";
-            this.cCCDNVDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.cCCDNVDataGridViewTextBoxColumn.Name = "cCCDNVDataGridViewTextBoxColumn";
-            this.cCCDNVDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // pTTTDataGridViewTextBoxColumn
-            // 
-            this.pTTTDataGridViewTextBoxColumn.DataPropertyName = "PTTT";
-            this.pTTTDataGridViewTextBoxColumn.HeaderText = "PTTT";
-            this.pTTTDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.pTTTDataGridViewTextBoxColumn.Name = "pTTTDataGridViewTextBoxColumn";
-            this.pTTTDataGridViewTextBoxColumn.ReadOnly = true;
-            // 
-            // ngayXuatDataGridViewTextBoxColumn
-            // 
-            this.ngayXuatDataGridViewTextBoxColumn.DataPropertyName = "NgayXuat";
-            this.ngayXuatDataGridViewTextBoxColumn.HeaderText = "NgayXuat";
-            this.ngayXuatDataGridViewTextBoxColumn.MinimumWidth = 6;
-            this.ngayXuatDataGridViewTextBoxColumn.Name = "ngayXuatDataGridViewTextBoxColumn";
-            this.ngayXuatDataGridViewTextBoxColumn.ReadOnly = true;
             // 
             // UC_HoaDonPT
             // 
@@ -604,13 +605,13 @@
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonXeBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.gv_hdPT)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.hoaDonPTBindingSource)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.qLMuaBanXeMayDataSet3)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonXeBindingSource1)).EndInit();
             this.groupBox_spXe.ResumeLayout(false);
             this.groupBox_spXe.PerformLayout();
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.qLMuaBanXeMayDataSet3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.hoaDonPTBindingSource)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -51,5 +51,10 @@ namespace QLMuaBanXeMay
         {
 
         }
+
+        private void Xe_GridView_CellContentClick_2(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

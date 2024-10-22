@@ -207,6 +207,7 @@
             this.uC_MainScreen.Name = "uC_MainScreen";
             this.uC_MainScreen.Size = new System.Drawing.Size(1300, 800);
             this.uC_MainScreen.TabIndex = 0;
+            this.uC_MainScreen.Load += new System.EventHandler(this.uC_MainScreen_Load);
             // 
             // Form1
             // 

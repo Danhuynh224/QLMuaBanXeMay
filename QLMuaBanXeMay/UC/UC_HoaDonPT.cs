@@ -58,5 +58,10 @@ namespace QLMuaBanXeMay.UC
 
             }
         }
+
+        private void groupBox_spXe_Enter(object sender, EventArgs e)
+        {
+
+        }
     }
 }

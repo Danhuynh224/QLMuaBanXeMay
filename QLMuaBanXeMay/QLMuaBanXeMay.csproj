@@ -95,6 +95,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLMuaBanXeMayDataSet3.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QLMuaBanXeMayDataSet4.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLMuaBanXeMayDataSet4.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UC\UC_HoaDonPT.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -265,6 +270,17 @@
     </None>
     <None Include="QLMuaBanXeMayDataSet3.xss">
       <DependentUpon>QLMuaBanXeMayDataSet3.xsd</DependentUpon>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet4.xsc">
+      <DependentUpon>QLMuaBanXeMayDataSet4.xsd</DependentUpon>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet4.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLMuaBanXeMayDataSet4.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLMuaBanXeMayDataSet4.xss">
+      <DependentUpon>QLMuaBanXeMayDataSet4.xsd</DependentUpon>
     </None>
     <None Include="Resources\form_main_login.png" />
   </ItemGroup>

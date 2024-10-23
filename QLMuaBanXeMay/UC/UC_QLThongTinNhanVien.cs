@@ -111,6 +111,8 @@ namespace QLMuaBanXeMay.UC
 
         private void clearTextBox()
         {
+            txtTenTK.Clear();
+            txtMatKhau.Clear();
             txtCCCD.Clear();
             txtTenNV.Clear();
             txtEmail.Clear();

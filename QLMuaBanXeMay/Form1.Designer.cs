@@ -96,7 +96,7 @@
             this.btnGuest.Location = new System.Drawing.Point(3, 60);
             this.btnGuest.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGuest.Name = "btnGuest";
-            this.btnGuest.Size = new System.Drawing.Size(189, 54);
+            this.btnGuest.Size = new System.Drawing.Size(187, 54);
             this.btnGuest.TabIndex = 7;
             this.btnGuest.Text = "Quản lý khách hàng         ";
             this.btnGuest.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -182,7 +182,7 @@
             // 
             this.panel4.BackgroundImage = global::QLMuaBanXeMay.Properties.Resources.form_main_login;
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel4.Location = new System.Drawing.Point(26, 102);
+            this.panel4.Location = new System.Drawing.Point(48, 103);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(90, 83);
             this.panel4.TabIndex = 1;

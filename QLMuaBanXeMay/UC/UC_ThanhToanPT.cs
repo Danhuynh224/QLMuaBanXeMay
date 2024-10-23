@@ -21,15 +21,17 @@ namespace QLMuaBanXeMay.UC
 
 
         Class.KhachHang khachHang_tt = new KhachHang();
+        NhanVien user;
         List<ChiTietHD_PT> ListHDPT = new List<ChiTietHD_PT>();
         public UC_ThanhToanPT()
         {
             
         }
-        public UC_ThanhToanPT(List<ChiTietHD_PT> listHDPT, KhachHang khachHang)
+        public UC_ThanhToanPT(List<ChiTietHD_PT> listHDPT, KhachHang khachHang, NhanVien user)
         {
             InitializeComponent();
             ListHDPT = listHDPT;
+            this.user = user;
             dataGridViewPT.DataSource = null; 
             dataGridViewPT.DataSource = listHDPT;
             dataGridViewPT.Columns[0].Visible = false;
@@ -78,7 +80,7 @@ namespace QLMuaBanXeMay.UC
             hoaDonPT.KhuyenMai = float.Parse(txt_khuyenMai.Text);
             hoaDonPT.TongTien = float.Parse(txt_thanhTien.Text);
             hoaDonPT.CCCDKH = Convert.ToInt32(txt_cccdKH.Text);
-            hoaDonPT.CCCDNV = 123456789;
+            hoaDonPT.CCCDNV = user.CCCDNV;
             hoaDonPT.PTTT = cb_pttt.Text;
             hoaDonPT.NgayXuat = dt_ngayXuat.Value;
 

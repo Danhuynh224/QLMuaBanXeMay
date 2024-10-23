@@ -112,7 +112,7 @@ namespace QLMuaBanXeMay
 
         private void capnhat_btn_Click(object sender, EventArgs e)
         {
-            UC_ThanhToanPT uc = new UC_ThanhToanPT(listHDPT, khachHang);
+            UC_ThanhToanPT uc = new UC_ThanhToanPT(listHDPT, khachHang, user);
             this.Controls.Clear();
             this.Controls.Add(uc);
         }

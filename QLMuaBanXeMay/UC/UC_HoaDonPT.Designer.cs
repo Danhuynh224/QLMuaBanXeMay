@@ -353,13 +353,13 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.gv_hdPT.DefaultCellStyle = dataGridViewCellStyle3;
             this.gv_hdPT.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.gv_hdPT.Location = new System.Drawing.Point(66, 649);
+            this.gv_hdPT.Location = new System.Drawing.Point(66, 587);
             this.gv_hdPT.Name = "gv_hdPT";
             this.gv_hdPT.ReadOnly = true;
             this.gv_hdPT.RowHeadersVisible = false;
             this.gv_hdPT.RowHeadersWidth = 51;
             this.gv_hdPT.RowTemplate.Height = 24;
-            this.gv_hdPT.Size = new System.Drawing.Size(1151, 243);
+            this.gv_hdPT.Size = new System.Drawing.Size(1151, 305);
             this.gv_hdPT.TabIndex = 48;
             this.gv_hdPT.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.gv_hdPT.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -495,7 +495,7 @@
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(66, 383);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1151, 260);
+            this.groupBox3.Size = new System.Drawing.Size(1151, 198);
             this.groupBox3.TabIndex = 50;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông tin sản phẩm";
@@ -538,7 +538,7 @@
             this.gv_chiTietHD.RowHeadersVisible = false;
             this.gv_chiTietHD.RowHeadersWidth = 51;
             this.gv_chiTietHD.RowTemplate.Height = 24;
-            this.gv_chiTietHD.Size = new System.Drawing.Size(1134, 219);
+            this.gv_chiTietHD.Size = new System.Drawing.Size(1134, 164);
             this.gv_chiTietHD.TabIndex = 0;
             this.gv_chiTietHD.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.gv_chiTietHD.ThemeStyle.AlternatingRowsStyle.Font = null;

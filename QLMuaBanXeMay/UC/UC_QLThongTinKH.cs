@@ -16,10 +16,12 @@ namespace QLMuaBanXeMay.UC
     public partial class UC_QLThongTinKH : UserControl
     {
         KhachHang kh;
-        public UC_QLThongTinKH()
+        NhanVien user;
+        public UC_QLThongTinKH(NhanVien user)
         {
             InitializeComponent();
-            LoadData();
+            this.user = user;
+            LoadData();        
         }
 
         private void LoadData()

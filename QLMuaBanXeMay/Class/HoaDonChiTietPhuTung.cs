@@ -11,10 +11,10 @@ namespace QLMuaBanXeMay.Class
         private int maHDPT;
         private int maPT;
         private int soLuong;
-        private float donGia;
+        private double donGia;
         public ChiTietHD_PT() { }
 
-        public ChiTietHD_PT(int maHDPT, int maPT, int soLuong, float donGia)
+        public ChiTietHD_PT(int maHDPT, int maPT, int soLuong, double donGia)
         {
             this.maHDPT = maHDPT;
             this.maPT = maPT;
@@ -45,7 +45,7 @@ namespace QLMuaBanXeMay.Class
             }
         }
 
-        public float DonGia
+        public double DonGia
         {
             get { return donGia; }
             set

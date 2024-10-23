@@ -29,13 +29,13 @@
         private void InitializeComponent()
         {
             this.components = new System.ComponentModel.Container();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.ThonTingroupBox = new System.Windows.Forms.GroupBox();
             this.btn_Add = new System.Windows.Forms.Button();
             this.btn_Update = new System.Windows.Forms.Button();
-            this.capnhat_btn = new System.Windows.Forms.Button();
+            this.btn_xuat = new System.Windows.Forms.Button();
             this.txt_HangSX = new System.Windows.Forms.TextBox();
             this.label8 = new System.Windows.Forms.Label();
             this.txt_SoLuongTon = new System.Windows.Forms.TextBox();
@@ -59,7 +59,7 @@
             this.phuTungBindingSource = new System.Windows.Forms.BindingSource(this.components);
             this.qLMuaBanXeMayDataSet1 = new QLMuaBanXeMay.QLMuaBanXeMayDataSet1();
             this.phuTungTableAdapter = new QLMuaBanXeMay.QLMuaBanXeMayDataSet1TableAdapters.PhuTungTableAdapter();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.grBox_Congcu = new System.Windows.Forms.GroupBox();
             this.btn_them = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.btn_search = new Guna.UI2.WinForms.Guna2Button();
@@ -70,7 +70,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PhuTung_GridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.phuTungBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLMuaBanXeMayDataSet1)).BeginInit();
-            this.groupBox4.SuspendLayout();
+            this.grBox_Congcu.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -78,7 +78,7 @@
             // 
             this.ThonTingroupBox.Controls.Add(this.btn_Add);
             this.ThonTingroupBox.Controls.Add(this.btn_Update);
-            this.ThonTingroupBox.Controls.Add(this.capnhat_btn);
+            this.ThonTingroupBox.Controls.Add(this.btn_xuat);
             this.ThonTingroupBox.Controls.Add(this.txt_HangSX);
             this.ThonTingroupBox.Controls.Add(this.label8);
             this.ThonTingroupBox.Controls.Add(this.txt_SoLuongTon);
@@ -101,7 +101,7 @@
             // 
             // btn_Add
             // 
-            this.btn_Add.Location = new System.Drawing.Point(558, 157);
+            this.btn_Add.Location = new System.Drawing.Point(721, 157);
             this.btn_Add.Name = "btn_Add";
             this.btn_Add.Size = new System.Drawing.Size(170, 38);
             this.btn_Add.TabIndex = 20;
@@ -111,7 +111,7 @@
             // 
             // btn_Update
             // 
-            this.btn_Update.Location = new System.Drawing.Point(734, 157);
+            this.btn_Update.Location = new System.Drawing.Point(519, 157);
             this.btn_Update.Name = "btn_Update";
             this.btn_Update.Size = new System.Drawing.Size(170, 38);
             this.btn_Update.TabIndex = 19;
@@ -119,15 +119,15 @@
             this.btn_Update.UseVisualStyleBackColor = true;
             this.btn_Update.Click += new System.EventHandler(this.UpdateButton_Click);
             // 
-            // capnhat_btn
+            // btn_xuat
             // 
-            this.capnhat_btn.Location = new System.Drawing.Point(910, 157);
-            this.capnhat_btn.Name = "capnhat_btn";
-            this.capnhat_btn.Size = new System.Drawing.Size(170, 38);
-            this.capnhat_btn.TabIndex = 18;
-            this.capnhat_btn.Text = "Xuất hóa đơn";
-            this.capnhat_btn.UseVisualStyleBackColor = true;
-            this.capnhat_btn.Click += new System.EventHandler(this.capnhat_btn_Click);
+            this.btn_xuat.Location = new System.Drawing.Point(910, 157);
+            this.btn_xuat.Name = "btn_xuat";
+            this.btn_xuat.Size = new System.Drawing.Size(170, 38);
+            this.btn_xuat.TabIndex = 18;
+            this.btn_xuat.Text = "Xuất hóa đơn";
+            this.btn_xuat.UseVisualStyleBackColor = true;
+            this.btn_xuat.Click += new System.EventHandler(this.capnhat_btn_Click);
             // 
             // txt_HangSX
             // 
@@ -246,17 +246,17 @@
             // 
             this.PhuTung_GridView.AllowUserToAddRows = false;
             this.PhuTung_GridView.AllowUserToDeleteRows = false;
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.PhuTung_GridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle4.BackColor = System.Drawing.Color.White;
+            this.PhuTung_GridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle4;
             this.PhuTung_GridView.AutoGenerateColumns = false;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.PhuTung_GridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle5.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle5.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle5.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle5.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle5.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.PhuTung_GridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle5;
             this.PhuTung_GridView.ColumnHeadersHeight = 22;
             this.PhuTung_GridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
             this.PhuTung_GridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -267,14 +267,14 @@
             this.HangSX,
             this.SoLuongTon});
             this.PhuTung_GridView.DataSource = this.phuTungBindingSource;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.PhuTung_GridView.DefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle6.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.PhuTung_GridView.DefaultCellStyle = dataGridViewCellStyle6;
             this.PhuTung_GridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.PhuTung_GridView.Location = new System.Drawing.Point(11, 29);
             this.PhuTung_GridView.Name = "PhuTung_GridView";
@@ -381,18 +381,18 @@
             // 
             this.phuTungTableAdapter.ClearBeforeFill = true;
             // 
-            // groupBox4
+            // grBox_Congcu
             // 
-            this.groupBox4.Controls.Add(this.btn_them);
-            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(602, 610);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox4.Size = new System.Drawing.Size(616, 88);
-            this.groupBox4.TabIndex = 25;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Công cụ";
+            this.grBox_Congcu.Controls.Add(this.btn_them);
+            this.grBox_Congcu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grBox_Congcu.Location = new System.Drawing.Point(602, 610);
+            this.grBox_Congcu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grBox_Congcu.Name = "grBox_Congcu";
+            this.grBox_Congcu.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grBox_Congcu.Size = new System.Drawing.Size(616, 88);
+            this.grBox_Congcu.TabIndex = 25;
+            this.grBox_Congcu.TabStop = false;
+            this.grBox_Congcu.Text = "Công cụ";
             // 
             // btn_them
             // 
@@ -476,7 +476,7 @@
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
             this.Controls.Add(this.label6);
-            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.grBox_Congcu);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.ThonTingroupBox);
             this.Controls.Add(this.gird_groupbox);
@@ -488,7 +488,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.PhuTung_GridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.phuTungBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLMuaBanXeMayDataSet1)).EndInit();
-            this.groupBox4.ResumeLayout(false);
+            this.grBox_Congcu.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -497,7 +497,7 @@
 
         #endregion
         private System.Windows.Forms.GroupBox ThonTingroupBox;
-        private System.Windows.Forms.Button capnhat_btn;
+        private System.Windows.Forms.Button btn_xuat;
         private System.Windows.Forms.TextBox txt_HangSX;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.TextBox txt_SoLuongTon;
@@ -515,7 +515,7 @@
         private System.Windows.Forms.BindingSource phuTungBindingSource;
         private QLMuaBanXeMayDataSet1 qLMuaBanXeMayDataSet1;
         private QLMuaBanXeMayDataSet1TableAdapters.PhuTungTableAdapter phuTungTableAdapter;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox grBox_Congcu;
         private Guna.UI2.WinForms.Guna2Button btn_them;
         private System.Windows.Forms.GroupBox groupBox3;
         private Guna.UI2.WinForms.Guna2Button btn_search;

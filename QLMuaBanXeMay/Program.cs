@@ -1,4 +1,5 @@
-﻿using System;
+﻿using QLMuaBanXeMay.WF;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -16,7 +17,7 @@ namespace QLMuaBanXeMay
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Form1("1"));
+            Application.Run(new Form_DangNhap());
         }
     }
 }

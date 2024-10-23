@@ -1,7 +1,9 @@
 {
   "ExpandedNodes": [
-    ""
+    "",
+    "\\QLMuaBanXeMay",
+    "\\QLMuaBanXeMay\\UC"
   ],
-  "SelectedNode": "\\QLMuaBanXeMay.sln",
+  "SelectedNode": "\\QLMuaBanXeMay\\UC\\UC_QLThongTinNhanVien.cs",
   "PreviewInSolutionExplorer": false
 }

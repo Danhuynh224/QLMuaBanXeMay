@@ -25,15 +25,22 @@ namespace QLMuaBanXeMay.UC
             this.xeMay_tt = xeMay;
             this.khachHang_tt  = khachHang;
             InitializeComponent();
-            txt_maXe.Text = xeMay.MaXe.ToString();
-            txt_tenXe.Text = xeMay.TenXe.ToString();
-            txt_donGia.Text = xeMay.DonGia.ToString();
-            txt_loaiXe.Text = xeMay.LoaiXe.ToString();
-            txt_mauSac.Text = xeMay.MauSac.ToString();
-            txt_phanKhoi.Text = xeMay.PhanKhoi.ToString();
-            txt_congSuat.Text = xeMay.CongSuat.ToString();
-            txt_hangSX.Text = xeMay.HangSX.ToString();
-            txt_namSX.Text = xeMay.NamSX.ToString();
+            try
+            {
+                txt_maXe.Text = xeMay.MaXe.ToString();
+                txt_tenXe.Text = xeMay.TenXe.ToString();
+                txt_donGia.Text = xeMay.DonGia.ToString();
+                txt_loaiXe.Text = xeMay.LoaiXe.ToString();
+                txt_mauSac.Text = xeMay.MauSac.ToString();
+                txt_phanKhoi.Text = xeMay.PhanKhoi.ToString();
+                txt_congSuat.Text = xeMay.CongSuat.ToString();
+                txt_hangSX.Text = xeMay.HangSX.ToString();
+                txt_namSX.Text = xeMay.NamSX.ToString();
+            }
+            catch {
+                MessageBox.Show("Vui lòng chọn sản phẩm");
+            }
+            
             //Thêm check tình trạng
         }
         

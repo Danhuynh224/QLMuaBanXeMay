@@ -65,6 +65,21 @@ namespace QLMuaBanXeMay.DAO
                 return dt;
             }
         }
+        public static DataTable LayThongTinTheoMaHDPT(string maHD)
+        {
+            using (SqlCommand command = new SqlCommand("SELECT * FROM View_HoaDonPT WHERE MaHDPT LIKE @maHD", MY_DB.getConnection()))
+            {
+                MY_DB.openConnection();
+                command.Parameters.AddWithValue("@maHD", "%" + maHD + "%");
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                MY_DB.closeConnection();
+
+                return dt;
+            }
+        }
         public static DataTable Load_ViewChiTietHD(int maHD)
         {
             using (SqlCommand command = new SqlCommand("SELECT * FROM View_ChiTietHDPT WHERE MaHDPT = @maHD", MY_DB.getConnection()))

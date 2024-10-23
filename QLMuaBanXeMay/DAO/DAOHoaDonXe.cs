@@ -28,6 +28,21 @@ namespace QLMuaBanXeMay.DAO
 
 
         }
+        public static DataTable LayThongTinTheoMaHDXe(string maHD)
+        {
+            using (SqlCommand command = new SqlCommand("SELECT * FROM View_HoaDonXe WHERE MaHDXe LIKE @maHD", MY_DB.getConnection()))
+            {
+                MY_DB.openConnection();
+                command.Parameters.AddWithValue("@maHD", "%" + maHD + "%");
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                MY_DB.closeConnection();
+
+                return dt;
+            }
+        }
 
         internal static void ThemHoaDonXe(HoaDonXe hoaDonXe)
         {

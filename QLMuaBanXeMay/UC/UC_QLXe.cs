@@ -42,7 +42,8 @@ namespace QLMuaBanXeMay
                 // Lấy giá trị từ các cột
                 xeMay.MaXe = Convert.ToInt32(row.Cells["MaXe"].Value);
                 xeMay.TenXe = row.Cells["TenXe"].Value.ToString(); // hoặc row.Cells[0].Value.ToString()
-                xeMay.DonGia = float.Parse(row.Cells["DonGia"].Value.ToString());
+                xeMay.DonGia = double.Parse(row.Cells["DonGia"].Value.ToString());
+                MessageBox.Show(xeMay.DonGia.ToString());
                 xeMay.LoaiXe = row.Cells["LoaiXe"].Value.ToString();
                 xeMay.MauSac = row.Cells["MauSac"].Value.ToString();
                 xeMay.PhanKhoi = Convert.ToInt32(row.Cells["PhanKhoi"].Value);

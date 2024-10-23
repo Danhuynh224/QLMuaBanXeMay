@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace QLMuaBanXeMay.DAO
 {
@@ -15,20 +16,27 @@ namespace QLMuaBanXeMay.DAO
         {
             using (SqlCommand command = new SqlCommand("ThemNhanVien", MY_DB.getConnection()))
             {
-                command.CommandType = CommandType.StoredProcedure;
+                try
+                {
+                    command.CommandType = CommandType.StoredProcedure;
 
-                command.Parameters.AddWithValue("@CCCDNV", nhanVien.CCCDNV);
-                command.Parameters.AddWithValue("@TenNV", nhanVien.TenNV);
-                command.Parameters.AddWithValue("@NgaySinh", nhanVien.NgaySinh);
-                command.Parameters.AddWithValue("@GioiTinh", nhanVien.GioiTinh);
-                command.Parameters.AddWithValue("@SDT", nhanVien.SDT);
-                command.Parameters.AddWithValue("@DiaChi", nhanVien.DiaChi);
-                command.Parameters.AddWithValue("@Email", nhanVien.Email);
-                command.Parameters.AddWithValue("@ChucVu", nhanVien.ChucVu);
+                    command.Parameters.AddWithValue("@CCCDNV", nhanVien.CCCDNV);
+                    command.Parameters.AddWithValue("@TenNV", nhanVien.TenNV);
+                    command.Parameters.AddWithValue("@NgaySinh", nhanVien.NgaySinh);
+                    command.Parameters.AddWithValue("@GioiTinh", nhanVien.GioiTinh);
+                    command.Parameters.AddWithValue("@SDT", nhanVien.SDT);
+                    command.Parameters.AddWithValue("@DiaChi", nhanVien.DiaChi);
+                    command.Parameters.AddWithValue("@Email", nhanVien.Email);
+                    command.Parameters.AddWithValue("@ChucVu", nhanVien.ChucVu);
 
-                MY_DB.openConnection();
-                command.ExecuteNonQuery();
-                MY_DB.closeConnection();
+                    MY_DB.openConnection();
+                    command.ExecuteNonQuery();
+                    MY_DB.closeConnection();
+                }
+                catch
+                {
+                    MessageBox.Show("Thông tin không hợp lệ");
+                }
             }
         }
 

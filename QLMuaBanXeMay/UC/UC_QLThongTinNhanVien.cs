@@ -37,7 +37,7 @@ namespace QLMuaBanXeMay.UC
             Form_ThemNhanVien form = new Form_ThemNhanVien(nhanVien, taiKhoan);
             if (form.ShowDialog() == DialogResult.OK)
             {
-                // Nhận giá trị từ Form2
+                
                 nhanVien = form.Nv;
                 taiKhoan = form.Tk;
                 DAONhanVien.ThemNhanVien(nhanVien);
@@ -111,6 +111,8 @@ namespace QLMuaBanXeMay.UC
 
         private void clearTextBox()
         {
+            txtTenTK.Clear();
+            txtMatKhau.Clear();
             txtCCCD.Clear();
             txtTenNV.Clear();
             txtEmail.Clear();

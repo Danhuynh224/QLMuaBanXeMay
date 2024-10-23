@@ -38,17 +38,6 @@
             this.xeMayTableAdapter = new QLMuaBanXeMay.QLMuaBanXeMayDataSetTableAdapters.XeMayTableAdapter();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
             this.Xe_GridView = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.MaXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.LoaiXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MauSac = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.PhanKhoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.CongSuat = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.HangSX = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.NamSX = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TinhTrang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.btn_xoa = new System.Windows.Forms.DataGridViewButtonColumn();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
             this.btn_Update = new System.Windows.Forms.Button();
             this.xuathoadon_btn = new System.Windows.Forms.Button();
@@ -74,16 +63,26 @@
             this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.btn_Them = new Guna.UI2.WinForms.Guna2Button();
-            this.groupBox4 = new System.Windows.Forms.GroupBox();
+            this.grBox_Congcu = new System.Windows.Forms.GroupBox();
             this.txt_search = new Guna.UI2.WinForms.Guna2TextBox();
             this.search_btn = new Guna.UI2.WinForms.Guna2Button();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
+            this.MaXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.DonGia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.LoaiXe = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MauSac = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.PhanKhoi = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.CongSuat = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.HangSX = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NamSX = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TinhTrang = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.xeMayBindingSource)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLMuaBanXeMayDataSet)).BeginInit();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.Xe_GridView)).BeginInit();
             this.groupBox1.SuspendLayout();
-            this.groupBox4.SuspendLayout();
+            this.grBox_Congcu.SuspendLayout();
             this.groupBox3.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -141,8 +140,7 @@
             this.CongSuat,
             this.HangSX,
             this.NamSX,
-            this.TinhTrang,
-            this.btn_xoa});
+            this.TinhTrang});
             this.Xe_GridView.DataSource = this.xeMayBindingSource;
             dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
@@ -184,115 +182,6 @@
             this.Xe_GridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.Xe_GridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.Xe_GridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Xe_GridView_CellClick);
-            // 
-            // MaXe
-            // 
-            this.MaXe.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.MaXe.DataPropertyName = "MaXe";
-            this.MaXe.FillWeight = 50F;
-            this.MaXe.HeaderText = "Mã Xe";
-            this.MaXe.MinimumWidth = 6;
-            this.MaXe.Name = "MaXe";
-            this.MaXe.ReadOnly = true;
-            // 
-            // TenXe
-            // 
-            this.TenXe.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TenXe.DataPropertyName = "TenXe";
-            this.TenXe.FillWeight = 160F;
-            this.TenXe.HeaderText = "Tên Xe";
-            this.TenXe.MinimumWidth = 6;
-            this.TenXe.Name = "TenXe";
-            this.TenXe.ReadOnly = true;
-            // 
-            // DonGia
-            // 
-            this.DonGia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.DonGia.DataPropertyName = "DonGia";
-            this.DonGia.HeaderText = "Đơn Giá";
-            this.DonGia.MinimumWidth = 6;
-            this.DonGia.Name = "DonGia";
-            this.DonGia.ReadOnly = true;
-            // 
-            // LoaiXe
-            // 
-            this.LoaiXe.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.LoaiXe.DataPropertyName = "LoaiXe";
-            this.LoaiXe.FillWeight = 80.58823F;
-            this.LoaiXe.HeaderText = "Loại Xe";
-            this.LoaiXe.MinimumWidth = 6;
-            this.LoaiXe.Name = "LoaiXe";
-            this.LoaiXe.ReadOnly = true;
-            // 
-            // MauSac
-            // 
-            this.MauSac.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.MauSac.DataPropertyName = "MauSac";
-            this.MauSac.FillWeight = 80.58823F;
-            this.MauSac.HeaderText = "Màu Sắc";
-            this.MauSac.MinimumWidth = 6;
-            this.MauSac.Name = "MauSac";
-            this.MauSac.ReadOnly = true;
-            // 
-            // PhanKhoi
-            // 
-            this.PhanKhoi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.PhanKhoi.DataPropertyName = "PhanKhoi";
-            this.PhanKhoi.FillWeight = 80.58823F;
-            this.PhanKhoi.HeaderText = "Phân Khối";
-            this.PhanKhoi.MinimumWidth = 6;
-            this.PhanKhoi.Name = "PhanKhoi";
-            this.PhanKhoi.ReadOnly = true;
-            // 
-            // CongSuat
-            // 
-            this.CongSuat.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.CongSuat.DataPropertyName = "CongSuat";
-            this.CongSuat.FillWeight = 80.58823F;
-            this.CongSuat.HeaderText = "Công Suất";
-            this.CongSuat.MinimumWidth = 6;
-            this.CongSuat.Name = "CongSuat";
-            this.CongSuat.ReadOnly = true;
-            // 
-            // HangSX
-            // 
-            this.HangSX.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.HangSX.DataPropertyName = "HangSX";
-            this.HangSX.FillWeight = 80.58823F;
-            this.HangSX.HeaderText = "Hãng Sản Xuất";
-            this.HangSX.MinimumWidth = 6;
-            this.HangSX.Name = "HangSX";
-            this.HangSX.ReadOnly = true;
-            // 
-            // NamSX
-            // 
-            this.NamSX.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.NamSX.DataPropertyName = "NamSX";
-            this.NamSX.FillWeight = 80.58823F;
-            this.NamSX.HeaderText = "Năm Sản Xuất";
-            this.NamSX.MinimumWidth = 6;
-            this.NamSX.Name = "NamSX";
-            this.NamSX.ReadOnly = true;
-            // 
-            // TinhTrang
-            // 
-            this.TinhTrang.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.TinhTrang.DataPropertyName = "TinhTrang";
-            this.TinhTrang.FillWeight = 80.58823F;
-            this.TinhTrang.HeaderText = "Tình Trạng";
-            this.TinhTrang.MinimumWidth = 6;
-            this.TinhTrang.Name = "TinhTrang";
-            this.TinhTrang.ReadOnly = true;
-            // 
-            // btn_xoa
-            // 
-            this.btn_xoa.FillWeight = 80.58823F;
-            this.btn_xoa.HeaderText = "";
-            this.btn_xoa.MinimumWidth = 6;
-            this.btn_xoa.Name = "btn_xoa";
-            this.btn_xoa.ReadOnly = true;
-            this.btn_xoa.Text = "Xóa";
-            this.btn_xoa.UseColumnTextForButtonValue = true;
             // 
             // groupBox1
             // 
@@ -543,18 +432,18 @@
             this.btn_Them.Text = "Thêm";
             this.btn_Them.Click += new System.EventHandler(this.btn_Them_Click);
             // 
-            // groupBox4
+            // grBox_Congcu
             // 
-            this.groupBox4.Controls.Add(this.btn_Them);
-            this.groupBox4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.groupBox4.Location = new System.Drawing.Point(615, 581);
-            this.groupBox4.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox4.Name = "groupBox4";
-            this.groupBox4.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.groupBox4.Size = new System.Drawing.Size(663, 88);
-            this.groupBox4.TabIndex = 28;
-            this.groupBox4.TabStop = false;
-            this.groupBox4.Text = "Công cụ";
+            this.grBox_Congcu.Controls.Add(this.btn_Them);
+            this.grBox_Congcu.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.grBox_Congcu.Location = new System.Drawing.Point(615, 581);
+            this.grBox_Congcu.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grBox_Congcu.Name = "grBox_Congcu";
+            this.grBox_Congcu.Padding = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.grBox_Congcu.Size = new System.Drawing.Size(663, 88);
+            this.grBox_Congcu.TabIndex = 28;
+            this.grBox_Congcu.TabStop = false;
+            this.grBox_Congcu.Text = "Công cụ";
             // 
             // txt_search
             // 
@@ -607,10 +496,109 @@
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Tìm kiếm theo tên xe";
             // 
+            // MaXe
+            // 
+            this.MaXe.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.MaXe.DataPropertyName = "MaXe";
+            this.MaXe.FillWeight = 50F;
+            this.MaXe.HeaderText = "Mã Xe";
+            this.MaXe.MinimumWidth = 6;
+            this.MaXe.Name = "MaXe";
+            this.MaXe.ReadOnly = true;
+            // 
+            // TenXe
+            // 
+            this.TenXe.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TenXe.DataPropertyName = "TenXe";
+            this.TenXe.FillWeight = 160F;
+            this.TenXe.HeaderText = "Tên Xe";
+            this.TenXe.MinimumWidth = 6;
+            this.TenXe.Name = "TenXe";
+            this.TenXe.ReadOnly = true;
+            // 
+            // DonGia
+            // 
+            this.DonGia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.DonGia.DataPropertyName = "DonGia";
+            this.DonGia.HeaderText = "Đơn Giá";
+            this.DonGia.MinimumWidth = 6;
+            this.DonGia.Name = "DonGia";
+            this.DonGia.ReadOnly = true;
+            // 
+            // LoaiXe
+            // 
+            this.LoaiXe.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.LoaiXe.DataPropertyName = "LoaiXe";
+            this.LoaiXe.FillWeight = 80.58823F;
+            this.LoaiXe.HeaderText = "Loại Xe";
+            this.LoaiXe.MinimumWidth = 6;
+            this.LoaiXe.Name = "LoaiXe";
+            this.LoaiXe.ReadOnly = true;
+            // 
+            // MauSac
+            // 
+            this.MauSac.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.MauSac.DataPropertyName = "MauSac";
+            this.MauSac.FillWeight = 80.58823F;
+            this.MauSac.HeaderText = "Màu Sắc";
+            this.MauSac.MinimumWidth = 6;
+            this.MauSac.Name = "MauSac";
+            this.MauSac.ReadOnly = true;
+            // 
+            // PhanKhoi
+            // 
+            this.PhanKhoi.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.PhanKhoi.DataPropertyName = "PhanKhoi";
+            this.PhanKhoi.FillWeight = 80.58823F;
+            this.PhanKhoi.HeaderText = "Phân Khối";
+            this.PhanKhoi.MinimumWidth = 6;
+            this.PhanKhoi.Name = "PhanKhoi";
+            this.PhanKhoi.ReadOnly = true;
+            // 
+            // CongSuat
+            // 
+            this.CongSuat.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.CongSuat.DataPropertyName = "CongSuat";
+            this.CongSuat.FillWeight = 80.58823F;
+            this.CongSuat.HeaderText = "Công Suất";
+            this.CongSuat.MinimumWidth = 6;
+            this.CongSuat.Name = "CongSuat";
+            this.CongSuat.ReadOnly = true;
+            // 
+            // HangSX
+            // 
+            this.HangSX.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.HangSX.DataPropertyName = "HangSX";
+            this.HangSX.FillWeight = 80.58823F;
+            this.HangSX.HeaderText = "Hãng Sản Xuất";
+            this.HangSX.MinimumWidth = 6;
+            this.HangSX.Name = "HangSX";
+            this.HangSX.ReadOnly = true;
+            // 
+            // NamSX
+            // 
+            this.NamSX.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.NamSX.DataPropertyName = "NamSX";
+            this.NamSX.FillWeight = 80.58823F;
+            this.NamSX.HeaderText = "Năm Sản Xuất";
+            this.NamSX.MinimumWidth = 6;
+            this.NamSX.Name = "NamSX";
+            this.NamSX.ReadOnly = true;
+            // 
+            // TinhTrang
+            // 
+            this.TinhTrang.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.TinhTrang.DataPropertyName = "TinhTrang";
+            this.TinhTrang.FillWeight = 80.58823F;
+            this.TinhTrang.HeaderText = "Tình Trạng";
+            this.TinhTrang.MinimumWidth = 6;
+            this.TinhTrang.Name = "TinhTrang";
+            this.TinhTrang.ReadOnly = true;
+            // 
             // UC_QLXe
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-            this.Controls.Add(this.groupBox4);
+            this.Controls.Add(this.grBox_Congcu);
             this.Controls.Add(this.groupBox3);
             this.Controls.Add(this.groupBox2);
             this.Controls.Add(this.groupBox1);
@@ -624,7 +612,7 @@
             ((System.ComponentModel.ISupportInitialize)(this.Xe_GridView)).EndInit();
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
-            this.groupBox4.ResumeLayout(false);
+            this.grBox_Congcu.ResumeLayout(false);
             this.groupBox3.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -660,10 +648,12 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
         private Guna.UI2.WinForms.Guna2Button btn_Them;
-        private System.Windows.Forms.GroupBox groupBox4;
+        private System.Windows.Forms.GroupBox grBox_Congcu;
         private Guna.UI2.WinForms.Guna2TextBox txt_search;
         private Guna.UI2.WinForms.Guna2Button search_btn;
         private System.Windows.Forms.GroupBox groupBox3;
+        private System.Windows.Forms.Button btn_Update;
+        private System.Windows.Forms.Button xuathoadon_btn;
         private System.Windows.Forms.DataGridViewTextBoxColumn MaXe;
         private System.Windows.Forms.DataGridViewTextBoxColumn TenXe;
         private System.Windows.Forms.DataGridViewTextBoxColumn DonGia;
@@ -674,8 +664,5 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn HangSX;
         private System.Windows.Forms.DataGridViewTextBoxColumn NamSX;
         private System.Windows.Forms.DataGridViewTextBoxColumn TinhTrang;
-        private System.Windows.Forms.DataGridViewButtonColumn btn_xoa;
-        private System.Windows.Forms.Button btn_Update;
-        private System.Windows.Forms.Button xuathoadon_btn;
     }
 }

@@ -102,7 +102,7 @@ namespace QLMuaBanXeMay.UC
         {
             int soluong;
             float khuyenmai;
-            float thanhTien = 0;
+            double thanhTien = 0;
             foreach (ChiTietHD_PT chiTietHDPT in ListHDPT)
             {
                 thanhTien += chiTietHDPT.DonGia * chiTietHDPT.SoLuong;

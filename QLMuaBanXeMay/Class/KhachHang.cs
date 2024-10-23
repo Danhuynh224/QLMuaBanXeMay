@@ -18,10 +18,10 @@ namespace QLMuaBanXeMay.Class
         private string diaChi;
         private string email;
         private int maLoai;
-        private float tongChiTieu;
+        private double tongChiTieu;
         public KhachHang() { }
 
-        public KhachHang(int ccCDKH, string tenKH, DateTime ngaySinh, string gioiTinh, string sdt, string diaChi, string email, int maLoai, float tongChiTieu)
+        public KhachHang(int ccCDKH, string tenKH, DateTime ngaySinh, string gioiTinh, string sdt, string diaChi, string email, int maLoai, double tongChiTieu)
         {
             this.ccCDKH = ccCDKH;
             this.tenKH = tenKH;
@@ -82,7 +82,7 @@ namespace QLMuaBanXeMay.Class
             set { maLoai = value; }
         }
 
-        public float TongChiTieu
+        public double TongChiTieu
         {
             get { return tongChiTieu; }
             set { tongChiTieu = value; }

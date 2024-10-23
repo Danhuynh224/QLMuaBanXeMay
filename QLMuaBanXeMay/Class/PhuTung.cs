@@ -11,14 +11,14 @@ namespace QLMuaBanXeMay.Class
     {
         private int maPT;
         private string tenPT;
-        private float donGia;
+        private double donGia;
         private string chatLieu;
         private string hangSX;
         private int soLuongTon;
 
         public PhuTung() { }
 
-        public PhuTung(int maPT, string tenPT, float donGia, string chatLieu, string hangSX, int soLuongTon)
+        public PhuTung(int maPT, string tenPT, double donGia, string chatLieu, string hangSX, int soLuongTon)
         {
             this.maPT = maPT;
             this.tenPT = tenPT;
@@ -40,7 +40,7 @@ namespace QLMuaBanXeMay.Class
             set { tenPT = value; }
         }
 
-        public float DonGia
+        public double DonGia
         {
             get { return donGia; }
             set

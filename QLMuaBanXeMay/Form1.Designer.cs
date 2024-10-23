@@ -29,21 +29,21 @@
         private void InitializeComponent()
         {
             this.panel3 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
+            this.btnEmployee = new System.Windows.Forms.Button();
+            this.btnGuest = new System.Windows.Forms.Button();
+            this.btnMotobike = new System.Windows.Forms.Button();
+            this.btnTool = new System.Windows.Forms.Button();
+            this.btnBillBike = new System.Windows.Forms.Button();
+            this.btnBillTool = new System.Windows.Forms.Button();
             this.btnSignOut = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.btnUser = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.uC_MainScreen = new QLMuaBanXeMay.UC_MainScreen();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.btnTool = new System.Windows.Forms.Button();
-            this.btnMotobike = new System.Windows.Forms.Button();
-            this.btnGuest = new System.Windows.Forms.Button();
-            this.btnBillBike = new System.Windows.Forms.Button();
-            this.btnEmployee = new System.Windows.Forms.Button();
-            this.btnBillTool = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
+            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
@@ -59,6 +59,109 @@
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(200, 753);
             this.panel3.TabIndex = 0;
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Controls.Add(this.btnEmployee);
+            this.flowLayoutPanel1.Controls.Add(this.btnGuest);
+            this.flowLayoutPanel1.Controls.Add(this.btnMotobike);
+            this.flowLayoutPanel1.Controls.Add(this.btnTool);
+            this.flowLayoutPanel1.Controls.Add(this.btnBillBike);
+            this.flowLayoutPanel1.Controls.Add(this.btnBillTool);
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 205);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(190, 385);
+            this.flowLayoutPanel1.TabIndex = 1;
+            // 
+            // btnEmployee
+            // 
+            this.btnEmployee.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
+            this.btnEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnEmployee.Image = global::QLMuaBanXeMay.Properties.Resources.form_main_employees;
+            this.btnEmployee.Location = new System.Drawing.Point(3, 2);
+            this.btnEmployee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnEmployee.Name = "btnEmployee";
+            this.btnEmployee.Size = new System.Drawing.Size(187, 54);
+            this.btnEmployee.TabIndex = 6;
+            this.btnEmployee.Text = "Quản lý nhân viên            ";
+            this.btnEmployee.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnEmployee.UseVisualStyleBackColor = true;
+            this.btnEmployee.Click += new System.EventHandler(this.btnEmployee_Click);
+            // 
+            // btnGuest
+            // 
+            this.btnGuest.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
+            this.btnGuest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnGuest.Image = global::QLMuaBanXeMay.Properties.Resources.form_main_guests;
+            this.btnGuest.Location = new System.Drawing.Point(3, 60);
+            this.btnGuest.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnGuest.Name = "btnGuest";
+            this.btnGuest.Size = new System.Drawing.Size(189, 54);
+            this.btnGuest.TabIndex = 7;
+            this.btnGuest.Text = "Quản lý khách hàng         ";
+            this.btnGuest.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnGuest.UseVisualStyleBackColor = true;
+            this.btnGuest.Click += new System.EventHandler(this.btnGuest_Click);
+            // 
+            // btnMotobike
+            // 
+            this.btnMotobike.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
+            this.btnMotobike.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnMotobike.Image = global::QLMuaBanXeMay.Properties.Resources.form_main_motobikes;
+            this.btnMotobike.Location = new System.Drawing.Point(3, 118);
+            this.btnMotobike.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnMotobike.Name = "btnMotobike";
+            this.btnMotobike.Size = new System.Drawing.Size(187, 54);
+            this.btnMotobike.TabIndex = 8;
+            this.btnMotobike.Text = "Quản lý xe máy                  ";
+            this.btnMotobike.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnMotobike.UseVisualStyleBackColor = true;
+            this.btnMotobike.Click += new System.EventHandler(this.btnMotobike_Click);
+            // 
+            // btnTool
+            // 
+            this.btnTool.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
+            this.btnTool.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnTool.Image = global::QLMuaBanXeMay.Properties.Resources.form_main_tools;
+            this.btnTool.Location = new System.Drawing.Point(3, 176);
+            this.btnTool.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnTool.Name = "btnTool";
+            this.btnTool.Size = new System.Drawing.Size(187, 54);
+            this.btnTool.TabIndex = 9;
+            this.btnTool.Text = "Quản lý phụ tùng                ";
+            this.btnTool.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnTool.UseVisualStyleBackColor = true;
+            this.btnTool.Click += new System.EventHandler(this.btnTool_Click);
+            // 
+            // btnBillBike
+            // 
+            this.btnBillBike.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
+            this.btnBillBike.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBillBike.Image = global::QLMuaBanXeMay.Properties.Resources.form_main_bills;
+            this.btnBillBike.Location = new System.Drawing.Point(3, 234);
+            this.btnBillBike.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBillBike.Name = "btnBillBike";
+            this.btnBillBike.Size = new System.Drawing.Size(187, 54);
+            this.btnBillBike.TabIndex = 10;
+            this.btnBillBike.Text = "Quản lý hóa đơn xe           ";
+            this.btnBillBike.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBillBike.UseVisualStyleBackColor = true;
+            this.btnBillBike.Click += new System.EventHandler(this.btnBillBike_Click);
+            // 
+            // btnBillTool
+            // 
+            this.btnBillTool.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
+            this.btnBillTool.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnBillTool.Image = global::QLMuaBanXeMay.Properties.Resources.form_main_bills_tools;
+            this.btnBillTool.Location = new System.Drawing.Point(3, 292);
+            this.btnBillTool.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnBillTool.Name = "btnBillTool";
+            this.btnBillTool.Size = new System.Drawing.Size(187, 54);
+            this.btnBillTool.TabIndex = 11;
+            this.btnBillTool.Text = "Quản lý hóa đơn phụ tùng";
+            this.btnBillTool.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnBillTool.UseVisualStyleBackColor = true;
+            this.btnBillTool.Click += new System.EventHandler(this.btnBillTool_Click);
             // 
             // btnSignOut
             // 
@@ -110,114 +213,11 @@
             // 
             // uC_MainScreen
             // 
-            this.uC_MainScreen.Location = new System.Drawing.Point(0, 0);
+            this.uC_MainScreen.Location = new System.Drawing.Point(3, 351);
             this.uC_MainScreen.Name = "uC_MainScreen";
             this.uC_MainScreen.Size = new System.Drawing.Size(1300, 800);
             this.uC_MainScreen.TabIndex = 0;
             this.uC_MainScreen.Load += new System.EventHandler(this.uC_MainScreen_Load);
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Controls.Add(this.btnEmployee);
-            this.flowLayoutPanel1.Controls.Add(this.btnGuest);
-            this.flowLayoutPanel1.Controls.Add(this.btnMotobike);
-            this.flowLayoutPanel1.Controls.Add(this.btnTool);
-            this.flowLayoutPanel1.Controls.Add(this.btnBillBike);
-            this.flowLayoutPanel1.Controls.Add(this.btnBillTool);
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 205);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(215, 385);
-            this.flowLayoutPanel1.TabIndex = 1;
-            // 
-            // btnTool
-            // 
-            this.btnTool.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
-            this.btnTool.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnTool.Image = global::QLMuaBanXeMay.Properties.Resources.form_main_tools;
-            this.btnTool.Location = new System.Drawing.Point(3, 176);
-            this.btnTool.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnTool.Name = "btnTool";
-            this.btnTool.Size = new System.Drawing.Size(199, 54);
-            this.btnTool.TabIndex = 9;
-            this.btnTool.Text = "Quản lý phụ tùng                ";
-            this.btnTool.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnTool.UseVisualStyleBackColor = true;
-            this.btnTool.Click += new System.EventHandler(this.btnTool_Click);
-            // 
-            // btnMotobike
-            // 
-            this.btnMotobike.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
-            this.btnMotobike.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnMotobike.Image = global::QLMuaBanXeMay.Properties.Resources.form_main_motobikes;
-            this.btnMotobike.Location = new System.Drawing.Point(3, 118);
-            this.btnMotobike.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnMotobike.Name = "btnMotobike";
-            this.btnMotobike.Size = new System.Drawing.Size(199, 54);
-            this.btnMotobike.TabIndex = 8;
-            this.btnMotobike.Text = "Quản lý xe máy                  ";
-            this.btnMotobike.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnMotobike.UseVisualStyleBackColor = true;
-            this.btnMotobike.Click += new System.EventHandler(this.btnMotobike_Click);
-            // 
-            // btnGuest
-            // 
-            this.btnGuest.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
-            this.btnGuest.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnGuest.Image = global::QLMuaBanXeMay.Properties.Resources.form_main_guests;
-            this.btnGuest.Location = new System.Drawing.Point(3, 60);
-            this.btnGuest.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnGuest.Name = "btnGuest";
-            this.btnGuest.Size = new System.Drawing.Size(199, 54);
-            this.btnGuest.TabIndex = 7;
-            this.btnGuest.Text = "Quản lý khách hàng         ";
-            this.btnGuest.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnGuest.UseVisualStyleBackColor = true;
-            this.btnGuest.Click += new System.EventHandler(this.btnGuest_Click);
-            // 
-            // btnBillBike
-            // 
-            this.btnBillBike.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
-            this.btnBillBike.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBillBike.Image = global::QLMuaBanXeMay.Properties.Resources.form_main_bills;
-            this.btnBillBike.Location = new System.Drawing.Point(3, 234);
-            this.btnBillBike.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnBillBike.Name = "btnBillBike";
-            this.btnBillBike.Size = new System.Drawing.Size(199, 54);
-            this.btnBillBike.TabIndex = 10;
-            this.btnBillBike.Text = "Quản lý hóa đơn xe           ";
-            this.btnBillBike.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBillBike.UseVisualStyleBackColor = true;
-            this.btnBillBike.Click += new System.EventHandler(this.btnBillBike_Click);
-            // 
-            // btnEmployee
-            // 
-            this.btnEmployee.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
-            this.btnEmployee.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnEmployee.Image = global::QLMuaBanXeMay.Properties.Resources.form_main_employees;
-            this.btnEmployee.Location = new System.Drawing.Point(3, 2);
-            this.btnEmployee.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnEmployee.Name = "btnEmployee";
-            this.btnEmployee.Size = new System.Drawing.Size(199, 54);
-            this.btnEmployee.TabIndex = 6;
-            this.btnEmployee.Text = "Quản lý nhân viên            ";
-            this.btnEmployee.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnEmployee.UseVisualStyleBackColor = true;
-            this.btnEmployee.Click += new System.EventHandler(this.btnEmployee_Click);
-            // 
-            // btnBillTool
-            // 
-            this.btnBillTool.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
-            this.btnBillTool.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnBillTool.Image = global::QLMuaBanXeMay.Properties.Resources.form_main_bills_tools;
-            this.btnBillTool.Location = new System.Drawing.Point(3, 292);
-            this.btnBillTool.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnBillTool.Name = "btnBillTool";
-            this.btnBillTool.Size = new System.Drawing.Size(199, 54);
-            this.btnBillTool.TabIndex = 11;
-            this.btnBillTool.Text = "Quản lý hóa đơn phụ tùng";
-            this.btnBillTool.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnBillTool.UseVisualStyleBackColor = true;
-            this.btnBillTool.Click += new System.EventHandler(this.btnBillTool_Click);
             // 
             // Form1
             // 
@@ -229,8 +229,8 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "mainform";
             this.panel3.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
+            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }

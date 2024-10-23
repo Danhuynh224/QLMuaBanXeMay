@@ -13,7 +13,7 @@ namespace QLMuaBanXeMay.Class
         private int maHDXe;
         private int maXe;
         private float khuyenMai;
-        private float tongTien;
+        private double tongTien;
         private int ccCDKH;
         private int ccCDNV;
         private string pTTT;
@@ -21,7 +21,7 @@ namespace QLMuaBanXeMay.Class
 
         public HoaDonXe() { }
 
-        public HoaDonXe(int maHDXe, int maXe, float khuyenMai, float tongTien, int ccCDKH, int ccCDNV, string pTTT, DateTime ngayXuat)
+        public HoaDonXe(int maHDXe, int maXe, float khuyenMai, double tongTien, int ccCDKH, int ccCDNV, string pTTT, DateTime ngayXuat)
         {
             this.maHDXe = maHDXe;
             this.maXe = maXe;
@@ -56,7 +56,7 @@ namespace QLMuaBanXeMay.Class
             }
         }
 
-        public float TongTien
+        public double TongTien
         {
             get { return tongTien; }
             set

@@ -65,5 +65,10 @@ namespace QLMuaBanXeMay.WF
                 btn_dangnhap.PerformClick();
             }
         }
+
+        private void txt_matkhau_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

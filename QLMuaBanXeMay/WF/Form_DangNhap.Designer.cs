@@ -37,6 +37,8 @@
             this.label4 = new System.Windows.Forms.Label();
             this.pictureBox2 = new System.Windows.Forms.PictureBox();
             this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
@@ -59,21 +61,27 @@
             // 
             // txt_matkhau
             // 
+            this.txt_matkhau.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(27)))));
+            this.txt_matkhau.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_matkhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_matkhau.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txt_matkhau.Location = new System.Drawing.Point(754, 296);
             this.txt_matkhau.Name = "txt_matkhau";
-            this.txt_matkhau.Size = new System.Drawing.Size(214, 30);
+            this.txt_matkhau.PasswordChar = '*';
+            this.txt_matkhau.Size = new System.Drawing.Size(214, 23);
             this.txt_matkhau.TabIndex = 12;
+            this.txt_matkhau.TextChanged += new System.EventHandler(this.txt_matkhau_TextChanged);
             this.txt_matkhau.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_matkhau_KeyDown);
             // 
             // txt_taikhoan
             // 
+            this.txt_taikhoan.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(27)))));
+            this.txt_taikhoan.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.txt_taikhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.txt_taikhoan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.txt_taikhoan.Location = new System.Drawing.Point(754, 207);
+            this.txt_taikhoan.Location = new System.Drawing.Point(754, 211);
             this.txt_taikhoan.Name = "txt_taikhoan";
-            this.txt_taikhoan.Size = new System.Drawing.Size(214, 30);
+            this.txt_taikhoan.Size = new System.Drawing.Size(214, 23);
             this.txt_taikhoan.TabIndex = 10;
             // 
             // label1
@@ -139,6 +147,26 @@
             this.pictureBox1.TabIndex = 16;
             this.pictureBox1.TabStop = false;
             // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.BackColor = System.Drawing.Color.Transparent;
+            this.label5.Location = new System.Drawing.Point(751, 224);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(217, 16);
+            this.label5.TabIndex = 20;
+            this.label5.Text = "______________________________";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.BackColor = System.Drawing.Color.Transparent;
+            this.label6.Location = new System.Drawing.Point(751, 310);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(217, 16);
+            this.label6.TabIndex = 21;
+            this.label6.Text = "______________________________";
+            // 
             // Form_DangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -154,6 +182,8 @@
             this.Controls.Add(this.txt_taikhoan);
             this.Controls.Add(this.btn_dangnhap);
             this.Controls.Add(this.txt_matkhau);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label5);
             this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.Name = "Form_DangNhap";
             this.Text = "Form_DangNhap";
@@ -175,5 +205,7 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.PictureBox pictureBox2;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label label6;
     }
 }

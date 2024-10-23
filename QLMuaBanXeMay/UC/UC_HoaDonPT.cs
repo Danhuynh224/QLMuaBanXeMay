@@ -14,11 +14,13 @@ namespace QLMuaBanXeMay.UC
 {
     public partial class UC_HoaDonPT : UserControl
     {
-        Class.HoaDonPT hoaDonPT = new Class.HoaDonPT();
-        public UC_HoaDonPT()
+        HoaDonPT hoaDonPT = new Class.HoaDonPT();
+        NhanVien user;
+        public UC_HoaDonPT(NhanVien user)
         {
             InitializeComponent();
-            Load_GridView();
+            this.user = user;
+            Load_GridView();           
         }
         private void Load_GridView()
         {

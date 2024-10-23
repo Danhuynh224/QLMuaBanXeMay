@@ -12,10 +12,10 @@ namespace QLMuaBanXeMay.Class
     {
         private int maLoai;
         private string tenLoai;
-        private float ctCanDat;
+        private double ctCanDat;
         private float khuyenMai;
 
-        public LoaiKH(int maLoai, string tenLoai, float ctCanDat, float khuyenMai)
+        public LoaiKH(int maLoai, string tenLoai, double ctCanDat, float khuyenMai)
         {
             this.maLoai = maLoai;
             this.tenLoai = tenLoai;
@@ -35,7 +35,7 @@ namespace QLMuaBanXeMay.Class
             set { tenLoai = value; }
         }
 
-        public float CTCanDat
+        public double CTCanDat
         {
             get { return ctCanDat; }
             set

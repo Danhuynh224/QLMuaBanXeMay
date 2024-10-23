@@ -30,11 +30,15 @@
         {
             this.btn_dangnhap = new Guna.UI2.WinForms.Guna2Button();
             this.txt_matkhau = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.txt_taikhoan = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
+            this.pictureBox2 = new System.Windows.Forms.PictureBox();
+            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
             this.SuspendLayout();
             // 
             // btn_dangnhap
@@ -43,9 +47,10 @@
             this.btn_dangnhap.DisabledState.CustomBorderColor = System.Drawing.Color.DarkGray;
             this.btn_dangnhap.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(169)))), ((int)(((byte)(169)))), ((int)(((byte)(169)))));
             this.btn_dangnhap.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
-            this.btn_dangnhap.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.btn_dangnhap.ForeColor = System.Drawing.Color.White;
-            this.btn_dangnhap.Location = new System.Drawing.Point(564, 291);
+            this.btn_dangnhap.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btn_dangnhap.Font = new System.Drawing.Font("Microsoft Sans Serif", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btn_dangnhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
+            this.btn_dangnhap.Location = new System.Drawing.Point(810, 396);
             this.btn_dangnhap.Name = "btn_dangnhap";
             this.btn_dangnhap.Size = new System.Drawing.Size(158, 35);
             this.btn_dangnhap.TabIndex = 13;
@@ -54,73 +59,102 @@
             // 
             // txt_matkhau
             // 
-            this.txt_matkhau.Location = new System.Drawing.Point(587, 213);
-            this.txt_matkhau.Multiline = true;
+            this.txt_matkhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_matkhau.Location = new System.Drawing.Point(754, 296);
             this.txt_matkhau.Name = "txt_matkhau";
-            this.txt_matkhau.Size = new System.Drawing.Size(170, 30);
+            this.txt_matkhau.Size = new System.Drawing.Size(214, 30);
             this.txt_matkhau.TabIndex = 12;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(490, 223);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(77, 20);
-            this.label3.TabIndex = 11;
-            this.label3.Text = "Mật khẩu";
+            this.txt_matkhau.KeyDown += new System.Windows.Forms.KeyEventHandler(this.txt_matkhau_KeyDown);
             // 
             // txt_taikhoan
             // 
-            this.txt_taikhoan.Location = new System.Drawing.Point(587, 143);
-            this.txt_taikhoan.Multiline = true;
+            this.txt_taikhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_taikhoan.Location = new System.Drawing.Point(754, 207);
             this.txt_taikhoan.Name = "txt_taikhoan";
-            this.txt_taikhoan.Size = new System.Drawing.Size(170, 30);
+            this.txt_taikhoan.Size = new System.Drawing.Size(214, 30);
             this.txt_taikhoan.TabIndex = 10;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Location = new System.Drawing.Point(551, 212);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(165, 25);
+            this.label1.TabIndex = 14;
+            this.label1.Text = "Tên đăng nhập:";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(490, 153);
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(603, 301);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(81, 20);
-            this.label2.TabIndex = 9;
-            this.label2.Text = "Tài khoản";
+            this.label2.Size = new System.Drawing.Size(108, 25);
+            this.label2.TabIndex = 15;
+            this.label2.Text = "Mật khẩu:";
             // 
-            // label1
+            // label3
             // 
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(591, 85);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(166, 39);
-            this.label1.TabIndex = 8;
-            this.label1.Text = "Đăng nhập";
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(630, 47);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(309, 36);
+            this.label3.TabIndex = 17;
+            this.label3.Text = "QUẢN LÝ MUA BÁN";
             // 
-            // panel1
+            // label4
             // 
-            this.panel1.BackgroundImage = global::QLMuaBanXeMay.Properties.Resources.motobike;
-            this.panel1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel1.Location = new System.Drawing.Point(0, 0);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(435, 453);
-            this.panel1.TabIndex = 7;
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(719, 94);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(136, 36);
+            this.label4.TabIndex = 18;
+            this.label4.Text = "XE MÁY";
+            // 
+            // pictureBox2
+            // 
+            this.pictureBox2.Image = global::QLMuaBanXeMay.Properties.Resources.tampt;
+            this.pictureBox2.Location = new System.Drawing.Point(556, 458);
+            this.pictureBox2.Name = "pictureBox2";
+            this.pictureBox2.Size = new System.Drawing.Size(236, 165);
+            this.pictureBox2.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox2.TabIndex = 19;
+            this.pictureBox2.TabStop = false;
+            // 
+            // pictureBox1
+            // 
+            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.pictureBox1.Image = global::QLMuaBanXeMay.Properties.Resources.background1;
+            this.pictureBox1.Location = new System.Drawing.Point(0, 0);
+            this.pictureBox1.Name = "pictureBox1";
+            this.pictureBox1.Size = new System.Drawing.Size(531, 648);
+            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.pictureBox1.TabIndex = 16;
+            this.pictureBox1.TabStop = false;
             // 
             // Form_DangNhap
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(782, 453);
-            this.Controls.Add(this.btn_dangnhap);
-            this.Controls.Add(this.txt_matkhau);
+            this.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(35)))), ((int)(((byte)(32)))), ((int)(((byte)(27)))));
+            this.ClientSize = new System.Drawing.Size(1019, 648);
+            this.Controls.Add(this.pictureBox2);
+            this.Controls.Add(this.label4);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.txt_taikhoan);
+            this.Controls.Add(this.pictureBox1);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label1);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.txt_taikhoan);
+            this.Controls.Add(this.btn_dangnhap);
+            this.Controls.Add(this.txt_matkhau);
+            this.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.Name = "Form_DangNhap";
             this.Text = "Form_DangNhap";
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -130,10 +164,12 @@
 
         private Guna.UI2.WinForms.Guna2Button btn_dangnhap;
         private System.Windows.Forms.TextBox txt_matkhau;
-        private System.Windows.Forms.Label label3;
         private System.Windows.Forms.TextBox txt_taikhoan;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.PictureBox pictureBox2;
     }
 }

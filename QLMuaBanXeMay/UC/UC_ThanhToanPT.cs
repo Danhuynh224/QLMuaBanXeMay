@@ -19,24 +19,24 @@ namespace QLMuaBanXeMay.UC
     public partial class UC_ThanhToanPT : UserControl
     {
 
-        Class.PhuTung phuTung_tt = new PhuTung();
+
         Class.KhachHang khachHang_tt = new KhachHang();
-        List<PhuTung> ListPT = new List<PhuTung>();
+        List<ChiTietHD_PT> ListHDPT = new List<ChiTietHD_PT>();
         public UC_ThanhToanPT()
         {
             
         }
-        public UC_ThanhToanPT(List<PhuTung> listPT, KhachHang khachHang)
+        public UC_ThanhToanPT(List<ChiTietHD_PT> listHDPT, KhachHang khachHang)
         {
             InitializeComponent();
-            ListPT = listPT;
-            dataGridViewPT.DataSource = null; // Xóa dữ liệu hiện có (nếu có)
-            dataGridViewPT.DataSource = listPT;
-            
+            ListHDPT = listHDPT;
+            dataGridViewPT.DataSource = null; 
+            dataGridViewPT.DataSource = listHDPT;
+            dataGridViewPT.Columns[0].Visible = false;
         }
         
 
-        private void UC_ThanhToanPT_Load(PhuTung phuTung, KhachHang khachHang)
+        private void UC_ThanhToanPT_Load(KhachHang khachHang)
         {
 
             MessageBox.Show(khachHang.MaLoai.ToString());
@@ -60,7 +60,7 @@ namespace QLMuaBanXeMay.UC
             if (kh.ShowDialog() == DialogResult.OK)
             {
                 MessageBox.Show(khachHang_tt.TenKH.ToString());
-                UC_ThanhToanPT_Load(phuTung_tt, khachHang_tt);
+                UC_ThanhToanPT_Load(khachHang_tt);
                 tinhThanhTien();
             }
             
@@ -85,17 +85,11 @@ namespace QLMuaBanXeMay.UC
             DAO.DAOHoaDonPT.ThemHoaDonPT(hoaDonPT);
             
 
-            Class.ChiTietHD_PT chiTietHD_PT = new ChiTietHD_PT();
-            chiTietHD_PT.MaHDPT = Convert.ToInt32(txt_maHD.Text);
-            foreach (PhuTung phuTung in ListPT)
+
+            foreach (ChiTietHD_PT chiTietHDPT in ListHDPT)
             {
-                
-            chiTietHD_PT.MaPT = phuTung.MaPT;
-            chiTietHD_PT.SoLuong = phuTung.SoLuongTon;
-            chiTietHD_PT.DonGia = phuTung.DonGia;
-
-            DAO.DAOHoaDonPT.ThemChiTietHDPT(chiTietHD_PT);
-
+                chiTietHDPT.MaHDPT = Convert.ToInt32(txt_maHD.Text);
+                DAO.DAOHoaDonPT.ThemChiTietHDPT(chiTietHDPT);
 
             }
             
@@ -109,9 +103,9 @@ namespace QLMuaBanXeMay.UC
             int soluong;
             float khuyenmai;
             float thanhTien = 0;
-            foreach (PhuTung phuTung in ListPT)
+            foreach (ChiTietHD_PT chiTietHDPT in ListHDPT)
             {
-                thanhTien += phuTung.DonGia * phuTung.SoLuongTon;
+                thanhTien += chiTietHDPT.DonGia * chiTietHDPT.SoLuong;
             }
             if (float.TryParse(txt_khuyenMai.Text, out khuyenmai))
             {

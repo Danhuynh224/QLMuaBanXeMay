@@ -38,5 +38,10 @@ namespace QLMuaBanXeMay.WF
             this.DialogResult = DialogResult.OK; // Thiết lập kết quả đối thoại
             this.Close(); // Đóng Form2
         }
+
+        private void Form_ThongTinXe_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace QLMuaBanXeMay.DAO
 {
@@ -15,15 +16,22 @@ namespace QLMuaBanXeMay.DAO
         {
             using (SqlCommand command = new SqlCommand("ThemTaiKhoan", MY_DB.getConnection()))
             {
-                command.CommandType = CommandType.StoredProcedure;
+                try
+                {
+                    command.CommandType = CommandType.StoredProcedure;
 
-                command.Parameters.AddWithValue("@TenTK", taiKhoan.TenTK);
-                command.Parameters.AddWithValue("@MatKhau", taiKhoan.MatKhau);
-                command.Parameters.AddWithValue("@CCCDNV", taiKhoan.CCCDNV);
+                    command.Parameters.AddWithValue("@TenTK", taiKhoan.TenTK);
+                    command.Parameters.AddWithValue("@MatKhau", taiKhoan.MatKhau);
+                    command.Parameters.AddWithValue("@CCCDNV", taiKhoan.CCCDNV);
 
-                MY_DB.openConnection();
-                command.ExecuteNonQuery();
-                MY_DB.closeConnection();
+                    MY_DB.openConnection();
+                    command.ExecuteNonQuery();
+                    MY_DB.closeConnection();
+                }
+                catch
+                {
+                    MessageBox.Show("Không vào được tài khoản");
+                }
             }
         }
         public static void SuaTaiKhoan(TaiKhoan taiKhoan)

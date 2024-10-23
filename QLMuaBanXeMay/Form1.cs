@@ -25,12 +25,12 @@ namespace QLMuaBanXeMay
         {
             if (NhanVien.ChucVu=="Bán Hàng")
             {
-                btnTool.Enabled = false;
-                btnBillTool.Enabled = false;
+                btnBillTool.Visible = false;
+               btnTool.Visible = false;
             }else if(NhanVien.ChucVu=="Kỹ Thuật")
             {
-                btnMotobike.Enabled = false;
-                btnBillBike.Enabled = false;
+                btnMotobike.Visible = false;
+                btnBillBike.Visible = false;
             }
         }
         private void btnEmployee_Click(object sender, EventArgs e)

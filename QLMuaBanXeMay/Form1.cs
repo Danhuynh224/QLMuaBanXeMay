@@ -97,5 +97,13 @@ namespace QLMuaBanXeMay
         {
 
         }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            UC_ThongKeDoanhThu uc = new UC_ThongKeDoanhThu();
+            panel5.Controls.Clear();
+            panel5.Controls.Add(uc);
+            uc.Dock = DockStyle.Fill;
+        }
     }
 }

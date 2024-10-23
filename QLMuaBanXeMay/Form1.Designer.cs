@@ -41,6 +41,7 @@
             this.btnUser = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.uC_MainScreen = new QLMuaBanXeMay.UC_MainScreen();
+            this.btnThongKe = new System.Windows.Forms.Button();
             this.panel3.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
             this.panel5.SuspendLayout();
@@ -68,9 +69,10 @@
             this.flowLayoutPanel1.Controls.Add(this.btnTool);
             this.flowLayoutPanel1.Controls.Add(this.btnBillBike);
             this.flowLayoutPanel1.Controls.Add(this.btnBillTool);
+            this.flowLayoutPanel1.Controls.Add(this.btnThongKe);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 205);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(190, 385);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(196, 411);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // btnEmployee
@@ -96,7 +98,7 @@
             this.btnGuest.Location = new System.Drawing.Point(3, 60);
             this.btnGuest.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGuest.Name = "btnGuest";
-            this.btnGuest.Size = new System.Drawing.Size(189, 54);
+            this.btnGuest.Size = new System.Drawing.Size(187, 54);
             this.btnGuest.TabIndex = 7;
             this.btnGuest.Text = "Quản lý khách hàng         ";
             this.btnGuest.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -219,6 +221,21 @@
             this.uC_MainScreen.TabIndex = 0;
             this.uC_MainScreen.Load += new System.EventHandler(this.uC_MainScreen_Load);
             // 
+            // btnThongKe
+            // 
+            this.btnThongKe.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
+            this.btnThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThongKe.Image = global::QLMuaBanXeMay.Properties.Resources.form_main_bills_tools;
+            this.btnThongKe.Location = new System.Drawing.Point(3, 350);
+            this.btnThongKe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnThongKe.Name = "btnThongKe";
+            this.btnThongKe.Size = new System.Drawing.Size(187, 54);
+            this.btnThongKe.TabIndex = 12;
+            this.btnThongKe.Text = "Thống kê doanh thu";
+            this.btnThongKe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnThongKe.UseVisualStyleBackColor = true;
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
+            // 
             // Form1
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -253,6 +270,7 @@
         private System.Windows.Forms.Button btnTool;
         private System.Windows.Forms.Button btnBillBike;
         private System.Windows.Forms.Button btnBillTool;
+        private System.Windows.Forms.Button btnThongKe;
     }
 }
 

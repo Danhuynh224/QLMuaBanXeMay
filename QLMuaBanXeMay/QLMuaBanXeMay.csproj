@@ -41,6 +41,7 @@
     <Reference Include="System.Design" />
     <Reference Include="System.Management" />
     <Reference Include="System.Web" />
+    <Reference Include="System.Windows.Forms.DataVisualization" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -172,6 +173,24 @@
     <Compile Include="UC\UC_ThanhToanPT.Designer.cs">
       <DependentUpon>UC_ThanhToanPT.cs</DependentUpon>
     </Compile>
+    <Compile Include="UC\UC_ThongKeDoanhThu.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_ThongKeDoanhThu.Designer.cs">
+      <DependentUpon>UC_ThongKeDoanhThu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UC_ThongKeTheoNhanVien.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_ThongKeTheoNhanVien.Designer.cs">
+      <DependentUpon>UC_ThongKeTheoNhanVien.cs</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UC_ThongKeTheoThang.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_ThongKeTheoThang.Designer.cs">
+      <DependentUpon>UC_ThongKeTheoThang.cs</DependentUpon>
+    </Compile>
     <Compile Include="WF\Form_DangNhap.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -253,6 +272,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="UC\UC_ThanhToanPT.resx">
       <DependentUpon>UC_ThanhToanPT.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_ThongKeDoanhThu.resx">
+      <DependentUpon>UC_ThongKeDoanhThu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_ThongKeTheoNhanVien.resx">
+      <DependentUpon>UC_ThongKeTheoNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="UC\UC_ThongKeTheoThang.resx">
+      <DependentUpon>UC_ThongKeTheoThang.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WF\Form_DangNhap.resx">
       <DependentUpon>Form_DangNhap.cs</DependentUpon>

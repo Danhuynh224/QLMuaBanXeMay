@@ -1,5 +1,6 @@
 ﻿using QLMuaBanXeMay.Class;
 using QLMuaBanXeMay.DAO;
+using QLMuaBanXeMay.WF;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,8 @@ namespace QLMuaBanXeMay.UC
 {
     public partial class UC_QLThongTinNhanVien : UserControl
     {
+        NhanVien nhanVien;
+        TaiKhoan taiKhoan;
         public UC_QLThongTinNhanVien()
         {
             InitializeComponent();
@@ -27,42 +30,17 @@ namespace QLMuaBanXeMay.UC
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            try
+            nhanVien = new NhanVien();
+            taiKhoan = new TaiKhoan();
+            Form_ThemNhanVien form = new Form_ThemNhanVien(nhanVien, taiKhoan);
+            if (form.ShowDialog() == DialogResult.OK)
             {
-                // Tạo đối tượng NhanVien từ các giá trị nhập vào
-                NhanVien nhanVien = new NhanVien();
-
-                nhanVien.CCCDNV = int.Parse(txtCCCD.Text);
-                nhanVien.TenNV = txtTenNV.Text;
-                nhanVien.NgaySinh = dtpNgaySinh.Value;
-                nhanVien.GioiTinh = txtGioiTinh.Text;
-                nhanVien.SDT = txtSDT.Text;
-                nhanVien.DiaChi = txtDiaChi.Text;
-                nhanVien.Email = txtEmail.Text;
-                nhanVien.ChucVu = txtChucVu.Text;
-
-
-                // Tạo đối tượng TaiKhoan từ các giá trị nhập vào
-                TaiKhoan taiKhoan = new TaiKhoan();
-
-                taiKhoan.TenTK = txtTenTK.Text;
-                taiKhoan.MatKhau = txtMatKhau.Text;
-                taiKhoan.CCCDNV = nhanVien.CCCDNV;
-
-
-                // Thêm nhân viên và tài khoản
+                // Nhận giá trị từ Form2
+                nhanVien = form.Nv;
+                taiKhoan = form.Tk;
                 DAONhanVien.ThemNhanVien(nhanVien);
                 DAOTaiKhoan.ThemTaiKhoan(taiKhoan);
-
-                MessageBox.Show("Thêm mới nhân viên thành công!");
-
-                // Tải lại dữ liệu vào DataGridView
                 LoadData();
-                clearTextBox();
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi: " + ex.Message);
             }
         }
 

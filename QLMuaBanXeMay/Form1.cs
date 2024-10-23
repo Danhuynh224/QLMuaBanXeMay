@@ -1,4 +1,5 @@
-﻿using QLMuaBanXeMay.UC;
+﻿using QLMuaBanXeMay.Class;
+using QLMuaBanXeMay.UC;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,11 +14,25 @@ namespace QLMuaBanXeMay
 {
     public partial class Form1 : Form
     {
-        public Form1(string chucVu)
+        NhanVien NhanVien;
+        public Form1(NhanVien nhanvien)
         {
             InitializeComponent();
+            NhanVien=nhanvien;
+            loadRole();
         }
-
+        private void loadRole()
+        {
+            if (NhanVien.ChucVu=="Bán Hàng")
+            {
+                btnTool.Enabled = false;
+                btnBillTool.Enabled = false;
+            }else if(NhanVien.ChucVu=="Kỹ Thuật")
+            {
+                btnMotobike.Enabled = false;
+                btnBillBike.Enabled = false;
+            }
+        }
         private void btnEmployee_Click(object sender, EventArgs e)
         {
             UC_QLThongTinNhanVien uc = new UC_QLThongTinNhanVien();

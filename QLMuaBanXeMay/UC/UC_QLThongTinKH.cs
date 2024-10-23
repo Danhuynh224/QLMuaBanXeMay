@@ -1,5 +1,6 @@
 ﻿using QLMuaBanXeMay.Class;
 using QLMuaBanXeMay.DAO;
+using QLMuaBanXeMay.WF;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -14,6 +15,7 @@ namespace QLMuaBanXeMay.UC
 {
     public partial class UC_QLThongTinKH : UserControl
     {
+        KhachHang kh;
         public UC_QLThongTinKH()
         {
             InitializeComponent();
@@ -27,27 +29,14 @@ namespace QLMuaBanXeMay.UC
 
         private void btnThem_Click(object sender, EventArgs e)
         {
-            try
+            kh = new KhachHang();
+            Form_ThemKhachHang form = new Form_ThemKhachHang(kh);
+            if (form.ShowDialog() == DialogResult.OK)
             {
-                KhachHang khachHang = new KhachHang();
-                khachHang.CCCDKH = int.Parse(txtCCCD.Text);
-                khachHang.TenKH = txtTenKH.Text;
-                khachHang.NgaySinh = dtpNgaySinh.Value;
-                khachHang.GioiTinh = txtGioiTinh.Text;
-                khachHang.SDT = txtSDT.Text;
-                khachHang.DiaChi = txtDiaChi.Text;
-                khachHang.Email = txtEmail.Text;
-                khachHang.MaLoai = int.Parse(txtMaLoai.Text);
-                khachHang.TongChiTieu = float.Parse(txtTongChiTieu.Text);
-
-                DAOKhachHang.ThemKhachHang(khachHang);
+                // Nhận giá trị từ Form2
+                kh = form.Kh;
+                DAOKhachHang.ThemKhachHang(kh);
                 LoadData();
-                clearTextBox();
-                MessageBox.Show("Thêm khách hàng thành công.");
-            }
-            catch (Exception ex)
-            {
-                MessageBox.Show("Lỗi: " + ex.Message);
             }
         }
         private void clearTextBox()
@@ -133,6 +122,11 @@ namespace QLMuaBanXeMay.UC
                 txtMaLoai.Text = row.Cells["MaLoai"].Value.ToString();
                 txtTongChiTieu.Text = row.Cells["TongChiTieu"].Value.ToString();
             }
+        }
+
+        private void groupBox1_Enter(object sender, EventArgs e)
+        {
+
         }
     }
 }

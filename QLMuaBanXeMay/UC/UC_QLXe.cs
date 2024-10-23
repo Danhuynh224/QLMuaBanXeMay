@@ -119,7 +119,7 @@ namespace QLMuaBanXeMay
             this.Controls.Add(uc);
         }
 
-        private void Xe_GridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        private void UC_QLXe_Load(object sender, EventArgs e)
         {
 
         }

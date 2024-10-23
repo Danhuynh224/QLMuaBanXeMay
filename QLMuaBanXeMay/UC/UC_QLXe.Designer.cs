@@ -184,7 +184,6 @@
             this.Xe_GridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.Xe_GridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.Xe_GridView.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Xe_GridView_CellClick);
-            this.Xe_GridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.Xe_GridView_CellContentClick);
             // 
             // MaXe
             // 
@@ -618,6 +617,7 @@
             this.Controls.Add(this.label1);
             this.Name = "UC_QLXe";
             this.Size = new System.Drawing.Size(1300, 721);
+            this.Load += new System.EventHandler(this.UC_QLXe_Load);
             ((System.ComponentModel.ISupportInitialize)(this.xeMayBindingSource)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.qLMuaBanXeMayDataSet)).EndInit();
             this.groupBox2.ResumeLayout(false);

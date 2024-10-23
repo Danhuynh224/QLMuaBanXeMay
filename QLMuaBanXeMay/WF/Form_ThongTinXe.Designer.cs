@@ -272,6 +272,7 @@
             this.Controls.Add(this.groupBox2);
             this.Name = "Form_ThongTinXe";
             this.Text = "Form_ThongTinXe";
+            this.Load += new System.EventHandler(this.Form_ThongTinXe_Load);
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             this.ResumeLayout(false);

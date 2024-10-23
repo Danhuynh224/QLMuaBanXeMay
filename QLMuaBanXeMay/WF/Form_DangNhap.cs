@@ -35,8 +35,16 @@ namespace QLMuaBanXeMay.WF
                     {
                         while (reader.Read())
                         {
-                            string chucVu = reader.GetString(3);
-                            Form1 form1 = new Form1(chucVu);
+                            int cccdNV = reader.GetInt32(0);
+                            string tenNV=reader.GetString(1);
+                            DateTime ngaySinh = reader.GetDateTime(2);
+                            string gioiTinh = reader.GetString(3);
+                            string sdt=reader.GetString(4);
+                            string diaChi = reader.GetString(5);
+                            string email=reader.GetString(6);
+                            string chucVu = reader.GetString(7);
+                            NhanVien nhanVien = new NhanVien(cccdNV,tenNV,ngaySinh,gioiTinh,sdt,diaChi,email,chucVu);
+                            Form1 form1 = new Form1(nhanVien);
                             form1.Show();
                             this.Hide();
                         }

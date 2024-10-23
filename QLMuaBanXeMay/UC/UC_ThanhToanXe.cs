@@ -16,14 +16,16 @@ namespace QLMuaBanXeMay.UC
     {
         Class.XeMay xeMay_tt = new XeMay();
         Class.KhachHang khachHang_tt = new KhachHang();
+        NhanVien user;
         public UC_ThanhToanXe()
         {
             InitializeComponent();
         }
-        public UC_ThanhToanXe(XeMay xeMay, KhachHang khachHang)
+        public UC_ThanhToanXe(XeMay xeMay, KhachHang khachHang, NhanVien user)
         {
             this.xeMay_tt = xeMay;
             this.khachHang_tt  = khachHang;
+            this.user = user;
             InitializeComponent();
             try
             {
@@ -87,7 +89,7 @@ namespace QLMuaBanXeMay.UC
         {
             int soluong;
             float khuyenmai;
-            float thanhTien = float.Parse(txt_donGia.Text);
+            double thanhTien = float.Parse(txt_donGia.Text);
             if (float.TryParse(txt_khuyenMai.Text, out khuyenmai))
             {
                 thanhTien = thanhTien - (thanhTien * khuyenmai);
@@ -104,7 +106,7 @@ namespace QLMuaBanXeMay.UC
             hoaDonXe.KhuyenMai = float.Parse(txt_khuyenMai.Text);
             hoaDonXe.TongTien = float.Parse(txt_thanhTien.Text);
             hoaDonXe.CCCDKH = Convert.ToInt32(txt_cccdKH.Text);
-            hoaDonXe.CCCDNV = 123456789;
+            hoaDonXe.CCCDNV = user.CCCDNV;
             hoaDonXe.PTTT = cb_pttt.Text;
             hoaDonXe.NgayXuat = dt_ngayXuat.Value;
 

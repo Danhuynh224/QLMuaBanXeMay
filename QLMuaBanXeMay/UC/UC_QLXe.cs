@@ -130,7 +130,7 @@ namespace QLMuaBanXeMay
 
         private void xuathoadon_btn_Click(object sender, EventArgs e)
         {
-            UC_ThanhToanXe uc = new UC_ThanhToanXe(xeMay, khachHang);
+            UC_ThanhToanXe uc = new UC_ThanhToanXe(xeMay, khachHang, user);
             this.Controls.Clear();
             this.Controls.Add(uc);
         }

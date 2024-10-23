@@ -14,9 +14,11 @@ namespace QLMuaBanXeMay.UC
 {
     public partial class UC_HoaDonXee : UserControl
     {
-        public UC_HoaDonXee()
+        NhanVien user;
+        public UC_HoaDonXee(NhanVien user)
         {
             InitializeComponent();
+            this.user = user;
             Load_GridView();
         }
 

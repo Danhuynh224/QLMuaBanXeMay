@@ -14,7 +14,7 @@ namespace QLMuaBanXeMay.DAO
     {
         public static DataTable LayThongTin()
         {
-            using (SqlCommand command = new SqlCommand("Select * From XeMay", MY_DB.getConnection()))
+            using (SqlCommand command = new SqlCommand("SELECT * FROM dbo.GetAllXeMay()", MY_DB.getConnection()))
             {
                 MY_DB.openConnection();
 
@@ -30,10 +30,10 @@ namespace QLMuaBanXeMay.DAO
 
         internal static object LayThongTinTheoTen(string TenXe)
         {
-            using (SqlCommand command = new SqlCommand("SELECT * FROM XeMay WHERE TenXe LIKE @TenXe", MY_DB.getConnection()))
+            using (SqlCommand command = new SqlCommand("SELECT * FROM dbo.GetXeMayByTenXe(@TenXe)", MY_DB.getConnection()))
             {
                 MY_DB.openConnection();
-                command.Parameters.AddWithValue("@TenXe", "%" + TenXe + "%");
+                command.Parameters.AddWithValue("@TenXe",TenXe.Trim());
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);

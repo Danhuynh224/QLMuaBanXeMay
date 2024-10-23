@@ -19,18 +19,33 @@ namespace QLMuaBanXeMay
     public partial class UC_QLXe : UserControl
     {
 
-        Class.XeMay xeMay = new XeMay();
-        Class.KhachHang khachHang = new KhachHang();
-        public UC_QLXe()
+        XeMay xeMay = new XeMay();
+        KhachHang khachHang = new KhachHang();
+        NhanVien user = new NhanVien();
+        public UC_QLXe(NhanVien user)
         {
             InitializeComponent();
-            Load_GridView();
+            this.user = user;
+            MessageBox.Show(user.ChucVu);
+            loadRole();
+            Load_GridView();         
         }
         private void Load_GridView()
         {
             Xe_GridView.DataSource = DAOXeMay.LayThongTin();
         }
-        
+        private void loadRole()
+        {
+            if (user.ChucVu == "Quản Lý")
+            {
+                xuathoadon_btn.Visible = false;
+            }
+            else if (user.ChucVu == "Bán Hàng")
+            {
+                btn_Update.Visible = false;
+                grBox_Congcu.Visible = false;
+            }
+        }
 
         private void Xe_GridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {

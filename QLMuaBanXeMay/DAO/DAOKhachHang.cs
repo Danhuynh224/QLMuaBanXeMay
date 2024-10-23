@@ -86,7 +86,7 @@ namespace QLMuaBanXeMay.DAO
 
         public static DataTable TimKhachHangTheoCCCD(int cccdKH)
         {
-            using (SqlCommand command = new SqlCommand("SELECT * FROM KhachHang WHERE CCCDKH = @CCCDKH", MY_DB.getConnection()))
+            using (SqlCommand command = new SqlCommand("SELECT * FROM dbo.GetKhachHangByCCCDKH(@CCCDKH)", MY_DB.getConnection()))
             {
                 MY_DB.openConnection();
                 command.Parameters.AddWithValue("@CCCDKH", cccdKH);

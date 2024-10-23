@@ -22,20 +22,33 @@ namespace QLMuaBanXeMay
     {
 
 
-        Class.PhuTung phuTung = new PhuTung();
-        Class.KhachHang khachHang = new KhachHang();
+        PhuTung phuTung = new PhuTung();
+        KhachHang khachHang = new KhachHang();
         List<ChiTietHD_PT> listHDPT = new List<ChiTietHD_PT>();
-        public UC_QLPhuTung()
+        NhanVien user;
+        public UC_QLPhuTung(NhanVien user)
         {
             InitializeComponent();
             Load_GridView();
-
+            this.user = user;
         }
         private void Load_GridView()
         {
             PhuTung_GridView.DataSource = DAOPhuTung.LayThongTin();
         }
-
+        private void loadRole()
+        {
+            if (user.ChucVu == "Quản Lý")
+            {
+                btn_Add.Visible = false;
+                btn_xuat.Visible = false;
+            }
+            else if (user.ChucVu == "Kỹ Thuật")
+            {
+                btn_Update.Visible = false;
+                grBox_Congcu.Visible = false;
+            }
+        }
 
         private void PhuTung_GridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {

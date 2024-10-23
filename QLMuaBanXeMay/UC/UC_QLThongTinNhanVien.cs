@@ -16,10 +16,12 @@ namespace QLMuaBanXeMay.UC
     public partial class UC_QLThongTinNhanVien : UserControl
     {
         NhanVien nhanVien;
+        NhanVien user;
         TaiKhoan taiKhoan;
-        public UC_QLThongTinNhanVien()
+        public UC_QLThongTinNhanVien(NhanVien user)
         {
             InitializeComponent();
+            this.user = user;
             LoadData();
         }
         private void LoadData()
@@ -109,6 +111,8 @@ namespace QLMuaBanXeMay.UC
 
         private void clearTextBox()
         {
+            txtTenTK.Clear();
+            txtMatKhau.Clear();
             txtCCCD.Clear();
             txtTenNV.Clear();
             txtEmail.Clear();

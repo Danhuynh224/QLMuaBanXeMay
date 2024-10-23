@@ -16,7 +16,6 @@ namespace QLMuaBanXeMay.WF
 {
     public partial class Form_ThongTinKH : Form
     {
-        
         private KhachHang khachHang1 = new KhachHang();
         Class.PhuTung phuTung1 = new PhuTung();
         public KhachHang KhachHang1 { get => khachHang1; set => khachHang1 = value; }
@@ -66,6 +65,17 @@ namespace QLMuaBanXeMay.WF
             }
         }
 
-        
+        private void btnThemKH_Click(object sender, EventArgs e)
+        {
+            khachHang1 = new KhachHang();
+            Form_ThemKhachHang form = new Form_ThemKhachHang(khachHang1);
+            if (form.ShowDialog() == DialogResult.OK)
+            {
+                // Nhận giá trị từ Form2
+                khachHang1 = form.Kh;
+                DAOKhachHang.ThemKhachHang(khachHang1);
+                Load_GridView();
+            }
+        }
     }
 }

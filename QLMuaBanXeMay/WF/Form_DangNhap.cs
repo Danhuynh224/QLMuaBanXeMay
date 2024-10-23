@@ -57,5 +57,18 @@ namespace QLMuaBanXeMay.WF
             }
             MY_DB.closeConnection();
         }
+
+        private void txt_matkhau_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                btn_dangnhap.PerformClick();
+            }
+        }
+
+        private void txt_matkhau_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

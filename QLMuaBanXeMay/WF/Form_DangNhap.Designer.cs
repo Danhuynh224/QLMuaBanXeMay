@@ -52,7 +52,7 @@
             this.btn_dangnhap.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.btn_dangnhap.Location = new System.Drawing.Point(810, 396);
             this.btn_dangnhap.Name = "btn_dangnhap";
-            this.btn_dangnhap.Size = new System.Drawing.Size(158, 35);
+            this.btn_dangnhap.Size = new System.Drawing.Size(158, 44);
             this.btn_dangnhap.TabIndex = 13;
             this.btn_dangnhap.Text = "Đăng nhập";
             this.btn_dangnhap.Click += new System.EventHandler(this.btn_dangnhap_Click);
@@ -60,6 +60,7 @@
             // txt_matkhau
             // 
             this.txt_matkhau.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_matkhau.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txt_matkhau.Location = new System.Drawing.Point(754, 296);
             this.txt_matkhau.Name = "txt_matkhau";
             this.txt_matkhau.Size = new System.Drawing.Size(214, 30);
@@ -69,6 +70,7 @@
             // txt_taikhoan
             // 
             this.txt_taikhoan.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txt_taikhoan.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
             this.txt_taikhoan.Location = new System.Drawing.Point(754, 207);
             this.txt_taikhoan.Name = "txt_taikhoan";
             this.txt_taikhoan.Size = new System.Drawing.Size(214, 30);
@@ -98,6 +100,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.label3.Location = new System.Drawing.Point(630, 47);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(309, 36);
@@ -108,6 +111,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(224)))), ((int)(((byte)(192)))));
             this.label4.Location = new System.Drawing.Point(719, 94);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(136, 36);

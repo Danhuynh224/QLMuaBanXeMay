@@ -66,70 +66,51 @@ namespace QLMuaBanXeMay.DAO
         }
         public static DataTable Load_ViewHD()
         {
-            using (SqlCommand command = new SqlCommand("Select * From View_HoaDonPT", MY_DB.getConnection()))
+            using (SqlCommand command = new SqlCommand("SELECT * FROM dbo.GetHoaDonPT()", MY_DB.getConnection()))
             {
-                try
-                {
-                    MY_DB.openConnection();
+                MY_DB.openConnection();
 
-                    SqlDataAdapter adapter = new SqlDataAdapter(command);
-                    DataTable dt = new DataTable();
-                    adapter.Fill(dt);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
 
-                    MY_DB.closeConnection();
+                MY_DB.closeConnection();
 
-                    return dt;
-                }
-                catch(Exception ex) { 
-                    MessageBox.Show ("Lỗi: "+ex.Message);
-                    return null;
-                }
+                return dt;
             }
         }
         public static DataTable LayThongTinTheoMaHDPT(string maHD)
         {
-            using (SqlCommand command = new SqlCommand("SELECT * FROM View_HoaDonPT WHERE MaHDPT LIKE @maHD", MY_DB.getConnection()))
+            using (SqlCommand command = new SqlCommand("SELECT * FROM dbo.GetHoaDonPTByMaHDPT(@maHD)", MY_DB.getConnection()))
             {
-                try
-                {
-                    MY_DB.openConnection();
-                    command.Parameters.AddWithValue("@maHD", "%" + maHD + "%");
-                    SqlDataAdapter adapter = new SqlDataAdapter(command);
-                    DataTable dt = new DataTable();
-                    adapter.Fill(dt);
+                command.Parameters.AddWithValue("@maHD", maHD); // Truyền tham số cho hàm
 
-                    MY_DB.closeConnection();
+                MY_DB.openConnection();
 
-                    return dt;
-                }
-                catch(Exception ex) {
-                    MessageBox.Show("Lỗi: " + ex.Message);
-                    return null;    
-                }
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
+
+                MY_DB.closeConnection();
+
+                return dt;
             }
         }
         public static DataTable Load_ViewChiTietHD(int maHD)
         {
-            using (SqlCommand command = new SqlCommand("SELECT * FROM View_ChiTietHDPT WHERE MaHDPT = @maHD", MY_DB.getConnection()))
+            using (SqlCommand command = new SqlCommand("SELECT * FROM dbo.GetChiTietHDPT(@maHD)", MY_DB.getConnection()))
             {
-                try
-                {
-                    command.Parameters.AddWithValue("@maHD", maHD);
+                command.Parameters.AddWithValue("@maHD", maHD); // Truyền tham số cho hàm
 
-                    MY_DB.openConnection();
+                MY_DB.openConnection();
 
-                    SqlDataAdapter adapter = new SqlDataAdapter(command);
-                    DataTable dt = new DataTable();
-                    adapter.Fill(dt);
+                SqlDataAdapter adapter = new SqlDataAdapter(command);
+                DataTable dt = new DataTable();
+                adapter.Fill(dt);
 
-                    MY_DB.closeConnection();
+                MY_DB.closeConnection();
 
-                    return dt;
-                }
-                catch(Exception ex)
-                {
-                    MessageBox.Show("Lỗi: "+ ex.Message); return null;
-                }
+                return dt;
             }
         }
 

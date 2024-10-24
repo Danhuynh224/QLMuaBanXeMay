@@ -139,5 +139,11 @@ namespace QLMuaBanXeMay.UC
                 txtMatKhau.Text = row.Cells["MatKhau"].Value.ToString();
             }
         }
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(txt_TimCCCD.Text);
+            dgv_thongTinNV.DataSource = DAONhanVien.TimNhanVienTheoCCCD(id);
+        }
     }
 }

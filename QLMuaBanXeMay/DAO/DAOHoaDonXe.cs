@@ -6,6 +6,7 @@ using System.Data.SqlClient;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using static System.ComponentModel.Design.ObjectSelectorEditor;
 
 namespace QLMuaBanXeMay.DAO
 {
@@ -30,8 +31,9 @@ namespace QLMuaBanXeMay.DAO
         }
         public static DataTable LayThongTinTheoMaHDXe(string maHD)
         {
-            using (SqlCommand command = new SqlCommand("SELECT * FROM View_HoaDonXe WHERE MaHDXe LIKE @maHD", MY_DB.getConnection()))
+            using (SqlCommand command = new SqlCommand("SELECT* FROM GetHoaDonXeByMaHD(@maHD);", MY_DB.getConnection()))
             {
+
                 MY_DB.openConnection();
                 command.Parameters.AddWithValue("@maHD", "%" + maHD + "%");
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
@@ -67,7 +69,7 @@ namespace QLMuaBanXeMay.DAO
         }
         public static DataTable Load_ViewHD()
         {
-            using (SqlCommand command = new SqlCommand("Select * From View_HoaDonXe", MY_DB.getConnection()))
+            using (SqlCommand command = new SqlCommand("SELECT * FROM GetAllHoaDonXe();", MY_DB.getConnection()))
             {
                 MY_DB.openConnection();
 

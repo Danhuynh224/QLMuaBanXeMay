@@ -26,13 +26,12 @@ namespace QLMuaBanXeMay
         {
             InitializeComponent();
             this.user = user;
-            MessageBox.Show(user.ChucVu);
             loadRole();
             Load_GridView();         
         }
         private void Load_GridView()
         {
-            Xe_GridView.DataSource = DAOXeMay.LayThongTin();
+            Xe_GridView.DataSource = DAOXeMay.LayThongTin(user.ChucVu);
         }
         private void loadRole()
         {
@@ -58,7 +57,6 @@ namespace QLMuaBanXeMay
                 xeMay.MaXe = Convert.ToInt32(row.Cells["MaXe"].Value);
                 xeMay.TenXe = row.Cells["TenXe"].Value.ToString(); // hoặc row.Cells[0].Value.ToString()
                 xeMay.DonGia = double.Parse(row.Cells["DonGia"].Value.ToString());
-                MessageBox.Show(xeMay.DonGia.ToString());
                 xeMay.LoaiXe = row.Cells["LoaiXe"].Value.ToString();
                 xeMay.MauSac = row.Cells["MauSac"].Value.ToString();
                 xeMay.PhanKhoi = Convert.ToInt32(row.Cells["PhanKhoi"].Value);
@@ -130,7 +128,7 @@ namespace QLMuaBanXeMay
 
         private void xuathoadon_btn_Click(object sender, EventArgs e)
         {
-            UC_ThanhToanXe uc = new UC_ThanhToanXe(xeMay, khachHang);
+            UC_ThanhToanXe uc = new UC_ThanhToanXe(xeMay, khachHang, user);
             this.Controls.Clear();
             this.Controls.Add(uc);
         }

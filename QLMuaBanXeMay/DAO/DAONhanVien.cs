@@ -80,7 +80,7 @@ namespace QLMuaBanXeMay.DAO
             }
         }
 
-        public static void XoaNhanVien(int cccdNV)
+        /*public static void XoaNhanVien(int cccdNV)
         {
             using (SqlCommand command = new SqlCommand("XoaNhanVien", MY_DB.getConnection()))
             {
@@ -91,6 +91,6 @@ namespace QLMuaBanXeMay.DAO
                 command.ExecuteNonQuery();
                 MY_DB.closeConnection();
             }
-        }
+        }*/
     }
 }

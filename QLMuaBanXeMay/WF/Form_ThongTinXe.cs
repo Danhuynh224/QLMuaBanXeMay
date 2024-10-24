@@ -33,7 +33,7 @@ namespace QLMuaBanXeMay.WF
             xeMay.CongSuat = float.Parse(txt_CongSuat.Text);
             xeMay.HangSX = txt_HangSX.Text;
             xeMay.NamSX = Convert.ToInt32(txt_NamSX.Text);
-            xeMay.TinhTrang = txt_TinhTrang.Text;
+            xeMay.TinhTrang = "Đang bán";
 
             this.DialogResult = DialogResult.OK; // Thiết lập kết quả đối thoại
             this.Close(); // Đóng Form2

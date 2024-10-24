@@ -83,16 +83,14 @@ namespace QLMuaBanXeMay.UC
             }
         }
 
-        private void btnXoa_Click(object sender, EventArgs e)
+        /*private void btnXoa_Click(object sender, EventArgs e)
         {
             try
             {
                 int cccdNV = int.Parse(txtCCCD.Text);
 
                 // Xóa thông tin trong bảng TaiKhoan và NhanVien
-                DAOTaiKhoan.XoaTaiKhoan(cccdNV);
                 DAONhanVien.XoaNhanVien(cccdNV);
-
                 MessageBox.Show("Xóa nhân viên thành công!");
 
                 // Tải lại dữ liệu lên DataGridView
@@ -102,7 +100,7 @@ namespace QLMuaBanXeMay.UC
             {
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
-        }
+        }*/
 
         private void UC_QLThongTinNhanVien_Load(object sender, EventArgs e)
         {

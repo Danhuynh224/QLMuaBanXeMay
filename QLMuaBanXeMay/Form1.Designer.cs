@@ -36,9 +36,9 @@
             this.btnTool = new System.Windows.Forms.Button();
             this.btnBillBike = new System.Windows.Forms.Button();
             this.btnBillTool = new System.Windows.Forms.Button();
+            this.btnThongKe = new System.Windows.Forms.Button();
             this.btnSignOut = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.btnUser = new System.Windows.Forms.Button();
             this.panel5 = new System.Windows.Forms.Panel();
             this.uC_MainScreen = new QLMuaBanXeMay.UC_MainScreen();
             this.panel3.SuspendLayout();
@@ -53,7 +53,6 @@
             this.panel3.Controls.Add(this.flowLayoutPanel1);
             this.panel3.Controls.Add(this.btnSignOut);
             this.panel3.Controls.Add(this.panel4);
-            this.panel3.Controls.Add(this.btnUser);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Left;
             this.panel3.Location = new System.Drawing.Point(0, 0);
             this.panel3.Name = "panel3";
@@ -68,9 +67,10 @@
             this.flowLayoutPanel1.Controls.Add(this.btnTool);
             this.flowLayoutPanel1.Controls.Add(this.btnBillBike);
             this.flowLayoutPanel1.Controls.Add(this.btnBillTool);
+            this.flowLayoutPanel1.Controls.Add(this.btnThongKe);
             this.flowLayoutPanel1.Location = new System.Drawing.Point(3, 205);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(190, 385);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(196, 411);
             this.flowLayoutPanel1.TabIndex = 1;
             // 
             // btnEmployee
@@ -96,7 +96,7 @@
             this.btnGuest.Location = new System.Drawing.Point(3, 60);
             this.btnGuest.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnGuest.Name = "btnGuest";
-            this.btnGuest.Size = new System.Drawing.Size(189, 54);
+            this.btnGuest.Size = new System.Drawing.Size(187, 54);
             this.btnGuest.TabIndex = 7;
             this.btnGuest.Text = "Quản lý khách hàng         ";
             this.btnGuest.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
@@ -163,6 +163,21 @@
             this.btnBillTool.UseVisualStyleBackColor = true;
             this.btnBillTool.Click += new System.EventHandler(this.btnBillTool_Click);
             // 
+            // btnThongKe
+            // 
+            this.btnThongKe.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
+            this.btnThongKe.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.btnThongKe.Image = global::QLMuaBanXeMay.Properties.Resources.form_main_bills_tools;
+            this.btnThongKe.Location = new System.Drawing.Point(3, 350);
+            this.btnThongKe.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
+            this.btnThongKe.Name = "btnThongKe";
+            this.btnThongKe.Size = new System.Drawing.Size(187, 54);
+            this.btnThongKe.TabIndex = 12;
+            this.btnThongKe.Text = "Thống kê doanh thu";
+            this.btnThongKe.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
+            this.btnThongKe.UseVisualStyleBackColor = true;
+            this.btnThongKe.Click += new System.EventHandler(this.btnThongKe_Click);
+            // 
             // btnSignOut
             // 
             this.btnSignOut.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
@@ -182,25 +197,10 @@
             // 
             this.panel4.BackgroundImage = global::QLMuaBanXeMay.Properties.Resources.form_main_login;
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel4.Location = new System.Drawing.Point(26, 102);
+            this.panel4.Location = new System.Drawing.Point(48, 103);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(90, 83);
             this.panel4.TabIndex = 1;
-            // 
-            // btnUser
-            // 
-            this.btnUser.FlatAppearance.BorderColor = System.Drawing.Color.Gainsboro;
-            this.btnUser.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.btnUser.Image = global::QLMuaBanXeMay.Properties.Resources.form_main_users;
-            this.btnUser.Location = new System.Drawing.Point(0, 635);
-            this.btnUser.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
-            this.btnUser.Name = "btnUser";
-            this.btnUser.Size = new System.Drawing.Size(199, 54);
-            this.btnUser.TabIndex = 8;
-            this.btnUser.Text = "Tài khoản                           ";
-            this.btnUser.TextImageRelation = System.Windows.Forms.TextImageRelation.ImageBeforeText;
-            this.btnUser.UseVisualStyleBackColor = true;
-            this.btnUser.Click += new System.EventHandler(this.btnUser_Click);
             // 
             // panel5
             // 
@@ -243,7 +243,6 @@
         private System.Windows.Forms.Panel panel3;
         private System.Windows.Forms.Button btnSignOut;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Button btnUser;
         private System.Windows.Forms.Panel panel5;
         private UC_MainScreen uC_MainScreen;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
@@ -253,6 +252,7 @@
         private System.Windows.Forms.Button btnTool;
         private System.Windows.Forms.Button btnBillBike;
         private System.Windows.Forms.Button btnBillTool;
+        private System.Windows.Forms.Button btnThongKe;
     }
 }
 

@@ -29,12 +29,13 @@ namespace QLMuaBanXeMay
         public UC_QLPhuTung(NhanVien user)
         {
             InitializeComponent();
-            Load_GridView();
             this.user = user;
+            Load_GridView();
+           
         }
         private void Load_GridView()
         {
-            PhuTung_GridView.DataSource = DAOPhuTung.LayThongTin();
+            PhuTung_GridView.DataSource = DAOPhuTung.LayThongTin(user.ChucVu);
         }
         private void loadRole()
         {
@@ -112,7 +113,7 @@ namespace QLMuaBanXeMay
 
         private void capnhat_btn_Click(object sender, EventArgs e)
         {
-            UC_ThanhToanPT uc = new UC_ThanhToanPT(listHDPT, khachHang);
+            UC_ThanhToanPT uc = new UC_ThanhToanPT(listHDPT, khachHang, user);
             this.Controls.Clear();
             this.Controls.Add(uc);
         }

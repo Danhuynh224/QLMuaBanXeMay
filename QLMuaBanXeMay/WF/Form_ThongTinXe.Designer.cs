@@ -32,8 +32,6 @@
             this.txt_NamSX = new System.Windows.Forms.TextBox();
             this.label11 = new System.Windows.Forms.Label();
             this.btn_Confirm = new System.Windows.Forms.Button();
-            this.txt_TinhTrang = new System.Windows.Forms.TextBox();
-            this.label10 = new System.Windows.Forms.Label();
             this.txt_PhanKhoi = new System.Windows.Forms.TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.txt_CongSuat = new System.Windows.Forms.TextBox();
@@ -58,8 +56,6 @@
             this.groupBox2.Controls.Add(this.txt_NamSX);
             this.groupBox2.Controls.Add(this.label11);
             this.groupBox2.Controls.Add(this.btn_Confirm);
-            this.groupBox2.Controls.Add(this.txt_TinhTrang);
-            this.groupBox2.Controls.Add(this.label10);
             this.groupBox2.Controls.Add(this.txt_PhanKhoi);
             this.groupBox2.Controls.Add(this.label6);
             this.groupBox2.Controls.Add(this.txt_CongSuat);
@@ -110,23 +106,6 @@
             this.btn_Confirm.Text = "Xác nhận";
             this.btn_Confirm.UseVisualStyleBackColor = true;
             this.btn_Confirm.Click += new System.EventHandler(this.btn_Confirm_Click);
-            // 
-            // txt_TinhTrang
-            // 
-            this.txt_TinhTrang.Location = new System.Drawing.Point(541, 285);
-            this.txt_TinhTrang.Name = "txt_TinhTrang";
-            this.txt_TinhTrang.Size = new System.Drawing.Size(195, 30);
-            this.txt_TinhTrang.TabIndex = 17;
-            // 
-            // label10
-            // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label10.Location = new System.Drawing.Point(412, 285);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(100, 25);
-            this.label10.TabIndex = 16;
-            this.label10.Text = "Tình trạng";
             // 
             // txt_PhanKhoi
             // 
@@ -285,8 +264,6 @@
         private System.Windows.Forms.TextBox txt_NamSX;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Button btn_Confirm;
-        private System.Windows.Forms.TextBox txt_TinhTrang;
-        private System.Windows.Forms.Label label10;
         private System.Windows.Forms.TextBox txt_PhanKhoi;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.TextBox txt_CongSuat;

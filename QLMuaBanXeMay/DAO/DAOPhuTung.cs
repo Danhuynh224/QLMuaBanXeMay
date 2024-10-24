@@ -65,9 +65,18 @@ namespace QLMuaBanXeMay.DAO
                 MY_DB.closeConnection();
             }
         }
-        public static DataTable LayThongTin()
+        public static DataTable LayThongTin(string chucvu)
         {
-            using (SqlCommand command = new SqlCommand("SELECT * FROM dbo.GetAllPhuTung()", MY_DB.getConnection()))
+            string sql;
+            if(chucvu=="Kỹ thuật")
+            {
+                sql = "SELECT * FROM dbo.GetAllPhuTungKyThuat()";
+            }
+            else
+            {
+                sql = "SELECT * FROM dbo.GetAllPhuTung()";
+            }
+            using (SqlCommand command = new SqlCommand(sql, MY_DB.getConnection()))
             {
                 MY_DB.openConnection();
 

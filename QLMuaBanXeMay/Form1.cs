@@ -1,5 +1,6 @@
 ﻿using QLMuaBanXeMay.Class;
 using QLMuaBanXeMay.UC;
+using QLMuaBanXeMay.WF;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -26,11 +27,13 @@ namespace QLMuaBanXeMay
             if (NhanVien.ChucVu=="Bán Hàng")
             {
                 btnBillTool.Visible = false;
-               btnTool.Visible = false;
+                btnTool.Visible = false;
+                btnThongKe.Visible = false;
             }else if(NhanVien.ChucVu=="Kỹ Thuật")
             {
                 btnMotobike.Visible = false;
                 btnBillBike.Visible = false;
+                btnMotobike.Visible = false;
             }
         }
         private void btnEmployee_Click(object sender, EventArgs e)
@@ -90,12 +93,23 @@ namespace QLMuaBanXeMay
 
         private void btnSignOut_Click(object sender, EventArgs e)
         {
+            Form_DangNhap form_DangNhap = new Form_DangNhap();
+            form_DangNhap.Show();
+            this.Close();
 
         }
 
         private void uC_MainScreen_Load(object sender, EventArgs e)
         {
 
+        }
+
+        private void btnThongKe_Click(object sender, EventArgs e)
+        {
+            UC_ThongKeDoanhThu uc = new UC_ThongKeDoanhThu();
+            panel5.Controls.Clear();
+            panel5.Controls.Add(uc);
+            uc.Dock = DockStyle.Fill;
         }
     }
 }

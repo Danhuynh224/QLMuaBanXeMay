@@ -29,8 +29,9 @@ namespace QLMuaBanXeMay
         public UC_QLPhuTung(NhanVien user)
         {
             InitializeComponent();
-            Load_GridView();
             this.user = user;
+            Load_GridView();
+           
         }
         private void Load_GridView()
         {

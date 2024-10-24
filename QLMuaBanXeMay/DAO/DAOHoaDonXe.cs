@@ -35,7 +35,6 @@ namespace QLMuaBanXeMay.DAO
 
             }
 
-
         }
         public static DataTable LayThongTinTheoMaHDXe(string maHD)
         {

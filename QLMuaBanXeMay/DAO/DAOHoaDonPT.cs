@@ -155,8 +155,6 @@ namespace QLMuaBanXeMay.DAO
                 }
              
             }
-
-         
         }
     }
 }

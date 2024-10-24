@@ -29,15 +29,15 @@ namespace QLMuaBanXeMay
             {
                 btnBillTool.Visible = false;
                 btnTool.Visible = false;
-                btnThongKe.Visible = false;
+                
                 btnEmployee.Visible = false;
             }else if(NhanVien.ChucVu== "Kỹ Thuật")
             {
                 btnBillBike.Visible = false;
                 btnMotobike.Visible = false;
                 btnEmployee.Visible = false;
-                btnThongKe.Visible = false;
             }
+            btnThongKe.Visible = false;
         }
         private void btnEmployee_Click(object sender, EventArgs e)
         {

@@ -71,7 +71,7 @@ namespace QLMuaBanXeMay.UC
         {
             Class.HoaDonPT hoaDonPT = new HoaDonPT();
             hoaDonPT.MaHDPT = Convert.ToInt32(txt_maHD.Text);
-            hoaDonPT.KhuyenMai = (float)Math.Round(float.Parse(txt_khuyenMai.Text), 2);
+            hoaDonPT.KhuyenMai = (double)Math.Round(double.Parse(txt_khuyenMai.Text), 2, MidpointRounding.AwayFromZero);
             hoaDonPT.TongTien = float.Parse(txt_thanhTien.Text);
             hoaDonPT.CCCDKH = Convert.ToInt32(txt_cccdKH.Text);
             hoaDonPT.CCCDNV = user.CCCDNV;
@@ -107,7 +107,7 @@ namespace QLMuaBanXeMay.UC
             {
                 thanhTien = thanhTien - (thanhTien * khuyenmai);
             }
-
+            thanhTien = Math.Ceiling(thanhTien);
             txt_thanhTien.Text = thanhTien.ToString();
 
         }

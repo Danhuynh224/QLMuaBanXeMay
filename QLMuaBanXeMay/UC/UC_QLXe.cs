@@ -22,6 +22,7 @@ namespace QLMuaBanXeMay
         XeMay xeMay = new XeMay();
         KhachHang khachHang = new KhachHang();
         NhanVien user = new NhanVien();
+        bool check = false;
         public UC_QLXe(NhanVien user)
         {
             InitializeComponent();
@@ -48,6 +49,7 @@ namespace QLMuaBanXeMay
 
         private void Xe_GridView_CellClick(object sender, DataGridViewCellEventArgs e)
         {
+            check = true;
             if (e.RowIndex >= 0)
             {
                 // Lấy hàng được chọn
@@ -135,9 +137,16 @@ namespace QLMuaBanXeMay
 
         private void xuathoadon_btn_Click(object sender, EventArgs e)
         {
-            UC_ThanhToanXe uc = new UC_ThanhToanXe(xeMay, khachHang, user);
-            this.Controls.Clear();
-            this.Controls.Add(uc);
+            if (check)
+            {
+                UC_ThanhToanXe uc = new UC_ThanhToanXe(xeMay, khachHang, user);
+                this.Controls.Clear();
+                this.Controls.Add(uc);
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn xe");
+            }
         }
 
         private void UC_QLXe_Load(object sender, EventArgs e)

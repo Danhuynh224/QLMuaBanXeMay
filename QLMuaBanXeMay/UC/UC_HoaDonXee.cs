@@ -70,7 +70,6 @@ namespace QLMuaBanXeMay.UC
             }    
             
         }
-
         private void button1_Click(object sender, EventArgs e)
         {
             string maHD = txt_timkiem.Text;

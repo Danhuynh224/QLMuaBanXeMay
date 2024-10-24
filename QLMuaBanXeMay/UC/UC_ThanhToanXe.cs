@@ -94,28 +94,36 @@ namespace QLMuaBanXeMay.UC
             double thanhTien = float.Parse(txt_donGia.Text);
             if (float.TryParse(txt_khuyenMai.Text, out khuyenmai))
             {
+                khuyenmai = (float)Math.Round(khuyenmai, 2);
                 thanhTien = thanhTien - (thanhTien * khuyenmai);
             }
-
+            thanhTien = Math.Ceiling(thanhTien);
             txt_thanhTien.Text = thanhTien.ToString();
         }
 
         private void btn_XuatHD_Click(object sender, EventArgs e)
         {
-            Class.HoaDonXe hoaDonXe = new HoaDonXe();
-            hoaDonXe.MaHDXe = Convert.ToInt32(txt_maHD.Text);
-            hoaDonXe.MaXe = Convert.ToInt32(txt_maXe.Text);
-            hoaDonXe.KhuyenMai = (float)Math.Round(float.Parse(txt_khuyenMai.Text), 2);
-            hoaDonXe.TongTien = float.Parse(txt_thanhTien.Text);
-            hoaDonXe.CCCDKH = Convert.ToInt32(txt_cccdKH.Text);
-            hoaDonXe.CCCDNV = user.CCCDNV;
-            hoaDonXe.PTTT = cb_pttt.Text;
-            hoaDonXe.NgayXuat = dt_ngayXuat.Value;
+            try
+            {
+                Class.HoaDonXe hoaDonXe = new HoaDonXe();
+                hoaDonXe.MaHDXe = Convert.ToInt32(txt_maHD.Text);
+                hoaDonXe.MaXe = Convert.ToInt32(txt_maXe.Text);
+                hoaDonXe.KhuyenMai = (double)Math.Round(double.Parse(txt_khuyenMai.Text), 2, MidpointRounding.AwayFromZero);
+                hoaDonXe.TongTien = float.Parse(txt_thanhTien.Text);
+                hoaDonXe.CCCDKH = Convert.ToInt32(txt_cccdKH.Text);
+                hoaDonXe.CCCDNV = user.CCCDNV;
+                hoaDonXe.PTTT = cb_pttt.Text;
+                hoaDonXe.NgayXuat = dt_ngayXuat.Value;
 
-            DAO.DAOHoaDonXe.ThemHoaDonXe(hoaDonXe);
+                DAO.DAOHoaDonXe.ThemHoaDonXe(hoaDonXe);
+                MessageBox.Show("Xuất hóa đơn thành công");
 
-
-            MessageBox.Show("Xuất hóa đơn thành công");
+            }
+            catch
+            {
+                MessageBox.Show("Vui lòng chọn xe");
+            }
+            
         }
     }
 }

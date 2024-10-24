@@ -67,7 +67,7 @@ namespace QLMuaBanXeMay.DAO
         }
         public static DataTable LayThongTin()
         {
-            using (SqlCommand command = new SqlCommand("Select * From PhuTung", MY_DB.getConnection()))
+            using (SqlCommand command = new SqlCommand("SELECT * FROM dbo.GetAllPhuTung()", MY_DB.getConnection()))
             {
                 MY_DB.openConnection();
 
@@ -82,10 +82,10 @@ namespace QLMuaBanXeMay.DAO
         }
         public static DataTable LayThongTinTheoTen(string TenPT)
         {
-            using (SqlCommand command = new SqlCommand("SELECT * FROM PhuTung WHERE TenPT LIKE @TenPT", MY_DB.getConnection()))
+            using (SqlCommand command = new SqlCommand("SELECT * FROM dbo.GetPhuTungByTenPT(@TenPT)", MY_DB.getConnection()))
             {
                 MY_DB.openConnection();
-                command.Parameters.AddWithValue("@TenPT", "%" + TenPT + "%");
+                command.Parameters.AddWithValue("@TenPT",TenPT.Trim());
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);

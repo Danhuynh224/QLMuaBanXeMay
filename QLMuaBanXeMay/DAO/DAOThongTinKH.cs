@@ -13,7 +13,7 @@ namespace QLMuaBanXeMay.DAO
     {
         public static DataTable LayThongTin()
         {
-            using (SqlCommand command = new SqlCommand("Select * From KhachHang", MY_DB.getConnection()))
+            using (SqlCommand command = new SqlCommand("SELECT * FROM dbo.GetAllKhachHang()", MY_DB.getConnection()))
             {
                 MY_DB.openConnection();
 

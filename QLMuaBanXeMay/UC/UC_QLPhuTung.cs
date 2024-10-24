@@ -30,6 +30,7 @@ namespace QLMuaBanXeMay
         {
             InitializeComponent();
             this.user = user;
+            loadRole();
             Load_GridView();
            
         }

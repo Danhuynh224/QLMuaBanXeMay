@@ -30,7 +30,7 @@ namespace QLMuaBanXeMay.DAO
                 }
                 catch
                 {
-                    MessageBox.Show("Không vào được tài khoản");
+                    MessageBox.Show("Không tạo được tài khoản");
                 }
             }
         }
@@ -38,27 +38,41 @@ namespace QLMuaBanXeMay.DAO
         {
             using (SqlCommand command = new SqlCommand("SuaTaiKhoan", MY_DB.getConnection()))
             {
-                command.CommandType = CommandType.StoredProcedure;
+                try
+                {
+                    command.CommandType = CommandType.StoredProcedure;
 
-                command.Parameters.AddWithValue("@CCCDNV", taiKhoan.CCCDNV);
-                command.Parameters.AddWithValue("@TenTK", taiKhoan.TenTK);
-                command.Parameters.AddWithValue("@MatKhau", taiKhoan.MatKhau);
+                    command.Parameters.AddWithValue("@CCCDNV", taiKhoan.CCCDNV);
+                    command.Parameters.AddWithValue("@TenTK", taiKhoan.TenTK);
+                    command.Parameters.AddWithValue("@MatKhau", taiKhoan.MatKhau);
 
-                MY_DB.openConnection();
-                command.ExecuteNonQuery();
-                MY_DB.closeConnection();
+                    MY_DB.openConnection();
+                    command.ExecuteNonQuery();
+                    MY_DB.closeConnection();                    
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show("Lỗi: "+ ex.Message);
+                }
             }
         }
         public static void XoaTaiKhoan(int cccdNV)
         {
             using (SqlCommand command = new SqlCommand("XoaTaiKhoan", MY_DB.getConnection()))
             {
-                command.CommandType = CommandType.StoredProcedure;
-                command.Parameters.AddWithValue("@CCCDNV", cccdNV);
+                try
+                {
+                    command.CommandType = CommandType.StoredProcedure;
+                    command.Parameters.AddWithValue("@CCCDNV", cccdNV);
 
-                MY_DB.openConnection();
-                command.ExecuteNonQuery();
-                MY_DB.closeConnection();
+                    MY_DB.openConnection();
+                    command.ExecuteNonQuery();
+                    MY_DB.closeConnection();
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message);
+                }
             }
         }
     }

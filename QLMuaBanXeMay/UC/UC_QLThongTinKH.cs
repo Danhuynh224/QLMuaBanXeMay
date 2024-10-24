@@ -71,7 +71,6 @@ namespace QLMuaBanXeMay.UC
                 DAOKhachHang.SuaKhachHang(khachHang);
                 LoadData();
                 clearTextBox();
-                MessageBox.Show("Cập nhật thông tin khách hàng thành công.");
             }
             catch (Exception ex)
             {

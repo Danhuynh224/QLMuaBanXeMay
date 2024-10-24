@@ -69,10 +69,7 @@ namespace QLMuaBanXeMay.UC
 
                 // Cập nhật thông tin
                 DAONhanVien.SuaNhanVien(nhanVien);
-                DAOTaiKhoan.SuaTaiKhoan(taiKhoan);
-
-                MessageBox.Show("Cập nhật thông tin thành công!");
-
+                DAOTaiKhoan.SuaTaiKhoan(taiKhoan);             
                 // Tải lại dữ liệu lên DataGridView
                 LoadData();
                 clearTextBox();

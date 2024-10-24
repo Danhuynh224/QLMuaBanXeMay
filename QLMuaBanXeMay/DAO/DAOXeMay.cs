@@ -12,9 +12,18 @@ namespace QLMuaBanXeMay.DAO
 {
     public partial class DAOXeMay
     {
-        public static DataTable LayThongTin()
+        public static DataTable LayThongTin(string chucvu)
         {
-            using (SqlCommand command = new SqlCommand("SELECT * FROM dbo.GetAllXeMay()", MY_DB.getConnection()))
+            string sql;
+            if (chucvu == "Bán Hàng") 
+            {
+                sql = "SELECT * FROM dbo.GetAllXeBanHang()";
+            }
+            else 
+            { 
+                sql = "SELECT * FROM dbo.GetAllXeMay()";
+            }
+            using (SqlCommand command = new SqlCommand(sql, MY_DB.getConnection()))
             {
                 MY_DB.openConnection();
 

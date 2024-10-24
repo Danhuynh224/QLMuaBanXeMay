@@ -34,7 +34,7 @@ namespace QLMuaBanXeMay
         }
         private void Load_GridView()
         {
-            PhuTung_GridView.DataSource = DAOPhuTung.LayThongTin();
+            PhuTung_GridView.DataSource = DAOPhuTung.LayThongTin(user.ChucVu);
         }
         private void loadRole()
         {

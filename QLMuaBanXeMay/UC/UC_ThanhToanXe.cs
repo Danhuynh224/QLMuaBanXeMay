@@ -113,7 +113,7 @@ namespace QLMuaBanXeMay.UC
             DAO.DAOHoaDonXe.ThemHoaDonXe(hoaDonXe);
 
 
-            MessageBox.Show("Done");
+            MessageBox.Show("Xuất hóa đơn thành công");
         }
     }
 }

@@ -26,15 +26,7 @@ namespace QLMuaBanXeMay.UC
         {
             gv_hdPT.DataSource = DAOHoaDonPT.Load_ViewHD();
         }
-        private void UC_HoaDonPT_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gv_hdPT_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+       
 
         private void gv_hdPT_CellClick(object sender, DataGridViewCellEventArgs e)
         {
@@ -59,10 +51,7 @@ namespace QLMuaBanXeMay.UC
             }
         }
 
-        private void groupBox_spXe_Enter(object sender, EventArgs e)
-        {
-
-        }
+      
 
         private void button1_Click(object sender, EventArgs e)
         {

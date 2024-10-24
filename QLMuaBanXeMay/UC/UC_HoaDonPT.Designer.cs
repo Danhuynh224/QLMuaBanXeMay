@@ -384,7 +384,6 @@
             this.gv_hdPT.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.gv_hdPT.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
             this.gv_hdPT.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gv_hdPT_CellClick);
-            this.gv_hdPT.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.gv_hdPT_CellContentClick);
             // 
             // maHDPTDataGridViewTextBoxColumn
             // 
@@ -541,7 +540,6 @@
             this.groupBox_spXe.TabIndex = 46;
             this.groupBox_spXe.TabStop = false;
             this.groupBox_spXe.Text = "Thông tin hóa đơn";
-            this.groupBox_spXe.Enter += new System.EventHandler(this.groupBox_spXe_Enter);
             // 
             // txt_timkiem
             // 
@@ -724,7 +722,6 @@
             this.Controls.Add(this.groupBox2);
             this.Name = "UC_HoaDonPT";
             this.Size = new System.Drawing.Size(1300, 1500);
-            this.Load += new System.EventHandler(this.UC_HoaDonPT_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.hoaDonXeBindingSource)).EndInit();

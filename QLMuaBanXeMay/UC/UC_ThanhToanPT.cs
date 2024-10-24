@@ -95,7 +95,7 @@ namespace QLMuaBanXeMay.UC
 
             }
             
-            MessageBox.Show("Done");
+            MessageBox.Show("Xuất hóa đơn thành công");
 
 
 

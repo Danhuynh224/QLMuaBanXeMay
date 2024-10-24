@@ -29,7 +29,7 @@ namespace QLMuaBanXeMay.UC
             dgv_ThongTinKH.DataSource = DAOKhachHang.LayDanhSachKhachHang();
         }
 
-        private void btnThem_Click(object sender, EventArgs e)
+        /*private void btnThem_Click(object sender, EventArgs e)
         {
             kh = new KhachHang();
             Form_ThemKhachHang form = new Form_ThemKhachHang(kh);
@@ -40,7 +40,7 @@ namespace QLMuaBanXeMay.UC
                 DAOKhachHang.ThemKhachHang(kh);
                 LoadData();
             }
-        }
+        }*/
         private void clearTextBox()
         {
             txtCCCD.Clear();
@@ -79,7 +79,7 @@ namespace QLMuaBanXeMay.UC
             }
         }
 
-        private void btnXoa_Click(object sender, EventArgs e)
+       /* private void btnXoa_Click(object sender, EventArgs e)
         {
             try
             {
@@ -93,7 +93,7 @@ namespace QLMuaBanXeMay.UC
             {
                 MessageBox.Show("Lỗi: " + ex.Message);
             }
-        }
+        }*/
 
         private void btnTim_Click(object sender, EventArgs e)
         {

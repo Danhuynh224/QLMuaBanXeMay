@@ -71,7 +71,7 @@ namespace QLMuaBanXeMay.DAO
             }
         }
 
-        public static void XoaKhachHang(int cccdKH)
+        /*public static void XoaKhachHang(int cccdKH)
         {
             using (SqlCommand command = new SqlCommand("XoaKhachHang", MY_DB.getConnection()))
             {
@@ -82,7 +82,7 @@ namespace QLMuaBanXeMay.DAO
                 command.ExecuteNonQuery();
                 MY_DB.closeConnection();
             }
-        }
+        }*/
 
         public static DataTable TimKhachHangTheoCCCD(int cccdKH)
         {

@@ -52,7 +52,7 @@ namespace QLMuaBanXeMay.DAO
         }
         public static DataTable Load_ViewHD()
         {
-            using (SqlCommand command = new SqlCommand("Select * From View_HoaDonPT", MY_DB.getConnection()))
+            using (SqlCommand command = new SqlCommand("SELECT * FROM dbo.GetHoaDonPT()", MY_DB.getConnection()))
             {
                 MY_DB.openConnection();
 

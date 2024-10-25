@@ -40,10 +40,8 @@
             this.btnSignOut = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.uC_MainScreen = new QLMuaBanXeMay.UC_MainScreen();
             this.panel3.SuspendLayout();
             this.flowLayoutPanel1.SuspendLayout();
-            this.panel5.SuspendLayout();
             this.SuspendLayout();
             // 
             // panel3
@@ -197,27 +195,18 @@
             // 
             this.panel4.BackgroundImage = global::QLMuaBanXeMay.Properties.Resources.form_main_login;
             this.panel4.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
-            this.panel4.Location = new System.Drawing.Point(48, 103);
+            this.panel4.Location = new System.Drawing.Point(48, 95);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(90, 83);
+            this.panel4.Size = new System.Drawing.Size(90, 91);
             this.panel4.TabIndex = 1;
             // 
             // panel5
             // 
-            this.panel5.Controls.Add(this.uC_MainScreen);
             this.panel5.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel5.Location = new System.Drawing.Point(200, 0);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(1282, 753);
             this.panel5.TabIndex = 1;
-            // 
-            // uC_MainScreen
-            // 
-            this.uC_MainScreen.Location = new System.Drawing.Point(3, 351);
-            this.uC_MainScreen.Name = "uC_MainScreen";
-            this.uC_MainScreen.Size = new System.Drawing.Size(1300, 800);
-            this.uC_MainScreen.TabIndex = 0;
-            this.uC_MainScreen.Load += new System.EventHandler(this.uC_MainScreen_Load);
             // 
             // Form1
             // 
@@ -230,7 +219,6 @@
             this.Text = "mainform";
             this.panel3.ResumeLayout(false);
             this.flowLayoutPanel1.ResumeLayout(false);
-            this.panel5.ResumeLayout(false);
             this.ResumeLayout(false);
 
         }
@@ -244,7 +232,6 @@
         private System.Windows.Forms.Button btnSignOut;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.Panel panel5;
-        private UC_MainScreen uC_MainScreen;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
         private System.Windows.Forms.Button btnEmployee;
         private System.Windows.Forms.Button btnGuest;

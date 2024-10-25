@@ -24,16 +24,19 @@ namespace QLMuaBanXeMay
         }
         private void loadRole()
         {
+            
             if (NhanVien.ChucVu=="Bán Hàng")
             {
                 btnBillTool.Visible = false;
                 btnTool.Visible = false;
                 btnThongKe.Visible = false;
-            }else if(NhanVien.ChucVu=="Kỹ Thuật")
+                btnEmployee.Visible = false;
+            }else if(NhanVien.ChucVu== "Kỹ Thuật")
             {
-                btnMotobike.Visible = false;
                 btnBillBike.Visible = false;
                 btnMotobike.Visible = false;
+                btnEmployee.Visible = false;
+                btnThongKe.Visible = false;
             }
         }
         private void btnEmployee_Click(object sender, EventArgs e)

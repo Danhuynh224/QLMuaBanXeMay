@@ -102,10 +102,17 @@ namespace QLMuaBanXeMay
             Form_ThongTinXe form = new Form_ThongTinXe(xeMay);
             if (form.ShowDialog() == DialogResult.OK)
             {
-                // Nhận giá trị từ Form2
-                xeMay = form.Xe;
-                DAOXeMay.ThemXe(xeMay);
-                Load_GridView();
+                try
+                {
+                    // Nhận giá trị từ Form2
+                    xeMay = form.Xe;
+                    DAOXeMay.ThemXe(xeMay);
+                    Load_GridView();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: "+ex.Message);
+                }
 
             }
         }

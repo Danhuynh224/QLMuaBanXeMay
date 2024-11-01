@@ -13,7 +13,7 @@ namespace QLMuaBanXeMay.Class
         private double donGia; 
         private string loaiXe; 
         private string mauSac; 
-        private int phanKhoi; 
+        private double phanKhoi; 
         private float congSuat; 
         private string hangSX; 
         private int namSX; 
@@ -56,7 +56,7 @@ namespace QLMuaBanXeMay.Class
             set { mauSac = value; }
         }
 
-        public int PhanKhoi
+        public double PhanKhoi
         {
             get { return phanKhoi; }
             set { phanKhoi = value; }
@@ -88,7 +88,7 @@ namespace QLMuaBanXeMay.Class
 
      
         public XeMay(int maXe, string tenXe, double donGia, string loaiXe, string mauSac,
-                      int phanKhoi, float congSuat, string hangSX, int namSX, string tinhTrang)
+                      double phanKhoi, float congSuat, string hangSX, int namSX, string tinhTrang)
         {
             MaXe = maXe;
             TenXe = tenXe;

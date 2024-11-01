@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace QLMuaBanXeMay.DAO
 {
@@ -15,15 +16,23 @@ namespace QLMuaBanXeMay.DAO
         {
             using (SqlCommand command = new SqlCommand("SELECT * FROM dbo.GetAllKhachHang()", MY_DB.getConnection()))
             {
-                MY_DB.openConnection();
+                try
+                {
+                    MY_DB.openConnection();
 
-                SqlDataAdapter adapter = new SqlDataAdapter(command);
-                DataTable dt = new DataTable();
-                adapter.Fill(dt);
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
 
-                MY_DB.closeConnection();
+                    MY_DB.closeConnection();
 
-                return dt;
+                    return dt;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: "+ex.Message);
+                    return null;
+                }
             }
         }
     }

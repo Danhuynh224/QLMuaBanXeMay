@@ -32,10 +32,11 @@ namespace QLMuaBanXeMay.DAO
                     MY_DB.openConnection();
                     command.ExecuteNonQuery();
                     MY_DB.closeConnection();
+                    MessageBox.Show("Thêm nhân viên thành công");
                 }
-                catch
+                catch (Exception ex)
                 {
-                    MessageBox.Show("Thông tin không hợp lệ");
+                    MessageBox.Show("Lỗi: "+ex.Message);
                 }
             }
         }
@@ -43,19 +44,25 @@ namespace QLMuaBanXeMay.DAO
 
         public static DataTable LayThongTinNhanVien()
         {
-            using (SqlCommand command = new SqlCommand("SELECT NhanVien.CCCDNV, TenNV, NgaySinh, GioiTinh, SDT, DiaChi, Email, ChucVu, TenTK, MatKhau " +
-                                                       "FROM NhanVien " +
-                                                       "INNER JOIN TaiKhoan ON NhanVien.CCCDNV = TaiKhoan.CCCDNV", MY_DB.getConnection()))
+            using (SqlCommand command = new SqlCommand("SELECT * FROM dbo.GetNhanVienWithTaiKhoan()", MY_DB.getConnection()))
             {
-                MY_DB.openConnection();
+                try
+                {
+                    MY_DB.openConnection();
 
-                SqlDataAdapter adapter = new SqlDataAdapter(command);
-                DataTable dt = new DataTable();
-                adapter.Fill(dt);
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
 
-                MY_DB.closeConnection();
+                    MY_DB.closeConnection();
 
-                return dt;
+                    return dt;
+                }
+                catch (Exception ex) 
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message);
+                    return null;
+                }
             }
         }
 
@@ -63,20 +70,28 @@ namespace QLMuaBanXeMay.DAO
         {
             using (SqlCommand command = new SqlCommand("SuaNhanVien", MY_DB.getConnection()))
             {
-                command.CommandType = CommandType.StoredProcedure;
+                try
+                {
+                    command.CommandType = CommandType.StoredProcedure;
 
-                command.Parameters.AddWithValue("@CCCDNV", nhanVien.CCCDNV);
-                command.Parameters.AddWithValue("@TenNV", nhanVien.TenNV);
-                command.Parameters.AddWithValue("@NgaySinh", nhanVien.NgaySinh);
-                command.Parameters.AddWithValue("@GioiTinh", nhanVien.GioiTinh);
-                command.Parameters.AddWithValue("@SDT", nhanVien.SDT);
-                command.Parameters.AddWithValue("@DiaChi", nhanVien.DiaChi);
-                command.Parameters.AddWithValue("@Email", nhanVien.Email);
-                command.Parameters.AddWithValue("@ChucVu", nhanVien.ChucVu);
+                    command.Parameters.AddWithValue("@CCCDNV", nhanVien.CCCDNV);
+                    command.Parameters.AddWithValue("@TenNV", nhanVien.TenNV);
+                    command.Parameters.AddWithValue("@NgaySinh", nhanVien.NgaySinh);
+                    command.Parameters.AddWithValue("@GioiTinh", nhanVien.GioiTinh);
+                    command.Parameters.AddWithValue("@SDT", nhanVien.SDT);
+                    command.Parameters.AddWithValue("@DiaChi", nhanVien.DiaChi);
+                    command.Parameters.AddWithValue("@Email", nhanVien.Email);
+                    command.Parameters.AddWithValue("@ChucVu", nhanVien.ChucVu);
 
-                MY_DB.openConnection();
-                command.ExecuteNonQuery();
-                MY_DB.closeConnection();
+                    MY_DB.openConnection();
+                    command.ExecuteNonQuery();
+                    MY_DB.closeConnection();
+                    MessageBox.Show("Cập nhật thông tin thành công!");
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message);
+                }
             }
         }
 
@@ -92,5 +107,28 @@ namespace QLMuaBanXeMay.DAO
                 MY_DB.closeConnection();
             }
         }*/
+        public static DataTable TimNhanVienTheoCCCD(int cccdKH)
+        {
+            using (SqlCommand command = new SqlCommand("SELECT * FROM dbo.GetNhanVienByCCCDNV(@CCCDKH)", MY_DB.getConnection()))
+            {
+                try
+                {
+                    MY_DB.openConnection();
+                    command.Parameters.AddWithValue("@CCCDKH", cccdKH);
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+                    MY_DB.closeConnection();
+
+                    return dt;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message);
+                    return null;
+                }
+            }
+        }
     }
+    
 }

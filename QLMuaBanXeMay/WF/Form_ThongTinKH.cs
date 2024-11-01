@@ -19,6 +19,7 @@ namespace QLMuaBanXeMay.WF
         private KhachHang khachHang1 = new KhachHang();
         Class.PhuTung phuTung1 = new PhuTung();
         public KhachHang KhachHang1 { get => khachHang1; set => khachHang1 = value; }
+        bool check=false;
         public Form_ThongTinKH(KhachHang khachHang)
         {
             InitializeComponent();
@@ -39,9 +40,15 @@ namespace QLMuaBanXeMay.WF
 
         private void btn_chonKH_Click(object sender, EventArgs e)
         {
-            
-            this.DialogResult = DialogResult.OK; // Thiết lập kết quả đối thoại
-            this.Close(); // Đóng Form2
+            if (check)
+            {
+                this.DialogResult = DialogResult.OK; // Thiết lập kết quả đối thoại
+                this.Close(); // Đóng Form2
+            }
+            else
+            {
+                MessageBox.Show("Vui lòng chọn lại khách hàng");
+            }
 
         }
 
@@ -61,6 +68,7 @@ namespace QLMuaBanXeMay.WF
                 KhachHang1.Email = row.Cells[6].Value.ToString();
                 KhachHang1.MaLoai = Convert.ToInt32(row.Cells[7].Value);
                 KhachHang1.TongChiTieu = float.Parse(row.Cells[8].Value.ToString());
+                check = true;
 
             }
         }

@@ -40,11 +40,6 @@ namespace QLMuaBanXeMay.UC
 
         private void UC_ThanhToanPT_Load(KhachHang khachHang)
         {
-
-            MessageBox.Show(khachHang.MaLoai.ToString());
-
-
-
             this.txt_cccdKH.Text = khachHang.CCCDKH.ToString();
             this.txt_ten.Text = khachHang.TenKH.ToString();
             this.dt_ngaySinh.Value = khachHang.NgaySinh;
@@ -57,14 +52,13 @@ namespace QLMuaBanXeMay.UC
         private void btn_chonKH_Click(object sender, EventArgs e)
         {
             Form_ThongTinKH kh = new Form_ThongTinKH(khachHang_tt);
-            khachHang_tt = kh.KhachHang1;
-
             if (kh.ShowDialog() == DialogResult.OK)
             {
-                MessageBox.Show(khachHang_tt.TenKH.ToString());
+                khachHang_tt = kh.KhachHang1;
                 UC_ThanhToanPT_Load(khachHang_tt);
                 tinhThanhTien();
             }
+            
             
         }
 
@@ -77,7 +71,7 @@ namespace QLMuaBanXeMay.UC
         {
             Class.HoaDonPT hoaDonPT = new HoaDonPT();
             hoaDonPT.MaHDPT = Convert.ToInt32(txt_maHD.Text);
-            hoaDonPT.KhuyenMai = float.Parse(txt_khuyenMai.Text);
+            hoaDonPT.KhuyenMai = (double)Math.Round(double.Parse(txt_khuyenMai.Text), 2, MidpointRounding.AwayFromZero);
             hoaDonPT.TongTien = float.Parse(txt_thanhTien.Text);
             hoaDonPT.CCCDKH = Convert.ToInt32(txt_cccdKH.Text);
             hoaDonPT.CCCDNV = user.CCCDNV;
@@ -113,7 +107,7 @@ namespace QLMuaBanXeMay.UC
             {
                 thanhTien = thanhTien - (thanhTien * khuyenmai);
             }
-
+            thanhTien = Math.Ceiling(thanhTien);
             txt_thanhTien.Text = thanhTien.ToString();
 
         }

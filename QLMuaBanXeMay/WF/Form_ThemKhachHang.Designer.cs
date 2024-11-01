@@ -44,19 +44,11 @@
             this.label6 = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
-            this.txtMaLoai = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.txtTongCTieu = new Guna.UI2.WinForms.Guna2TextBox();
-            this.label3 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
             // groupBox2
             // 
-            this.groupBox2.Controls.Add(this.txtTongCTieu);
-            this.groupBox2.Controls.Add(this.label3);
-            this.groupBox2.Controls.Add(this.txtMaLoai);
-            this.groupBox2.Controls.Add(this.label1);
             this.groupBox2.Controls.Add(this.cbbGioiTinh);
             this.groupBox2.Controls.Add(this.btnXacNhan);
             this.groupBox2.Controls.Add(this.dtpNgaySinh);
@@ -107,7 +99,7 @@
             this.btnXacNhan.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(141)))), ((int)(((byte)(141)))), ((int)(((byte)(141)))));
             this.btnXacNhan.Font = new System.Drawing.Font("Segoe UI", 9F);
             this.btnXacNhan.ForeColor = System.Drawing.Color.White;
-            this.btnXacNhan.Location = new System.Drawing.Point(776, 273);
+            this.btnXacNhan.Location = new System.Drawing.Point(649, 178);
             this.btnXacNhan.Name = "btnXacNhan";
             this.btnXacNhan.Size = new System.Drawing.Size(180, 45);
             this.btnXacNhan.TabIndex = 81;
@@ -298,66 +290,6 @@
             this.label5.TabIndex = 61;
             this.label5.Text = "CCCD:";
             // 
-            // txtMaLoai
-            // 
-            this.txtMaLoai.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtMaLoai.DefaultText = "";
-            this.txtMaLoai.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtMaLoai.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtMaLoai.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMaLoai.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtMaLoai.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMaLoai.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtMaLoai.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtMaLoai.Location = new System.Drawing.Point(649, 162);
-            this.txtMaLoai.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtMaLoai.Name = "txtMaLoai";
-            this.txtMaLoai.PasswordChar = '\0';
-            this.txtMaLoai.PlaceholderText = "";
-            this.txtMaLoai.SelectedText = "";
-            this.txtMaLoai.Size = new System.Drawing.Size(307, 36);
-            this.txtMaLoai.TabIndex = 84;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(525, 169);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(81, 24);
-            this.label1.TabIndex = 83;
-            this.label1.Text = "Mã Loại:";
-            // 
-            // txtTongCTieu
-            // 
-            this.txtTongCTieu.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.txtTongCTieu.DefaultText = "";
-            this.txtTongCTieu.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.txtTongCTieu.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.txtTongCTieu.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTongCTieu.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.txtTongCTieu.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTongCTieu.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.txtTongCTieu.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.txtTongCTieu.Location = new System.Drawing.Point(649, 215);
-            this.txtTongCTieu.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.txtTongCTieu.Name = "txtTongCTieu";
-            this.txtTongCTieu.PasswordChar = '\0';
-            this.txtTongCTieu.PlaceholderText = "";
-            this.txtTongCTieu.SelectedText = "";
-            this.txtTongCTieu.Size = new System.Drawing.Size(307, 36);
-            this.txtTongCTieu.TabIndex = 86;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(525, 225);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(125, 24);
-            this.label3.TabIndex = 85;
-            this.label3.Text = "Tổng chi tiêu:";
-            // 
             // Form_ThemKhachHang
             // 
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -391,9 +323,5 @@
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Label label8;
         private System.Windows.Forms.Label label5;
-        private Guna.UI2.WinForms.Guna2TextBox txtTongCTieu;
-        private System.Windows.Forms.Label label3;
-        private Guna.UI2.WinForms.Guna2TextBox txtMaLoai;
-        private System.Windows.Forms.Label label1;
     }
 }

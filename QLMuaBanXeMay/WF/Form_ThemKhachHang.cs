@@ -38,8 +38,6 @@ namespace QLMuaBanXeMay.WF
                 kh.SDT = txtSDT.Text;
                 kh.DiaChi = txtDiaChi.Text;
                 kh.Email = txtEmail.Text;
-                kh.MaLoai = int.Parse(txtMaLoai.Text);
-                kh.TongChiTieu = float.Parse(txtTongCTieu.Text);
 
                 this.DialogResult = DialogResult.OK;
                 this.Close();

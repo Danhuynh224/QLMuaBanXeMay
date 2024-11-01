@@ -69,10 +69,7 @@ namespace QLMuaBanXeMay.UC
 
                 // Cập nhật thông tin
                 DAONhanVien.SuaNhanVien(nhanVien);
-                DAOTaiKhoan.SuaTaiKhoan(taiKhoan);
-
-                MessageBox.Show("Cập nhật thông tin thành công!");
-
+                DAOTaiKhoan.SuaTaiKhoan(taiKhoan);             
                 // Tải lại dữ liệu lên DataGridView
                 LoadData();
                 clearTextBox();
@@ -141,6 +138,12 @@ namespace QLMuaBanXeMay.UC
                 txtTenTK.Text = row.Cells["TenTK"].Value.ToString();
                 txtMatKhau.Text = row.Cells["MatKhau"].Value.ToString();
             }
+        }
+
+        private void btnTim_Click(object sender, EventArgs e)
+        {
+            int id = int.Parse(txt_TimCCCD.Text);
+            dgv_thongTinNV.DataSource = DAONhanVien.TimNhanVienTheoCCCD(id);
         }
     }
 }

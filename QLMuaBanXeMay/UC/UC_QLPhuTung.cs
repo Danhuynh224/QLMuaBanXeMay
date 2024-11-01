@@ -30,6 +30,7 @@ namespace QLMuaBanXeMay
         {
             InitializeComponent();
             this.user = user;
+            loadRole();
             Load_GridView();
            
         }
@@ -131,6 +132,7 @@ namespace QLMuaBanXeMay
                 }
                 ChiTietHD_PT chiTietHD_PT = new ChiTietHD_PT(1,Convert.ToInt32(txt_MaPhuTung.Text), Convert.ToInt32(SLMua), float.Parse(txt_DonGia.Text));
                 listHDPT.Add(chiTietHD_PT);
+                MessageBox.Show("Đã thêm " + chiTietHD_PT.SoLuong + " " + phuTung.TenPT + "vào giỏ hàng");
             }
             else
             {

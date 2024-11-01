@@ -158,7 +158,7 @@
             // 
             // btn_XuatHD
             // 
-            this.btn_XuatHD.Location = new System.Drawing.Point(1034, 727);
+            this.btn_XuatHD.Location = new System.Drawing.Point(1048, 694);
             this.btn_XuatHD.Name = "btn_XuatHD";
             this.btn_XuatHD.Size = new System.Drawing.Size(121, 36);
             this.btn_XuatHD.TabIndex = 7;
@@ -282,7 +282,7 @@
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(21, 526);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(1257, 180);
+            this.groupBox3.Size = new System.Drawing.Size(1257, 162);
             this.groupBox3.TabIndex = 9;
             this.groupBox3.TabStop = false;
             this.groupBox3.Text = "Thông tin hóa đơn";

@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using static System.Net.Mime.MediaTypeNames;
+using System.Windows.Forms;
 
 namespace QLMuaBanXeMay.DAO
 {
@@ -25,15 +26,23 @@ namespace QLMuaBanXeMay.DAO
             }
             using (SqlCommand command = new SqlCommand(sql, MY_DB.getConnection()))
             {
-                MY_DB.openConnection();
+                try
+                {
+                    MY_DB.openConnection();
 
-                SqlDataAdapter adapter = new SqlDataAdapter(command);
-                DataTable dt = new DataTable();
-                adapter.Fill(dt);
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
 
-                MY_DB.closeConnection();
+                    MY_DB.closeConnection();
 
-                return dt;
+                    return dt;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message);
+                    return null;
+                }
             }
         }
 
@@ -41,15 +50,23 @@ namespace QLMuaBanXeMay.DAO
         {
             using (SqlCommand command = new SqlCommand("SELECT * FROM dbo.GetXeMayByTenXe(@TenXe)", MY_DB.getConnection()))
             {
-                MY_DB.openConnection();
-                command.Parameters.AddWithValue("@TenXe",TenXe.Trim());
-                SqlDataAdapter adapter = new SqlDataAdapter(command);
-                DataTable dt = new DataTable();
-                adapter.Fill(dt);
+                try
+                {
+                    MY_DB.openConnection();
+                    command.Parameters.AddWithValue("@TenXe", TenXe.Trim());
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
 
-                MY_DB.closeConnection();
+                    MY_DB.closeConnection();
 
-                return dt;
+                    return dt;
+                }
+                catch (Exception ex)    
+                {
+                    MessageBox.Show("Lỗi: "+ex.Message);
+                    return null;
+                }
             }
         }
 
@@ -57,23 +74,30 @@ namespace QLMuaBanXeMay.DAO
         {
             using (SqlCommand command = new SqlCommand("SuaXe", MY_DB.getConnection()))
             {
-                command.CommandType = CommandType.StoredProcedure;
+                try
+                {
+                    command.CommandType = CommandType.StoredProcedure;
 
-                command.Parameters.AddWithValue("@MaXe", xe.MaXe);
-                command.Parameters.AddWithValue("@TenXe", xe.TenXe);
-                command.Parameters.AddWithValue("@DonGia", xe.DonGia);
-                command.Parameters.AddWithValue("@LoaiXe", xe.LoaiXe);
-                command.Parameters.AddWithValue("@MauSac", xe.MauSac);
-                command.Parameters.AddWithValue("@PhanKhoi", xe.PhanKhoi);
-                command.Parameters.AddWithValue("@CongSuat", xe.CongSuat);
-                command.Parameters.AddWithValue("@HangSX", xe.HangSX);
-                command.Parameters.AddWithValue("@NamSX", xe.NamSX);
-                command.Parameters.AddWithValue("@TinhTrang", xe.TinhTrang);
-                MY_DB.openConnection();
+                    command.Parameters.AddWithValue("@MaXe", xe.MaXe);
+                    command.Parameters.AddWithValue("@TenXe", xe.TenXe);
+                    command.Parameters.AddWithValue("@DonGia", xe.DonGia);
+                    command.Parameters.AddWithValue("@LoaiXe", xe.LoaiXe);
+                    command.Parameters.AddWithValue("@MauSac", xe.MauSac);
+                    command.Parameters.AddWithValue("@PhanKhoi", xe.PhanKhoi);
+                    command.Parameters.AddWithValue("@CongSuat", xe.CongSuat);
+                    command.Parameters.AddWithValue("@HangSX", xe.HangSX);
+                    command.Parameters.AddWithValue("@NamSX", xe.NamSX);
+                    command.Parameters.AddWithValue("@TinhTrang", xe.TinhTrang);
+                    MY_DB.openConnection();
 
-                command.ExecuteNonQuery();
+                    command.ExecuteNonQuery();
 
-                MY_DB.closeConnection();
+                    MY_DB.closeConnection();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: "+ex.Message);
+                }
             }
         }
 
@@ -81,23 +105,30 @@ namespace QLMuaBanXeMay.DAO
         {
             using (SqlCommand command = new SqlCommand("ThemXe", MY_DB.getConnection()))
             {
-                command.CommandType = CommandType.StoredProcedure;
+                try
+                {
+                    command.CommandType = CommandType.StoredProcedure;
 
-                command.Parameters.AddWithValue("@MaXe", xe.MaXe);
-                command.Parameters.AddWithValue("@TenXe", xe.TenXe);
-                command.Parameters.AddWithValue("@DonGia", xe.DonGia);
-                command.Parameters.AddWithValue("@LoaiXe", xe.LoaiXe);
-                command.Parameters.AddWithValue("@MauSac", xe.MauSac);
-                command.Parameters.AddWithValue("@PhanKhoi", xe.PhanKhoi);
-                command.Parameters.AddWithValue("@CongSuat", xe.CongSuat);
-                command.Parameters.AddWithValue("@HangSX", xe.HangSX);
-                command.Parameters.AddWithValue("@NamSX", xe.NamSX);
-                command.Parameters.AddWithValue("@TinhTrang", xe.TinhTrang);
-                MY_DB.openConnection();
+                    command.Parameters.AddWithValue("@MaXe", xe.MaXe);
+                    command.Parameters.AddWithValue("@TenXe", xe.TenXe);
+                    command.Parameters.AddWithValue("@DonGia", xe.DonGia);
+                    command.Parameters.AddWithValue("@LoaiXe", xe.LoaiXe);
+                    command.Parameters.AddWithValue("@MauSac", xe.MauSac);
+                    command.Parameters.AddWithValue("@PhanKhoi", xe.PhanKhoi);
+                    command.Parameters.AddWithValue("@CongSuat", xe.CongSuat);
+                    command.Parameters.AddWithValue("@HangSX", xe.HangSX);
+                    command.Parameters.AddWithValue("@NamSX", xe.NamSX);
+                    command.Parameters.AddWithValue("@TinhTrang", xe.TinhTrang);
+                    MY_DB.openConnection();
 
-                command.ExecuteNonQuery();
+                    command.ExecuteNonQuery();
 
-                MY_DB.closeConnection();
+                    MY_DB.closeConnection();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: "+ex.Message);
+                }
             }
         }
     }

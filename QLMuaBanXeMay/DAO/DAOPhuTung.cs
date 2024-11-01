@@ -16,53 +16,74 @@ namespace QLMuaBanXeMay.DAO
         {
             using (SqlCommand command = new SqlCommand("ThemPhuTung", MY_DB.getConnection()))
             {
-                command.CommandType = CommandType.StoredProcedure;
+                try
+                {
+                    command.CommandType = CommandType.StoredProcedure;
 
-                command.Parameters.AddWithValue("@MaPT", phuTung.MaPT);
-                command.Parameters.AddWithValue("@TenPT", phuTung.TenPT);
-                command.Parameters.AddWithValue("@DonGia", phuTung.DonGia);
-                command.Parameters.AddWithValue("@ChatLieu", phuTung.ChatLieu);
-                command.Parameters.AddWithValue("@HangSX", phuTung.HangSX);
-                command.Parameters.AddWithValue("@SoLuongTon", phuTung.SoLuongTon);
-                MY_DB.openConnection();
+                    command.Parameters.AddWithValue("@MaPT", phuTung.MaPT);
+                    command.Parameters.AddWithValue("@TenPT", phuTung.TenPT);
+                    command.Parameters.AddWithValue("@DonGia", phuTung.DonGia);
+                    command.Parameters.AddWithValue("@ChatLieu", phuTung.ChatLieu);
+                    command.Parameters.AddWithValue("@HangSX", phuTung.HangSX);
+                    command.Parameters.AddWithValue("@SoLuongTon", phuTung.SoLuongTon);
+                    MY_DB.openConnection();
 
-                command.ExecuteNonQuery();
+                    command.ExecuteNonQuery();
 
-                MY_DB.closeConnection();
+                    MY_DB.closeConnection();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message);
+                }
             }    
         }
         public static void XoaPhuTung(int MaPT)
         {
             using (SqlCommand command = new SqlCommand("XoaPhuTung", MY_DB.getConnection()))
             {
-                command.CommandType = CommandType.StoredProcedure;
+                try
+                {
+                    command.CommandType = CommandType.StoredProcedure;
 
-                command.Parameters.AddWithValue("@MaPT", MaPT);
+                    command.Parameters.AddWithValue("@MaPT", MaPT);
 
-                MY_DB.openConnection();
+                    MY_DB.openConnection();
 
-                command.ExecuteNonQuery();
+                    command.ExecuteNonQuery();
 
-                MY_DB.closeConnection();
+                    MY_DB.closeConnection();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: "+ ex.Message);
+                }
             }
         }
         public static void CapNhatPhuTung(PhuTung phuTung)
         {
             using (SqlCommand command = new SqlCommand("SuaPhuTung", MY_DB.getConnection()))
             {
-                command.CommandType = CommandType.StoredProcedure;
+                try
+                {
+                    command.CommandType = CommandType.StoredProcedure;
 
-                command.Parameters.AddWithValue("@MaPT", phuTung.MaPT);
-                command.Parameters.AddWithValue("@TenPT", phuTung.TenPT);
-                command.Parameters.AddWithValue("@DonGia", phuTung.DonGia);
-                command.Parameters.AddWithValue("@ChatLieu", phuTung.ChatLieu);
-                command.Parameters.AddWithValue("@HangSX", phuTung.HangSX);
-                command.Parameters.AddWithValue("@SoLuongTon", phuTung.SoLuongTon);
-                MY_DB.openConnection();
+                    command.Parameters.AddWithValue("@MaPT", phuTung.MaPT);
+                    command.Parameters.AddWithValue("@TenPT", phuTung.TenPT);
+                    command.Parameters.AddWithValue("@DonGia", phuTung.DonGia);
+                    command.Parameters.AddWithValue("@ChatLieu", phuTung.ChatLieu);
+                    command.Parameters.AddWithValue("@HangSX", phuTung.HangSX);
+                    command.Parameters.AddWithValue("@SoLuongTon", phuTung.SoLuongTon);
+                    MY_DB.openConnection();
 
-                command.ExecuteNonQuery();
+                    command.ExecuteNonQuery();
 
-                MY_DB.closeConnection();
+                    MY_DB.closeConnection();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: "+ ex.Message);
+                }
             }
         }
         public static DataTable LayThongTin(string chucvu)
@@ -78,30 +99,46 @@ namespace QLMuaBanXeMay.DAO
             }
             using (SqlCommand command = new SqlCommand(sql, MY_DB.getConnection()))
             {
-                MY_DB.openConnection();
+                try
+                {
+                    MY_DB.openConnection();
 
-                SqlDataAdapter adapter = new SqlDataAdapter(command);
-                DataTable dt = new DataTable();
-                adapter.Fill(dt);
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
 
-                MY_DB.closeConnection();
+                    MY_DB.closeConnection();
 
-                return dt;
+                    return dt;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message);
+                    return null;
+                }
             }    
         }
         public static DataTable LayThongTinTheoTen(string TenPT)
         {
             using (SqlCommand command = new SqlCommand("SELECT * FROM dbo.GetPhuTungByTenPT(@TenPT)", MY_DB.getConnection()))
             {
-                MY_DB.openConnection();
-                command.Parameters.AddWithValue("@TenPT",TenPT.Trim());
-                SqlDataAdapter adapter = new SqlDataAdapter(command);
-                DataTable dt = new DataTable();
-                adapter.Fill(dt);
+                try
+                {
+                    MY_DB.openConnection();
+                    command.Parameters.AddWithValue("@TenPT", TenPT.Trim());
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
 
-                MY_DB.closeConnection();
+                    MY_DB.closeConnection();
 
-                return dt;
+                    return dt;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: "+ex.Message);
+                    return null;
+                }
             }
         }
     }

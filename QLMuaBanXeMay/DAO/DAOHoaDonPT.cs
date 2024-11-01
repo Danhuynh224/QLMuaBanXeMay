@@ -16,38 +16,52 @@ namespace QLMuaBanXeMay.DAO
         {
             using (SqlCommand command = new SqlCommand("ThemHoaDonPT", MY_DB.getConnection()))
             {
-                command.CommandType = CommandType.StoredProcedure;
+                try
+                {
+                    command.CommandType = CommandType.StoredProcedure;
 
-                command.Parameters.AddWithValue("@MaHDPT", hoaDonPT.MaHDPT);
-                command.Parameters.AddWithValue("@KhuyenMai", hoaDonPT.KhuyenMai);
-                command.Parameters.AddWithValue("@TongTien", hoaDonPT.TongTien);
-                command.Parameters.AddWithValue("@CCCDKH", hoaDonPT.CCCDKH);
-                command.Parameters.AddWithValue("@CCCDNV", hoaDonPT.CCCDNV);
-                command.Parameters.AddWithValue("@PTTT", hoaDonPT.PTTT);
-                command.Parameters.AddWithValue("@NgayXuat", hoaDonPT.NgayXuat);
-                MY_DB.openConnection();
+                    command.Parameters.AddWithValue("@MaHDPT", hoaDonPT.MaHDPT);
+                    command.Parameters.AddWithValue("@KhuyenMai", hoaDonPT.KhuyenMai);
+                    command.Parameters.AddWithValue("@TongTien", hoaDonPT.TongTien);
+                    command.Parameters.AddWithValue("@CCCDKH", hoaDonPT.CCCDKH);
+                    command.Parameters.AddWithValue("@CCCDNV", hoaDonPT.CCCDNV);
+                    command.Parameters.AddWithValue("@PTTT", hoaDonPT.PTTT);
+                    command.Parameters.AddWithValue("@NgayXuat", hoaDonPT.NgayXuat);
+                    MY_DB.openConnection();
 
-                command.ExecuteNonQuery();
+                    command.ExecuteNonQuery();
 
-                MY_DB.closeConnection();
+                    MY_DB.closeConnection();
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message);
+                }
             }
         }
         public static void ThemChiTietHDPT(ChiTietHD_PT chiTietHD_PT)
         {
             using (SqlCommand command = new SqlCommand("ThemChiTietHDPT", MY_DB.getConnection()))
             {
-                command.CommandType = CommandType.StoredProcedure;
+                try
+                {
+                    command.CommandType = CommandType.StoredProcedure;
 
-                command.Parameters.AddWithValue("@MaHDPT", chiTietHD_PT.MaHDPT);
-                command.Parameters.AddWithValue("@MaPT", chiTietHD_PT.MaPT);
-                command.Parameters.AddWithValue("@SoLuong", chiTietHD_PT.SoLuong);
-                command.Parameters.AddWithValue("@DonGia", chiTietHD_PT.DonGia);
+                    command.Parameters.AddWithValue("@MaHDPT", chiTietHD_PT.MaHDPT);
+                    command.Parameters.AddWithValue("@MaPT", chiTietHD_PT.MaPT);
+                    command.Parameters.AddWithValue("@SoLuong", chiTietHD_PT.SoLuong);
+                    command.Parameters.AddWithValue("@DonGia", chiTietHD_PT.DonGia);
 
-                MY_DB.openConnection();
+                    MY_DB.openConnection();
 
-                command.ExecuteNonQuery();
+                    command.ExecuteNonQuery();
 
-                MY_DB.closeConnection();
+                    MY_DB.closeConnection();
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show("Lỗi: "+ex.Message);
+                }
             }
         }
         public static DataTable Load_ViewHD()
@@ -67,10 +81,12 @@ namespace QLMuaBanXeMay.DAO
         }
         public static DataTable LayThongTinTheoMaHDPT(string maHD)
         {
-            using (SqlCommand command = new SqlCommand("SELECT * FROM View_HoaDonPT WHERE MaHDPT LIKE @maHD", MY_DB.getConnection()))
+            using (SqlCommand command = new SqlCommand("SELECT * FROM dbo.GetHoaDonPTByMaHDPT(@maHD)", MY_DB.getConnection()))
             {
+                command.Parameters.AddWithValue("@maHD", maHD); // Truyền tham số cho hàm
+
                 MY_DB.openConnection();
-                command.Parameters.AddWithValue("@maHD", "%" + maHD + "%");
+
                 SqlDataAdapter adapter = new SqlDataAdapter(command);
                 DataTable dt = new DataTable();
                 adapter.Fill(dt);
@@ -82,10 +98,9 @@ namespace QLMuaBanXeMay.DAO
         }
         public static DataTable Load_ViewChiTietHD(int maHD)
         {
-            using (SqlCommand command = new SqlCommand("SELECT * FROM View_ChiTietHDPT WHERE MaHDPT = @maHD", MY_DB.getConnection()))
+            using (SqlCommand command = new SqlCommand("SELECT * FROM dbo.GetChiTietHDPT(@maHD)", MY_DB.getConnection()))
             {
-               
-                command.Parameters.AddWithValue("@maHD", maHD);
+                command.Parameters.AddWithValue("@maHD", maHD); // Truyền tham số cho hàm
 
                 MY_DB.openConnection();
 
@@ -104,17 +119,23 @@ namespace QLMuaBanXeMay.DAO
             
             using (SqlCommand command = new SqlCommand("SELECT dbo.LayKhuyenMaiTuCCCD(@cccd)", MY_DB.getConnection()))
             {
-                command.Parameters.AddWithValue("@cccd", cccd);
-                MY_DB.openConnection();
-                string khuyenmai = command.ExecuteScalar().ToString();
+                try
+                {
+                    command.Parameters.AddWithValue("@cccd", cccd);
+                    MY_DB.openConnection();
+                    string khuyenmai = command.ExecuteScalar().ToString();
 
-                MY_DB.closeConnection();
+                    MY_DB.closeConnection();
 
-                return khuyenmai;
+                    return khuyenmai;
+                }
+                catch(Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message);
+                    return "0";
+                }
              
             }
-
-         
         }
     }
 }

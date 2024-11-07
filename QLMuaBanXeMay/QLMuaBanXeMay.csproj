@@ -126,6 +126,11 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>QLXePTDataSet.xsd</DependentUpon>
     </Compile>
+    <Compile Include="QLXePTDataSet1.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLXePTDataSet1.xsd</DependentUpon>
+    </Compile>
     <Compile Include="UC\UC_HoaDonLuong.cs">
       <SubType>UserControl</SubType>
     </Compile>
@@ -216,6 +221,12 @@
     <Compile Include="WF\Form_NhapSLPT.Designer.cs">
       <DependentUpon>Form_NhapSLPT.cs</DependentUpon>
     </Compile>
+    <Compile Include="WF\Form_ThemHoaDonLuong.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="WF\Form_ThemHoaDonLuong.Designer.cs">
+      <DependentUpon>Form_ThemHoaDonLuong.cs</DependentUpon>
+    </Compile>
     <Compile Include="WF\Form_ThemKhachHang.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -300,6 +311,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="WF\Form_DangNhap.resx">
       <DependentUpon>Form_DangNhap.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="WF\Form_ThemHoaDonLuong.resx">
+      <DependentUpon>Form_ThemHoaDonLuong.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="WF\Form_ThemKhachHang.resx">
       <DependentUpon>Form_ThemKhachHang.cs</DependentUpon>
@@ -429,6 +443,17 @@
     </None>
     <None Include="QLXePTDataSet.xss">
       <DependentUpon>QLXePTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLXePTDataSet1.xsc">
+      <DependentUpon>QLXePTDataSet1.xsd</DependentUpon>
+    </None>
+    <None Include="QLXePTDataSet1.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLXePTDataSet1.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLXePTDataSet1.xss">
+      <DependentUpon>QLXePTDataSet1.xsd</DependentUpon>
     </None>
     <None Include="Resources\form_main_login.png" />
   </ItemGroup>

@@ -17,10 +17,9 @@ namespace QLMuaBanXeMay.Class
 
         public HoaDonLuong() { }
 
-        public HoaDonLuong(int maHDL, string cCCDQL, string cCCDNV, int soGioLam, DateTime ngayXuat, decimal tongTien)
+        public HoaDonLuong(int maHDL, string cCCDNV, int soGioLam, DateTime ngayXuat, decimal tongTien)
         {
             this.MaHDL = maHDL;
-            this.CCCDQL = cCCDQL;
             this.CCCDNV = cCCDNV;
             this.SoGioLam = soGioLam;
             this.NgayXuat = ngayXuat;

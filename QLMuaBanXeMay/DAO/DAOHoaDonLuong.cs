@@ -6,6 +6,7 @@ using System.Data;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Windows.Forms;
 
 namespace QLMuaBanXeMay.DAO
 {
@@ -28,6 +29,29 @@ namespace QLMuaBanXeMay.DAO
             }
         }
 
+        public static DataTable Load_ViewDSNhanVien()
+        {
+            using (SqlCommand command = new SqlCommand("SELECT * FROM GetAllThongTinNVCaLamViec();", MY_DB.getConnection()))
+            {
+                try
+                {
+                    MY_DB.openConnection();
+
+                    SqlDataAdapter adapter = new SqlDataAdapter(command);
+                    DataTable dt = new DataTable();
+                    adapter.Fill(dt);
+
+                    MY_DB.closeConnection();
+
+                    return dt;
+                }
+                catch (Exception ex)
+                {
+                    MessageBox.Show("Lỗi: " + ex.Message);
+                    return null;
+                }
+            }
+        }
 
         public List<HoaDonLuong> GetAllHoaDonLuong()
         {

@@ -70,7 +70,6 @@ namespace QLMuaBanXeMay.UC
         private void btn_XuatHD_Click(object sender, EventArgs e)
         {
             Class.HoaDonPT hoaDonPT = new HoaDonPT();
-            hoaDonPT.MaHDPT = Convert.ToInt32(txt_maHD.Text);
             hoaDonPT.KhuyenMai = (double)Math.Round(double.Parse(txt_khuyenMai.Text), 2, MidpointRounding.AwayFromZero);
             hoaDonPT.TongTien = float.Parse(txt_thanhTien.Text);
             hoaDonPT.CCCDKH = Convert.ToInt32(txt_cccdKH.Text);
@@ -78,13 +77,13 @@ namespace QLMuaBanXeMay.UC
             hoaDonPT.PTTT = cb_pttt.Text;
             hoaDonPT.NgayXuat = dt_ngayXuat.Value;
 
-            DAO.DAOHoaDonPT.ThemHoaDonPT(hoaDonPT);
+            int maHDPT=DAO.DAOHoaDonPT.ThemHoaDonPT(hoaDonPT);
             
 
 
             foreach (ChiTietHD_PT chiTietHDPT in ListHDPT)
             {
-                chiTietHDPT.MaHDPT = Convert.ToInt32(txt_maHD.Text);
+                chiTietHDPT.MaHDPT = maHDPT;
                 DAO.DAOHoaDonPT.ThemChiTietHDPT(chiTietHDPT);
 
             }

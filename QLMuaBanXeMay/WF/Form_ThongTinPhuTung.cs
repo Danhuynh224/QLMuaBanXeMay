@@ -25,7 +25,6 @@ namespace QLMuaBanXeMay.WF
 
         private void ConfirmButton_Click(object sender, EventArgs e)
         {
-            phuTung.MaPT = Convert.ToInt32(txt_MaPT.Text);
             phuTung.TenPT= txt_TenPT.Text;
             phuTung.ChatLieu=txt_ChatLieu.Text;
             phuTung.HangSX=txt_HangSX.Text;

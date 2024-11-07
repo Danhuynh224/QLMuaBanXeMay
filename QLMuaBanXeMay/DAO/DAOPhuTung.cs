@@ -19,8 +19,6 @@ namespace QLMuaBanXeMay.DAO
                 try
                 {
                     command.CommandType = CommandType.StoredProcedure;
-
-                    command.Parameters.AddWithValue("@MaPT", phuTung.MaPT);
                     command.Parameters.AddWithValue("@TenPT", phuTung.TenPT);
                     command.Parameters.AddWithValue("@DonGia", phuTung.DonGia);
                     command.Parameters.AddWithValue("@ChatLieu", phuTung.ChatLieu);

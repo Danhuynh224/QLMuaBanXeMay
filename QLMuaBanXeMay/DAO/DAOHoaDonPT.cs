@@ -12,32 +12,36 @@ namespace QLMuaBanXeMay.DAO
 {
     public partial class DAOHoaDonPT
     {
-        public static void ThemHoaDonPT(HoaDonPT hoaDonPT)
+        public static int ThemHoaDonPT(HoaDonPT hoaDonPT)
         {
-            using (SqlCommand command = new SqlCommand("ThemHoaDonPT", MY_DB.getConnection()))
-            {
-                try
+                int maHDPT;
+                using (SqlCommand cmd = new SqlCommand("ThemHoaDonPT", MY_DB.getConnection()))
                 {
-                    command.CommandType = CommandType.StoredProcedure;
+                    cmd.CommandType = CommandType.StoredProcedure;
 
-                    command.Parameters.AddWithValue("@MaHDPT", hoaDonPT.MaHDPT);
-                    command.Parameters.AddWithValue("@KhuyenMai", hoaDonPT.KhuyenMai);
-                    command.Parameters.AddWithValue("@TongTien", hoaDonPT.TongTien);
-                    command.Parameters.AddWithValue("@CCCDKH", hoaDonPT.CCCDKH);
-                    command.Parameters.AddWithValue("@CCCDNV", hoaDonPT.CCCDNV);
-                    command.Parameters.AddWithValue("@PTTT", hoaDonPT.PTTT);
-                    command.Parameters.AddWithValue("@NgayXuat", hoaDonPT.NgayXuat);
-                    MY_DB.openConnection();
+                    // Thêm tham số đầu vào
+                    cmd.Parameters.AddWithValue("@KhuyenMai", hoaDonPT.KhuyenMai);
+                    cmd.Parameters.AddWithValue("@TongTien", hoaDonPT.TongTien);
+                    cmd.Parameters.AddWithValue("@CCCDKH", hoaDonPT.CCCDKH);
+                    cmd.Parameters.AddWithValue("@CCCDNV", hoaDonPT.CCCDNV);
+                    cmd.Parameters.AddWithValue("@PTTT", hoaDonPT.PTTT);
+                    cmd.Parameters.AddWithValue("@NgayXuat", hoaDonPT.NgayXuat);
 
-                    command.ExecuteNonQuery();
+                MY_DB.openConnection();
+                    SqlParameter outputIdParam = new SqlParameter("@MaHDPT", SqlDbType.Int)
+                    {
+                        Direction = ParameterDirection.Output
+                    };
+                    cmd.Parameters.Add(outputIdParam);
 
-                    MY_DB.closeConnection();
+                    // Thực thi lệnh
+                    cmd.ExecuteNonQuery();
+                MY_DB.closeConnection();
+                    // Lấy giá trị MaHDPT vừa thêm
+                    maHDPT = Convert.ToInt32(outputIdParam.Value);
                 }
-                catch (Exception ex)
-                {
-                    MessageBox.Show("Lỗi: " + ex.Message);
-                }
-            }
+        
+            return maHDPT;
         }
         public static void ThemChiTietHDPT(ChiTietHD_PT chiTietHD_PT)
         {

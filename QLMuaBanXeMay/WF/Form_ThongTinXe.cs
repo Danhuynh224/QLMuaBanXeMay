@@ -24,7 +24,7 @@ namespace QLMuaBanXeMay.WF
 
         private void btn_Confirm_Click(object sender, EventArgs e)
         {
-            xeMay.MaXe = Convert.ToInt32(txt_MaXe.Text);
+
             xeMay.TenXe = txt_TenXe.Text.ToString(); // hoặc row.Cells[0].Value.ToString()
             xeMay.DonGia = float.Parse(txt_DonGia.Text);
             xeMay.LoaiXe = txt_LoaiXe.Text.ToString();

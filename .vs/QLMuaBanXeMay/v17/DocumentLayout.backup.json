@@ -3,6 +3,26 @@
   "WorkspaceRootPath": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\qlmuabanxemay\\dao\\daokhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|solutionrelative:qlmuabanxemay\\dao\\daokhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|c:\\users\\admin\\source\\repos\\qlmuabanxemay2\\qlmuabanxemay\\wf\\form_themkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|solutionrelative:qlmuabanxemay\\wf\\form_themkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\qlmuabanxemay\\wf\\form_themkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|solutionrelative:qlmuabanxemay\\wf\\form_themkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\qlmuabanxemay\\uc\\uc_qlthongtinkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|solutionrelative:qlmuabanxemay\\uc\\uc_qlthongtinkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\qlmuabanxemay\\uc\\uc_qlthongtinkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
+      "RelativeMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|solutionrelative:qlmuabanxemay\\uc\\uc_qlthongtinkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|c:\\users\\admin\\source\\repos\\qlmuabanxemay2\\qlmuabanxemay\\class\\xemay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|solutionrelative:qlmuabanxemay\\class\\xemay.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
@@ -15,20 +35,8 @@
       "RelativeMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|solutionrelative:qlmuabanxemay\\uc\\uc_qlthongtinnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\qlmuabanxemay\\uc\\uc_qlthongtinkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|solutionrelative:qlmuabanxemay\\uc\\uc_qlthongtinkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\qlmuabanxemay\\dao\\daokhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|solutionrelative:qlmuabanxemay\\dao\\daokhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\qlmuabanxemay\\uc\\uc_qlthongtinnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|solutionrelative:qlmuabanxemay\\uc\\uc_qlthongtinnhanvien.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\qlmuabanxemay\\uc\\uc_qlthongtinkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|solutionrelative:qlmuabanxemay\\uc\\uc_qlthongtinkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\qlmuabanxemay\\uc\\uc_hoadonxee.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
@@ -39,7 +47,7 @@
       "RelativeMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|solutionrelative:qlmuabanxemay\\class\\my_db.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|c:\\users\\admin\\source\\repos\\qlmuabanxemay2\\qlmuabanxemay\\uc\\uc_qlxe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "AbsoluteMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\qlmuabanxemay\\uc\\uc_qlxe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|solutionrelative:qlmuabanxemay\\uc\\uc_qlxe.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
@@ -53,10 +61,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\qlmuabanxemay\\wf\\form_thongtinkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
       "RelativeMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|solutionrelative:qlmuabanxemay\\wf\\form_thongtinkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\qlmuabanxemay\\wf\\form_themkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form",
-      "RelativeMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|solutionrelative:qlmuabanxemay\\wf\\form_themkhachhang.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}|Form"
     },
     {
       "AbsoluteMoniker": "D:0:0:{C240EC68-D9F9-4AD4-9DEB-D465ABE9518F}|QLMuaBanXeMay\\QLMuaBanXeMay.csproj|C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\qlmuabanxemay\\wf\\form_thongtinkh.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -193,7 +197,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 2,
+          "SelectedChildIndex": 6,
           "Children": [
             {
               "$type": "Bookmark",
@@ -205,7 +209,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
+              "Title": "Form_ThemKhachHang.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\WF\\Form_ThemKhachHang.cs",
+              "RelativeDocumentMoniker": "QLMuaBanXeMay\\WF\\Form_ThemKhachHang.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\WF\\Form_ThemKhachHang.cs",
+              "RelativeToolTip": "QLMuaBanXeMay\\WF\\Form_ThemKhachHang.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-25T00:39:02.716Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
               "Title": "XeMay.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\Class\\XeMay.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\Class\\XeMay.cs",
@@ -218,71 +235,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "UC_QLThongTinNhanVien.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\UC\\UC_QLThongTinNhanVien.cs",
-              "RelativeDocumentMoniker": "QLMuaBanXeMay\\UC\\UC_QLThongTinNhanVien.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\UC\\UC_QLThongTinNhanVien.cs [Design]",
-              "RelativeToolTip": "QLMuaBanXeMay\\UC\\UC_QLThongTinNhanVien.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T12:10:57.702Z",
-              "EditorCaption": " [Design]"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "UC_QLThongTinNhanVien.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\UC\\UC_QLThongTinNhanVien.cs",
-              "RelativeDocumentMoniker": "QLMuaBanXeMay\\UC\\UC_QLThongTinNhanVien.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\UC\\UC_QLThongTinNhanVien.cs",
-              "RelativeToolTip": "QLMuaBanXeMay\\UC\\UC_QLThongTinNhanVien.cs",
-              "ViewState": "AgIAAHkAAAAAAAAAAAAwwJEAAABHAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T12:12:30.403Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 3,
               "Title": "UC_QLThongTinKH.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\UC\\UC_QLThongTinKH.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\UC\\UC_QLThongTinKH.cs",
               "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\UC\\UC_QLThongTinKH.cs",
               "RelativeToolTip": "QLMuaBanXeMay\\UC\\UC_QLThongTinKH.cs",
-              "ViewState": "AgIAAEwAAAAAAAAAAAAAAGEAAAAJAAAAAAAAAA==",
+              "ViewState": "AgIAAB0AAAAAAAAAAAAqwCoAAAALAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-10-23T15:33:56.065Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "DAONhanVien.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\DAO\\DAONhanVien.cs",
-              "RelativeDocumentMoniker": "QLMuaBanXeMay\\DAO\\DAONhanVien.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\DAO\\DAONhanVien.cs",
-              "RelativeToolTip": "QLMuaBanXeMay\\DAO\\DAONhanVien.cs",
-              "ViewState": "AgIAAFIAAAAAAAAAAAArwF8AAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T11:50:17.543Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 4,
-              "Title": "DAOKhachHang.cs",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\DAO\\DAOKhachHang.cs",
-              "RelativeDocumentMoniker": "QLMuaBanXeMay\\DAO\\DAOKhachHang.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\DAO\\DAOKhachHang.cs",
-              "RelativeToolTip": "QLMuaBanXeMay\\DAO\\DAOKhachHang.cs",
-              "ViewState": "AgIAAFwAAAAAAAAAAAAgwIEAAAAJAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T16:00:54.142Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
               "Title": "UC_QLThongTinKH.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\UC\\UC_QLThongTinKH.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\UC\\UC_QLThongTinKH.cs",
@@ -294,19 +260,78 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "DAOKhachHang.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\DAO\\DAOKhachHang.cs",
+              "RelativeDocumentMoniker": "QLMuaBanXeMay\\DAO\\DAOKhachHang.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\DAO\\DAOKhachHang.cs",
+              "RelativeToolTip": "QLMuaBanXeMay\\DAO\\DAOKhachHang.cs",
+              "ViewState": "AgIAABMAAAAAAAAAAAAQwDAAAABLAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-23T16:00:54.142Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "DAONhanVien.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\DAO\\DAONhanVien.cs",
+              "RelativeDocumentMoniker": "QLMuaBanXeMay\\DAO\\DAONhanVien.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\DAO\\DAONhanVien.cs",
+              "RelativeToolTip": "QLMuaBanXeMay\\DAO\\DAONhanVien.cs",
+              "ViewState": "AgIAAFIAAAAAAAAAAAArwF8AAAAJAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T11:50:17.543Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Form_ThemKhachHang.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\WF\\Form_ThemKhachHang.cs",
+              "RelativeDocumentMoniker": "QLMuaBanXeMay\\WF\\Form_ThemKhachHang.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\WF\\Form_ThemKhachHang.cs [Design]",
+              "RelativeToolTip": "QLMuaBanXeMay\\WF\\Form_ThemKhachHang.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-24T15:43:46.636Z",
+              "EditorCaption": " [Design]"
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 7,
+              "Title": "UC_QLThongTinNhanVien.cs",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\UC\\UC_QLThongTinNhanVien.cs",
+              "RelativeDocumentMoniker": "QLMuaBanXeMay\\UC\\UC_QLThongTinNhanVien.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\UC\\UC_QLThongTinNhanVien.cs",
+              "RelativeToolTip": "QLMuaBanXeMay\\UC\\UC_QLThongTinNhanVien.cs",
+              "ViewState": "AgIAAHkAAAAAAAAAAAAwwJEAAABHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T12:12:30.403Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "UC_QLThongTinNhanVien.cs [Design]",
+              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\UC\\UC_QLThongTinNhanVien.cs",
+              "RelativeDocumentMoniker": "QLMuaBanXeMay\\UC\\UC_QLThongTinNhanVien.cs",
+              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\UC\\UC_QLThongTinNhanVien.cs [Design]",
+              "RelativeToolTip": "QLMuaBanXeMay\\UC\\UC_QLThongTinNhanVien.cs [Design]",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-10-22T12:10:57.702Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
               "Title": "UC_HoaDonXee.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\UC\\UC_HoaDonXee.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\UC\\UC_HoaDonXee.cs",
               "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\UC\\UC_HoaDonXee.cs [Design]",
               "RelativeToolTip": "QLMuaBanXeMay\\UC\\UC_HoaDonXee.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-22T12:16:38.577Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-22T12:16:38.577Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 10,
               "Title": "MY_DB.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\Class\\MY_DB.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\Class\\MY_DB.cs",
@@ -314,12 +339,11 @@
               "RelativeToolTip": "QLMuaBanXeMay\\Class\\MY_DB.cs",
               "ViewState": "AgIAAAMAAAAAAAAAAAAiwA0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T16:56:13.654Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T16:56:13.654Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 11,
               "Title": "UC_QLXe.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\UC\\UC_QLXe.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\UC\\UC_QLXe.cs",
@@ -327,24 +351,22 @@
               "RelativeToolTip": "QLMuaBanXeMay\\UC\\UC_QLXe.cs",
               "ViewState": "AgIAAGIAAAAAAAAAAAAjwIkAAABFAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T09:04:07.384Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-23T09:04:07.384Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 12,
               "Title": "UC_QLXe.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\UC\\UC_QLXe.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\UC\\UC_QLXe.cs",
               "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\UC\\UC_QLXe.cs [Design]",
               "RelativeToolTip": "QLMuaBanXeMay\\UC\\UC_QLXe.cs [Design]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-23T09:04:03.72Z",
-              "EditorCaption": " [Design]"
+              "WhenOpened": "2024-10-23T09:04:03.72Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 13,
               "Title": "UC_ThanhToanXe.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\UC\\UC_ThanhToanXe.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\UC\\UC_ThanhToanXe.cs",
@@ -355,7 +377,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 14,
               "Title": "Form_ThongTinKH.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\WF\\Form_ThongTinKH.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\WF\\Form_ThongTinKH.cs",
@@ -366,18 +388,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Form_ThemKhachHang.cs [Design]",
-              "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\WF\\Form_ThemKhachHang.cs",
-              "RelativeDocumentMoniker": "QLMuaBanXeMay\\WF\\Form_ThemKhachHang.cs",
-              "ToolTip": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\WF\\Form_ThemKhachHang.cs [Design]",
-              "RelativeToolTip": "QLMuaBanXeMay\\WF\\Form_ThemKhachHang.cs [Design]",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T15:43:46.636Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "Form_ThongTinKH.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\WF\\Form_ThongTinKH.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\WF\\Form_ThongTinKH.cs",
@@ -389,7 +400,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "UC_ThanhToanXe.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\UC\\UC_ThanhToanXe.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\UC\\UC_ThanhToanXe.cs",
@@ -401,7 +412,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 18,
               "Title": "UC_ThanhToanPT.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\UC\\UC_ThanhToanPT.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\UC\\UC_ThanhToanPT.cs",
@@ -412,7 +423,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 17,
               "Title": "UC_ThanhToanPT.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\UC\\UC_ThanhToanPT.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\UC\\UC_ThanhToanPT.cs",
@@ -424,7 +435,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 19,
               "Title": "UC_HoaDonPT.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\UC\\UC_HoaDonPT.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\UC\\UC_HoaDonPT.cs",
@@ -435,7 +446,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
+              "DocumentIndex": 20,
               "Title": "HoaDonPhuTung.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\Class\\HoaDonPhuTung.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\Class\\HoaDonPhuTung.cs",
@@ -447,7 +458,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 21,
               "Title": "UC_HoaDonXee.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\UC\\UC_HoaDonXee.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\UC\\UC_HoaDonXee.cs",
@@ -455,12 +466,11 @@
               "RelativeToolTip": "QLMuaBanXeMay\\UC\\UC_HoaDonXee.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAdAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-10-24T15:09:00.913Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-10-24T15:09:00.913Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 22,
               "Title": "UC_HoaDonPT.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\UC\\UC_HoaDonPT.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\UC\\UC_HoaDonPT.cs",
@@ -472,7 +482,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 24,
               "Title": "DAOXeMay.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\DAO\\DAOXeMay.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\DAO\\DAOXeMay.cs",
@@ -484,7 +494,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 23,
               "Title": "DAOPhuTung.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\DAO\\DAOPhuTung.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\DAO\\DAOPhuTung.cs",
@@ -496,7 +506,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 25,
               "Title": "DAOHoaDonPT.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\DAO\\DAOHoaDonPT.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\DAO\\DAOHoaDonPT.cs",
@@ -508,7 +518,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 26,
               "Title": "DAOThongTinKH.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\DAO\\DAOThongTinKH.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\DAO\\DAOThongTinKH.cs",
@@ -520,7 +530,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 27,
               "Title": "DAOTaiKhoan.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\DAO\\DAOTaiKhoan.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\DAO\\DAOTaiKhoan.cs",
@@ -532,7 +542,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 28,
+              "DocumentIndex": 29,
               "Title": "UC_QLPhuTung.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\UC\\UC_QLPhuTung.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\UC\\UC_QLPhuTung.cs",
@@ -543,7 +553,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 28,
               "Title": "UC_QLPhuTung.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\UC\\UC_QLPhuTung.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\UC\\UC_QLPhuTung.cs",
@@ -555,7 +565,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 29,
+              "DocumentIndex": 30,
               "Title": "PhuTung.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\Class\\PhuTung.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\Class\\PhuTung.cs",
@@ -567,7 +577,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 35,
+              "DocumentIndex": 36,
               "Title": "Program.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\Program.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\Program.cs",
@@ -579,7 +589,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 30,
+              "DocumentIndex": 31,
               "Title": "Form1.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\Form1.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\Form1.cs",
@@ -591,7 +601,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 31,
+              "DocumentIndex": 32,
               "Title": "Form_DangNhap.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\WF\\Form_DangNhap.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\WF\\Form_DangNhap.cs",
@@ -603,7 +613,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 34,
+              "DocumentIndex": 35,
               "Title": "NhanVien.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\Class\\NhanVien.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\Class\\NhanVien.cs",
@@ -615,7 +625,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 32,
+              "DocumentIndex": 33,
               "Title": "Form1.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\Form1.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\Form1.cs",
@@ -626,7 +636,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 33,
+              "DocumentIndex": 34,
               "Title": "Form_DangNhap.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\WF\\Form_DangNhap.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\WF\\Form_DangNhap.cs",
@@ -637,7 +647,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 36,
+              "DocumentIndex": 37,
               "Title": "TaiKhoan.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\Class\\TaiKhoan.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\Class\\TaiKhoan.cs",
@@ -649,7 +659,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 37,
+              "DocumentIndex": 38,
               "Title": "Form_ThongTinXe.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\WF\\Form_ThongTinXe.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\WF\\Form_ThongTinXe.cs",
@@ -660,7 +670,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 38,
+              "DocumentIndex": 39,
               "Title": "Form_ThongTinPhuTung.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\WF\\Form_ThongTinPhuTung.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\WF\\Form_ThongTinPhuTung.cs",
@@ -671,7 +681,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 39,
+              "DocumentIndex": 40,
               "Title": "Form1.Designer.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\Form1.Designer.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\Form1.Designer.cs",
@@ -682,7 +692,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 42,
+              "DocumentIndex": 43,
               "Title": "UC_ThongTinNhanVien.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay\\QLMuaBanXeMay\\UserControl\\UC_ThongTinNhanVien.cs",
               "RelativeDocumentMoniker": "..\\QLMuaBanXeMay\\QLMuaBanXeMay\\UserControl\\UC_ThongTinNhanVien.cs",
@@ -693,7 +703,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 43,
+              "DocumentIndex": 44,
               "Title": "UC_ThongTinKhachHang.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay\\QLMuaBanXeMay\\UserControl\\UC_ThongTinKhachHang.cs",
               "RelativeDocumentMoniker": "..\\QLMuaBanXeMay\\QLMuaBanXeMay\\UserControl\\UC_ThongTinKhachHang.cs",
@@ -704,7 +714,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 44,
+              "DocumentIndex": 45,
               "Title": "UC_QLPhuTung.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay\\QLMuaBanXeMay\\UserControl\\UC_QLPhuTung.cs",
               "RelativeDocumentMoniker": "..\\QLMuaBanXeMay\\QLMuaBanXeMay\\UserControl\\UC_QLPhuTung.cs",
@@ -715,7 +725,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 45,
+              "DocumentIndex": 46,
               "Title": "UC_QLXe.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay\\QLMuaBanXeMay\\UserControl\\UC_QLXe.cs",
               "RelativeDocumentMoniker": "..\\QLMuaBanXeMay\\QLMuaBanXeMay\\UserControl\\UC_QLXe.cs",
@@ -726,7 +736,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 46,
+              "DocumentIndex": 47,
               "Title": "UC_MainScreen.cs [Design]",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay\\QLMuaBanXeMay\\UserControl\\UC_MainScreen.cs",
               "RelativeDocumentMoniker": "..\\QLMuaBanXeMay\\QLMuaBanXeMay\\UserControl\\UC_MainScreen.cs",
@@ -737,7 +747,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 40,
+              "DocumentIndex": 41,
               "Title": "LoaiKH.cs",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\Class\\LoaiKH.cs",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\Class\\LoaiKH.cs",
@@ -749,7 +759,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 41,
+              "DocumentIndex": 42,
               "Title": "Form1.resx",
               "DocumentMoniker": "C:\\Users\\ADMIN\\source\\repos\\QLMuaBanXeMay2\\QLMuaBanXeMay\\Form1.resx",
               "RelativeDocumentMoniker": "QLMuaBanXeMay\\Form1.resx",

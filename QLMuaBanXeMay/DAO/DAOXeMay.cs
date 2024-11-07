@@ -109,7 +109,6 @@ namespace QLMuaBanXeMay.DAO
                 {
                     command.CommandType = CommandType.StoredProcedure;
 
-                    command.Parameters.AddWithValue("@MaXe", xe.MaXe);
                     command.Parameters.AddWithValue("@TenXe", xe.TenXe);
                     command.Parameters.AddWithValue("@DonGia", xe.DonGia);
                     command.Parameters.AddWithValue("@LoaiXe", xe.LoaiXe);

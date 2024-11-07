@@ -40,8 +40,6 @@
             this.label14 = new System.Windows.Forms.Label();
             this.txt_ChatLieu = new System.Windows.Forms.TextBox();
             this.label15 = new System.Windows.Forms.Label();
-            this.txt_MaPT = new System.Windows.Forms.TextBox();
-            this.label16 = new System.Windows.Forms.Label();
             this.groupBox2.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -58,8 +56,6 @@
             this.groupBox2.Controls.Add(this.label14);
             this.groupBox2.Controls.Add(this.txt_ChatLieu);
             this.groupBox2.Controls.Add(this.label15);
-            this.groupBox2.Controls.Add(this.txt_MaPT);
-            this.groupBox2.Controls.Add(this.label16);
             this.groupBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold);
             this.groupBox2.Location = new System.Drawing.Point(12, 26);
             this.groupBox2.Name = "groupBox2";
@@ -114,7 +110,7 @@
             // 
             // txt_TenPT
             // 
-            this.txt_TenPT.Location = new System.Drawing.Point(154, 104);
+            this.txt_TenPT.Location = new System.Drawing.Point(152, 43);
             this.txt_TenPT.Name = "txt_TenPT";
             this.txt_TenPT.Size = new System.Drawing.Size(195, 30);
             this.txt_TenPT.TabIndex = 7;
@@ -123,7 +119,7 @@
             // 
             this.label13.AutoSize = true;
             this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label13.Location = new System.Drawing.Point(6, 104);
+            this.label13.Location = new System.Drawing.Point(4, 43);
             this.label13.Name = "label13";
             this.label13.Size = new System.Drawing.Size(138, 25);
             this.label13.TabIndex = 6;
@@ -131,7 +127,7 @@
             // 
             // txt_DonGia
             // 
-            this.txt_DonGia.Location = new System.Drawing.Point(154, 173);
+            this.txt_DonGia.Location = new System.Drawing.Point(152, 112);
             this.txt_DonGia.Name = "txt_DonGia";
             this.txt_DonGia.Size = new System.Drawing.Size(195, 30);
             this.txt_DonGia.TabIndex = 5;
@@ -141,7 +137,7 @@
             // 
             this.label14.AutoSize = true;
             this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label14.Location = new System.Drawing.Point(58, 173);
+            this.label14.Location = new System.Drawing.Point(56, 112);
             this.label14.Name = "label14";
             this.label14.Size = new System.Drawing.Size(79, 25);
             this.label14.TabIndex = 4;
@@ -163,23 +159,6 @@
             this.label15.Size = new System.Drawing.Size(96, 25);
             this.label15.TabIndex = 2;
             this.label15.Text = "Chất Liệu";
-            // 
-            // txt_MaPT
-            // 
-            this.txt_MaPT.Location = new System.Drawing.Point(154, 46);
-            this.txt_MaPT.Name = "txt_MaPT";
-            this.txt_MaPT.Size = new System.Drawing.Size(195, 30);
-            this.txt_MaPT.TabIndex = 1;
-            // 
-            // label16
-            // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F);
-            this.label16.Location = new System.Drawing.Point(6, 46);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(131, 25);
-            this.label16.TabIndex = 0;
-            this.label16.Text = "Mã Phụ Tùng";
             // 
             // Form_ThongTinPhuTung
             // 
@@ -210,7 +189,5 @@
         private System.Windows.Forms.Label label14;
         private System.Windows.Forms.TextBox txt_ChatLieu;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txt_MaPT;
-        private System.Windows.Forms.Label label16;
     }
 }

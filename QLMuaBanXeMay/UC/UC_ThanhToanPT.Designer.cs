@@ -59,8 +59,6 @@
             this.txt_thanhTien = new System.Windows.Forms.TextBox();
             this.label4 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
-            this.txt_maHD = new System.Windows.Forms.TextBox();
-            this.label20 = new System.Windows.Forms.Label();
             this.dataGridViewPT = new Guna.UI2.WinForms.Guna2DataGridView();
             this.groupBox2.SuspendLayout();
             this.panel1.SuspendLayout();
@@ -277,8 +275,6 @@
             this.groupBox3.Controls.Add(this.txt_thanhTien);
             this.groupBox3.Controls.Add(this.label4);
             this.groupBox3.Controls.Add(this.label15);
-            this.groupBox3.Controls.Add(this.txt_maHD);
-            this.groupBox3.Controls.Add(this.label20);
             this.groupBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.groupBox3.Location = new System.Drawing.Point(21, 526);
             this.groupBox3.Name = "groupBox3";
@@ -311,7 +307,7 @@
             this.dt_ngayXuat.CustomFormat = "dd/MM/yyyy";
             this.dt_ngayXuat.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dt_ngayXuat.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.dt_ngayXuat.Location = new System.Drawing.Point(145, 92);
+            this.dt_ngayXuat.Location = new System.Drawing.Point(145, 43);
             this.dt_ngayXuat.Name = "dt_ngayXuat";
             this.dt_ngayXuat.Size = new System.Drawing.Size(276, 27);
             this.dt_ngayXuat.TabIndex = 26;
@@ -342,7 +338,7 @@
             // txt_thanhTien
             // 
             this.txt_thanhTien.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_thanhTien.Location = new System.Drawing.Point(145, 133);
+            this.txt_thanhTien.Location = new System.Drawing.Point(145, 84);
             this.txt_thanhTien.Name = "txt_thanhTien";
             this.txt_thanhTien.Size = new System.Drawing.Size(276, 27);
             this.txt_thanhTien.TabIndex = 28;
@@ -352,7 +348,7 @@
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.Blue;
-            this.label4.Location = new System.Drawing.Point(32, 138);
+            this.label4.Location = new System.Drawing.Point(48, 87);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(92, 20);
             this.label4.TabIndex = 27;
@@ -363,30 +359,11 @@
             this.label15.AutoSize = true;
             this.label15.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label15.ForeColor = System.Drawing.Color.Blue;
-            this.label15.Location = new System.Drawing.Point(36, 97);
+            this.label15.Location = new System.Drawing.Point(48, 46);
             this.label15.Name = "label15";
             this.label15.Size = new System.Drawing.Size(88, 20);
             this.label15.TabIndex = 11;
             this.label15.Text = "Ngày xuất:";
-            // 
-            // txt_maHD
-            // 
-            this.txt_maHD.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.txt_maHD.Location = new System.Drawing.Point(145, 43);
-            this.txt_maHD.Name = "txt_maHD";
-            this.txt_maHD.Size = new System.Drawing.Size(276, 27);
-            this.txt_maHD.TabIndex = 10;
-            // 
-            // label20
-            // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 10.2F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.Blue;
-            this.label20.Location = new System.Drawing.Point(57, 50);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(67, 20);
-            this.label20.TabIndex = 9;
-            this.label20.Text = "Mã HĐ:";
             // 
             // dataGridViewPT
             // 
@@ -489,8 +466,6 @@
         private System.Windows.Forms.TextBox txt_thanhTien;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label15;
-        private System.Windows.Forms.TextBox txt_maHD;
-        private System.Windows.Forms.Label label20;
         private System.Windows.Forms.DateTimePicker dt_ngayXuat;
         private System.Windows.Forms.TextBox txt_khuyenMai;
         private System.Windows.Forms.Label label10;

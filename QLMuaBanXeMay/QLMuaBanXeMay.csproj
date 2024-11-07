@@ -54,6 +54,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Class\HoaDonChiTietPhuTung.cs" />
+    <Compile Include="Class\HoaDonLuong.cs" />
     <Compile Include="Class\HoaDonPhuTung.cs" />
     <Compile Include="Class\HoaDonXeMay.cs" />
     <Compile Include="Class\KhachHang.cs" />
@@ -62,6 +63,7 @@
     <Compile Include="Class\NhanVien.cs" />
     <Compile Include="Class\PhuTung.cs" />
     <Compile Include="Class\TaiKhoan.cs" />
+    <Compile Include="DAO\DAOHoaDonLuong.cs" />
     <Compile Include="DAO\DAOHoaDonPT.cs" />
     <Compile Include="DAO\DAOHoaDonXe.cs" />
     <Compile Include="DAO\DAOKhachHang.cs" />
@@ -118,6 +120,17 @@
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>QLMuaBanXeMayDataSet7.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="QLXePTDataSet.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>QLXePTDataSet.xsd</DependentUpon>
+    </Compile>
+    <Compile Include="UC\UC_HoaDonLuong.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="UC\UC_HoaDonLuong.Designer.cs">
+      <DependentUpon>UC_HoaDonLuong.cs</DependentUpon>
     </Compile>
     <Compile Include="UC\UC_HoaDonPT.cs">
       <SubType>UserControl</SubType>
@@ -246,6 +259,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="UC\UC_HoaDonLuong.resx">
+      <DependentUpon>UC_HoaDonLuong.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="UC\UC_HoaDonPT.resx">
       <DependentUpon>UC_HoaDonPT.cs</DependentUpon>
     </EmbeddedResource>
@@ -402,6 +418,17 @@
     </None>
     <None Include="QLMuaBanXeMayDataSet7.xss">
       <DependentUpon>QLMuaBanXeMayDataSet7.xsd</DependentUpon>
+    </None>
+    <None Include="QLXePTDataSet.xsc">
+      <DependentUpon>QLXePTDataSet.xsd</DependentUpon>
+    </None>
+    <None Include="QLXePTDataSet.xsd">
+      <Generator>MSDataSetGenerator</Generator>
+      <LastGenOutput>QLXePTDataSet.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="QLXePTDataSet.xss">
+      <DependentUpon>QLXePTDataSet.xsd</DependentUpon>
     </None>
     <None Include="Resources\form_main_login.png" />
   </ItemGroup>

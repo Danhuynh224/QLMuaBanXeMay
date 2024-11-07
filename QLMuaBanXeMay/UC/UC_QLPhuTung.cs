@@ -130,9 +130,9 @@ namespace QLMuaBanXeMay
                     // Nhận giá trị từ Form2
                     SLMua = form_NhapSLPT.SelectedValue;
                 }
-                ChiTietHD_PT chiTietHD_PT = new ChiTietHD_PT(1,Convert.ToInt32(txt_MaPhuTung.Text), Convert.ToInt32(SLMua), float.Parse(txt_DonGia.Text));
+                ChiTietHD_PT chiTietHD_PT = new ChiTietHD_PT(0,Convert.ToInt32(txt_MaPhuTung.Text), Convert.ToInt32(SLMua), float.Parse(txt_DonGia.Text));
                 listHDPT.Add(chiTietHD_PT);
-                MessageBox.Show("Đã thêm " + chiTietHD_PT.SoLuong + " " + phuTung.TenPT + "vào giỏ hàng");
+                MessageBox.Show("Đã thêm " + chiTietHD_PT.SoLuong + " " + phuTung.TenPT + " vào giỏ hàng");
             }
             else
             {

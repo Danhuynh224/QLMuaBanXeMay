@@ -13,9 +13,7 @@ namespace QLMuaBanXeMay.Class
 
 
         static SqlConnection con = new SqlConnection(@"Data Source=DESKTOP-Q1R3HVB;Initial Catalog=QLXePT;Integrated Security=True;Encrypt=False");
-        //static SqlConnection con = new SqlConnection(@"Data Source=DANHUYNH\SQLEXPRESS;Initial Catalog=QLMuaBanXePT;Integrated Security=True");
 
-        //static SqlConnection con = new SqlConnection(@"Data Source=MINHTRI\SQLEXPRESS;Initial Catalog=QLMuaBanXeMay;Integrated Security=True;Encrypt=True;TrustServerCertificate=True");
 
         static public SqlConnection getConnection()
         {

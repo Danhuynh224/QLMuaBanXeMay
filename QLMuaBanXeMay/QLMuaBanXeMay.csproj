@@ -53,6 +53,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Class\DangNhap.cs" />
     <Compile Include="Class\HoaDonChiTietPhuTung.cs" />
     <Compile Include="Class\HoaDonPhuTung.cs" />
     <Compile Include="Class\HoaDonXeMay.cs" />

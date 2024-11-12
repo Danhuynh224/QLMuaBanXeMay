@@ -14,7 +14,7 @@ namespace QLMuaBanXeMay.DAO
     {
         public static DataTable LayDanhSachKhachHang()
         {
-            using (SqlCommand command = new SqlCommand("Select * from dbo.LayDanhSachKhachHang()", MY_DB.getConnection()))
+            using (SqlCommand command = new SqlCommand("Select * from dbo.GetAllKhachHang()", MY_DB.getConnection()))
             {
                 try
                 {

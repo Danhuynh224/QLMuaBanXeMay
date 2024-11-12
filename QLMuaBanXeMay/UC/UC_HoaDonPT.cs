@@ -58,5 +58,10 @@ namespace QLMuaBanXeMay.UC
             string maHD = txt_timkiem.Text;
             gv_hdPT.DataSource = DAOHoaDonPT.LayThongTinTheoMaHDPT(maHD);
         }
+
+        private void UC_HoaDonPT_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }
